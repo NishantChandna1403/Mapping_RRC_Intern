@@ -1,0 +1,31 @@
+[0.975s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/px4_offboard': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/nishant/RRC_Project/Test_ws/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build --no-deps symlink_data
+[1.111s] /home/nishant/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.111s]   warnings.warn(msg)
+[1.211s] running develop
+[1.336s] running egg_info
+[1.345s] creating px4_offboard.egg-info
+[1.345s] writing px4_offboard.egg-info/PKG-INFO
+[1.345s] writing dependency_links to px4_offboard.egg-info/dependency_links.txt
+[1.345s] writing entry points to px4_offboard.egg-info/entry_points.txt
+[1.345s] writing requirements to px4_offboard.egg-info/requires.txt
+[1.345s] writing top-level names to px4_offboard.egg-info/top_level.txt
+[1.345s] writing manifest file 'px4_offboard.egg-info/SOURCES.txt'
+[1.363s] reading manifest file 'px4_offboard.egg-info/SOURCES.txt'
+[1.364s] writing manifest file 'px4_offboard.egg-info/SOURCES.txt'
+[1.373s] running build_ext
+[1.373s] Creating /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages/px4-offboard.egg-link (link to .)
+[1.374s] Installing control script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[1.374s] Installing offboard_control script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[1.374s] Installing processes script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[1.374s] Installing velocity_control script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[1.375s] Installing visualizer script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[1.375s] 
+[1.375s] Installed /home/nishant/RRC_Project/Test_ws/build/px4_offboard
+[1.375s] running symlink_data
+[1.375s] creating /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/ament_index/resource_index/packages
+[1.375s] symbolically linking /home/nishant/RRC_Project/Test_ws/build/px4_offboard/resource/px4_offboard -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/ament_index/resource_index/packages
+[1.375s] symbolically linking /home/nishant/RRC_Project/Test_ws/build/px4_offboard/resource/visualize.rviz -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/ament_index/resource_index/packages
+[1.376s] symbolically linking /home/nishant/RRC_Project/Test_ws/build/px4_offboard/package.xml -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/px4_offboard
+[1.376s] symbolically linking /home/nishant/RRC_Project/Test_ws/build/px4_offboard/launch/offboard_velocity_control.launch.py -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/px4_offboard
+[1.376s] symbolically linking /home/nishant/RRC_Project/Test_ws/build/px4_offboard/resource/visualize.rviz -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/px4_offboard
+[1.422s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/px4_offboard' returned '0': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/nishant/RRC_Project/Test_ws/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build --no-deps symlink_data

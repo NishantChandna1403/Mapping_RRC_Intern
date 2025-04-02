@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nishant/RRC_Project/Test_ws/build/genz_icp/libodometry_component.so" "TARGETS" "odometry_component" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/genz_icp")
