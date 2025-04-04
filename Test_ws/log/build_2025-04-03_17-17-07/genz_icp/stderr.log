@@ -1,0 +1,55 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:[m[K In member function ‘[01m[Kstd::tuple<Sophus::SE3<double, 0>, std::vector<Eigen::Matrix<double, 3, 1, 0, 3, 1>, std::allocator<Eigen::Matrix<double, 3, 1, 0, 3, 1> > >, std::vector<Eigen::Matrix<double, 3, 1, 0, 3, 1>, std::allocator<Eigen::Matrix<double, 3, 1, 0, 3, 1> > > > genz_icp::Registration::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const genz_icp::VoxelHashMap&, const SE3d&, double, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:200:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K...[m[K’ token
+  200 |         [01;31m[K...[m[K
+      |         [01;31m[K^~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:202:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kdx[m[K’ was not declared in this scope
+  202 |         const Sophus::SE3d estimation = Sophus::SE3d::exp([01;31m[Kdx[m[K);
+      |                                                           [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:219:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanar_count[m[K’ was not declared in this scope
+  219 |             VisualizeStatus([01;31m[Kplanar_count[m[K, non_planar_count, alpha);
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:219:43:[m[K [01;31m[Kerror: [m[K‘[01m[Knon_planar_count[m[K’ was not declared in this scope; did you mean ‘[01m[Kfinal_planar_points[m[K’?
+  219 |             VisualizeStatus(planar_count, [01;31m[Knon_planar_count[m[K, alpha);
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                           [32m[Kfinal_planar_points[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:219:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kalpha[m[K’ was not declared in this scope; did you mean ‘[01m[Kisalpha[m[K’?
+  219 |             VisualizeStatus(planar_count, non_planar_count, [01;31m[Kalpha[m[K);
+      |                                                             [01;31m[K^~~~~[m[K
+      |                                                             [32m[Kisalpha[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:220:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc_planar[m[K’ was not declared in this scope
+  220 |             final_planar_points = [01;31m[Ksrc_planar[m[K;
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:221:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc_non_planar[m[K’ was not declared in this scope
+  221 |             final_non_planar_points = [01;31m[Ksrc_non_planar[m[K;
+      |                                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:183:107:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kmax_correspondence_distance[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+  183 |                                                                                                    [01;31m[Kdouble max_correspondence_distance[m[K,
+      |                                                                                                    [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:184:107:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kkernel[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+  184 |                                                                                                    [01;31m[Kdouble kernel[m[K) {
+      |                                                                                                    [01;31m[K~~~~~~~^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:230:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  230 |     [01;31m[Kreturn[m[K std::make_tuple(T_icp * initial_guess, final_planar_points, final_non_planar_points);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:231:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  231 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:233:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  233 | [01;31m[K}[m[K  // namespace genz_icp
+      | [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:[m[K In member function ‘[01m[Kstd::tuple<Sophus::SE3<double, 0>, std::vector<Eigen::Matrix<double, 3, 1, 0, 3, 1>, std::allocator<Eigen::Matrix<double, 3, 1, 0, 3, 1> > >, std::vector<Eigen::Matrix<double, 3, 1, 0, 3, 1>, std::allocator<Eigen::Matrix<double, 3, 1, 0, 3, 1> > > > genz_icp::Registration::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const genz_icp::VoxelHashMap&, const SE3d&, double, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:226:9:[m[K [01;31m[Kerror: [m[Kcontrol reaches end of non-void function [[01;31m[K-Werror=return-type[m[K]
+  226 |         [01;31m[K}[m[K
+      |         [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:145:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid {anonymous}::VisualizeStatus(size_t, size_t, double)[m[K’ defined but not used [[01;31m[K-Werror=unused-function[m[K]
+  145 | void [01;31m[KVisualizeStatus[m[K(size_t planar_count, size_t non_planar_count, double alpha) {
+      |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:67:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::tuple<Eigen::Matrix<double, 6, 6, 0, 6, 6>, Eigen::Matrix<double, 6, 1, 0, 6, 1> > {anonymous}::BuildLinearSystem(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, double, double)[m[K’ defined but not used [[01;31m[K-Werror=unused-function[m[K]
+   67 | std::tuple<Eigen::Matrix6d, Eigen::Vector6d> [01;31m[KBuildLinearSystem[m[K(
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/core/CMakeFiles/core.dir/build.make:76: genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:322: genz_icp/core/CMakeFiles/core.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

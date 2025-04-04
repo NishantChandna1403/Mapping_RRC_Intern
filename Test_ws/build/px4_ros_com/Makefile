@@ -276,17 +276,17 @@ offboard_control_srv/fast:
 .PHONY : offboard_control_srv/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_px4_ros_com
+# Target rules for targets named ament_cmake_python_copy_px4_ros_com
 
 # Build rule for target.
-ament_cmake_python_symlink_px4_ros_com: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_px4_ros_com
-.PHONY : ament_cmake_python_symlink_px4_ros_com
+ament_cmake_python_copy_px4_ros_com: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_px4_ros_com
+.PHONY : ament_cmake_python_copy_px4_ros_com
 
 # fast build rule for target.
-ament_cmake_python_symlink_px4_ros_com/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_px4_ros_com.dir/build.make CMakeFiles/ament_cmake_python_symlink_px4_ros_com.dir/build
-.PHONY : ament_cmake_python_symlink_px4_ros_com/fast
+ament_cmake_python_copy_px4_ros_com/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_px4_ros_com.dir/build.make CMakeFiles/ament_cmake_python_copy_px4_ros_com.dir/build
+.PHONY : ament_cmake_python_copy_px4_ros_com/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_px4_ros_com_egg
@@ -459,7 +459,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_px4_ros_com_egg"
-	@echo "... ament_cmake_python_symlink_px4_ros_com"
+	@echo "... ament_cmake_python_copy_px4_ros_com"
 	@echo "... px4_ros_com_uninstall"
 	@echo "... uninstall"
 	@echo "... debug_vect_advertiser"

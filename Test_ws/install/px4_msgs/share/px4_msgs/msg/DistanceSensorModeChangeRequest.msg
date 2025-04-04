@@ -1,1 +1,0 @@
-/home/nishant/RRC_Project/Test_ws/src/px4_msgs/msg/DistanceSensorModeChangeRequest.msg

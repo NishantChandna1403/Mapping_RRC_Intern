@@ -1,0 +1,50 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:16 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/include/ros2_full_sensor_suite/sensor_base_attacher_plugin.hpp:30[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/sensor_base_attacher_plugin.cpp:18[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/sensor_base_attacher_plugin.cpp:[m[K In member function ‘[01m[Kvoid gazebo::SensorBaseAttacherPlugin::Attach()[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/sensor_base_attacher_plugin.cpp:165:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kignition::math::v6::Pose3d[m[K’ {aka ‘[01m[Kignition::math::v6::Pose3<double>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  165 |       ros_node_->get_logger(), [01;35m[K"Attached %s "[m[K, pose_);
+      |                                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/sensor_base_attacher_plugin.cpp:165:43:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  165 |       ros_node_->get_logger(), "Attached [01;36m[K%s[m[K ", pose_);
+      |                                          [01;36m[K~^[m[K
+      |                                           [01;36m[K|[m[K
+      |                                           [01;36m[Kchar*[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/include/ros2_full_sensor_suite/gazebo_ros_gps.hpp:37[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/gazebo_ros_gps.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/gazebo_ros_gps.cpp:[m[K In destructor ‘[01m[Kvirtual gazebo::GazeboRosGps::~GazeboRosGps()[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/src/gazebo_ros_gps.cpp:56:28:[m[K [01;35m[Kwarning: [m[Ktoo many arguments for format [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-extra-args-Wformat-extra-args]8;;[m[K]
+   56 |       node_->get_logger(), [01;35m[K"Shutting down Gazebo GPS node bye. "[m[K,
+      |                            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

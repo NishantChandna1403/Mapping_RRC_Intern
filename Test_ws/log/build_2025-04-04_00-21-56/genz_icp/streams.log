@@ -1,0 +1,13 @@
+[0.011s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target core[0m
+[0.170s] [ 14%] Built target metrics
+[0.174s] [ 21%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o[0m
+[0.213s] [ 35%] Built target odometry_node
+[0.682s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:34:10:[m[K [01;31m[Kfatal error: [m[Kceres/ceres.h: No such file or directory
+[0.682s]    34 | #include [01;31m[K<ceres/ceres.h>[m[K
+[0.682s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.682s] compilation terminated.
+[0.684s] gmake[2]: *** [genz_icp/core/CMakeFiles/core.dir/build.make:76: genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o] Error 1
+[0.684s] gmake[1]: *** [CMakeFiles/Makefile2:322: genz_icp/core/CMakeFiles/core.dir/all] Error 2
+[0.684s] gmake: *** [Makefile:146: all] Error 2
+[0.687s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

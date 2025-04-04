@@ -93,6 +93,7 @@ odometry_component_EXTERNAL_OBJECTS =
 libodometry_component.so: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o
 libodometry_component.so: CMakeFiles/odometry_component.dir/build.make
 libodometry_component.so: genz_icp/pipeline/libpipeline.a
+libodometry_component.so: /usr/lib/libceres.so.2.0.0
 libodometry_component.so: /opt/ros/humble/lib/libcomponent_manager.so
 libodometry_component.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 libodometry_component.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -108,6 +109,12 @@ libodometry_component.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_p
 libodometry_component.so: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
 libodometry_component.so: genz_icp/core/libcore.a
 libodometry_component.so: /usr/lib/x86_64-linux-gnu/libtbb.so.12.5
+libodometry_component.so: /usr/lib/libceres.so.2.0.0
+libodometry_component.so: /usr/lib/x86_64-linux-gnu/libglog.so.0.4.0
+libodometry_component.so: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
+libodometry_component.so: /usr/lib/x86_64-linux-gnu/libglog.so.0.4.0
+libodometry_component.so: /usr/lib/x86_64-linux-gnu/libunwind.so
+libodometry_component.so: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
 libodometry_component.so: /opt/ros/humble/lib/libclass_loader.so
 libodometry_component.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
 libodometry_component.so: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so

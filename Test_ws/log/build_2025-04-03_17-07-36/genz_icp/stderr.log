@@ -1,0 +1,8 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:[m[K In member function ‘[01m[Kstd::tuple<Sophus::SE3<double, 0>, std::vector<Eigen::Matrix<double, 3, 1, 0, 3, 1>, std::allocator<Eigen::Matrix<double, 3, 1, 0, 3, 1> > >, std::vector<Eigen::Matrix<double, 3, 1, 0, 3, 1>, std::allocator<Eigen::Matrix<double, 3, 1, 0, 3, 1> > > > genz_icp::Registration::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const genz_icp::VoxelHashMap&, const SE3d&, double, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:191:84:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Klong unsigned int[m[K’ to ‘[01m[Kdouble[m[K’ may change value [[01;31m[K-Werror=conversion[m[K]
+  191 |                                ? static_cast<double>(planar_count) / [01;31m[K(planar_count + non_planar_count)[m[K
+      |                                                                      [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/core/CMakeFiles/core.dir/build.make:76: genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:322: genz_icp/core/CMakeFiles/core.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

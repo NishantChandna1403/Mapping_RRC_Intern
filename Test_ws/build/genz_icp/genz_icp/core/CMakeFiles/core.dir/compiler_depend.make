@@ -1870,7 +1870,82 @@ genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o: /home/nishant/RRC_Project/
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/oneapi/tbb/task_arena.h \
   /usr/include/oneapi/tbb/info.h \
-  /usr/include/c++/11/iostream
+  /usr/include/ceres/ceres.h \
+  /usr/include/ceres/autodiff_cost_function.h \
+  /usr/include/ceres/internal/autodiff.h \
+  /usr/include/ceres/internal/array_selector.h \
+  /usr/include/ceres/internal/fixed_array.h \
+  /usr/include/ceres/internal/memory.h \
+  /usr/include/glog/logging.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/inttypes.h \
+  /usr/include/gflags/gflags.h \
+  /usr/include/gflags/gflags_declare.h \
+  /usr/include/gflags/gflags_gflags.h \
+  /usr/include/glog/log_severity.h \
+  /usr/include/glog/vlog_is_on.h \
+  /usr/include/ceres/types.h \
+  /usr/include/ceres/internal/disable_warnings.h \
+  /usr/include/ceres/internal/port.h \
+  /usr/include/ceres/internal/config.h \
+  /usr/include/ceres/internal/reenable_warnings.h \
+  /usr/include/ceres/internal/eigen.h \
+  /usr/include/ceres/internal/parameter_dims.h \
+  /usr/include/ceres/internal/integer_sequence_algorithm.h \
+  /usr/include/ceres/internal/variadic_evaluate.h \
+  /usr/include/ceres/cost_function.h \
+  /usr/include/ceres/jet.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/ceres/sized_cost_function.h \
+  /usr/include/ceres/internal/parameter_dims.h \
+  /usr/include/ceres/autodiff_local_parameterization.h \
+  /usr/include/ceres/local_parameterization.h \
+  /usr/include/ceres/internal/line_parameterization.h \
+  /usr/include/ceres/internal/householder_vector.h \
+  /usr/include/ceres/conditioned_cost_function.h \
+  /usr/include/ceres/context.h \
+  /usr/include/ceres/cost_function_to_functor.h \
+  /usr/include/ceres/dynamic_cost_function_to_functor.h \
+  /usr/include/ceres/dynamic_cost_function.h \
+  /usr/include/ceres/covariance.h \
+  /usr/include/ceres/crs_matrix.h \
+  /usr/include/ceres/dynamic_autodiff_cost_function.h \
+  /usr/include/ceres/dynamic_numeric_diff_cost_function.h \
+  /usr/include/ceres/internal/numeric_diff.h \
+  /usr/include/eigen3/Eigen/StdVector \
+  /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
+  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
+  /usr/include/ceres/numeric_diff_options.h \
+  /usr/include/ceres/evaluation_callback.h \
+  /usr/include/ceres/gradient_checker.h \
+  /usr/include/ceres/gradient_problem.h \
+  /usr/include/ceres/first_order_function.h \
+  /usr/include/ceres/gradient_problem_solver.h \
+  /usr/include/ceres/iteration_callback.h \
+  /usr/include/ceres/loss_function.h \
+  /usr/include/ceres/numeric_diff_cost_function.h \
+  /usr/include/ceres/ordered_groups.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/include/ceres/problem.h \
+  /usr/include/ceres/solver.h \
+  /usr/include/c++/11/unordered_set \
+  /usr/include/c++/11/bits/unordered_set.h \
+  /usr/include/ceres/version.h \
+  /usr/include/ceres/rotation.h
 
 genz_icp/core/CMakeFiles/core.dir/Threshold.cpp.o: /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Threshold.cpp \
   /usr/include/stdc-predef.h \
@@ -2977,6 +3052,74 @@ genz_icp/core/CMakeFiles/core.dir/VoxelHashMap.cpp.o: /home/nishant/RRC_Project/
 
 /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Threshold.cpp:
 
+/usr/include/ceres/solver.h:
+
+/usr/include/c++/11/bits/stl_multiset.h:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/map:
+
+/usr/include/ceres/ordered_groups.h:
+
+/usr/include/ceres/loss_function.h:
+
+/usr/include/ceres/iteration_callback.h:
+
+/usr/include/ceres/gradient_problem_solver.h:
+
+/usr/include/ceres/first_order_function.h:
+
+/usr/include/eigen3/Eigen/src/StlSupport/details.h:
+
+/usr/include/ceres/dynamic_numeric_diff_cost_function.h:
+
+/usr/include/ceres/dynamic_autodiff_cost_function.h:
+
+/usr/include/ceres/dynamic_cost_function_to_functor.h:
+
+/usr/include/ceres/context.h:
+
+/usr/include/ceres/internal/line_parameterization.h:
+
+/usr/include/ceres/autodiff_local_parameterization.h:
+
+/usr/include/ceres/cost_function.h:
+
+/usr/include/ceres/internal/eigen.h:
+
+/usr/include/ceres/internal/port.h:
+
+/usr/include/ceres/types.h:
+
+/usr/include/gflags/gflags_gflags.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/ceres/rotation.h:
+
+/usr/include/unistd.h:
+
+/usr/include/ceres/internal/memory.h:
+
+/usr/include/ceres/autodiff_cost_function.h:
+
 /usr/include/tbb/blocked_range.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
@@ -2988,6 +3131,10 @@ genz_icp/core/CMakeFiles/core.dir/VoxelHashMap.cpp.o: /home/nishant/RRC_Project/
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
 /usr/include/c++/11/locale:
+
+/usr/include/ceres/gradient_checker.h:
+
+/usr/include/gflags/gflags_declare.h:
 
 /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.hpp:
 
@@ -3011,7 +3158,11 @@ _deps/tessil-src/include/tsl/robin_map.h:
 
 /usr/include/oneapi/tbb/cache_aligned_allocator.h:
 
+/usr/include/ceres/jet.h:
+
 /usr/include/oneapi/tbb/detail/_aligned_space.h:
+
+/usr/include/ceres/internal/reenable_warnings.h:
 
 /usr/include/oneapi/tbb/partitioner.h:
 
@@ -3029,17 +3180,23 @@ _deps/tessil-src/include/tsl/robin_map.h:
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
+/usr/include/ceres/version.h:
+
 /usr/include/c++/11/iterator:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
+/usr/include/ceres/ceres.h:
+
 /usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/include/c++/11/bits/align.h:
+
+/usr/include/ceres/numeric_diff_options.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
@@ -3058,6 +3215,8 @@ _deps/tessil-src/include/tsl/robin_map.h:
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/ceres/problem.h:
 
 /usr/include/c++/11/thread:
 
@@ -3113,15 +3272,23 @@ _deps/tessil-src/include/tsl/robin_map.h:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
+/usr/include/ceres/evaluation_callback.h:
+
 /usr/include/c++/11/bits/basic_ios.tcc:
 
+/usr/include/eigen3/Eigen/StdVector:
+
 /usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/ceres/internal/disable_warnings.h:
 
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/c++/11/array:
+
+/usr/include/ceres/internal/config.h:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -3154,6 +3321,8 @@ _deps/tessil-src/include/tsl/robin_map.h:
 /usr/include/c++/11/utility:
 
 /usr/include/c++/11/ios:
+
+/usr/include/c++/11/bits/unordered_set.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
@@ -3231,6 +3400,8 @@ _deps/tessil-src/include/tsl/robin_map.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
+/usr/include/ceres/internal/array_selector.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/time.h:
@@ -3258,6 +3429,8 @@ _deps/tessil-src/include/tsl/robin_map.h:
 /usr/include/c++/11/cctype:
 
 /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+
+/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
 
@@ -3317,6 +3490,8 @@ _deps/sophus-src/sophus/so2.hpp:
 
 /usr/include/eigen3/Eigen/Eigenvalues:
 
+/usr/include/glog/vlog_is_on.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
@@ -3372,6 +3547,8 @@ _deps/sophus-src/sophus/so2.hpp:
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/glog/logging.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -3487,6 +3664,8 @@ _deps/sophus-src/sophus/so2.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
@@ -3500,6 +3679,8 @@ _deps/sophus-src/sophus/so2.hpp:
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/c++/11/limits:
+
+/usr/include/ceres/internal/householder_vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -3727,6 +3908,8 @@ _deps/sophus-src/sophus/so2.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/usr/include/gflags/gflags.h:
+
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/c++/11/algorithm:
@@ -3743,6 +3926,8 @@ _deps/sophus-src/sophus/so2.hpp:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
 
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
@@ -3750,6 +3935,10 @@ _deps/sophus-src/sophus/so2.hpp:
 /usr/include/eigen3/Eigen/src/Core/SolverBase.h:
 
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
+
+/usr/include/ceres/internal/numeric_diff.h:
+
+/usr/include/glog/log_severity.h:
 
 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
 
@@ -3762,6 +3951,8 @@ _deps/sophus-src/sophus/so2.hpp:
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /usr/include/eigen3/Eigen/Geometry:
+
+/usr/include/ceres/dynamic_cost_function.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
 
@@ -3833,6 +4024,8 @@ _deps/sophus-src/sophus/types.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
 
+/usr/include/ceres/covariance.h:
+
 /usr/include/eigen3/Eigen/src/Core/EigenBase.h:
 
 /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
@@ -3883,6 +4076,8 @@ _deps/sophus-src/sophus/types.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Block.h:
 
+/usr/include/c++/11/set:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Transform.h:
@@ -3930,6 +4125,8 @@ _deps/sophus-src/sophus/types.hpp:
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/11/unordered_set:
 
 /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
 
@@ -3997,6 +4194,10 @@ _deps/sophus-src/sophus/types.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
 
+/usr/include/ceres/cost_function_to_functor.h:
+
+/usr/include/ceres/internal/autodiff.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h:
 
 /usr/include/eigen3/Eigen/src/Core/Replicate.h:
@@ -4017,9 +4218,13 @@ _deps/sophus-src/sophus/se3.hpp:
 
 _deps/sophus-src/sophus/so3.hpp:
 
+/usr/include/ceres/conditioned_cost_function.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
 
 _deps/sophus-src/sophus/rotation_matrix.hpp:
+
+/usr/include/ceres/internal/integer_sequence_algorithm.h:
 
 /usr/include/c++/11/cstring:
 
@@ -4095,6 +4300,8 @@ _deps/sophus-src/sophus/rotation_matrix.hpp:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
 
+/usr/include/ceres/internal/fixed_array.h:
+
 /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
@@ -4107,11 +4314,17 @@ _deps/sophus-src/sophus/common.hpp:
 
 /usr/include/c++/11/random:
 
+/usr/include/ceres/internal/parameter_dims.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
+
+/usr/include/linux/close_range.h:
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/bit:
+
+/usr/include/ceres/numeric_diff_cost_function.h:
 
 /usr/include/math.h:
 
@@ -4155,6 +4368,8 @@ _deps/sophus-src/sophus/common.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
 
+/usr/include/ceres/crs_matrix.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
@@ -4165,11 +4380,15 @@ _deps/sophus-src/sophus/common.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h:
 
+/usr/include/ceres/sized_cost_function.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
+
+/usr/include/ceres/local_parameterization.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/Meta.h:
 
@@ -4212,6 +4431,10 @@ _deps/sophus-src/sophus/common.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h:
+
+/usr/include/ceres/gradient_problem.h:
+
+/usr/include/ceres/internal/variadic_evaluate.h:
 
 _deps/tessil-src/include/tsl/robin_hash.h:
 

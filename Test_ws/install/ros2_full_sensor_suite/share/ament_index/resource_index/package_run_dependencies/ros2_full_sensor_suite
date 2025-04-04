@@ -1,1 +1,1 @@
-/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_full_sensor_suite
+camera_info_manager;gazebo;gazebo_dev;gazebo_msgs;gazebo_ros;gazebo_ros_pkgs;geometry_msgs;image_transport;cv_bridge;nav_msgs;rclcpp;sensor_msgs;std_msgs;std_srvs

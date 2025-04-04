@@ -1,1 +1,7 @@
-/home/nishant/RRC_Project/Test_ws/src/px4_ros_com/launch/offboard_control_launch.yaml
+launch:
+
+- node:
+    pkg: "px4_ros_com"
+    exec: "offboard_control"
+    name: "offboard_control"
+    output: "screen"

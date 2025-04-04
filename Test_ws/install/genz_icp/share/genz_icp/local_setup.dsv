@@ -1,1 +1,2 @@
-/home/nishant/RRC_Project/Test_ws/build/genz_icp/ament_cmake_environment_hooks/local_setup.dsv
+source;share/genz_icp/environment/ament_prefix_path.sh
+source;share/genz_icp/environment/path.sh
