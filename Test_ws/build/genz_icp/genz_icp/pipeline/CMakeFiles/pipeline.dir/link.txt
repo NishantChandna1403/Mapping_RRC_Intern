@@ -1,0 +1,2 @@
+ccache /usr/bin/ar qc libpipeline.a CMakeFiles/pipeline.dir/GenZICP.cpp.o
+ccache /usr/bin/ranlib libpipeline.a

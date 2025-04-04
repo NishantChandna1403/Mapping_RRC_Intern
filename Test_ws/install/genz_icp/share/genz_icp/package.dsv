@@ -1,0 +1,11 @@
+source;share/genz_icp/hook/cmake_prefix_path.ps1
+source;share/genz_icp/hook/cmake_prefix_path.dsv
+source;share/genz_icp/hook/cmake_prefix_path.sh
+source;share/genz_icp/hook/ld_library_path_lib.ps1
+source;share/genz_icp/hook/ld_library_path_lib.dsv
+source;share/genz_icp/hook/ld_library_path_lib.sh
+source;share/genz_icp/local_setup.bash
+source;share/genz_icp/local_setup.dsv
+source;share/genz_icp/local_setup.ps1
+source;share/genz_icp/local_setup.sh
+source;share/genz_icp/local_setup.zsh

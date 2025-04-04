@@ -1,0 +1,38 @@
+[0.013s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.068s] [ 14%] Built target metrics
+[0.072s] [ 28%] Built target odometry_node
+[0.073s] [ 71%] Built target core
+[0.099s] [ 85%] Built target pipeline
+[0.114s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.135s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[20.552s] [100%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[20.793s] [100%] Built target odometry_component
+[20.803s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '0': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[20.804s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/genz_icp
+[20.813s] -- Install configuration: "Release"
+[20.813s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node
+[20.814s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so
+[20.816s] -- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so" to ""
+[20.816s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch
+[20.816s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch.py
+[20.816s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch
+[20.816s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz
+[20.816s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros1.rviz
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros2.rviz
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/package_run_dependencies/genz_icp
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/parent_prefix_path/genz_icp
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.sh
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.dsv
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.sh
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.dsv
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.bash
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.sh
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.zsh
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.dsv
+[20.817s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.dsv
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/packages/genz_icp
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/rclcpp_components/genz_icp
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig.cmake
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig-version.cmake
+[20.817s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.xml
+[20.819s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '0': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/genz_icp

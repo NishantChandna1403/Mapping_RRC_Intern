@@ -1,0 +1,83 @@
+[0.106s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/Test_ws/src/kiss-icp/ros -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/Test_ws/install/kiss_icp
+[0.119s] -- Using ccache: /usr/bin/ccache
+[0.289s] -- The C compiler identification is GNU 11.4.0
+[0.295s] -- Detecting C compiler ABI info
+[0.366s] -- Detecting C compiler ABI info - done
+[0.374s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.375s] -- Detecting C compile features
+[0.375s] -- Detecting C compile features - done
+[3.767s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.204s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.328s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.366s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.369s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.376s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.386s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.400s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.432s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.447s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[4.476s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.478s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.573s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.601s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.643s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.758s] -- Looking for C++ include pthread.h
+[4.881s] -- Looking for C++ include pthread.h - found
+[4.881s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.986s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.987s] -- Found Threads: TRUE  
+[5.022s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[5.059s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.076s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.252s] -- Configuring done
+[5.272s] -- Generating done
+[5.281s] -- Build files have been written to: /home/nishant/RRC_Project/Test_ws/build/kiss_icp
+[5.293s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/Test_ws/src/kiss-icp/ros -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/Test_ws/install/kiss_icp
+[5.295s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/kiss_icp -- -j12 -l12
+[5.366s] [  7%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Registration.cpp.o[0m
+[5.377s] [ 14%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Preprocessing.cpp.o[0m
+[5.382s] [ 21%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelHashMap.cpp.o[0m
+[5.382s] [ 28%] [32mBuilding CXX object CMakeFiles/kiss_icp_node.dir/rclcpp_components/node_main_kiss_icp_node.cpp.o[0m
+[5.386s] [ 42%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/VoxelUtils.cpp.o[0m
+[5.386s] [ 35%] [32mBuilding CXX object kiss_icp/metrics/CMakeFiles/kiss_icp_metrics.dir/Metrics.cpp.o[0m
+[5.394s] [ 50%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/kiss_icp_core.dir/Threshold.cpp.o[0m
+[11.258s] [ 57%] [32m[1mLinking CXX executable kiss_icp_node[0m
+[11.431s] [ 57%] Built target kiss_icp_node
+[14.395s] [ 64%] [32m[1mLinking CXX static library libkiss_icp_core.a[0m
+[14.446s] [ 64%] Built target kiss_icp_core
+[14.471s] [ 71%] [32mBuilding CXX object kiss_icp/pipeline/CMakeFiles/kiss_icp_pipeline.dir/KissICP.cpp.o[0m
+[16.919s] [ 78%] [32m[1mLinking CXX static library libkiss_icp_pipeline.a[0m
+[16.963s] [ 78%] Built target kiss_icp_pipeline
+[16.988s] [ 85%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/src/OdometryServer.cpp.o[0m
+[21.933s] [ 92%] [32m[1mLinking CXX static library libkiss_icp_metrics.a[0m
+[21.977s] [ 92%] Built target kiss_icp_metrics
+[37.266s] [100%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[37.487s] [100%] Built target odometry_component
+[37.501s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/kiss_icp -- -j12 -l12
+[37.503s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/kiss_icp
+[37.512s] -- Install configuration: "Release"
+[37.512s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/kiss_icp_node
+[37.513s] -- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/kiss_icp_node" to ""
+[37.513s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libodometry_component.so
+[37.514s] -- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libodometry_component.so" to ""
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp//launch
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp//launch/odometry.launch.py
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp//rviz
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp//rviz/kiss_icp.rviz
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/path.sh
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.bash
+[37.515s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.sh
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/package.dsv
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+[37.516s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/package.xml
+[37.519s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/kiss_icp

@@ -1,0 +1,16 @@
+[0.119s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.167s] [35m[1mConsolidate compiler generated dependencies of target core[0m
+[0.181s] [ 14%] Built target metrics
+[0.195s] [ 28%] Built target odometry_node
+[0.202s] [ 35%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o[0m
+[1.999s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:189:60:[m[K [01;31m[Kerror: [m[Kattributes are not allowed on a function-definition
+[1.999s]   189 | void SE3ToCeresPose(const Sophus::SE3d& se3, double* pose) [01;31m[K__attribute__[m[K((unused)) {
+[1.999s]       |                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[1.999s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:189:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid {anonymous}::SE3ToCeresPose(const SE3d&, double*)[m[K’ defined but not used [[01;31m[K-Werror=unused-function[m[K]
+[2.000s]   189 | void [01;31m[KSE3ToCeresPose[m[K(const Sophus::SE3d& se3, double* pose) __attribute__((unused)) {
+[2.000s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.000s] cc1plus: all warnings being treated as errors
+[2.001s] gmake[2]: *** [genz_icp/core/CMakeFiles/core.dir/build.make:76: genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o] Error 1
+[2.001s] gmake[1]: *** [CMakeFiles/Makefile2:322: genz_icp/core/CMakeFiles/core.dir/all] Error 2
+[2.001s] gmake: *** [Makefile:146: all] Error 2
+[2.003s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

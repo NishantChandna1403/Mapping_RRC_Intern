@@ -1,0 +1,83 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nishant/RRC_Project/Test_ws/build/bcr_bot
+-- Install configuration: ""
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//launch
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//meshes/kinect
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfD_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_GroundB_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Lamp_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_TrashCanC_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringD_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfE_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_RoofB_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_DeskC_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringA_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_PalletJackB_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_Bucket_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_WallB_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ClutteringC_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/meshes
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//models/aws_robomaker_warehouse_ShelfF_01/materials/textures
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//urdf
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//worlds
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot//rviz
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot/config
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/bcr_bot/share/bcr_bot/package.dsv

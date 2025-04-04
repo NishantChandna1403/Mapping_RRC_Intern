@@ -1,0 +1,4 @@
+Invoking command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite -- -j12 -l12
+Invoked command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite -- -j12 -l12
+Invoking command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite
+Invoked command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite

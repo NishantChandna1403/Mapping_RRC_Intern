@@ -1,0 +1,40 @@
+[0.451s] Invoking command in '/home/nishant/RRC_Project/Test_ws/src/ROS2_PX4_Offboard_Example/px4_offboard': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/nishant/RRC_Project/Test_ws/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build install --record /home/nishant/RRC_Project/Test_ws/build/px4_offboard/install.log --single-version-externally-managed install_data
+[0.549s] /home/nishant/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[0.549s]   warnings.warn(msg)
+[0.599s] running egg_info
+[0.607s] writing ../../../build/px4_offboard/px4_offboard.egg-info/PKG-INFO
+[0.607s] writing dependency_links to ../../../build/px4_offboard/px4_offboard.egg-info/dependency_links.txt
+[0.607s] writing entry points to ../../../build/px4_offboard/px4_offboard.egg-info/entry_points.txt
+[0.607s] writing requirements to ../../../build/px4_offboard/px4_offboard.egg-info/requires.txt
+[0.608s] writing top-level names to ../../../build/px4_offboard/px4_offboard.egg-info/top_level.txt
+[0.625s] reading manifest file '../../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[0.625s] adding license file 'LICENSE'
+[0.626s] writing manifest file '../../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[0.626s] running build
+[0.626s] running build_py
+[0.626s] copying px4_offboard/visualizer.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.626s] copying px4_offboard/processes.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.626s] copying px4_offboard/velocity_control.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.626s] copying px4_offboard/pcl_converter.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.626s] copying px4_offboard/control.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.626s] copying px4_offboard/run.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.626s] copying px4_offboard/__init__.py -> /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build/lib/px4_offboard
+[0.627s] running install
+[0.629s] running install_lib
+[0.638s] running install_data
+[0.638s] copying resource/px4_offboard -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/ament_index/resource_index/packages
+[0.638s] copying resource/visualize.rviz -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/ament_index/resource_index/packages
+[0.638s] copying package.xml -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/px4_offboard
+[0.639s] copying launch/offboard_velocity_control.launch.py -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/px4_offboard
+[0.639s] copying resource/visualize.rviz -> /home/nishant/RRC_Project/Test_ws/install/px4_offboard/share/px4_offboard
+[0.639s] running install_egg_info
+[0.648s] removing '/home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info' (and everything under it)
+[0.648s] Copying ../../../build/px4_offboard/px4_offboard.egg-info to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info
+[0.648s] running install_scripts
+[0.719s] Installing control script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[0.719s] Installing offboard_control script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[0.719s] Installing processes script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[0.719s] Installing velocity_control script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[0.719s] Installing visualizer script to /home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/px4_offboard
+[0.719s] writing list of installed files to '/home/nishant/RRC_Project/Test_ws/build/px4_offboard/install.log'
+[0.738s] Invoked command in '/home/nishant/RRC_Project/Test_ws/src/ROS2_PX4_Offboard_Example/px4_offboard' returned '0': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/nishant/RRC_Project/Test_ws/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nishant/RRC_Project/Test_ws/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/nishant/RRC_Project/Test_ws/build/px4_offboard/build install --record /home/nishant/RRC_Project/Test_ws/build/px4_offboard/install.log --single-version-externally-managed install_data
