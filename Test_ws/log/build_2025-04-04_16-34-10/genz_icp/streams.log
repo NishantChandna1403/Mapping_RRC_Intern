@@ -1,0 +1,20 @@
+[0.009s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.056s] [ 14%] Built target metrics
+[0.067s] [ 57%] Built target core
+[0.067s] [ 71%] Built target odometry_node
+[0.090s] [ 85%] Built target pipeline
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.127s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[6.586s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[6.586s]                  from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+[6.586s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:279[m[K:
+[6.586s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:280:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[6.586s]   280 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(genz_icp_ros::OdometryServer)
+[6.587s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.587s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:28:24:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[6.587s]    28 | namespace genz_icp_ros [01;36m[K{[m[K
+[6.587s]       |                        [01;36m[K^[m[K
+[6.589s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[6.590s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[6.590s] gmake: *** [Makefile:146: all] Error 2
+[6.593s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

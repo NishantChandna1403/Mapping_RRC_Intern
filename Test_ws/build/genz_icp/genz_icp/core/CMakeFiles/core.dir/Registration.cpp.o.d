@@ -565,4 +565,62 @@ genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o: \
  /usr/include/c++/11/memory_resource /usr/include/c++/11/shared_mutex \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/oneapi/tbb/task_arena.h /usr/include/oneapi/tbb/info.h \
- /usr/include/c++/11/iostream
+ /usr/include/ceres/ceres.h /usr/include/ceres/autodiff_cost_function.h \
+ /usr/include/ceres/internal/autodiff.h \
+ /usr/include/ceres/internal/array_selector.h \
+ /usr/include/ceres/internal/fixed_array.h \
+ /usr/include/ceres/internal/memory.h /usr/include/glog/logging.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/inttypes.h \
+ /usr/include/gflags/gflags.h /usr/include/gflags/gflags_declare.h \
+ /usr/include/gflags/gflags_gflags.h /usr/include/glog/log_severity.h \
+ /usr/include/glog/vlog_is_on.h /usr/include/ceres/types.h \
+ /usr/include/ceres/internal/disable_warnings.h \
+ /usr/include/ceres/internal/port.h /usr/include/ceres/internal/config.h \
+ /usr/include/ceres/internal/reenable_warnings.h \
+ /usr/include/ceres/internal/eigen.h \
+ /usr/include/ceres/internal/parameter_dims.h \
+ /usr/include/ceres/internal/integer_sequence_algorithm.h \
+ /usr/include/ceres/internal/variadic_evaluate.h \
+ /usr/include/ceres/cost_function.h /usr/include/ceres/jet.h \
+ /usr/include/c++/11/iostream /usr/include/ceres/sized_cost_function.h \
+ /usr/include/ceres/internal/parameter_dims.h \
+ /usr/include/ceres/autodiff_local_parameterization.h \
+ /usr/include/ceres/local_parameterization.h \
+ /usr/include/ceres/internal/line_parameterization.h \
+ /usr/include/ceres/internal/householder_vector.h \
+ /usr/include/ceres/conditioned_cost_function.h \
+ /usr/include/ceres/context.h \
+ /usr/include/ceres/cost_function_to_functor.h \
+ /usr/include/ceres/dynamic_cost_function_to_functor.h \
+ /usr/include/ceres/dynamic_cost_function.h \
+ /usr/include/ceres/covariance.h /usr/include/ceres/crs_matrix.h \
+ /usr/include/ceres/dynamic_autodiff_cost_function.h \
+ /usr/include/ceres/dynamic_numeric_diff_cost_function.h \
+ /usr/include/ceres/internal/numeric_diff.h \
+ /usr/include/eigen3/Eigen/StdVector \
+ /usr/include/eigen3/Eigen/src/StlSupport/StdVector.h \
+ /usr/include/eigen3/Eigen/src/StlSupport/details.h \
+ /usr/include/ceres/numeric_diff_options.h \
+ /usr/include/ceres/evaluation_callback.h \
+ /usr/include/ceres/gradient_checker.h \
+ /usr/include/ceres/gradient_problem.h \
+ /usr/include/ceres/first_order_function.h \
+ /usr/include/ceres/gradient_problem_solver.h \
+ /usr/include/ceres/iteration_callback.h \
+ /usr/include/ceres/loss_function.h \
+ /usr/include/ceres/numeric_diff_cost_function.h \
+ /usr/include/ceres/ordered_groups.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h /usr/include/ceres/problem.h \
+ /usr/include/ceres/solver.h /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h /usr/include/ceres/version.h \
+ /usr/include/ceres/rotation.h

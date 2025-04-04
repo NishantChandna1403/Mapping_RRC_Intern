@@ -1,0 +1,27 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:16 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/gazebo_ros_gps.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/gazebo_ros_velodyne_laser.dir/build.make:76: CMakeFiles/gazebo_ros_velodyne_laser.dir/src/gazebo_ros_velodyne_laser.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/gazebo_ros_velodyne_laser.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/gazebo_ros_imu.dir/build.make:76: CMakeFiles/gazebo_ros_imu.dir/src/gazebo_ros_imu.cpp.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/build.make:90: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/src/realsense_ros_plugin.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/build.make:76: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/src/gazebo_ros_realsense_camera.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/gazebo_ros_imu.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/sensor_base_attacher_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,61 @@
+[0.009s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.055s] [ 14%] Built target metrics
+[0.062s] [ 28%] Built target odometry_node
+[0.064s] [ 71%] Built target core
+[0.087s] [ 85%] Built target pipeline
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.115s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[6.691s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[6.691s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyframe_window_size_[m[K’ was not declared in this scope
+[6.692s]    47 |     [01;31m[Kkeyframe_window_size_[m[K = declare_parameter<int>("keyframe_window_size", keyframe_window_size_);
+[6.692s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.692s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_counter_[m[K’ was not declared in this scope
+[6.692s]    70 |     [01;31m[Kframe_counter_[m[K = 0;
+[6.692s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.692s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:91:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_map_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap_publisher_[m[K’?
+[6.692s]    91 |         [01;31m[Kglobal_map_publisher_[m[K = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/global_map", qos);
+[6.693s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.693s]       |         [32m[Kmap_publisher_[m[K
+[6.693s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[6.693s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:208:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe_counter_[m[K’ was not declared in this scope
+[6.693s]   208 |     [01;31m[Kframe_counter_[m[K++;
+[6.693s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.693s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:233:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_map_[m[K’ was not declared in this scope
+[6.693s]   233 |     [01;31m[Kglobal_map_[m[K.insert(global_map_.end(), points_in_map.begin(), points_in_map.end());
+[6.693s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[6.693s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:236:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyframe_window_size_[m[K’ was not declared in this scope
+[6.693s]   236 |     if (frame_counter_ >= [01;31m[Kkeyframe_window_size_[m[K) {
+[6.693s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.694s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[6.694s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[6.695s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:36[m[K,
+[6.695s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[6.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::PublishClouds(const rclcpp::Time&, const string&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[6.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:331:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_map_[m[K’ was not declared in this scope
+[6.695s]   331 |     RCLCPP_INFO(this->get_logger(), "Global map size: %zu points", [01;31m[Kglobal_map_[m[K.size());
+[6.695s]       |                                                                    [01;31m[K^~~~~~~~~~~[m[K
+[6.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:332:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_map_[m[K’ was not declared in this scope
+[6.695s]   332 |     if (![01;31m[Kglobal_map_[m[K.empty()) {
+[6.695s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[6.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:343:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_map_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmap_publisher_[m[K’?
+[6.695s]   343 |     [01;31m[Kglobal_map_publisher_[m[K->publish(std::move(EigenToPointCloud2(global_map_, map_header)));
+[6.695s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.695s]       |     [32m[Kmap_publisher_[m[K
+[6.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:343:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_map_[m[K’ was not declared in this scope
+[6.695s]   343 |     global_map_publisher_->publish(std::move(EigenToPointCloud2([01;31m[Kglobal_map_[m[K, map_header)));
+[6.696s]       |                                                                 [01;31m[K^~~~~~~~~~~[m[K
+[6.697s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[6.698s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[6.698s] gmake: *** [Makefile:146: all] Error 2
+[6.702s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

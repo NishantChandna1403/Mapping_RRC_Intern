@@ -1,3 +1,1 @@
-source;share/ros2_full_sensor_suite/environment/ament_prefix_path.sh
-source;share/ros2_full_sensor_suite/environment/library_path.sh
-source;share/ros2_full_sensor_suite/environment/path.sh
+/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite/ament_cmake_environment_hooks/local_setup.dsv

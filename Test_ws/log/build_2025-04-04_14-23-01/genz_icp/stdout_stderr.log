@@ -1,0 +1,146 @@
+[ 14%] Built target odometry_node
+[ 28%] Built target metrics
+[ 71%] Built target core
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:29[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::GpsCallback(px4_msgs::msg::SensorGps_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:117:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_latitude_deg_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+  117 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Received GPS data: Lat=%d, Lon=%d, Alt=%d"[m[K,
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  118 |                 [32m[Klatest_gps_data_.latitude_deg[m[K, latest_gps_data_.longitude_deg, latest_gps_data_.altitude_msl_m);
+      |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                  [32m[K|[m[K
+      |                                  [32m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_latitude_deg_type {aka double}[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:117:62:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  117 |     RCLCPP_INFO(this->get_logger(), "Received GPS data: Lat=[01;36m[K%d[m[K, Lon=%d, Alt=%d",
+      |                                                             [01;36m[K~^[m[K
+      |                                                              [01;36m[K|[m[K
+      |                                                              [01;36m[Kint[m[K
+      |                                                             [32m[K%f[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:29[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:117:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_longitude_deg_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+  117 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Received GPS data: Lat=%d, Lon=%d, Alt=%d"[m[K,
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  118 |                 latest_gps_data_.latitude_deg, [32m[Klatest_gps_data_.longitude_deg[m[K, latest_gps_data_.altitude_msl_m);
+      |                                                [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                 [32m[K|[m[K
+      |                                                                 [32m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_longitude_deg_type {aka double}[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:117:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  117 |     RCLCPP_INFO(this->get_logger(), "Received GPS data: Lat=%d, Lon=[01;36m[K%d[m[K, Alt=%d",
+      |                                                                     [01;36m[K~^[m[K
+      |                                                                      [01;36m[K|[m[K
+      |                                                                      [01;36m[Kint[m[K
+      |                                                                     [32m[K%f[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:29[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:117:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_altitude_msl_m_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+  117 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Received GPS data: Lat=%d, Lon=%d, Alt=%d"[m[K,
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  118 |                 latest_gps_data_.latitude_deg, latest_gps_data_.longitude_deg, [32m[Klatest_gps_data_.altitude_msl_m[m[K);
+      |                                                                                [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_altitude_msl_m_type {aka double}[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:117:78:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  117 |     RCLCPP_INFO(this->get_logger(), "Received GPS data: Lat=%d, Lon=%d, Alt=[01;36m[K%d[m[K",
+      |                                                                             [01;36m[K~^[m[K
+      |                                                                              [01;36m[K|[m[K
+      |                                                                              [01;36m[Kint[m[K
+      |                                                                             [32m[K%f[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:29[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:161:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_altitude_msl_m_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+  161 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Latest GPS altitude: %d"[m[K, [32m[Klatest_gps_data_.altitude_msl_m[m[K);
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                 [32m[K|[m[K
+      |                                                                                 [32m[Kpx4_msgs::msg::SensorGps_<std::allocator<void> >::_altitude_msl_m_type {aka double}[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:161:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  161 |     RCLCPP_INFO(this->get_logger(), "Latest GPS altitude: [01;36m[K%d[m[K", latest_gps_data_.altitude_msl_m);
+      |                                                           [01;36m[K~^[m[K
+      |                                                            [01;36m[K|[m[K
+      |                                                            [01;36m[Kint[m[K
+      |                                                           [32m[K%f[m[K
+[100%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[100%] Built target odometry_component
+-- Install configuration: "Release"
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so" to ""
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch.py
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros1.rviz
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros2.rviz
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/package_run_dependencies/genz_icp
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/parent_prefix_path/genz_icp
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.dsv
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.bash
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.sh
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.zsh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.dsv
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.dsv
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/packages/genz_icp
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/rclcpp_components/genz_icp
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig.cmake
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig-version.cmake
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.xml

@@ -1,2 +1,1 @@
-add_subdirectory(scripts)
-add_subdirectory(textures)
+/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/models/ground_grass_plane/materials/CMakeLists.txt

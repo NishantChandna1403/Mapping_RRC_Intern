@@ -1,9 +1,1 @@
-set(MODEL_NAME grass_plane)
-set (files 
-  model.config
-  model.sdf
-)
-
-add_subdirectory(materials)
-
-install(FILES ${files} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}/gazebo_models/environments/${MODEL_NAME}/)
+/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/models/ground_grass_plane/CMakeLists.txt
