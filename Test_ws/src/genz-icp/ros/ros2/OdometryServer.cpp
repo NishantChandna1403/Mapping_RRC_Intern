@@ -45,7 +45,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <std_msgs/msg/string.hpp>
-#include <px4_msgs/msg/vehicle_attitude.hpp> // Added for VehicleAttitude
+#include <px4_msgs/msg/vehicle_attitude.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp> // Added for local position
 
 namespace genz_icp_ros {
 
@@ -90,11 +91,15 @@ OdometryServer::OdometryServer(const rclcpp::NodeOptions &options)
         "/fmu/out/vehicle_attitude", rclcpp::SensorDataQoS(),
         std::bind(&OdometryServer::AttitudeCallback, this, std::placeholders::_1));
 
+    local_position_sub_ = create_subscription<px4_msgs::msg::VehicleLocalPosition>(
+        "/fmu/out/vehicle_local_position", rclcpp::SensorDataQoS(),
+        std::bind(&OdometryServer::LocalPositionCallback, this, std::placeholders::_1));
+
     // Initialize publishers
     rclcpp::QoS qos((rclcpp::SystemDefaultsQoS().keep_last(1).durability_volatile()));
     odom_publisher_ = create_publisher<nav_msgs::msg::Odometry>("/genz/odometry", qos);
     traj_publisher_ = create_publisher<nav_msgs::msg::Path>("/genz/trajectory", qos);
-    imu_odom_publisher_ = create_publisher<nav_msgs::msg::Odometry>("/imu/odometry", qos); // Added
+    imu_odom_publisher_ = create_publisher<nav_msgs::msg::Odometry>("/imu/odometry", qos);
     path_msg_.header.frame_id = odom_frame_;
     if (publish_debug_clouds_) {
         map_publisher_ = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/local_map", qos);
@@ -146,7 +151,7 @@ void OdometryServer::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::Cons
     imu_odom_msg.pose.pose.orientation.z = msg->q[3];
     imu_odom_msg.pose.pose.orientation.w = msg->q[0];
 
-    // Manually convert geometry_msgs::msg::Pose to Sophus::SE3d
+    // Manually convert to Sophus::SE3d
     Eigen::Vector3d translation(imu_odom_msg.pose.pose.position.x,
                                 imu_odom_msg.pose.pose.position.y,
                                 imu_odom_msg.pose.pose.position.z);
@@ -164,6 +169,20 @@ void OdometryServer::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::Cons
     imu_odom_publisher_->publish(imu_odom_msg);
 }
 
+void OdometryServer::LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg) {
+    // Extract position from VehicleLocalPosition (NED frame)
+    Eigen::Vector3d translation(msg->x, msg->y, msg->z);
+
+    // Since VehicleLocalPosition doesn’t provide orientation, use identity quaternion
+    // (orientation will come from IMU anyway)
+    Eigen::Quaterniond quaternion(1.0, 0.0, 0.0, 0.0);
+    latest_local_position_pose_ = Sophus::SE3d(quaternion, translation);
+
+    if (!first_local_position_received_) {
+        first_local_position_received_ = true;
+    }
+}
+
 void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg) {
     const auto cloud_frame_id = msg->header.frame_id;
     const auto points = PointCloud2ToEigen(msg);
@@ -173,9 +192,11 @@ void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSha
     }();
     const auto egocentric_estimation = (base_frame_.empty() || base_frame_ == cloud_frame_id);
 
-    // Pass the latest IMU pose to GenZ-ICP (default to identity if no IMU data yet)
+    // Pass the latest IMU and local position poses to GenZ-ICP
     const auto &[planar_points, non_planar_points] = odometry_.RegisterFrame(
-        points, timestamps, first_imu_received_ ? latest_imu_pose_ : Sophus::SE3d());
+        points, timestamps,
+        first_imu_received_ ? latest_imu_pose_ : Sophus::SE3d(),
+        first_local_position_received_ ? latest_local_position_pose_ : Sophus::SE3d());
 
     // Compute the pose using GenZ, ego-centric to the LiDAR
     const Sophus::SE3d genz_pose = odometry_.poses().back();
@@ -187,9 +208,8 @@ void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSha
         return cloud2base * genz_pose * cloud2base.inverse();
     }();
 
-    // Spit the current estimated pose to ROS msgs
+    // Publish the current estimated pose to ROS msgs
     PublishOdometry(pose, msg->header.stamp, cloud_frame_id);
-    // Publishing this clouds is a bit costly, so do it only if we are debugging
     if (publish_debug_clouds_) {
         PublishClouds(msg->header.stamp, cloud_frame_id, planar_points, non_planar_points);
     }
@@ -198,7 +218,7 @@ void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSha
 void OdometryServer::PublishOdometry(const Sophus::SE3d &pose,
                                      const rclcpp::Time &stamp,
                                      const std::string &cloud_frame_id) {
-    // Broadcast the tf ---
+    // Broadcast the tf
     if (publish_odom_tf_) {
         geometry_msgs::msg::TransformStamped transform_msg;
         transform_msg.header.stamp = stamp;
@@ -208,7 +228,7 @@ void OdometryServer::PublishOdometry(const Sophus::SE3d &pose,
         tf_broadcaster_->sendTransform(transform_msg);
     }
 
-    // publish trajectory msg
+    // Publish trajectory msg
     geometry_msgs::msg::PoseStamped pose_msg;
     pose_msg.header.stamp = stamp;
     pose_msg.header.frame_id = odom_frame_;
@@ -216,7 +236,7 @@ void OdometryServer::PublishOdometry(const Sophus::SE3d &pose,
     path_msg_.poses.push_back(pose_msg);
     traj_publisher_->publish(path_msg_);
 
-    // publish odometry msg
+    // Publish odometry msg
     nav_msgs::msg::Odometry odom_msg;
     odom_msg.header.stamp = stamp;
     odom_msg.header.frame_id = odom_frame_;
@@ -236,7 +256,7 @@ void OdometryServer::PublishClouds(const rclcpp::Time &stamp,
     const auto genz_map = odometry_.LocalMap();
 
     if (!publish_odom_tf_) {
-        // debugging happens in an egocentric world
+        // Debugging happens in an egocentric world
         std_msgs::msg::Header cloud_header;
         cloud_header.stamp = stamp;
         cloud_header.frame_id = cloud_frame_id;
@@ -259,6 +279,7 @@ void OdometryServer::PublishClouds(const rclcpp::Time &stamp,
         map_publisher_->publish(std::move(EigenToPointCloud2(genz_map, odom_header)));
     }
 }
+
 }  // namespace genz_icp_ros
 
 #include "rclcpp_components/register_node_macro.hpp"

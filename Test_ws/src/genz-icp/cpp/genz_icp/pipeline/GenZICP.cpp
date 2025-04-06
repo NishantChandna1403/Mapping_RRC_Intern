@@ -35,8 +35,9 @@
 namespace genz_icp::pipeline {
 
 GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                                    const std::vector<double> &timestamps,
-                                                    const Sophus::SE3d &imu_pose) {
+                                                    const std::vector<double> timestamps,
+                                                    const Sophus::SE3d &imu_pose,
+                                                    const Sophus::SE3d &local_position_pose) {
     const auto &deskew_frame = [&]() -> std::vector<Eigen::Vector3d> {
         if (!config_.deskew || timestamps.empty()) return frame;
         // TODO(Nacho) Add some asserts here to sanitize the timestamps
@@ -93,9 +94,13 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
     auto registration_result = registration_.RegisterFrame(source, local_map_, initial_guess, 3.0 * sigma, sigma / 3.0);
     auto &[new_pose, planar_points, non_planar_points] = registration_result;
 
+    // Fuse translation: 0.7 * local position + 0.3 * ICP
+    Eigen::Vector3d icp_translation = new_pose.translation();
+    Eigen::Vector3d local_position_translation = local_position_pose.translation();
+    Eigen::Vector3d fused_translation = 0.7 * local_position_translation + 0.3 * icp_translation;
+
     // Always use the IMU orientation
-    Eigen::Vector3d translation = new_pose.translation(); // Keep ICP translation
-    new_pose = Sophus::SE3d(imu_pose.unit_quaternion(), translation);
+    new_pose = Sophus::SE3d(imu_pose.unit_quaternion(), fused_translation);
 
     const auto model_deviation = initial_guess.inverse() * new_pose;
     adaptive_threshold_.UpdateModelDeviation(model_deviation);
@@ -105,7 +110,7 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
 }
 
 GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
-    return RegisterFrame(frame, {}, Sophus::SE3d());
+    return RegisterFrame(frame, {}, Sophus::SE3d(), Sophus::SE3d());
 }
 
 GenZICP::Vector3dVectorTuple GenZICP::Voxelize(const std::vector<Eigen::Vector3d> &frame, double adaptive_voxel_size) const {

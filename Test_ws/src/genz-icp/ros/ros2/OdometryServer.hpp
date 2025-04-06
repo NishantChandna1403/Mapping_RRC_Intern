@@ -33,6 +33,7 @@
 #include <nav_msgs/msg/odometry.hpp>
 #include <nav_msgs/msg/path.hpp>
 #include <px4_msgs/msg/vehicle_attitude.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp> // Added for local position
 
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
@@ -52,6 +53,7 @@ private:
 
     void RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg);
     void AttitudeCallback(const px4_msgs::msg::VehicleAttitude::ConstSharedPtr &msg);
+    void LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg); // Added
     void PublishOdometry(const Sophus::SE3d &pose,
                          const rclcpp::Time &stamp,
                          const std::string &cloud_frame_id);
@@ -72,10 +74,11 @@ private:
     // Subscribers
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr attitude_sub_;
+    rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_position_sub_; // Added
 
     // Publishers
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;
-    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr imu_odom_publisher_; // Added
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr imu_odom_publisher_;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr map_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr planar_points_publisher_;
@@ -90,6 +93,10 @@ private:
     // IMU-related members
     Sophus::SE3d latest_imu_pose_; // Store the latest IMU pose
     bool first_imu_received_ = false; // Flag to track first IMU measurement
+
+    // Local position-related members
+    Sophus::SE3d latest_local_position_pose_; // Store the latest local position pose
+    bool first_local_position_received_ = false; // Flag to track first local position measurement
 };
 
 }  // namespace genz_icp_ros

@@ -1,0 +1,26 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:77:65:[m[K [01;31m[Kerror: [m[Kextended character × is not valid in an identifier
+   77 |                                       const std::vector<double> [01;31m[K×[m[Ktamps,
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:38:79:[m[K [01;31m[Kerror: [m[Kextended character × is not valid in an identifier
+   38 |                                       const std::vector<double> [01;31m[K×[m[Ktamps,
+      |                                                                 [01;31m[K^[m[K
+
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In lambda function:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:42:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimestamps[m[K’ was not declared in this scope; did you mean ‘[01m[Kmkstemps[m[K’?
+   42 |         if (!config_.deskew || [01;31m[Ktimestamps[m[K.empty()) return frame;
+      |                                [01;31m[K^~~~~~~~~~[m[K
+      |                                [32m[Kmkstemps[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:53:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimestamps[m[K’ was not declared in this scope; did you mean ‘[01m[Kmkstemps[m[K’?
+   53 |         return DeSkewScan(frame, [01;31m[Ktimestamps[m[K, start_pose, finish_pose);
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+      |                                  [32m[Kmkstemps[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:38:79:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[K×tamps[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Werror=unused-parameter]8;;[m[K]
+   38 |                                       [01;31m[Kconst std::vector<double> ×tamps[m[K,
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
