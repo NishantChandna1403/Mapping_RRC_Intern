@@ -1,0 +1,17 @@
+[ 14%] Built target metrics
+[35m[1mConsolidate compiler generated dependencies of target core[0m
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:34:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’
+   34 | class [01;31m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:47:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’
+   47 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

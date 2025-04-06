@@ -1,201 +1,129 @@
-#!/usr/bin/env python3
-
-import numpy as np
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
-from sensor_msgs.msg import PointCloud2, PointField
+from sensor_msgs.msg import NavSatFix
+from geometry_msgs.msg import PoseWithCovarianceStamped, PoseStamped
+import numpy as np
+from gtsam import NonlinearFactorGraph, Values, PriorFactorPose2, Pose2, noiseModel
 from std_msgs.msg import Header
-import sensor_msgs_py.point_cloud2 as pc2
-from px4_msgs.msg import SensorGps
-import gtsam
-from gtsam.symbol_shorthand import X
-from scipy.spatial import cKDTree
+from pyproj import Transformer
 
-class FactorGraphSLAM(Node):
+class GICPGPSFusionNED(Node):
     def __init__(self):
-        super().__init__('factor_graph_slam')
-        
-        sensor_qos = QoSProfile(
-            reliability=QoSReliabilityPolicy.BEST_EFFORT,
-            history=QoSHistoryPolicy.KEEP_LAST,
-            depth=10
-        )
-        map_qos = QoSProfile(
-            reliability=QoSReliabilityPolicy.RELIABLE,
-            history=QoSHistoryPolicy.KEEP_LAST,
-            depth=10
-        )
-        
-        self.graph = gtsam.NonlinearFactorGraph()
-        self.initial_estimates = gtsam.Values()
-        self.current_pose_key = 0
-        self.last_pose = None
-        
-        self.global_map = []
-        self.map_poses = []
-        
-        self.icp_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.1, 0.1, 0.1, 0.05, 0.05, 0.05]))
-        self.gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([1.0, 1.0, 1.0, 0.1, 0.1, 0.1]))
-        self.point_to_point_noise = gtsam.noiseModel.Isotropic.Sigma(3, 0.1)
-        
-        self.map_pub = self.create_publisher(PointCloud2, '/slam_map', map_qos)
-        
-        self.points_sub = self.create_subscription(
-            PointCloud2,
-            '/camera/points_transformed',
-            self.points_callback,
-            sensor_qos)
-        self.gps_sub = self.create_subscription(
-            SensorGps,
-            '/fmu/out/vehicle_gps_position',
-            self.gps_callback,
-            sensor_qos)
-        
-        self.previous_points = None
-        self.current_points = None
-        
-        self.get_logger().info("FactorGraphSLAM node initialized")
+        super().__init__('gicp_gps_fusion_ned')
+        self.graph = NonlinearFactorGraph()
+        self.initial_estimates = Values()
+        self.pose_id = 0
 
-    def points_callback(self, msg):
-        self.get_logger().info(f"Received point cloud with {msg.width * msg.height} points")
-        points_list = list(pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True))
-        points = np.array([[p[0], p[1], p[2]] for p in points_list], dtype=np.float32)
-        
-        self.current_points = points[::10]
-        self.get_logger().info(f"Processed {len(self.current_points)} valid points")
-        
-        if self.previous_points is not None and self.current_points.size > 0:
-            self.get_logger().info("Running ICP and updating graph")
-            relative_pose = self.compute_icp_gtsam(self.previous_points, self.current_points)
-            
-            if self.last_pose is None:
-                self.last_pose = gtsam.Pose3()
-                self.initial_estimates.insert(X(0), self.last_pose)
-                self.map_poses.append(self.last_pose)
-                self.global_map.append(self.current_points)
-                self.get_logger().info("Initialized first pose with point cloud")
-            else:
-                current_pose_key = self.current_pose_key + 1
-                self.graph.add(gtsam.BetweenFactorPose3(
-                    X(self.current_pose_key), 
-                    X(current_pose_key), 
-                    relative_pose, 
-                    self.icp_noise
-                ))
-                
-                self.last_pose = self.last_pose.compose(relative_pose)
-                self.initial_estimates.insert(X(current_pose_key), self.last_pose)
-                self.current_pose_key = current_pose_key
-                self.map_poses.append(self.last_pose)
-                self.global_map.append(self.current_points)
-                self.get_logger().info(f"Added pose {self.current_pose_key}, map size: {len(self.global_map)}")
-                
-                self.optimize_graph()
-                self.publish_map()
-        
-        self.previous_points = self.current_points.copy()
+        # Publishers and subscribers
+        self.pose_pub = self.create_publisher(PoseStamped, '/optimized_pose_ned', 10)
+        self.gicp_sub = self.create_subscription(
+            PoseWithCovarianceStamped, '/icp_odom', self.gicp_callback, 10)
+        self.gps_sub = self.create_subscription(
+            NavSatFix, '/gps/fix', self.gps_callback, 10)
+
+        # NED conversion setup
+        self.ned_transformer = None
+        self.ref_lat = None
+        self.ref_lon = None
+        self.ref_alt = None
+        self.gicp_offset = None  
+
+        # Parameters
+        self.w_max = 0.4  # Max GICP weight
+        self.k = 500.0  # Tuning constant
+        self.gps_noise = noiseModel.Diagonal.Sigmas(np.array([1.0, 1.0]))  # Base GPS noise
+
+    def set_ned_reference(self, lat, lon, alt):
+        # Set first GPS fix as NED origin
+        self.ref_lat, self.ref_lon, self.ref_alt = lat, lon, alt
+        self.ned_transformer = Transformer.from_crs(
+            "epsg:4326",  # WGS84 lat/lon
+            "+proj=tmerc +lat_0={} +lon_0={} +k=1 +x_0=0 +y_0=0 +ellps=WGS84 +units=m".format(lat, lon),
+            always_xy=True
+        )
+        self.get_logger().info(f"NED reference set: lat={lat}, lon={lon}, alt={alt}")
+
+    def gps_to_ned(self, lat, lon, alt):
+        if self.ned_transformer is None:
+            self.set_ned_reference(lat, lon, alt)
+            return 0.0, 0.0  # Origin
+        x, y = self.ned_transformer.transform(lon, lat)  # lon, lat order for pyproj
+        z = -(alt - self.ref_alt)  # Down is positive
+        return x, y  # North, East
+
+    def gicp_callback(self, msg):
+        # GICP pose in local frame
+        x_local = msg.pose.pose.position.x
+        y_local = msg.pose.pose.position.y
+        theta = self.quat_to_yaw(msg.pose.pose.orientation)
+        cov = np.array(msg.pose.covariance).reshape(6, 6)[0:3, 0:3]
+        N_t = msg.covariance[0]  # Placeholder for point count
+
+        # Convert to NED (assume initial alignment with first GPS)
+        if self.gicp_offset is None and self.ref_lat is not None:
+            self.gicp_offset = [x_local, y_local]  # First GICP pose aligns with NED origin
+        x_ned = x_local - (self.gicp_offset[0] if self.gicp_offset else 0)
+        y_ned = y_local - (self.gicp_offset[1] if self.gicp_offset else 0)
+
+        z_gicp = Pose2(x_ned, y_ned, theta)
+        self.initial_estimates.insert(self.pose_id, z_gicp)
+
+        # Weight and factor
+        w_gicp = min(self.w_max, N_t / (N_t + self.k))
+        w_gps = 1.0 - w_gicp
+        adjusted_cov = cov / w_gicp
+        gicp_noise = noiseModel.Gaussian.Covariance(adjusted_cov)
+        self.graph.add(PriorFactorPose2(self.pose_id, z_gicp, gicp_noise))
+        self.get_logger().info(f"Added GICP: pose_id={self.pose_id}, N_t={N_t}, w_gicp={w_gicp}")
+
+        self.optimize_and_publish()
 
     def gps_callback(self, msg):
-        self.get_logger().info("Received GPS data")
-        gps_position = gtsam.Point3(msg.latitude_deg / 1e7, msg.longitude_deg / 1e7, msg.altitude_msl_m / 1000.0)
-        gps_pose = gtsam.Pose3(gtsam.Rot3(), gps_position)
-        
-        if self.current_pose_key == 0 and self.last_pose is None:
-            self.last_pose = gps_pose
-            self.initial_estimates.insert(X(0), self.last_pose)
-            self.map_poses.append(self.last_pose)
-            self.get_logger().info("Initialized first pose with GPS data")
-        
-        if self.current_pose_key >= 0 and self.last_pose is not None:
-            gps_pose = gtsam.Pose3(self.last_pose.rotation(), gps_position)
-            self.graph.add(gtsam.PriorFactorPose3(
-                X(self.current_pose_key),
-                gps_pose,
-                self.gps_noise
-            ))
-            self.optimize_graph()
-            if self.global_map:
-                self.publish_map()
+        # GPS to NED
+        x_ned, y_ned = self.gps_to_ned(msg.latitude, msg.longitude, msg.altitude)
+        gps_pose = Pose2(x_ned, y_ned, 0.0)
 
-    def compute_icp_gtsam(self, source_points, target_points):
-        tree = cKDTree(target_points)
-        distances, indices = tree.query(source_points, k=1)
-        tgt_points = target_points[indices]
+        # Weight and factor
+        w_gicp = min(self.w_max, self.initial_estimates.atPose2(self.pose_id - 1).x() / (self.k + self.initial_estimates.atPose2(self.pose_id - 1).x()))  # Placeholder N_t from last pose
+        w_gps = 1.0 - w_gicp
+        adjusted_gps_noise = noiseModel.Diagonal.Sigmas(np.array([1.0 / w_gps, 1.0 / w_gps]))
+        self.graph.add(PriorFactorPose2(self.pose_id - 1, gps_pose, adjusted_gps_noise))
+        self.get_logger().info(f"Added GPS: pose_id={self.pose_id - 1}, w_gps={w_gps}")
 
-        icp_graph = gtsam.NonlinearFactorGraph()
-        icp_initial = gtsam.Values()
-        pose_symbol = X(0)
-        icp_initial.insert(pose_symbol, gtsam.Pose3())
+        self.optimize_and_publish()
 
-        # Create expression for pose3
-        pose_expr = gtsam.ExpressionPose3(pose_symbol)
-
-        for src, tgt in zip(source_points, tgt_points):
-            src_point = gtsam.Point3(*src)
-            tgt_point = gtsam.Point3(*tgt)
-            # Transform source point using the pose expression
-            transformed_expr = gtsam.ExpressionPoint3(pose_expr.transformFrom(src_point))
-            # Add error factor: transformed source should match target
-            factor = gtsam.ExpressionFactorPoint3(
-                self.point_to_point_noise,
-                tgt_point,
-                transformed_expr
-            )
-            icp_graph.add(factor)
-
-        params = gtsam.LevenbergMarquardtParams()
-        params.setMaxIterations(10)
-        optimizer = gtsam.LevenbergMarquardtOptimizer(icp_graph, icp_initial, params)
+    def optimize_and_publish(self):
+        from gtsam import LevenbergMarquardtOptimizer
+        optimizer = LevenbergMarquardtOptimizer(self.graph, self.initial_estimates)
         result = optimizer.optimize()
-        
-        self.get_logger().info("ICP completed")
-        return result.atPose3(pose_symbol)
 
-    def optimize_graph(self):
-        optimizer = gtsam.LevenbergMarquardtOptimizer(self.graph, self.initial_estimates)
-        result = optimizer.optimize()
-        
+        latest_pose = result.atPose2(self.pose_id - 1)
+        pose_msg = PoseStamped()
+        pose_msg.header = Header(frame_id='ned', stamp=self.get_clock().now().to_msg())
+        pose_msg.pose.position.x = latest_pose.x()  # North
+        pose_msg.pose.position.y = latest_pose.y()  # East
+        pose_msg.pose.orientation = self.yaw_to_quat(latest_pose.theta())
+        self.pose_pub.publish(pose_msg)
+
         self.initial_estimates = result
-        for i in range(len(self.map_poses)):
-            self.map_poses[i] = result.atPose3(X(i))
-        
-        current_pose = result.atPose3(X(self.current_pose_key))
-        self.get_logger().info(f"Current Pose: {current_pose.translation()}")
+        self.pose_id += 1
 
-    def publish_map(self):
-        if not self.global_map or not self.map_poses:
-            self.get_logger().warn("No map data to publish: global_map or map_poses is empty")
-            return
+    def quat_to_yaw(self, quat):
+        import tf_transformations
+        return tf_transformations.euler_from_quaternion([quat.x, quat.y, quat.z, quat.w])[2]
 
-        self.get_logger().info(f"Publishing map with {len(self.global_map)} point clouds")
-        global_points = []
-        for pose, points in zip(self.map_poses, self.global_map):
-            rot = pose.rotation().matrix()
-            trans = pose.translation()
-            transformed_points = np.dot(points, rot.T) + trans
-            global_points.append(transformed_points)
-        
-        global_points = np.vstack(global_points)
-        self.get_logger().info(f"Total points in map: {len(global_points)}")
-
-        header = Header()
-        header.stamp = self.get_clock().now().to_msg()
-        header.frame_id = "map"
-        
-        fields = [
-            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
-            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
-            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1),
-        ]
-        
-        cloud = pc2.create_cloud(header, fields, global_points)
-        self.map_pub.publish(cloud)
-        self.get_logger().info("Map published to /slam_map")
+    def yaw_to_quat(self, yaw):
+        import tf_transformations
+        q = tf_transformations.quaternion_from_euler(0, 0, yaw)
+        from geometry_msgs.msg import Quaternion
+        return Quaternion(x=q[0], y=q[1], z=q[2], w=q[3])
 
 def main(args=None):
     rclpy.init(args=args)
-    slam = FactorGraphSLAM()
-    rclpy.spin(slam)
-    slam.destroy_node()
+    fusion_node = GICPGPSFusionNED()
+    rclpy.spin(fusion_node)
+    fusion_node.destroy_node()
     rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

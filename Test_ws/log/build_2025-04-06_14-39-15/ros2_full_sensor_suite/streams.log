@@ -1,0 +1,36 @@
+[0.098s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite -- -j12 -l12
+[0.166s] [ 18%] Built target gazebo_ros_imu
+[0.169s] [ 36%] Built target gazebo_ros_gps
+[0.172s] [ 54%] Built target sensor_base_attacher_plugin
+[0.177s] [ 72%] Built target gazebo_ros_velodyne_laser
+[0.183s] [100%] Built target gazebo_ros_realsense_camera_plugin
+[0.193s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite -- -j12 -l12
+[0.195s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite
+[0.203s] -- Install configuration: ""
+[0.203s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//launch
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/dumpster
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/dumpster/meshes
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/dumpster/materials
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/dumpster/materials/textures
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/dumpster/materials/scripts
+[0.204s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/full_sensor_suite
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/full_sensor_suite/meshes
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/full_sensor_suite/materials
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/full_sensor_suite/materials/textures
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/full_sensor_suite/materials/scripts
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/botanbot_simple
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/botanbot_simple/meshes
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/botanbot_simple/materials
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/botanbot_simple/materials/textures
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/botanbot_simple/materials/scripts
+[0.205s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/ground_grass_plane
+[0.206s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/ground_grass_plane/materials
+[0.206s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/ground_grass_plane/materials/textures
+[0.206s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//models/ground_grass_plane/materials/scripts
+[0.207s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//worlds
+[0.207s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite//urdf
+[0.207s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/include/
+[0.208s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/include//ros2_full_sensor_suite
+[0.208s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/share/ros2_full_sensor_suite/package.dsv
+[0.208s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite

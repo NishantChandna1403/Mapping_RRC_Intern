@@ -22,75 +22,74 @@
 // SOFTWARE.
 #pragma once
 
-// GenZ-ICP
-#include "genz_icp/pipeline/GenZICP.hpp"
+#include <memory>
+#include <string>
+#include <vector>
 
-// ROS 2
-#include <tf2_ros/buffer.h>
-#include <tf2_ros/transform_broadcaster.h>
-#include <tf2_ros/transform_listener.h>
+#include <sophus/se3.hpp>
 
-#include <nav_msgs/msg/odometry.hpp>
-#include <nav_msgs/msg/path.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
-#include <string>
+#include <nav_msgs/msg/odometry.hpp>
+#include <nav_msgs/msg/path.hpp>
+#include <px4_msgs/msg/vehicle_attitude.hpp>
+
+#include <tf2_ros/buffer.h>
+#include <tf2_ros/transform_listener.h>
+#include <tf2_ros/transform_broadcaster.h>
+
+#include "genz_icp/pipeline/GenZICP.hpp"
 
 namespace genz_icp_ros {
 
 class OdometryServer : public rclcpp::Node {
 public:
-    /// OdometryServer constructor
-    OdometryServer() = delete;
     explicit OdometryServer(const rclcpp::NodeOptions &options);
 
 private:
-    /// Register new frame
-    void RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg);
+    Sophus::SE3d LookupTransform(const std::string &target_frame,
+                                 const std::string &source_frame) const;
 
-    /// Stream the estimated pose to ROS
+    void RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg);
+    void AttitudeCallback(const px4_msgs::msg::VehicleAttitude::ConstSharedPtr &msg);
     void PublishOdometry(const Sophus::SE3d &pose,
                          const rclcpp::Time &stamp,
                          const std::string &cloud_frame_id);
-
-    /// Stream the debugging point clouds for visualization (if required)
     void PublishClouds(const rclcpp::Time &stamp,
                        const std::string &cloud_frame_id,
                        const std::vector<Eigen::Vector3d> &planar_points,
                        const std::vector<Eigen::Vector3d> &non_planar_points);
 
-    /// Utility function to compute transformation using tf tree
-    Sophus::SE3d LookupTransform(const std::string &target_frame,
-                                 const std::string &source_frame) const;
-
 private:
-    /// Tools for broadcasting TFs.
-    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-    std::unique_ptr<tf2_ros::Buffer> tf2_buffer_;
-    std::unique_ptr<tf2_ros::TransformListener> tf2_listener_;
-    bool publish_odom_tf_;
-    bool publish_debug_clouds_;
+    genz_icp::pipeline::GenZConfig config_;
+    genz_icp::pipeline::GenZICP odometry_;
 
-    /// Data subscribers.
+    std::string base_frame_ = "base_link";
+    std::string odom_frame_ = "odom";
+    bool publish_odom_tf_ = true;
+    bool publish_debug_clouds_ = false;
+
+    // Subscribers
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud_sub_;
+    rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr attitude_sub_;
 
-    /// Data publishers.
+    // Publishers
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr imu_odom_publisher_; // Added
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr map_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr planar_points_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr non_planar_points_publisher_;
 
-    /// Path publisher
     nav_msgs::msg::Path path_msg_;
-    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_publisher_;
 
-    /// GenZ-ICP
-    genz_icp::pipeline::GenZICP odometry_;
-    genz_icp::pipeline::GenZConfig config_;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    std::unique_ptr<tf2_ros::Buffer> tf2_buffer_;
+    std::unique_ptr<tf2_ros::TransformListener> tf2_listener_;
 
-    /// Global/map coordinate frame.
-    std::string odom_frame_{"odom"};
-    std::string base_frame_{};
+    // IMU-related members
+    Sophus::SE3d latest_imu_pose_; // Store the latest IMU pose
+    bool first_imu_received_ = false; // Flag to track first IMU measurement
 };
 
 }  // namespace genz_icp_ros

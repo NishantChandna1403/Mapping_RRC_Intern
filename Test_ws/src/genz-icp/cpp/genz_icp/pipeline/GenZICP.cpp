@@ -35,12 +35,13 @@
 namespace genz_icp::pipeline {
 
 GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                                    const std::vector<double> &timestamps) {
+                                                    const std::vector<double> &timestamps,
+                                                    const Sophus::SE3d &imu_pose) {
     const auto &deskew_frame = [&]() -> std::vector<Eigen::Vector3d> {
         if (!config_.deskew || timestamps.empty()) return frame;
         // TODO(Nacho) Add some asserts here to sanitize the timestamps
 
-        //  If not enough poses for the estimation, do not de-skew
+        // If not enough poses for the estimation, do not de-skew
         const size_t N = poses().size();
         if (N <= 2) return frame;
 
@@ -49,14 +50,10 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         const auto &finish_pose = poses_[N - 1];
 
         return DeSkewScan(frame, timestamps, start_pose, finish_pose);
-        
     }();
-    return RegisterFrame(deskew_frame);
-}
 
-GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
     // Preprocess the input cloud
-    const auto &cropped_frame = Preprocess(frame, config_.max_range, config_.min_range);
+    const auto &cropped_frame = Preprocess(deskew_frame, config_.max_range, config_.min_range);
 
     // Adapt voxel size based on LOCUS 2.0's adaptive voxel grid filter
     static double voxel_size = config_.voxel_size; // Initial voxel size
@@ -71,21 +68,44 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
     const double sigma = GetAdaptiveThreshold();
 
     // Compute initial_guess for ICP
-    const auto prediction = GetPredictionModel();
-    const auto last_pose = !poses_.empty() ? poses_.back() : Sophus::SE3d();
-    const auto initial_guess = last_pose * prediction;
+    Sophus::SE3d initial_guess;
+    if (first_frame_) {
+        // Use the first IMU measurement as the initial pose in NED frame
+        initial_ned_pose_ = imu_pose;
+        initial_guess = initial_ned_pose_;
+        last_imu_pose_ = imu_pose; // Store the first IMU pose for relative updates
+        first_frame_ = false;
+    } else {
+        const auto prediction = GetPredictionModel();
+        const auto last_pose = poses_.back();
 
-    // Run GenZ-ICP
-    const auto &[new_pose, planar_points, non_planar_points] = registration_.RegisterFrame(source,         //
-                                                          local_map_,     //
-                                                          initial_guess,  //
-                                                          3.0 * sigma,    //
-                                                          sigma / 3.0);
+        // Check if imu_pose is effectively identity (no significant change)
+        bool is_imu_identity = (imu_pose.translation().norm() < 1e-6) &&
+                               imu_pose.unit_quaternion().isApprox(Eigen::Quaterniond(1.0, 0.0, 0.0, 0.0), 1e-6);
+
+        // Compute relative IMU update (delta from the last IMU pose)
+        Sophus::SE3d imu_delta = last_imu_pose_.inverse() * imu_pose;
+        initial_guess = is_imu_identity ? last_pose * prediction : last_pose * imu_delta;
+        last_imu_pose_ = imu_pose; // Update the last IMU pose
+    }
+
+    // Run GenZ-ICP to get translation (orientation will be overridden by IMU)
+    auto registration_result = registration_.RegisterFrame(source, local_map_, initial_guess, 3.0 * sigma, sigma / 3.0);
+    auto &[new_pose, planar_points, non_planar_points] = registration_result;
+
+    // Always use the IMU orientation
+    Eigen::Vector3d translation = new_pose.translation(); // Keep ICP translation
+    new_pose = Sophus::SE3d(imu_pose.unit_quaternion(), translation);
+
     const auto model_deviation = initial_guess.inverse() * new_pose;
     adaptive_threshold_.UpdateModelDeviation(model_deviation);
     local_map_.Update(frame_downsample, new_pose);
     poses_.push_back(new_pose);
     return {planar_points, non_planar_points};
+}
+
+GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
+    return RegisterFrame(frame, {}, Sophus::SE3d());
 }
 
 GenZICP::Vector3dVectorTuple GenZICP::Voxelize(const std::vector<Eigen::Vector3d> &frame, double adaptive_voxel_size) const {

@@ -1,0 +1,30 @@
+[0.012s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.054s] [ 14%] Built target odometry_node
+[0.058s] [ 28%] Built target metrics
+[0.065s] [ 71%] Built target core
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.089s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[1.493s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[1.542s] [ 85%] Built target pipeline
+[1.581s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[7.907s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’:
+[7.908s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:150:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_pose_[m[K’ was not declared in this scope
+[7.908s]   150 |     [01;31m[Klatest_imu_pose_[m[K = tf2::poseToSophus(imu_odom_msg.pose.pose);
+[7.908s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.908s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:150:29:[m[K [01;31m[Kerror: [m[K‘[01m[KposeToSophus[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+[7.908s]   150 |     latest_imu_pose_ = tf2::[01;31m[KposeToSophus[m[K(imu_odom_msg.pose.pose);
+[7.908s]       |                             [01;31m[K^~~~~~~~~~~~[m[K
+[7.908s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:151:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_imu_received_[m[K’ was not declared in this scope
+[7.908s]   151 |     if (![01;31m[Kfirst_imu_received_[m[K) {
+[7.908s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[7.909s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[7.909s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:170:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_imu_received_[m[K’ was not declared in this scope
+[7.909s]   170 |         points, timestamps, [01;31m[Kfirst_imu_received_[m[K ? latest_imu_pose_ : Sophus::SE3d());
+[7.909s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[7.909s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:170:51:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_pose_[m[K’ was not declared in this scope
+[7.909s]   170 |         points, timestamps, first_imu_received_ ? [01;31m[Klatest_imu_pose_[m[K : Sophus::SE3d());
+[7.909s]       |                                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.911s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[7.911s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[7.912s] gmake: *** [Makefile:146: all] Error 2
+[7.915s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

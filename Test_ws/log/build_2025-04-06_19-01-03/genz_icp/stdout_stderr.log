@@ -1,0 +1,28 @@
+[ 14%] Built target odometry_node
+[ 28%] Built target metrics
+[ 71%] Built target core
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[ 85%] Built target pipeline
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:150:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_pose_[m[K’ was not declared in this scope
+  150 |     [01;31m[Klatest_imu_pose_[m[K = tf2::poseToSophus(imu_odom_msg.pose.pose);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:150:29:[m[K [01;31m[Kerror: [m[K‘[01m[KposeToSophus[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+  150 |     latest_imu_pose_ = tf2::[01;31m[KposeToSophus[m[K(imu_odom_msg.pose.pose);
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:151:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_imu_received_[m[K’ was not declared in this scope
+  151 |     if (![01;31m[Kfirst_imu_received_[m[K) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:170:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_imu_received_[m[K’ was not declared in this scope
+  170 |         points, timestamps, [01;31m[Kfirst_imu_received_[m[K ? latest_imu_pose_ : Sophus::SE3d());
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:170:51:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_pose_[m[K’ was not declared in this scope
+  170 |         points, timestamps, first_imu_received_ ? [01;31m[Klatest_imu_pose_[m[K : Sophus::SE3d());
+      |                                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

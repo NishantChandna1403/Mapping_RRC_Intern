@@ -1,0 +1,11 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:76:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_imu_pose_[m[K’ was not declared in this scope
+   76 |         [01;31m[Klast_imu_pose_[m[K = imu_pose; // Store the first IMU pose for relative updates
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:87:34:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_imu_pose_[m[K’ was not declared in this scope; did you mean ‘[01m[Klast_pose[m[K’?
+   87 |         Sophus::SE3d imu_delta = [01;31m[Klast_imu_pose_[m[K.inverse() * imu_pose;
+      |                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                  [32m[Klast_pose[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

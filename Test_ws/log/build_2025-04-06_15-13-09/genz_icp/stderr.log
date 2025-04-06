@@ -1,0 +1,11 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+   62 |     [01;31m[Kconfig_[m[K.max_range = declare_parameter<double>("max_range", config_.max_range);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:129:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+  129 |         if (![01;31m[Kconfig_[m[K.deskew) return {};
+      |              [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

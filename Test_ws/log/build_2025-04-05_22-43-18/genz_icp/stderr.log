@@ -1,0 +1,15 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:85:25:[m[K [01;31m[Kerror: [m[K‘[01m[KIcpPipelineConfig[m[K’ in namespace ‘[01m[Kgenz_icp::pipeline[m[K’ does not name a type
+   85 |     genz_icp::pipeline::[01;31m[KIcpPipelineConfig[m[K config_;  // Updated type to match CPP
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+   63 |     [01;31m[Kconfig_[m[K.max_range = declare_parameter<double>("max_range", config_.max_range);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:152:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+  152 |         if (![01;31m[Kconfig_[m[K.deskew) return {};
+      |              [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

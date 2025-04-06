@@ -1,0 +1,99 @@
+[0.024s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.287s] [ 42%] Built target core
+[0.287s] [ 57%] Built target metrics
+[0.287s] [ 71%] Built target pipeline
+[0.287s] [ 85%] Built target odometry_node
+[0.287s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.287s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[9.355s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[9.355s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:85:25:[m[K [01;31m[Kerror: [m[K‘[01m[KIcpPipelineConfig[m[K’ in namespace ‘[01m[Kgenz_icp::pipeline[m[K’ does not name a type
+[9.355s]    85 |     genz_icp::pipeline::[01;31m[KIcpPipelineConfig[m[K config_;  // Updated type to match CPP
+[9.355s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+[9.356s]    64 |     [01;31m[Kconfig_[m[K.max_range = declare_parameter<double>("max_range", config_.max_range);
+[9.356s]       |     [01;31m[K^~~~~~~[m[K
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_position_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinitial_position_set_[m[K’?
+[9.356s]    91 |     [01;31m[Klocal_position_sub_[m[K = create_subscription<px4_msgs::msg::VehicleLocalPosition>(
+[9.356s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[9.356s]       |     [32m[Kinitial_position_set_[m[K
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:93:36:[m[K [01;31m[Kerror: [m[K‘[01m[KLocalPositionCallback[m[K’ is not a member of ‘[01m[Kgenz_icp_ros::OdometryServer[m[K’
+[9.356s]    93 |         std::bind(&OdometryServer::[01;31m[KLocalPositionCallback[m[K, this, std::placeholders::_1));
+[9.356s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_sub_[m[K’ was not declared in this scope
+[9.356s]    96 |     [01;31m[Kattitude_sub_[m[K = create_subscription<px4_msgs::msg::VehicleAttitude>(
+[9.356s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:98:36:[m[K [01;31m[Kerror: [m[K‘[01m[KAttitudeCallback[m[K’ is not a member of ‘[01m[Kgenz_icp_ros::OdometryServer[m[K’
+[9.356s]    98 |         std::bind(&OdometryServer::[01;31m[KAttitudeCallback[m[K, this, std::placeholders::_1));
+[9.356s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[9.356s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:118:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_initial_position_[m[K’ was not declared in this scope
+[9.356s]   118 |     [01;31m[Khas_initial_position_[m[K = false;
+[9.356s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:119:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_position_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinitial_position_set_[m[K’?
+[9.357s]   119 |     [01;31m[Kinitial_position_[m[K.setZero();
+[9.357s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.357s]       |     [32m[Kinitial_position_set_[m[K
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:120:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_gps_position_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_gps_local_pos_[m[K’?
+[9.357s]   120 |     [01;31m[Kcurrent_gps_position_[m[K.setZero();
+[9.357s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.357s]       |     [32m[Kcurrent_gps_local_pos_[m[K
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:121:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_attitude_[m[K’ was not declared in this scope
+[9.357s]   121 |     [01;31m[Kcurrent_attitude_[m[K = Eigen::Quaterniond::Identity();
+[9.357s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K At global scope:
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:126:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::LocalPositionCallback(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’
+[9.357s]   126 | void [01;31m[KOdometryServer[m[K::LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg) {
+[9.357s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:126:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid genz_icp_ros::OdometryServer::LocalPositionCallback(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’
+[9.357s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:46:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+[9.357s]    46 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+[9.357s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[9.357s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:141:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(px4_msgs::msg::VehicleAttitude_<std::allocator<void> >::SharedPtr)[m[K’
+[9.357s]   141 | void [01;31m[KOdometryServer[m[K::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::SharedPtr msg) {
+[9.357s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:141:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(px4_msgs::msg::VehicleAttitude_<std::allocator<void> >::SharedPtr)[m[K’
+[9.358s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:46:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+[9.358s]    46 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+[9.358s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:167:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+[9.358s]   167 |         if (![01;31m[Kconfig_[m[K.deskew) return {};
+[9.358s]       |              [01;31m[K^~~~~~~[m[K
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:179:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_initial_position_[m[K’ was not declared in this scope
+[9.358s]   179 |     if ([01;31m[Khas_initial_position_[m[K && points.cols() < 400) {
+[9.358s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:179:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class std::vector<Eigen::Matrix<double, 3, 1> >[m[K’ has no member named ‘[01m[Kcols[m[K’
+[9.358s]   179 |     if (has_initial_position_ && points.[01;31m[Kcols[m[K() < 400) {
+[9.358s]       |                                         [01;31m[K^~~~[m[K
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:181:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_attitude_[m[K’ was not declared in this scope
+[9.358s]   181 |         Sophus::SE3d gps_pose([01;31m[Kcurrent_attitude_[m[K, current_gps_position_);
+[9.358s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:181:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_gps_position_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_gps_local_pos_[m[K’?
+[9.358s]   181 |         Sophus::SE3d gps_pose(current_attitude_, [01;31m[Kcurrent_gps_position_[m[K);
+[9.367s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.367s]       |                                                  [32m[Kcurrent_gps_local_pos_[m[K
+[9.367s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+[9.368s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[9.368s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:29[m[K,
+[9.368s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[9.368s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:192:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class std::vector<Eigen::Matrix<double, 3, 1> >[m[K’ has no member named ‘[01m[Kcols[m[K’
+[9.369s]   192 |         RCLCPP_DEBUG(this->get_logger(), "Fusing ICP and GPS estimates (points=%zu)", points.[01;31m[Kcols[m[K());
+[9.369s]       |                                                                                              [01;31m[K^~~~[m[K
+[9.380s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[9.380s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[9.380s] gmake: *** [Makefile:146: all] Error 2
+[9.382s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

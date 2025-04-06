@@ -45,6 +45,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <std_msgs/msg/string.hpp>
+#include <px4_msgs/msg/vehicle_attitude.hpp> // Added for VehicleAttitude
 
 namespace genz_icp_ros {
 
@@ -85,10 +86,15 @@ OdometryServer::OdometryServer(const rclcpp::NodeOptions &options)
         "pointcloud_topic", rclcpp::SensorDataQoS(),
         std::bind(&OdometryServer::RegisterFrame, this, std::placeholders::_1));
 
+    attitude_sub_ = create_subscription<px4_msgs::msg::VehicleAttitude>(
+        "/fmu/out/vehicle_attitude", rclcpp::SensorDataQoS(),
+        std::bind(&OdometryServer::AttitudeCallback, this, std::placeholders::_1));
+
     // Initialize publishers
     rclcpp::QoS qos((rclcpp::SystemDefaultsQoS().keep_last(1).durability_volatile()));
     odom_publisher_ = create_publisher<nav_msgs::msg::Odometry>("/genz/odometry", qos);
     traj_publisher_ = create_publisher<nav_msgs::msg::Path>("/genz/trajectory", qos);
+    imu_odom_publisher_ = create_publisher<nav_msgs::msg::Odometry>("/imu/odometry", qos); // Added
     path_msg_.header.frame_id = odom_frame_;
     if (publish_debug_clouds_) {
         map_publisher_ = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/local_map", qos);
@@ -122,6 +128,42 @@ Sophus::SE3d OdometryServer::LookupTransform(const std::string &target_frame,
     return {};
 }
 
+void OdometryServer::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::ConstSharedPtr &msg) {
+    // Create an odometry message with IMU orientation only (zero position)
+    nav_msgs::msg::Odometry imu_odom_msg;
+    imu_odom_msg.header.stamp = this->now(); // Use current ROS time
+    imu_odom_msg.header.frame_id = odom_frame_;
+    imu_odom_msg.child_frame_id = base_frame_.empty() ? "imu_link" : base_frame_;
+
+    // Set position to zero (since we only care about orientation for now)
+    imu_odom_msg.pose.pose.position.x = 0.0;
+    imu_odom_msg.pose.pose.position.y = 0.0;
+    imu_odom_msg.pose.pose.position.z = 0.0;
+
+    // Set orientation from VehicleAttitude
+    imu_odom_msg.pose.pose.orientation.x = msg->q[1]; // PX4: [w, x, y, z] -> ROS: [x, y, z, w]
+    imu_odom_msg.pose.pose.orientation.y = msg->q[2];
+    imu_odom_msg.pose.pose.orientation.z = msg->q[3];
+    imu_odom_msg.pose.pose.orientation.w = msg->q[0];
+
+    // Manually convert geometry_msgs::msg::Pose to Sophus::SE3d
+    Eigen::Vector3d translation(imu_odom_msg.pose.pose.position.x,
+                                imu_odom_msg.pose.pose.position.y,
+                                imu_odom_msg.pose.pose.position.z);
+    Eigen::Quaterniond quaternion(imu_odom_msg.pose.pose.orientation.w,
+                                  imu_odom_msg.pose.pose.orientation.x,
+                                  imu_odom_msg.pose.pose.orientation.y,
+                                  imu_odom_msg.pose.pose.orientation.z);
+    latest_imu_pose_ = Sophus::SE3d(quaternion, translation);
+
+    if (!first_imu_received_) {
+        first_imu_received_ = true;
+    }
+
+    // Publish the IMU odometry
+    imu_odom_publisher_->publish(imu_odom_msg);
+}
+
 void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg) {
     const auto cloud_frame_id = msg->header.frame_id;
     const auto points = PointCloud2ToEigen(msg);
@@ -131,8 +173,9 @@ void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSha
     }();
     const auto egocentric_estimation = (base_frame_.empty() || base_frame_ == cloud_frame_id);
 
-    // Register frame, main entry point to GenZ-ICP pipeline
-    const auto &[planar_points, non_planar_points] = odometry_.RegisterFrame(points, timestamps);
+    // Pass the latest IMU pose to GenZ-ICP (default to identity if no IMU data yet)
+    const auto &[planar_points, non_planar_points] = odometry_.RegisterFrame(
+        points, timestamps, first_imu_received_ ? latest_imu_pose_ : Sophus::SE3d());
 
     // Compute the pose using GenZ, ego-centric to the LiDAR
     const Sophus::SE3d genz_pose = odometry_.poses().back();
@@ -201,7 +244,6 @@ void OdometryServer::PublishClouds(const rclcpp::Time &stamp,
         map_publisher_->publish(std::move(EigenToPointCloud2(genz_map, odom_header)));
         planar_points_publisher_->publish(std::move(EigenToPointCloud2(planar_points, cloud_header)));
         non_planar_points_publisher_->publish(std::move(EigenToPointCloud2(non_planar_points, cloud_header)));
-
         return;
     }
 

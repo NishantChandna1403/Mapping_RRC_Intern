@@ -38,9 +38,18 @@ class PointCloudTransformer(Node):
         # Extract x, y, z as a normal float array (N, 3)
         cloud_points = np.column_stack((cloud_data['x'], cloud_data['y'], cloud_data['z']))
         
+        valid_mask = cloud_points[:, 2] <= 50.0
+        filtered_points = cloud_points[valid_mask]
+        valid_mask = filtered_points[:, 1] <= -1 
+        filtered_points = filtered_points[valid_mask]
+        
+        if filtered_points.shape[0] == 0:
+            self.get_logger().warn('All points filtered out (z > 60m)')
+            return
+            
         # Convert to homogeneous coordinates (N, 4)
-        ones = np.ones((cloud_points.shape[0], 1), dtype=np.float32)
-        cloud_points_hom = np.hstack((cloud_points, ones))  # Shape (N, 4)
+        ones = np.ones((filtered_points.shape[0], 1), dtype=np.float32)
+        cloud_points_hom = np.hstack((filtered_points, ones))  # Shape (N, 4)
         
         # Apply transformation
         transformed_points = (self.transformation_matrix @ cloud_points_hom.T).T[:, :3]  # (N, 3)

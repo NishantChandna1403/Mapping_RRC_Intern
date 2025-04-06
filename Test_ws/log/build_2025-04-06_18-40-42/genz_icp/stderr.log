@@ -1,0 +1,7 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:145:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ has no member named ‘[01m[KSetInitialPose[m[K’
+  145 |         odometry_.[01;31m[KSetInitialPose[m[K(initial_pose);  // Pass to GenZICP
+      |                   [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

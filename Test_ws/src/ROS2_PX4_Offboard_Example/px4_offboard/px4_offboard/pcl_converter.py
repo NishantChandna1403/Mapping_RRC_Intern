@@ -38,7 +38,7 @@ class PointCloudTransformer(Node):
         # Extract x, y, z as a normal float array (N, 3)
         cloud_points = np.column_stack((cloud_data['x'], cloud_data['y'], cloud_data['z']))
         
-        valid_mask = cloud_points[:, 2] <= 60.0
+        valid_mask = cloud_points[:, 2] <= 50.0
         filtered_points = cloud_points[valid_mask]
         valid_mask = filtered_points[:, 1] <= -1 
         filtered_points = filtered_points[valid_mask]

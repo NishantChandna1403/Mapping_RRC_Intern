@@ -74,7 +74,8 @@ public:
 public:
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame);
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                      const std::vector<double> &timestamps);
+                                      const std::vector<double> &timestamps,
+                                      const Sophus::SE3d &imu_pose = Sophus::SE3d());
     Vector3dVectorTuple Voxelize(const std::vector<Eigen::Vector3d> &frame, double voxel_size) const;
     double GetAdaptiveThreshold();
     Sophus::SE3d GetPredictionModel() const;
@@ -92,6 +93,9 @@ private:
     Registration registration_;
     VoxelHashMap local_map_;
     AdaptiveThreshold adaptive_threshold_;
+    Sophus::SE3d initial_ned_pose_; // Store the first IMU pose as initial NED frame
+    Sophus::SE3d last_imu_pose_;    // Store the last IMU pose for relative updates
+    bool first_frame_ = true;       // Flag to initialize with first IMU measurement
 };
 
 }  // namespace genz_icp::pipeline

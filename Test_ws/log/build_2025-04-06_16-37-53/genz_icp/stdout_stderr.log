@@ -1,0 +1,28 @@
+[ 42%] Built target core
+[ 57%] Built target metrics
+[ 71%] Built target odometry_node
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_orientation_[m[K’ was not declared in this scope
+  112 |     [01;31m[Kimu_orientation_[m[K.x = 0.0;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:138:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_mutex_[m[K’ was not declared in this scope
+  138 |     std::lock_guard<std::mutex> lock([01;31m[Kimu_mutex_[m[K);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:139:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_orientation_[m[K’ was not declared in this scope
+  139 |     [01;31m[Kimu_orientation_[m[K.x = msg->q[1]; // PX4: [w, x, y, z] -> ROS: [x, y, z, w]
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::PublishOdometry(const SE3d&, const rclcpp::Time&, const string&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:182:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_mutex_[m[K’ was not declared in this scope
+  182 |         std::lock_guard<std::mutex> lock([01;31m[Kimu_mutex_[m[K);
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:183:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_orientation_[m[K’ was not declared in this scope; did you mean ‘[01m[Korientation[m[K’?
+  183 |         orientation = [01;31m[Kimu_orientation_[m[K;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Korientation[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
