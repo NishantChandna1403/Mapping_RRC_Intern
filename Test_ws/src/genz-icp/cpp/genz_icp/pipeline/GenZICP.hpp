@@ -34,27 +34,19 @@
 namespace genz_icp::pipeline {
 
 struct GenZConfig {
-    // map params
-    double max_range = 100.0;
+    double max_range = 30.0;
     double min_range = 0.5;
     double map_cleanup_radius = 400.0;
     int max_points_per_voxel = 1;
-
-    // voxelize params
     double voxel_size = 0.25;
     int desired_num_voxelized_points = 2000;
-
-    // th parms
     double min_motion_th = 0.1;
     double initial_threshold = 2.0;
     double planarity_threshold = 0.1;
-
-    // Motion compensation
     bool deskew = false;
-
-    // registration params
     int max_num_iterations = 150;
     double convergence_criterion = 0.0001;
+    double gps_accuracy = 1.0; // Default GPS accuracy (meters)
 };
 
 class GenZICP {
@@ -75,28 +67,32 @@ public:
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame);
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
                                       const std::vector<double> timestamps,
-                                      const Sophus::SE3d &imu_pose = Sophus::SE3d(),
-                                      const Sophus::SE3d &local_position_pose = Sophus::SE3d()); // Added local position
+                                      const Sophus::SE3d &imu_orientation = Sophus::SE3d(),
+                                      const Sophus::SE3d &local_position_pose = Sophus::SE3d());
     Vector3dVectorTuple Voxelize(const std::vector<Eigen::Vector3d> &frame, double voxel_size) const;
     double GetAdaptiveThreshold();
     Sophus::SE3d GetPredictionModel() const;
     bool HasMoved();
 
 public:
-    // Extra C++ API to facilitate ROS debugging
-    std::vector<Eigen::Vector3d> LocalMap() const { return local_map_.Pointcloud(); };
-    std::vector<Sophus::SE3d> poses() const { return poses_; };
+    std::vector<Eigen::Vector3d> LocalMap() const { return local_map_.Pointcloud(); }
+    std::vector<Sophus::SE3d> poses() const { return poses_; }
 
 private:
-    // GenZ-ICP pipeline modules
+    Sophus::SE3d fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+                                    const Sophus::SE3d& imu_orientation,
+                                    const Sophus::SE3d& local_position_pose,
+                                    const Vector3dVector& planar_points,
+                                    const Vector3dVector& non_planar_points);
+
     std::vector<Sophus::SE3d> poses_;
     GenZConfig config_;
     Registration registration_;
     VoxelHashMap local_map_;
     AdaptiveThreshold adaptive_threshold_;
-    Sophus::SE3d initial_ned_pose_; // Store the first IMU pose as initial NED frame
-    Sophus::SE3d last_imu_pose_;    // Store the last IMU pose for relative updates
-    bool first_frame_ = true;       // Flag to initialize with first IMU measurement
+    Sophus::SE3d initial_enu_orientation_;
+    Sophus::SE3d last_imu_orientation_;
+    bool first_frame_ = true;
 };
 
 }  // namespace genz_icp::pipeline

@@ -1,0 +1,9 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:144:14:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&)[m[K’
+  144 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:85:14:[m[K [01;36m[Knote: [m[K‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&)[m[K’ previously defined here
+   85 | Sophus::SE3d [01;36m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+      |              [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

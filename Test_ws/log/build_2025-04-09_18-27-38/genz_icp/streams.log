@@ -1,0 +1,16 @@
+[0.008s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.045s] [ 14%] Built target metrics
+[0.045s] [ 28%] Built target odometry_node
+[0.050s] [ 71%] Built target core
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.071s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[1.779s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:144:14:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&)[m[K’
+[1.779s]   144 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+[1.779s]       |              [01;31m[K^~~~~~~[m[K
+[1.779s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:85:14:[m[K [01;36m[Knote: [m[K‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&)[m[K’ previously defined here
+[1.779s]    85 | Sophus::SE3d [01;36m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+[1.779s]       |              [01;36m[K^~~~~~~[m[K
+[1.785s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[1.785s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[1.785s] gmake: *** [Makefile:146: all] Error 2
+[1.789s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
