@@ -79,11 +79,10 @@ public:
     std::vector<Sophus::SE3d> poses() const { return poses_; }
 
 private:
-    Sophus::SE3d fusePosesWithCeres(const Sophus::SE3d& icp_pose,
-                                    const Sophus::SE3d& imu_orientation,
-                                    const Sophus::SE3d& local_position_pose,
-                                    const Vector3dVector& planar_points,
-                                    const Vector3dVector& non_planar_points);
+    Sophus::SE3d fusePoses(const Sophus::SE3d& icp_pose,
+                           const Sophus::SE3d& imu_orientation,
+                           const Sophus::SE3d& local_position_pose,
+                           size_t num_points);
 
     std::vector<Sophus::SE3d> poses_;
     GenZConfig config_;
