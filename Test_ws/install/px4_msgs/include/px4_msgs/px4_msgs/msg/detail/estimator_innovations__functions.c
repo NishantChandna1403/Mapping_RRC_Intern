@@ -31,7 +31,6 @@ px4_msgs__msg__EstimatorInnovations__init(px4_msgs__msg__EstimatorInnovations * 
   // baro_vpos
   // aux_hvel
   // flow
-  // terr_flow
   // heading
   // mag_field
   // gravity
@@ -63,7 +62,6 @@ px4_msgs__msg__EstimatorInnovations__fini(px4_msgs__msg__EstimatorInnovations * 
   // baro_vpos
   // aux_hvel
   // flow
-  // terr_flow
   // heading
   // mag_field
   // gravity
@@ -145,12 +143,6 @@ px4_msgs__msg__EstimatorInnovations__are_equal(const px4_msgs__msg__EstimatorInn
   // flow
   for (size_t i = 0; i < 2; ++i) {
     if (lhs->flow[i] != rhs->flow[i]) {
-      return false;
-    }
-  }
-  // terr_flow
-  for (size_t i = 0; i < 2; ++i) {
-    if (lhs->terr_flow[i] != rhs->terr_flow[i]) {
       return false;
     }
   }
@@ -242,10 +234,6 @@ px4_msgs__msg__EstimatorInnovations__copy(
   // flow
   for (size_t i = 0; i < 2; ++i) {
     output->flow[i] = input->flow[i];
-  }
-  // terr_flow
-  for (size_t i = 0; i < 2; ++i) {
-    output->terr_flow[i] = input->terr_flow[i];
   }
   // heading
   output->heading = input->heading;

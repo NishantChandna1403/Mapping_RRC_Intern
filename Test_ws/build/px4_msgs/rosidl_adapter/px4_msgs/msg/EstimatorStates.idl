@@ -5,8 +5,8 @@
 
 module px4_msgs {
   module msg {
+    typedef float float__25[25];
     typedef float float__24[24];
-    typedef float float__23[23];
     struct EstimatorStates {
       @verbatim (language="comment", text=
         "time since system start (microseconds)")
@@ -18,7 +18,7 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "Internal filter states")
-      float__24 states;
+      float__25 states;
 
       @verbatim (language="comment", text=
         "Number of states effectively used")
@@ -26,7 +26,7 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "Diagonal Elements of Covariance Matrix")
-      float__23 covariances;
+      float__24 covariances;
     };
   };
 };

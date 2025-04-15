@@ -131,13 +131,6 @@ static bool _EstimatorInnovations__cdr_serialize(
     cdr.serializeArray(array_ptr, size);
   }
 
-  // Field name: terr_flow
-  {
-    size_t size = 2;
-    auto array_ptr = ros_message->terr_flow;
-    cdr.serializeArray(array_ptr, size);
-  }
-
   // Field name: heading
   {
     cdr << ros_message->heading;
@@ -275,13 +268,6 @@ static bool _EstimatorInnovations__cdr_deserialize(
   {
     size_t size = 2;
     auto array_ptr = ros_message->flow;
-    cdr.deserializeArray(array_ptr, size);
-  }
-
-  // Field name: terr_flow
-  {
-    size_t size = 2;
-    auto array_ptr = ros_message->terr_flow;
     cdr.deserializeArray(array_ptr, size);
   }
 
@@ -445,15 +431,6 @@ size_t get_serialized_size_px4_msgs__msg__EstimatorInnovations(
   {
     size_t array_size = 2;
     auto array_ptr = ros_message->flow;
-    (void)array_ptr;
-    size_t item_size = sizeof(array_ptr[0]);
-    current_alignment += array_size * item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name terr_flow
-  {
-    size_t array_size = 2;
-    auto array_ptr = ros_message->terr_flow;
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
     current_alignment += array_size * item_size +
@@ -650,14 +627,6 @@ size_t max_serialized_size_px4_msgs__msg__EstimatorInnovations(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: flow
-  {
-    size_t array_size = 2;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: terr_flow
   {
     size_t array_size = 2;
 

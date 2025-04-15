@@ -75,7 +75,7 @@ void assign_function__DistanceSensor__q(
   item = value;
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember DistanceSensor_message_member_array[12] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember DistanceSensor_message_member_array[13] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -279,13 +279,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DistanceSenso
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "mode",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::DistanceSensor, mode),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers DistanceSensor_message_members = {
   "px4_msgs::msg",  // message namespace
   "DistanceSensor",  // message name
-  12,  // number of fields
+  13,  // number of fields
   sizeof(px4_msgs::msg::DistanceSensor),
   DistanceSensor_message_member_array,  // message members
   DistanceSensor_init_function,  // function to initialize message memory (memory has to be allocated)

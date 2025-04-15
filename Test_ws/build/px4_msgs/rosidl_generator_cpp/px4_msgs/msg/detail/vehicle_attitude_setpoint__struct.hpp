@@ -39,9 +39,6 @@ struct VehicleAttitudeSetpoint_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->timestamp = 0ull;
-      this->roll_body = 0.0f;
-      this->pitch_body = 0.0f;
-      this->yaw_body = 0.0f;
       this->yaw_sp_move_rate = 0.0f;
       std::fill<typename std::array<float, 4>::iterator, float>(this->q_d.begin(), this->q_d.end(), 0.0f);
       std::fill<typename std::array<float, 3>::iterator, float>(this->thrust_body.begin(), this->thrust_body.end(), 0.0f);
@@ -58,9 +55,6 @@ struct VehicleAttitudeSetpoint_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->timestamp = 0ull;
-      this->roll_body = 0.0f;
-      this->pitch_body = 0.0f;
-      this->yaw_body = 0.0f;
       this->yaw_sp_move_rate = 0.0f;
       std::fill<typename std::array<float, 4>::iterator, float>(this->q_d.begin(), this->q_d.end(), 0.0f);
       std::fill<typename std::array<float, 3>::iterator, float>(this->thrust_body.begin(), this->thrust_body.end(), 0.0f);
@@ -73,15 +67,6 @@ struct VehicleAttitudeSetpoint_
   using _timestamp_type =
     uint64_t;
   _timestamp_type timestamp;
-  using _roll_body_type =
-    float;
-  _roll_body_type roll_body;
-  using _pitch_body_type =
-    float;
-  _pitch_body_type pitch_body;
-  using _yaw_body_type =
-    float;
-  _yaw_body_type yaw_body;
   using _yaw_sp_move_rate_type =
     float;
   _yaw_sp_move_rate_type yaw_sp_move_rate;
@@ -103,24 +88,6 @@ struct VehicleAttitudeSetpoint_
     const uint64_t & _arg)
   {
     this->timestamp = _arg;
-    return *this;
-  }
-  Type & set__roll_body(
-    const float & _arg)
-  {
-    this->roll_body = _arg;
-    return *this;
-  }
-  Type & set__pitch_body(
-    const float & _arg)
-  {
-    this->pitch_body = _arg;
-    return *this;
-  }
-  Type & set__yaw_body(
-    const float & _arg)
-  {
-    this->yaw_body = _arg;
     return *this;
   }
   Type & set__yaw_sp_move_rate(
@@ -155,6 +122,8 @@ struct VehicleAttitudeSetpoint_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    0u;
 
   // pointer types
   using RawPtr =
@@ -199,15 +168,6 @@ struct VehicleAttitudeSetpoint_
     if (this->timestamp != other.timestamp) {
       return false;
     }
-    if (this->roll_body != other.roll_body) {
-      return false;
-    }
-    if (this->pitch_body != other.pitch_body) {
-      return false;
-    }
-    if (this->yaw_body != other.yaw_body) {
-      return false;
-    }
     if (this->yaw_sp_move_rate != other.yaw_sp_move_rate) {
       return false;
     }
@@ -236,6 +196,11 @@ using VehicleAttitudeSetpoint =
   px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint32_t VehicleAttitudeSetpoint_<ContainerAllocator>::MESSAGE_VERSION;
+#endif  // __cplusplus < 201703L
 
 }  // namespace msg
 

@@ -37,7 +37,7 @@ void EstimatorGpsStatus_fini_function(void * message_memory)
   typed_message->~EstimatorGpsStatus();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorGpsStatus_message_member_array[16] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorGpsStatus_message_member_array[17] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -260,6 +260,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorGpsS
     nullptr  // resize(index) function pointer
   },
   {
+    "check_fail_spoofed_gps",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::EstimatorGpsStatus, check_fail_spoofed_gps),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "position_drift_rate_horizontal_m_s",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -315,7 +332,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorGpsS
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers EstimatorGpsStatus_message_members = {
   "px4_msgs::msg",  // message namespace
   "EstimatorGpsStatus",  // message name
-  16,  // number of fields
+  17,  // number of fields
   sizeof(px4_msgs::msg::EstimatorGpsStatus),
   EstimatorGpsStatus_message_member_array,  // message members
   EstimatorGpsStatus_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -1,5 +1,0 @@
-[ 14%] Built target metrics
-[ 28%] Built target odometry_node
-[ 71%] Built target core
-[ 85%] Built target pipeline
-[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m

@@ -54,8 +54,11 @@ px4_msgs__msg__VehicleLocalPosition__init(px4_msgs__msg__VehicleLocalPosition * 
   // ref_lat
   // ref_lon
   // ref_alt
-  // dist_bottom
   // dist_bottom_valid
+  // dist_bottom
+  // dist_bottom_var
+  // delta_dist_bottom
+  // dist_bottom_reset_counter
   // dist_bottom_sensor_bitfield
   // eph
   // epv
@@ -65,7 +68,8 @@ px4_msgs__msg__VehicleLocalPosition__init(px4_msgs__msg__VehicleLocalPosition * 
   // vxy_max
   // vz_max
   // hagl_min
-  // hagl_max
+  // hagl_max_z
+  // hagl_max_xy
   return true;
 }
 
@@ -112,8 +116,11 @@ px4_msgs__msg__VehicleLocalPosition__fini(px4_msgs__msg__VehicleLocalPosition * 
   // ref_lat
   // ref_lon
   // ref_alt
-  // dist_bottom
   // dist_bottom_valid
+  // dist_bottom
+  // dist_bottom_var
+  // delta_dist_bottom
+  // dist_bottom_reset_counter
   // dist_bottom_sensor_bitfield
   // eph
   // epv
@@ -123,7 +130,8 @@ px4_msgs__msg__VehicleLocalPosition__fini(px4_msgs__msg__VehicleLocalPosition * 
   // vxy_max
   // vz_max
   // hagl_min
-  // hagl_max
+  // hagl_max_z
+  // hagl_max_xy
 }
 
 bool
@@ -284,12 +292,24 @@ px4_msgs__msg__VehicleLocalPosition__are_equal(const px4_msgs__msg__VehicleLocal
   if (lhs->ref_alt != rhs->ref_alt) {
     return false;
   }
+  // dist_bottom_valid
+  if (lhs->dist_bottom_valid != rhs->dist_bottom_valid) {
+    return false;
+  }
   // dist_bottom
   if (lhs->dist_bottom != rhs->dist_bottom) {
     return false;
   }
-  // dist_bottom_valid
-  if (lhs->dist_bottom_valid != rhs->dist_bottom_valid) {
+  // dist_bottom_var
+  if (lhs->dist_bottom_var != rhs->dist_bottom_var) {
+    return false;
+  }
+  // delta_dist_bottom
+  if (lhs->delta_dist_bottom != rhs->delta_dist_bottom) {
+    return false;
+  }
+  // dist_bottom_reset_counter
+  if (lhs->dist_bottom_reset_counter != rhs->dist_bottom_reset_counter) {
     return false;
   }
   // dist_bottom_sensor_bitfield
@@ -328,8 +348,12 @@ px4_msgs__msg__VehicleLocalPosition__are_equal(const px4_msgs__msg__VehicleLocal
   if (lhs->hagl_min != rhs->hagl_min) {
     return false;
   }
-  // hagl_max
-  if (lhs->hagl_max != rhs->hagl_max) {
+  // hagl_max_z
+  if (lhs->hagl_max_z != rhs->hagl_max_z) {
+    return false;
+  }
+  // hagl_max_xy
+  if (lhs->hagl_max_xy != rhs->hagl_max_xy) {
     return false;
   }
   return true;
@@ -421,10 +445,16 @@ px4_msgs__msg__VehicleLocalPosition__copy(
   output->ref_lon = input->ref_lon;
   // ref_alt
   output->ref_alt = input->ref_alt;
-  // dist_bottom
-  output->dist_bottom = input->dist_bottom;
   // dist_bottom_valid
   output->dist_bottom_valid = input->dist_bottom_valid;
+  // dist_bottom
+  output->dist_bottom = input->dist_bottom;
+  // dist_bottom_var
+  output->dist_bottom_var = input->dist_bottom_var;
+  // delta_dist_bottom
+  output->delta_dist_bottom = input->delta_dist_bottom;
+  // dist_bottom_reset_counter
+  output->dist_bottom_reset_counter = input->dist_bottom_reset_counter;
   // dist_bottom_sensor_bitfield
   output->dist_bottom_sensor_bitfield = input->dist_bottom_sensor_bitfield;
   // eph
@@ -443,8 +473,10 @@ px4_msgs__msg__VehicleLocalPosition__copy(
   output->vz_max = input->vz_max;
   // hagl_min
   output->hagl_min = input->hagl_min;
-  // hagl_max
-  output->hagl_max = input->hagl_max;
+  // hagl_max_z
+  output->hagl_max_z = input->hagl_max_z;
+  // hagl_max_xy
+  output->hagl_max_xy = input->hagl_max_xy;
   return true;
 }
 

@@ -34,8 +34,8 @@ cdr_serialize(
 {
   // Member: timestamp
   cdr << ros_message.timestamp;
-  // Member: last_heartbeat
-  cdr << ros_message.last_heartbeat;
+  // Member: last_at_ok_timestamp
+  cdr << ros_message.last_at_ok_timestamp;
   // Member: tx_buf_write_index
   cdr << ros_message.tx_buf_write_index;
   // Member: rx_buf_read_index
@@ -74,8 +74,8 @@ cdr_deserialize(
   // Member: timestamp
   cdr >> ros_message.timestamp;
 
-  // Member: last_heartbeat
-  cdr >> ros_message.last_heartbeat;
+  // Member: last_at_ok_timestamp
+  cdr >> ros_message.last_at_ok_timestamp;
 
   // Member: tx_buf_write_index
   cdr >> ros_message.tx_buf_write_index;
@@ -158,9 +158,9 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: last_heartbeat
+  // Member: last_at_ok_timestamp
   {
-    size_t item_size = sizeof(ros_message.last_heartbeat);
+    size_t item_size = sizeof(ros_message.last_at_ok_timestamp);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -275,7 +275,7 @@ max_serialized_size_IridiumsbdStatus(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: last_heartbeat
+  // Member: last_at_ok_timestamp
   {
     size_t array_size = 1;
 

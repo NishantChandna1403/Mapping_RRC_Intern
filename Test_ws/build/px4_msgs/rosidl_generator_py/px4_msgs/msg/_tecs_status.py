@@ -60,6 +60,7 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         '_timestamp',
         '_altitude_sp',
         '_altitude_reference',
+        '_altitude_time_constant',
         '_height_rate_reference',
         '_height_rate_direct',
         '_height_rate_setpoint',
@@ -80,12 +81,14 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         '_pitch_sp_rad',
         '_throttle_trim',
         '_underspeed_ratio',
+        '_fast_descend_ratio',
     ]
 
     _fields_and_field_types = {
         'timestamp': 'uint64',
         'altitude_sp': 'float',
         'altitude_reference': 'float',
+        'altitude_time_constant': 'float',
         'height_rate_reference': 'float',
         'height_rate_direct': 'float',
         'height_rate_setpoint': 'float',
@@ -106,10 +109,13 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         'pitch_sp_rad': 'float',
         'throttle_trim': 'float',
         'underspeed_ratio': 'float',
+        'fast_descend_ratio': 'float',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -141,6 +147,7 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         self.timestamp = kwargs.get('timestamp', int())
         self.altitude_sp = kwargs.get('altitude_sp', float())
         self.altitude_reference = kwargs.get('altitude_reference', float())
+        self.altitude_time_constant = kwargs.get('altitude_time_constant', float())
         self.height_rate_reference = kwargs.get('height_rate_reference', float())
         self.height_rate_direct = kwargs.get('height_rate_direct', float())
         self.height_rate_setpoint = kwargs.get('height_rate_setpoint', float())
@@ -161,6 +168,7 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         self.pitch_sp_rad = kwargs.get('pitch_sp_rad', float())
         self.throttle_trim = kwargs.get('throttle_trim', float())
         self.underspeed_ratio = kwargs.get('underspeed_ratio', float())
+        self.fast_descend_ratio = kwargs.get('fast_descend_ratio', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -196,6 +204,8 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         if self.altitude_sp != other.altitude_sp:
             return False
         if self.altitude_reference != other.altitude_reference:
+            return False
+        if self.altitude_time_constant != other.altitude_time_constant:
             return False
         if self.height_rate_reference != other.height_rate_reference:
             return False
@@ -236,6 +246,8 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
         if self.throttle_trim != other.throttle_trim:
             return False
         if self.underspeed_ratio != other.underspeed_ratio:
+            return False
+        if self.fast_descend_ratio != other.fast_descend_ratio:
             return False
         return True
 
@@ -288,6 +300,21 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'altitude_reference' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._altitude_reference = value
+
+    @builtins.property
+    def altitude_time_constant(self):
+        """Message field 'altitude_time_constant'."""
+        return self._altitude_time_constant
+
+    @altitude_time_constant.setter
+    def altitude_time_constant(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'altitude_time_constant' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'altitude_time_constant' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._altitude_time_constant = value
 
     @builtins.property
     def height_rate_reference(self):
@@ -588,3 +615,18 @@ class TecsStatus(metaclass=Metaclass_TecsStatus):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'underspeed_ratio' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._underspeed_ratio = value
+
+    @builtins.property
+    def fast_descend_ratio(self):
+        """Message field 'fast_descend_ratio'."""
+        return self._fast_descend_ratio
+
+    @fast_descend_ratio.setter
+    def fast_descend_ratio(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'fast_descend_ratio' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'fast_descend_ratio' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._fast_descend_ratio = value

@@ -1,8 +1,0 @@
-[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:[m[K In function ‘[01m[KSophus::SE3d {anonymous}::SolveWithCeres(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&, double, double)[m[K’:
-[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/core/Registration.cpp:113:12:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kalpha[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
-  113 |     [01;31m[Kdouble alpha[m[K) {
-      |     [01;31m[K~~~~~~~^~~~~[m[K
-cc1plus: all warnings being treated as errors
-gmake[2]: *** [genz_icp/core/CMakeFiles/core.dir/build.make:76: genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:322: genz_icp/core/CMakeFiles/core.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

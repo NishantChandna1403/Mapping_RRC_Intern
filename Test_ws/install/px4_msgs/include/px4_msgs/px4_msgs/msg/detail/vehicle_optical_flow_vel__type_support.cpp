@@ -113,6 +113,82 @@ void assign_function__VehicleOpticalFlowVel__vel_ne(
   item = value;
 }
 
+size_t size_function__VehicleOpticalFlowVel__vel_body_filtered(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 2;
+}
+
+const void * get_const_function__VehicleOpticalFlowVel__vel_body_filtered(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<float, 2> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__VehicleOpticalFlowVel__vel_body_filtered(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<float, 2> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__VehicleOpticalFlowVel__vel_body_filtered(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__VehicleOpticalFlowVel__vel_body_filtered(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__VehicleOpticalFlowVel__vel_body_filtered(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__VehicleOpticalFlowVel__vel_body_filtered(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
+size_t size_function__VehicleOpticalFlowVel__vel_ne_filtered(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 2;
+}
+
+const void * get_const_function__VehicleOpticalFlowVel__vel_ne_filtered(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<float, 2> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__VehicleOpticalFlowVel__vel_ne_filtered(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<float, 2> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__VehicleOpticalFlowVel__vel_ne_filtered(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__VehicleOpticalFlowVel__vel_ne_filtered(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__VehicleOpticalFlowVel__vel_ne_filtered(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__VehicleOpticalFlowVel__vel_ne_filtered(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
 size_t size_function__VehicleOpticalFlowVel__flow_rate_uncompensated(const void * untyped_member)
 {
   (void)untyped_member;
@@ -303,7 +379,7 @@ void assign_function__VehicleOpticalFlowVel__ref_gyro(
   item = value;
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleOpticalFlowVel_message_member_array[9] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleOpticalFlowVel_message_member_array[11] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -370,6 +446,40 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleOptica
     get_function__VehicleOpticalFlowVel__vel_ne,  // get(index) function pointer
     fetch_function__VehicleOpticalFlowVel__vel_ne,  // fetch(index, &value) function pointer
     assign_function__VehicleOpticalFlowVel__vel_ne,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "vel_body_filtered",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    2,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::VehicleOpticalFlowVel, vel_body_filtered),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__VehicleOpticalFlowVel__vel_body_filtered,  // size() function pointer
+    get_const_function__VehicleOpticalFlowVel__vel_body_filtered,  // get_const(index) function pointer
+    get_function__VehicleOpticalFlowVel__vel_body_filtered,  // get(index) function pointer
+    fetch_function__VehicleOpticalFlowVel__vel_body_filtered,  // fetch(index, &value) function pointer
+    assign_function__VehicleOpticalFlowVel__vel_body_filtered,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "vel_ne_filtered",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    2,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::VehicleOpticalFlowVel, vel_ne_filtered),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__VehicleOpticalFlowVel__vel_ne_filtered,  // size() function pointer
+    get_const_function__VehicleOpticalFlowVel__vel_ne_filtered,  // get_const(index) function pointer
+    get_function__VehicleOpticalFlowVel__vel_ne_filtered,  // get(index) function pointer
+    fetch_function__VehicleOpticalFlowVel__vel_ne_filtered,  // fetch(index, &value) function pointer
+    assign_function__VehicleOpticalFlowVel__vel_ne_filtered,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
   },
   {
@@ -462,7 +572,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleOptica
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers VehicleOpticalFlowVel_message_members = {
   "px4_msgs::msg",  // message namespace
   "VehicleOpticalFlowVel",  // message name
-  9,  // number of fields
+  11,  // number of fields
   sizeof(px4_msgs::msg::VehicleOpticalFlowVel),
   VehicleOpticalFlowVel_message_member_array,  // message members
   VehicleOpticalFlowVel_init_function,  // function to initialize message memory (memory has to be allocated)

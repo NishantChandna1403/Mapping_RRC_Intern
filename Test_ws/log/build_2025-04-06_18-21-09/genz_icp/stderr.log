@@ -1,9 +1,0 @@
-[31mCMake Error at /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/CMakeLists.txt:62 (add_executable):
-  add_executable cannot create target "genz_icp_node" because another target
-  with the same name already exists.  The existing target is an executable
-  created in source directory
-  "/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline".
-  See documentation for policy CMP0002 for more details.
-
-[0m
-gmake: *** [Makefile:392: cmake_check_build_system] Error 1

@@ -19,7 +19,7 @@ module px4_msgs {
       float speed;
 
       @verbatim (language="comment", text=
-        "the direction bein report by the wind / airflow sensor")
+        "the direction being reported by the wind / airflow sensor")
       float direction;
 
       @verbatim (language="comment", text=

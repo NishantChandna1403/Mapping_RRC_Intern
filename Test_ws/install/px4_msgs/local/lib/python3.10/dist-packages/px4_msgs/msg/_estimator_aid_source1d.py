@@ -65,8 +65,10 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
         '_observation',
         '_observation_variance',
         '_innovation',
+        '_innovation_filtered',
         '_innovation_variance',
         '_test_ratio',
+        '_test_ratio_filtered',
         '_innovation_rejected',
         '_fused',
     ]
@@ -80,8 +82,10 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
         'observation': 'float',
         'observation_variance': 'float',
         'innovation': 'float',
+        'innovation_filtered': 'float',
         'innovation_variance': 'float',
         'test_ratio': 'float',
+        'test_ratio_filtered': 'float',
         'innovation_rejected': 'boolean',
         'fused': 'boolean',
     }
@@ -92,6 +96,8 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -113,8 +119,10 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
         self.observation = kwargs.get('observation', float())
         self.observation_variance = kwargs.get('observation_variance', float())
         self.innovation = kwargs.get('innovation', float())
+        self.innovation_filtered = kwargs.get('innovation_filtered', float())
         self.innovation_variance = kwargs.get('innovation_variance', float())
         self.test_ratio = kwargs.get('test_ratio', float())
+        self.test_ratio_filtered = kwargs.get('test_ratio_filtered', float())
         self.innovation_rejected = kwargs.get('innovation_rejected', bool())
         self.fused = kwargs.get('fused', bool())
 
@@ -163,9 +171,13 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
             return False
         if self.innovation != other.innovation:
             return False
+        if self.innovation_filtered != other.innovation_filtered:
+            return False
         if self.innovation_variance != other.innovation_variance:
             return False
         if self.test_ratio != other.test_ratio:
+            return False
+        if self.test_ratio_filtered != other.test_ratio_filtered:
             return False
         if self.innovation_rejected != other.innovation_rejected:
             return False
@@ -299,6 +311,21 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
         self._innovation = value
 
     @builtins.property
+    def innovation_filtered(self):
+        """Message field 'innovation_filtered'."""
+        return self._innovation_filtered
+
+    @innovation_filtered.setter
+    def innovation_filtered(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'innovation_filtered' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'innovation_filtered' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._innovation_filtered = value
+
+    @builtins.property
     def innovation_variance(self):
         """Message field 'innovation_variance'."""
         return self._innovation_variance
@@ -327,6 +354,21 @@ class EstimatorAidSource1d(metaclass=Metaclass_EstimatorAidSource1d):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'test_ratio' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._test_ratio = value
+
+    @builtins.property
+    def test_ratio_filtered(self):
+        """Message field 'test_ratio_filtered'."""
+        return self._test_ratio_filtered
+
+    @test_ratio_filtered.setter
+    def test_ratio_filtered(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'test_ratio_filtered' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'test_ratio_filtered' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._test_ratio_filtered = value
 
     @builtins.property
     def innovation_rejected(self):

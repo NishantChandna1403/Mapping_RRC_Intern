@@ -1,29 +1,12 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2024 Ignacio Vizzo, Cyrill Stachniss, University of Bonn
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-// 
-// The above copyright notice and this permission notice shall be included in all
-// copies or substantial portions of the Software.
-// 
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-// SOFTWARE.
-
 #include "GenZICP.hpp"
 
 #include <Eigen/Core>
 #include <tuple>
 #include <vector>
 #include <iostream>
+#include <cmath>
+#include <deque>
+#include <algorithm>
 
 #include "genz_icp/core/Deskew.hpp"
 #include "genz_icp/core/Preprocessing.hpp"
@@ -38,36 +21,18 @@ Sophus::SE3d GenZICP::fusePoses(const Sophus::SE3d& icp_pose,
                                 size_t num_points) {
     std::cout << "[DEBUG] Fusing poses with " << num_points << " points" << std::endl;
 
-    // Compute ICP weightage based on number of points
-    const double threshold_points = 200000.0;
-    double icp_weight;
-    if (static_cast<double>(num_points) >= threshold_points) {
-        icp_weight = 1.0;
-
-    
-    } else {
-        icp_weight = static_cast<double>(num_points) / threshold_points;
-        icp_weight = std::min(0.99, icp_weight); // Cap at 0.99 to ensure some GPS+IMU contribution
-    }
+    const double min_points = 50000.0;
+    const double max_points = 1000000.0;
+    double icp_weight = std::min(1.0, std::max(0.0, (static_cast<double>(num_points) - min_points) / (max_points - min_points)));
     double gps_imu_weight = 1.0 - icp_weight;
 
     std::cout << "[DEBUG] Weights - ICP: " << icp_weight << ", GPS+IMU: " << gps_imu_weight << std::endl;
 
-    // GPS+IMU pose: GPS translation + IMU orientation
     Sophus::SE3d gps_imu_pose(imu_orientation.unit_quaternion(), local_position_pose.translation());
 
-    if (icp_weight >= 1.0) {
-        // Use ICP pose exclusively
-        std::cout << "[DEBUG] Using full ICP pose - Translation: " << icp_pose.translation().transpose()
-                  << ", Quaternion: " << icp_pose.unit_quaternion().coeffs().transpose() << std::endl;
-        return icp_pose;
-    }
-
-    // Fuse translation (weighted average)
     Eigen::Vector3d fused_trans = icp_weight * icp_pose.translation() +
                                   gps_imu_weight * gps_imu_pose.translation();
 
-    // Fuse orientation (slerp between quaternions)
     Eigen::Quaterniond icp_quat = icp_pose.unit_quaternion();
     Eigen::Quaterniond gps_imu_quat = gps_imu_pose.unit_quaternion();
     Eigen::Quaterniond fused_quat = icp_quat.slerp(gps_imu_weight, gps_imu_quat);
@@ -86,6 +51,17 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
     std::cout << "[DEBUG] Entering RegisterFrame" << std::endl;
     std::cout << "[DEBUG] Raw input frame size: " << frame.size() << std::endl;
 
+    auto to_yaw = [](const Sophus::SE3d& pose) -> double {
+        Eigen::Quaterniond q = pose.unit_quaternion();
+        Eigen::Vector3d euler = q.toRotationMatrix().eulerAngles(2, 1, 0);
+        return euler[0];
+    };
+
+    static std::deque<double> yaw_history;
+    const size_t max_history_size = 2;
+    const size_t min_points_for_icp = 100;
+    const double yaw_threshold_deg = 0.4;
+
     const auto &deskew_frame = [&]() -> std::vector<Eigen::Vector3d> {
         if (!config_.deskew || timestamps.empty()) return frame;
         const size_t N = poses().size();
@@ -101,13 +77,47 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
     Sophus::SE3d new_pose;
     std::vector<Eigen::Vector3d> planar_points, non_planar_points;
 
-    // Always attempt ICP, but weightage will determine how much it's used
+    const auto &cropped_frame = Preprocess(deskew_frame, config_.max_range, config_.min_range);
+    std::cout << "[DEBUG] Cropped points: " << cropped_frame.size() << std::endl;
+
+    if (cropped_frame.empty()) {
+        std::cout << "[DEBUG] No points after cropping, using GPS+IMU" << std::endl;
+        new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
+        poses_.push_back(new_pose);
+        double new_yaw = to_yaw(new_pose);
+        yaw_history.push_back(new_yaw);
+        if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+        std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
+                  << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
+        return {{}, {}};
+    }
+
+    // Check for yaw change
+    if (!first_frame_ && !poses_.empty()) {
+        double current_yaw = to_yaw(imu_orientation);
+        double reference_yaw = to_yaw(poses_.back());
+        double yaw_diff = std::atan2(std::sin(current_yaw - reference_yaw),
+                                     std::cos(current_yaw - reference_yaw));
+        double yaw_diff_deg = std::abs(yaw_diff * 180.0 / M_PI);
+
+        std::cout << "[DEBUG] Yaw difference from last frame: " << yaw_diff_deg << " degrees" << std::endl;
+
+        if (yaw_diff_deg > yaw_threshold_deg) {
+            std::cout << "[DEBUG] Significant yaw change detected, skipping ICP and using GPS+IMU" << std::endl;
+            new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
+            poses_.push_back(new_pose);
+            double new_yaw = to_yaw(new_pose);
+            yaw_history.push_back(new_yaw);
+            if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+            std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
+                      << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
+            return {{}, {}};
+        }
+    }
+
     std::cout << "[DEBUG] Entering ICP + GPS + IMU mode" << std::endl;
     Sophus::SE3d icp_pose;
     try {
-        const auto &cropped_frame = Preprocess(deskew_frame, config_.max_range, config_.min_range);
-        std::cout << "[DEBUG] Cropped points: " << cropped_frame.size() << std::endl;
-
         static double voxel_size = config_.voxel_size;
         const auto source_tmp = genz_icp::VoxelDownsample(cropped_frame, voxel_size);
         double adaptive_voxel_size = genz_icp::Clamp(
@@ -115,6 +125,19 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         const auto &[source, frame_downsample] = Voxelize(cropped_frame, adaptive_voxel_size);
         voxel_size = adaptive_voxel_size;
         std::cout << "[DEBUG] Voxelized source points: " << source.size() << std::endl;
+
+        if (source.size() < min_points_for_icp) {
+            std::cout << "[DEBUG] Too few points after voxelization (" << source.size()
+                      << "), using GPS+IMU" << std::endl;
+            new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
+            poses_.push_back(new_pose);
+            double new_yaw = to_yaw(new_pose);
+            yaw_history.push_back(new_yaw);
+            if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+            std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
+                      << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
+            return {{}, {}};
+        }
 
         const double sigma = GetAdaptiveThreshold();
 
@@ -142,7 +165,6 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         std::cout << "[DEBUG] ICP pose - Translation: " << icp_pose.translation().transpose()
                   << ", Quaternion: " << icp_pose.unit_quaternion().coeffs().transpose() << std::endl;
 
-        // Fuse poses using point-based weightage
         new_pose = fusePoses(icp_pose, imu_orientation, local_position_pose, deskew_frame.size());
 
         std::cout << "[DEBUG] Updating local map and threshold" << std::endl;
@@ -150,11 +172,20 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         adaptive_threshold_.UpdateModelDeviation(model_deviation);
         local_map_.Update(frame_downsample, new_pose);
     } catch (const std::exception& e) {
+        std::cout << "[DEBUG] ICP exception (" << e.what() << "), using GPS+IMU" << std::endl;
         new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
-        std::cout << "[DEBUG] ICP exception (" << e.what() << "), using GPS+IMU - Translation: "
-                  << new_pose.translation().transpose() << ", Quaternion: "
-                  << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
+        poses_.push_back(new_pose);
+        double new_yaw = to_yaw(new_pose);
+        yaw_history.push_back(new_yaw);
+        if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+        std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
+                  << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
+        return {{}, {}};
     }
+
+    double new_yaw = to_yaw(new_pose);
+    yaw_history.push_back(new_yaw);
+    if (yaw_history.size() > max_history_size) yaw_history.pop_front();
 
     poses_.push_back(new_pose);
     std::cout << "[DEBUG] Pose appended to poses_, size: " << poses_.size() << std::endl;

@@ -18,6 +18,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VehicleStatus__MESSAGE_VERSION = 1ul
+};
+
 /// Constant 'ARMING_STATE_DISARMED'.
 enum
 {
@@ -36,10 +42,10 @@ enum
   px4_msgs__msg__VehicleStatus__ARM_DISARM_REASON_TRANSITION_TO_STANDBY = 0
 };
 
-/// Constant 'ARM_DISARM_REASON_RC_STICK'.
+/// Constant 'ARM_DISARM_REASON_STICK_GESTURE'.
 enum
 {
-  px4_msgs__msg__VehicleStatus__ARM_DISARM_REASON_RC_STICK = 1
+  px4_msgs__msg__VehicleStatus__ARM_DISARM_REASON_STICK_GESTURE = 1
 };
 
 /// Constant 'ARM_DISARM_REASON_RC_SWITCH'.
@@ -444,34 +450,22 @@ enum
   px4_msgs__msg__VehicleStatus__HIL_STATE_ON = 1
 };
 
-/// Constant 'VEHICLE_TYPE_UNKNOWN'.
-enum
-{
-  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_UNKNOWN = 0
-};
-
 /// Constant 'VEHICLE_TYPE_ROTARY_WING'.
 enum
 {
-  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_ROTARY_WING = 1
+  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_ROTARY_WING = 0
 };
 
 /// Constant 'VEHICLE_TYPE_FIXED_WING'.
 enum
 {
-  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_FIXED_WING = 2
+  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_FIXED_WING = 1
 };
 
 /// Constant 'VEHICLE_TYPE_ROVER'.
 enum
 {
-  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_ROVER = 3
-};
-
-/// Constant 'VEHICLE_TYPE_AIRSHIP'.
-enum
-{
-  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_AIRSHIP = 4
+  px4_msgs__msg__VehicleStatus__VEHICLE_TYPE_ROVER = 2
 };
 
 /// Constant 'FAILSAFE_DEFER_STATE_DISABLED'.
@@ -525,7 +519,7 @@ typedef struct px4_msgs__msg__VehicleStatus
   /// Bitmask of detected failures
   uint16_t failure_detector_status;
   uint8_t hil_state;
-  /// If it's a VTOL, then the value will be VEHICLE_TYPE_ROTARY_WING while flying as a multicopter, and VEHICLE_TYPE_FIXED_WING when flying as a fixed-wing
+  /// Current vehicle locomotion method. A vehicle can have different methods (e.g. VTOL transitions from RW to FW method)
   uint8_t vehicle_type;
   /// true if system is in failsafe state (e.g.:RTL, Hover, Terminate, ...)
   bool failsafe;
@@ -568,10 +562,6 @@ typedef struct px4_msgs__msg__VehicleStatus
   bool open_drone_id_system_healthy;
   bool parachute_system_present;
   bool parachute_system_healthy;
-  /// Set to true if avoidance system is enabled via COM_OBS_AVOID parameter
-  bool avoidance_system_required;
-  /// Status of the obstacle avoidance system
-  bool avoidance_system_valid;
   bool rc_calibration_in_progress;
   bool calibration_enabled;
   /// true if all checks necessary to arm pass

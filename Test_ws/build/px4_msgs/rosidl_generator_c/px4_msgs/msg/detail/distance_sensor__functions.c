@@ -29,6 +29,7 @@ px4_msgs__msg__DistanceSensor__init(px4_msgs__msg__DistanceSensor * msg)
   // v_fov
   // q
   // orientation
+  // mode
   return true;
 }
 
@@ -50,6 +51,7 @@ px4_msgs__msg__DistanceSensor__fini(px4_msgs__msg__DistanceSensor * msg)
   // v_fov
   // q
   // orientation
+  // mode
 }
 
 bool
@@ -108,6 +110,10 @@ px4_msgs__msg__DistanceSensor__are_equal(const px4_msgs__msg__DistanceSensor * l
   if (lhs->orientation != rhs->orientation) {
     return false;
   }
+  // mode
+  if (lhs->mode != rhs->mode) {
+    return false;
+  }
   return true;
 }
 
@@ -145,6 +151,8 @@ px4_msgs__msg__DistanceSensor__copy(
   }
   // orientation
   output->orientation = input->orientation;
+  // mode
+  output->mode = input->mode;
   return true;
 }
 

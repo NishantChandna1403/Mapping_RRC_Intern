@@ -109,6 +109,11 @@ static bool _ManualControlSwitches__cdr_serialize(
     cdr << ros_message->video_switch;
   }
 
+  // Field name: payload_power_switch
+  {
+    cdr << ros_message->payload_power_switch;
+  }
+
   // Field name: engage_main_motor_switch
   {
     cdr << ros_message->engage_main_motor_switch;
@@ -189,6 +194,11 @@ static bool _ManualControlSwitches__cdr_deserialize(
   // Field name: video_switch
   {
     cdr >> ros_message->video_switch;
+  }
+
+  // Field name: payload_power_switch
+  {
+    cdr >> ros_message->payload_power_switch;
   }
 
   // Field name: engage_main_motor_switch
@@ -287,6 +297,12 @@ size_t get_serialized_size_px4_msgs__msg__ManualControlSwitches(
   // field.name video_switch
   {
     size_t item_size = sizeof(ros_message->video_switch);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name payload_power_switch
+  {
+    size_t item_size = sizeof(ros_message->payload_power_switch);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -411,6 +427,13 @@ size_t max_serialized_size_px4_msgs__msg__ManualControlSwitches(
     current_alignment += array_size * sizeof(uint8_t);
   }
   // member: video_switch
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: payload_power_switch
   {
     size_t array_size = 1;
 

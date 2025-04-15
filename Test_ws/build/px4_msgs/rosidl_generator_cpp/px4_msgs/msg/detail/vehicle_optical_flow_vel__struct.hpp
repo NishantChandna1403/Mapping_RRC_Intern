@@ -42,6 +42,8 @@ struct VehicleOpticalFlowVel_
       this->timestamp_sample = 0ull;
       std::fill<typename std::array<float, 2>::iterator, float>(this->vel_body.begin(), this->vel_body.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->vel_ne.begin(), this->vel_ne.end(), 0.0f);
+      std::fill<typename std::array<float, 2>::iterator, float>(this->vel_body_filtered.begin(), this->vel_body_filtered.end(), 0.0f);
+      std::fill<typename std::array<float, 2>::iterator, float>(this->vel_ne_filtered.begin(), this->vel_ne_filtered.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->flow_rate_uncompensated.begin(), this->flow_rate_uncompensated.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->flow_rate_compensated.begin(), this->flow_rate_compensated.end(), 0.0f);
       std::fill<typename std::array<float, 3>::iterator, float>(this->gyro_rate.begin(), this->gyro_rate.end(), 0.0f);
@@ -53,6 +55,8 @@ struct VehicleOpticalFlowVel_
   explicit VehicleOpticalFlowVel_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : vel_body(_alloc),
     vel_ne(_alloc),
+    vel_body_filtered(_alloc),
+    vel_ne_filtered(_alloc),
     flow_rate_uncompensated(_alloc),
     flow_rate_compensated(_alloc),
     gyro_rate(_alloc),
@@ -66,6 +70,8 @@ struct VehicleOpticalFlowVel_
       this->timestamp_sample = 0ull;
       std::fill<typename std::array<float, 2>::iterator, float>(this->vel_body.begin(), this->vel_body.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->vel_ne.begin(), this->vel_ne.end(), 0.0f);
+      std::fill<typename std::array<float, 2>::iterator, float>(this->vel_body_filtered.begin(), this->vel_body_filtered.end(), 0.0f);
+      std::fill<typename std::array<float, 2>::iterator, float>(this->vel_ne_filtered.begin(), this->vel_ne_filtered.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->flow_rate_uncompensated.begin(), this->flow_rate_uncompensated.end(), 0.0f);
       std::fill<typename std::array<float, 2>::iterator, float>(this->flow_rate_compensated.begin(), this->flow_rate_compensated.end(), 0.0f);
       std::fill<typename std::array<float, 3>::iterator, float>(this->gyro_rate.begin(), this->gyro_rate.end(), 0.0f);
@@ -87,6 +93,12 @@ struct VehicleOpticalFlowVel_
   using _vel_ne_type =
     std::array<float, 2>;
   _vel_ne_type vel_ne;
+  using _vel_body_filtered_type =
+    std::array<float, 2>;
+  _vel_body_filtered_type vel_body_filtered;
+  using _vel_ne_filtered_type =
+    std::array<float, 2>;
+  _vel_ne_filtered_type vel_ne_filtered;
   using _flow_rate_uncompensated_type =
     std::array<float, 2>;
   _flow_rate_uncompensated_type flow_rate_uncompensated;
@@ -126,6 +138,18 @@ struct VehicleOpticalFlowVel_
     const std::array<float, 2> & _arg)
   {
     this->vel_ne = _arg;
+    return *this;
+  }
+  Type & set__vel_body_filtered(
+    const std::array<float, 2> & _arg)
+  {
+    this->vel_body_filtered = _arg;
+    return *this;
+  }
+  Type & set__vel_ne_filtered(
+    const std::array<float, 2> & _arg)
+  {
+    this->vel_ne_filtered = _arg;
     return *this;
   }
   Type & set__flow_rate_uncompensated(
@@ -211,6 +235,12 @@ struct VehicleOpticalFlowVel_
       return false;
     }
     if (this->vel_ne != other.vel_ne) {
+      return false;
+    }
+    if (this->vel_body_filtered != other.vel_body_filtered) {
+      return false;
+    }
+    if (this->vel_ne_filtered != other.vel_ne_filtered) {
       return false;
     }
     if (this->flow_rate_uncompensated != other.flow_rate_uncompensated) {

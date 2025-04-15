@@ -1,25 +1,3 @@
-// MIT License
-//
-// Copyright (c) 2022 Ignacio Vizzo, Tiziano Guadagnino, Benedikt Mersch, Cyrill Stachniss.
-// Modified by Daehan Lee, Hyungtae Lim, and Soohee Han, 2024
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in all
-// copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-// SOFTWARE.
 #pragma once
 
 #include <Eigen/Core>
@@ -201,11 +179,24 @@ inline std::vector<double> GetTimestamps(const PointCloud2::ConstSharedPtr msg) 
 inline std::vector<Eigen::Vector3d> PointCloud2ToEigen(const PointCloud2::ConstSharedPtr msg) {
     std::vector<Eigen::Vector3d> points;
     points.reserve(msg->height * msg->width);
+
+    // Transformation matrix: Camera Optical (Z forward, X right, Y down) to ROS Standard (X forward, Y left, Z up)
+    Eigen::Matrix3d transform;
+    transform << 0,  0,  1,   // Z -> X
+                -1,  0,  0,   // X -> -Y
+                 0, -1,  0;   // Y -> -Z
+
     sensor_msgs::PointCloud2ConstIterator<float> msg_x(*msg, "x");
     sensor_msgs::PointCloud2ConstIterator<float> msg_y(*msg, "y");
     sensor_msgs::PointCloud2ConstIterator<float> msg_z(*msg, "z");
     for (size_t i = 0; i < msg->height * msg->width; ++i, ++msg_x, ++msg_y, ++msg_z) {
-        points.emplace_back(*msg_x, *msg_y, *msg_z);
+        // Read point in Camera Optical frame
+        Eigen::Vector3d point(*msg_x, *msg_y, *msg_z);
+        // Filter points: z <= 50.0 and y <= -1.0 in Camera Optical frame
+        if (point.z() <= 50.0 && point.y() <= -1.0) {
+            // Apply transformation to ROS Standard frame
+            points.emplace_back(transform * point);
+        }
     }
     return points;
 }

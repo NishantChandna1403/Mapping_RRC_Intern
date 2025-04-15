@@ -25,11 +25,11 @@ typedef struct px4_msgs__msg__EstimatorStates
   /// the timestamp of the raw data (microseconds)
   uint64_t timestamp_sample;
   /// Internal filter states
-  float states[24];
+  float states[25];
   /// Number of states effectively used
   uint8_t n_states;
   /// Diagonal Elements of Covariance Matrix
-  float covariances[23];
+  float covariances[24];
 } px4_msgs__msg__EstimatorStates;
 
 // Struct for a sequence of px4_msgs__msg__EstimatorStates.

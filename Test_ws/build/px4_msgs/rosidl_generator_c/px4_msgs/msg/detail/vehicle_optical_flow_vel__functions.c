@@ -21,6 +21,8 @@ px4_msgs__msg__VehicleOpticalFlowVel__init(px4_msgs__msg__VehicleOpticalFlowVel 
   // timestamp_sample
   // vel_body
   // vel_ne
+  // vel_body_filtered
+  // vel_ne_filtered
   // flow_rate_uncompensated
   // flow_rate_compensated
   // gyro_rate
@@ -39,6 +41,8 @@ px4_msgs__msg__VehicleOpticalFlowVel__fini(px4_msgs__msg__VehicleOpticalFlowVel 
   // timestamp_sample
   // vel_body
   // vel_ne
+  // vel_body_filtered
+  // vel_ne_filtered
   // flow_rate_uncompensated
   // flow_rate_compensated
   // gyro_rate
@@ -69,6 +73,18 @@ px4_msgs__msg__VehicleOpticalFlowVel__are_equal(const px4_msgs__msg__VehicleOpti
   // vel_ne
   for (size_t i = 0; i < 2; ++i) {
     if (lhs->vel_ne[i] != rhs->vel_ne[i]) {
+      return false;
+    }
+  }
+  // vel_body_filtered
+  for (size_t i = 0; i < 2; ++i) {
+    if (lhs->vel_body_filtered[i] != rhs->vel_body_filtered[i]) {
+      return false;
+    }
+  }
+  // vel_ne_filtered
+  for (size_t i = 0; i < 2; ++i) {
+    if (lhs->vel_ne_filtered[i] != rhs->vel_ne_filtered[i]) {
       return false;
     }
   }
@@ -124,6 +140,14 @@ px4_msgs__msg__VehicleOpticalFlowVel__copy(
   // vel_ne
   for (size_t i = 0; i < 2; ++i) {
     output->vel_ne[i] = input->vel_ne[i];
+  }
+  // vel_body_filtered
+  for (size_t i = 0; i < 2; ++i) {
+    output->vel_body_filtered[i] = input->vel_body_filtered[i];
+  }
+  // vel_ne_filtered
+  for (size_t i = 0; i < 2; ++i) {
+    output->vel_ne_filtered[i] = input->vel_ne_filtered[i];
   }
   // flow_rate_uncompensated
   for (size_t i = 0; i < 2; ++i) {

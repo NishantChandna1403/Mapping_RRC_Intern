@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
-class Init_VehicleLocalPosition_hagl_max
+class Init_VehicleLocalPosition_hagl_max_xy
 {
 public:
-  explicit Init_VehicleLocalPosition_hagl_max(::px4_msgs::msg::VehicleLocalPosition & msg)
+  explicit Init_VehicleLocalPosition_hagl_max_xy(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  ::px4_msgs::msg::VehicleLocalPosition hagl_max(::px4_msgs::msg::VehicleLocalPosition::_hagl_max_type arg)
+  ::px4_msgs::msg::VehicleLocalPosition hagl_max_xy(::px4_msgs::msg::VehicleLocalPosition::_hagl_max_xy_type arg)
   {
-    msg_.hagl_max = std::move(arg);
+    msg_.hagl_max_xy = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleLocalPosition msg_;
+};
+
+class Init_VehicleLocalPosition_hagl_max_z
+{
+public:
+  explicit Init_VehicleLocalPosition_hagl_max_z(::px4_msgs::msg::VehicleLocalPosition & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleLocalPosition_hagl_max_xy hagl_max_z(::px4_msgs::msg::VehicleLocalPosition::_hagl_max_z_type arg)
+  {
+    msg_.hagl_max_z = std::move(arg);
+    return Init_VehicleLocalPosition_hagl_max_xy(msg_);
   }
 
 private:
@@ -43,10 +59,10 @@ public:
   explicit Init_VehicleLocalPosition_hagl_min(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  Init_VehicleLocalPosition_hagl_max hagl_min(::px4_msgs::msg::VehicleLocalPosition::_hagl_min_type arg)
+  Init_VehicleLocalPosition_hagl_max_z hagl_min(::px4_msgs::msg::VehicleLocalPosition::_hagl_min_type arg)
   {
     msg_.hagl_min = std::move(arg);
-    return Init_VehicleLocalPosition_hagl_max(msg_);
+    return Init_VehicleLocalPosition_hagl_max_z(msg_);
   }
 
 private:
@@ -181,16 +197,48 @@ private:
   ::px4_msgs::msg::VehicleLocalPosition msg_;
 };
 
-class Init_VehicleLocalPosition_dist_bottom_valid
+class Init_VehicleLocalPosition_dist_bottom_reset_counter
 {
 public:
-  explicit Init_VehicleLocalPosition_dist_bottom_valid(::px4_msgs::msg::VehicleLocalPosition & msg)
+  explicit Init_VehicleLocalPosition_dist_bottom_reset_counter(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  Init_VehicleLocalPosition_dist_bottom_sensor_bitfield dist_bottom_valid(::px4_msgs::msg::VehicleLocalPosition::_dist_bottom_valid_type arg)
+  Init_VehicleLocalPosition_dist_bottom_sensor_bitfield dist_bottom_reset_counter(::px4_msgs::msg::VehicleLocalPosition::_dist_bottom_reset_counter_type arg)
   {
-    msg_.dist_bottom_valid = std::move(arg);
+    msg_.dist_bottom_reset_counter = std::move(arg);
     return Init_VehicleLocalPosition_dist_bottom_sensor_bitfield(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleLocalPosition msg_;
+};
+
+class Init_VehicleLocalPosition_delta_dist_bottom
+{
+public:
+  explicit Init_VehicleLocalPosition_delta_dist_bottom(::px4_msgs::msg::VehicleLocalPosition & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleLocalPosition_dist_bottom_reset_counter delta_dist_bottom(::px4_msgs::msg::VehicleLocalPosition::_delta_dist_bottom_type arg)
+  {
+    msg_.delta_dist_bottom = std::move(arg);
+    return Init_VehicleLocalPosition_dist_bottom_reset_counter(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleLocalPosition msg_;
+};
+
+class Init_VehicleLocalPosition_dist_bottom_var
+{
+public:
+  explicit Init_VehicleLocalPosition_dist_bottom_var(::px4_msgs::msg::VehicleLocalPosition & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleLocalPosition_delta_dist_bottom dist_bottom_var(::px4_msgs::msg::VehicleLocalPosition::_dist_bottom_var_type arg)
+  {
+    msg_.dist_bottom_var = std::move(arg);
+    return Init_VehicleLocalPosition_delta_dist_bottom(msg_);
   }
 
 private:
@@ -203,10 +251,26 @@ public:
   explicit Init_VehicleLocalPosition_dist_bottom(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  Init_VehicleLocalPosition_dist_bottom_valid dist_bottom(::px4_msgs::msg::VehicleLocalPosition::_dist_bottom_type arg)
+  Init_VehicleLocalPosition_dist_bottom_var dist_bottom(::px4_msgs::msg::VehicleLocalPosition::_dist_bottom_type arg)
   {
     msg_.dist_bottom = std::move(arg);
-    return Init_VehicleLocalPosition_dist_bottom_valid(msg_);
+    return Init_VehicleLocalPosition_dist_bottom_var(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleLocalPosition msg_;
+};
+
+class Init_VehicleLocalPosition_dist_bottom_valid
+{
+public:
+  explicit Init_VehicleLocalPosition_dist_bottom_valid(::px4_msgs::msg::VehicleLocalPosition & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleLocalPosition_dist_bottom dist_bottom_valid(::px4_msgs::msg::VehicleLocalPosition::_dist_bottom_valid_type arg)
+  {
+    msg_.dist_bottom_valid = std::move(arg);
+    return Init_VehicleLocalPosition_dist_bottom(msg_);
   }
 
 private:
@@ -219,10 +283,10 @@ public:
   explicit Init_VehicleLocalPosition_ref_alt(::px4_msgs::msg::VehicleLocalPosition & msg)
   : msg_(msg)
   {}
-  Init_VehicleLocalPosition_dist_bottom ref_alt(::px4_msgs::msg::VehicleLocalPosition::_ref_alt_type arg)
+  Init_VehicleLocalPosition_dist_bottom_valid ref_alt(::px4_msgs::msg::VehicleLocalPosition::_ref_alt_type arg)
   {
     msg_.ref_alt = std::move(arg);
-    return Init_VehicleLocalPosition_dist_bottom(msg_);
+    return Init_VehicleLocalPosition_dist_bottom_valid(msg_);
   }
 
 private:

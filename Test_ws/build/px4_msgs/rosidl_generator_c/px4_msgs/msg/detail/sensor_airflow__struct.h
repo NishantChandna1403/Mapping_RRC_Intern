@@ -26,7 +26,7 @@ typedef struct px4_msgs__msg__SensorAirflow
   uint32_t device_id;
   /// the speed being reported by the wind / airflow sensor
   float speed;
-  /// the direction bein report by the wind / airflow sensor
+  /// the direction being reported by the wind / airflow sensor
   float direction;
   /// Status code from the sensor
   uint8_t status;

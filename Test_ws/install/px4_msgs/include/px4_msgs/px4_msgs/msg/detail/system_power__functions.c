@@ -19,6 +19,7 @@ px4_msgs__msg__SystemPower__init(px4_msgs__msg__SystemPower * msg)
   }
   // timestamp
   // voltage5v_v
+  // voltage_payload_v
   // sensors3v3
   // sensors3v3_valid
   // usb_connected
@@ -29,6 +30,7 @@ px4_msgs__msg__SystemPower__init(px4_msgs__msg__SystemPower * msg)
   // hipower_5v_oc
   // comp_5v_valid
   // can1_gps1_5v_valid
+  // payload_v_valid
   return true;
 }
 
@@ -40,6 +42,7 @@ px4_msgs__msg__SystemPower__fini(px4_msgs__msg__SystemPower * msg)
   }
   // timestamp
   // voltage5v_v
+  // voltage_payload_v
   // sensors3v3
   // sensors3v3_valid
   // usb_connected
@@ -50,6 +53,7 @@ px4_msgs__msg__SystemPower__fini(px4_msgs__msg__SystemPower * msg)
   // hipower_5v_oc
   // comp_5v_valid
   // can1_gps1_5v_valid
+  // payload_v_valid
 }
 
 bool
@@ -64,6 +68,10 @@ px4_msgs__msg__SystemPower__are_equal(const px4_msgs__msg__SystemPower * lhs, co
   }
   // voltage5v_v
   if (lhs->voltage5v_v != rhs->voltage5v_v) {
+    return false;
+  }
+  // voltage_payload_v
+  if (lhs->voltage_payload_v != rhs->voltage_payload_v) {
     return false;
   }
   // sensors3v3
@@ -108,6 +116,10 @@ px4_msgs__msg__SystemPower__are_equal(const px4_msgs__msg__SystemPower * lhs, co
   if (lhs->can1_gps1_5v_valid != rhs->can1_gps1_5v_valid) {
     return false;
   }
+  // payload_v_valid
+  if (lhs->payload_v_valid != rhs->payload_v_valid) {
+    return false;
+  }
   return true;
 }
 
@@ -123,6 +135,8 @@ px4_msgs__msg__SystemPower__copy(
   output->timestamp = input->timestamp;
   // voltage5v_v
   output->voltage5v_v = input->voltage5v_v;
+  // voltage_payload_v
+  output->voltage_payload_v = input->voltage_payload_v;
   // sensors3v3
   for (size_t i = 0; i < 4; ++i) {
     output->sensors3v3[i] = input->sensors3v3[i];
@@ -145,6 +159,8 @@ px4_msgs__msg__SystemPower__copy(
   output->comp_5v_valid = input->comp_5v_valid;
   // can1_gps1_5v_valid
   output->can1_gps1_5v_valid = input->can1_gps1_5v_valid;
+  // payload_v_valid
+  output->payload_v_valid = input->payload_v_valid;
   return true;
 }
 

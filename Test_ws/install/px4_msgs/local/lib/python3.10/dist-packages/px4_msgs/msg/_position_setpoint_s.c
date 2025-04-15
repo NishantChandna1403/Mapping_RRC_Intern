@@ -194,6 +194,15 @@ bool px4_msgs__msg__position_setpoint__convert_from_py(PyObject * _pymsg, void *
     ros_message->acceptance_radius = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // alt_acceptance_radius
+    PyObject * field = PyObject_GetAttrString(_pymsg, "alt_acceptance_radius");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->alt_acceptance_radius = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // cruising_speed
     PyObject * field = PyObject_GetAttrString(_pymsg, "cruising_speed");
     if (!field) {
@@ -413,6 +422,17 @@ PyObject * px4_msgs__msg__position_setpoint__convert_to_py(void * raw_ros_messag
     field = PyFloat_FromDouble(ros_message->acceptance_radius);
     {
       int rc = PyObject_SetAttrString(_pymessage, "acceptance_radius", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // alt_acceptance_radius
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->alt_acceptance_radius);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "alt_acceptance_radius", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -13,10 +13,10 @@ pcl_converter_path = os.path.join(script_dir, "pcl_converter.py")
 
 # List of commands
 commands = [
-    "MicroXRCEAgent udp4 -p 8888",
-    "cd ~/PX4-Autopilot && PX4_SITL_WORLD=$(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/baylands.world make px4_sitl_default gazebo-classic_iris_depth_camera",
+    " micro-xrce-dds-agent udp4 -p 8888",
+    "cd ~/PX4-Autopilot && PX4_SITL_WORLD=$(pwd)/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/baylands.world make px4_sitl gazebo-classic_iris_depth_camera",
     f"{qgc_path}",  # Launch QGroundControl
-    "bash -c 'source ~/RRC_Project/Test_ws/install/setup.bash && ros2 launch genz_icp odometry.launch.py topic:=/camera/points_transformed'",
+    "bash -c 'source ~/RRC_Project/Test_ws/install/setup.bash && ros2 launch genz_icp odometry.launch.py topic:=/camera/points'",
     f"bash -c 'cd {script_dir} && python3 pcl_converter.py'"
 ]
 

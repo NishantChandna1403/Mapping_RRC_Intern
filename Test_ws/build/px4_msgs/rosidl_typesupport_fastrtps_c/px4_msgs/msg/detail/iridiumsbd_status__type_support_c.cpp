@@ -54,9 +54,9 @@ static bool _IridiumsbdStatus__cdr_serialize(
     cdr << ros_message->timestamp;
   }
 
-  // Field name: last_heartbeat
+  // Field name: last_at_ok_timestamp
   {
-    cdr << ros_message->last_heartbeat;
+    cdr << ros_message->last_at_ok_timestamp;
   }
 
   // Field name: tx_buf_write_index
@@ -141,9 +141,9 @@ static bool _IridiumsbdStatus__cdr_deserialize(
     cdr >> ros_message->timestamp;
   }
 
-  // Field name: last_heartbeat
+  // Field name: last_at_ok_timestamp
   {
-    cdr >> ros_message->last_heartbeat;
+    cdr >> ros_message->last_at_ok_timestamp;
   }
 
   // Field name: tx_buf_write_index
@@ -244,9 +244,9 @@ size_t get_serialized_size_px4_msgs__msg__IridiumsbdStatus(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name last_heartbeat
+  // field.name last_at_ok_timestamp
   {
-    size_t item_size = sizeof(ros_message->last_heartbeat);
+    size_t item_size = sizeof(ros_message->last_at_ok_timestamp);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -365,7 +365,7 @@ size_t max_serialized_size_px4_msgs__msg__IridiumsbdStatus(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: last_heartbeat
+  // member: last_at_ok_timestamp
   {
     size_t array_size = 1;
 

@@ -12,8 +12,10 @@ import math  # noqa: E402, I100
 # Member 'observation'
 # Member 'observation_variance'
 # Member 'innovation'
+# Member 'innovation_filtered'
 # Member 'innovation_variance'
 # Member 'test_ratio'
+# Member 'test_ratio_filtered'
 import numpy  # noqa: E402, I100
 
 import rosidl_parser.definition  # noqa: E402, I100
@@ -72,8 +74,10 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
         '_observation',
         '_observation_variance',
         '_innovation',
+        '_innovation_filtered',
         '_innovation_variance',
         '_test_ratio',
+        '_test_ratio_filtered',
         '_innovation_rejected',
         '_fused',
     ]
@@ -87,8 +91,10 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
         'observation': 'float[3]',
         'observation_variance': 'float[3]',
         'innovation': 'float[3]',
+        'innovation_filtered': 'float[3]',
         'innovation_variance': 'float[3]',
         'test_ratio': 'float[3]',
+        'test_ratio_filtered': 'float[3]',
         'innovation_rejected': 'boolean',
         'fused': 'boolean',
     }
@@ -99,6 +105,8 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 3),  # noqa: E501
@@ -132,6 +140,11 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
         else:
             self.innovation = numpy.array(kwargs.get('innovation'), dtype=numpy.float32)
             assert self.innovation.shape == (3, )
+        if 'innovation_filtered' not in kwargs:
+            self.innovation_filtered = numpy.zeros(3, dtype=numpy.float32)
+        else:
+            self.innovation_filtered = numpy.array(kwargs.get('innovation_filtered'), dtype=numpy.float32)
+            assert self.innovation_filtered.shape == (3, )
         if 'innovation_variance' not in kwargs:
             self.innovation_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
@@ -142,6 +155,11 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
         else:
             self.test_ratio = numpy.array(kwargs.get('test_ratio'), dtype=numpy.float32)
             assert self.test_ratio.shape == (3, )
+        if 'test_ratio_filtered' not in kwargs:
+            self.test_ratio_filtered = numpy.zeros(3, dtype=numpy.float32)
+        else:
+            self.test_ratio_filtered = numpy.array(kwargs.get('test_ratio_filtered'), dtype=numpy.float32)
+            assert self.test_ratio_filtered.shape == (3, )
         self.innovation_rejected = kwargs.get('innovation_rejected', bool())
         self.fused = kwargs.get('fused', bool())
 
@@ -190,9 +208,13 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
             return False
         if all(self.innovation != other.innovation):
             return False
+        if all(self.innovation_filtered != other.innovation_filtered):
+            return False
         if all(self.innovation_variance != other.innovation_variance):
             return False
         if all(self.test_ratio != other.test_ratio):
+            return False
+        if all(self.test_ratio_filtered != other.test_ratio_filtered):
             return False
         if self.innovation_rejected != other.innovation_rejected:
             return False
@@ -374,6 +396,37 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
         self._innovation = numpy.array(value, dtype=numpy.float32)
 
     @builtins.property
+    def innovation_filtered(self):
+        """Message field 'innovation_filtered'."""
+        return self._innovation_filtered
+
+    @innovation_filtered.setter
+    def innovation_filtered(self, value):
+        if isinstance(value, numpy.ndarray):
+            assert value.dtype == numpy.float32, \
+                "The 'innovation_filtered' numpy.ndarray() must have the dtype of 'numpy.float32'"
+            assert value.size == 3, \
+                "The 'innovation_filtered' numpy.ndarray() must have a size of 3"
+            self._innovation_filtered = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) == 3 and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'innovation_filtered' field must be a set or sequence with length 3 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._innovation_filtered = numpy.array(value, dtype=numpy.float32)
+
+    @builtins.property
     def innovation_variance(self):
         """Message field 'innovation_variance'."""
         return self._innovation_variance
@@ -434,6 +487,37 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
                 "The 'test_ratio' field must be a set or sequence with length 3 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._test_ratio = numpy.array(value, dtype=numpy.float32)
+
+    @builtins.property
+    def test_ratio_filtered(self):
+        """Message field 'test_ratio_filtered'."""
+        return self._test_ratio_filtered
+
+    @test_ratio_filtered.setter
+    def test_ratio_filtered(self, value):
+        if isinstance(value, numpy.ndarray):
+            assert value.dtype == numpy.float32, \
+                "The 'test_ratio_filtered' numpy.ndarray() must have the dtype of 'numpy.float32'"
+            assert value.size == 3, \
+                "The 'test_ratio_filtered' numpy.ndarray() must have a size of 3"
+            self._test_ratio_filtered = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) == 3 and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'test_ratio_filtered' field must be a set or sequence with length 3 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._test_ratio_filtered = numpy.array(value, dtype=numpy.float32)
 
     @builtins.property
     def innovation_rejected(self):

@@ -36,6 +36,8 @@ cdr_serialize(
   cdr << ros_message.timestamp;
   // Member: voltage5v_v
   cdr << ros_message.voltage5v_v;
+  // Member: voltage_payload_v
+  cdr << ros_message.voltage_payload_v;
   // Member: sensors3v3
   {
     cdr << ros_message.sensors3v3;
@@ -58,6 +60,8 @@ cdr_serialize(
   cdr << ros_message.comp_5v_valid;
   // Member: can1_gps1_5v_valid
   cdr << ros_message.can1_gps1_5v_valid;
+  // Member: payload_v_valid
+  cdr << ros_message.payload_v_valid;
   return true;
 }
 
@@ -72,6 +76,9 @@ cdr_deserialize(
 
   // Member: voltage5v_v
   cdr >> ros_message.voltage5v_v;
+
+  // Member: voltage_payload_v
+  cdr >> ros_message.voltage_payload_v;
 
   // Member: sensors3v3
   {
@@ -105,6 +112,9 @@ cdr_deserialize(
   // Member: can1_gps1_5v_valid
   cdr >> ros_message.can1_gps1_5v_valid;
 
+  // Member: payload_v_valid
+  cdr >> ros_message.payload_v_valid;
+
   return true;
 }
 
@@ -130,6 +140,12 @@ get_serialized_size(
   // Member: voltage5v_v
   {
     size_t item_size = sizeof(ros_message.voltage5v_v);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: voltage_payload_v
+  {
+    size_t item_size = sizeof(ros_message.voltage_payload_v);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -194,6 +210,12 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: payload_v_valid
+  {
+    size_t item_size = sizeof(ros_message.payload_v_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -228,6 +250,15 @@ max_serialized_size_SystemPower(
   }
 
   // Member: voltage5v_v
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: voltage_payload_v
   {
     size_t array_size = 1;
 
@@ -317,6 +348,14 @@ max_serialized_size_SystemPower(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Member: payload_v_valid
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -325,7 +364,7 @@ max_serialized_size_SystemPower(
     using DataType = px4_msgs::msg::SystemPower;
     is_plain =
       (
-      offsetof(DataType, can1_gps1_5v_valid) +
+      offsetof(DataType, payload_v_valid) +
       last_member_size
       ) == ret_val;
   }

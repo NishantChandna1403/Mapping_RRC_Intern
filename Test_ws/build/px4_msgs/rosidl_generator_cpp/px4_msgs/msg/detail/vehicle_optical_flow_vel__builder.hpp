@@ -101,16 +101,48 @@ private:
   ::px4_msgs::msg::VehicleOpticalFlowVel msg_;
 };
 
+class Init_VehicleOpticalFlowVel_vel_ne_filtered
+{
+public:
+  explicit Init_VehicleOpticalFlowVel_vel_ne_filtered(::px4_msgs::msg::VehicleOpticalFlowVel & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleOpticalFlowVel_flow_rate_uncompensated vel_ne_filtered(::px4_msgs::msg::VehicleOpticalFlowVel::_vel_ne_filtered_type arg)
+  {
+    msg_.vel_ne_filtered = std::move(arg);
+    return Init_VehicleOpticalFlowVel_flow_rate_uncompensated(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleOpticalFlowVel msg_;
+};
+
+class Init_VehicleOpticalFlowVel_vel_body_filtered
+{
+public:
+  explicit Init_VehicleOpticalFlowVel_vel_body_filtered(::px4_msgs::msg::VehicleOpticalFlowVel & msg)
+  : msg_(msg)
+  {}
+  Init_VehicleOpticalFlowVel_vel_ne_filtered vel_body_filtered(::px4_msgs::msg::VehicleOpticalFlowVel::_vel_body_filtered_type arg)
+  {
+    msg_.vel_body_filtered = std::move(arg);
+    return Init_VehicleOpticalFlowVel_vel_ne_filtered(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::VehicleOpticalFlowVel msg_;
+};
+
 class Init_VehicleOpticalFlowVel_vel_ne
 {
 public:
   explicit Init_VehicleOpticalFlowVel_vel_ne(::px4_msgs::msg::VehicleOpticalFlowVel & msg)
   : msg_(msg)
   {}
-  Init_VehicleOpticalFlowVel_flow_rate_uncompensated vel_ne(::px4_msgs::msg::VehicleOpticalFlowVel::_vel_ne_type arg)
+  Init_VehicleOpticalFlowVel_vel_body_filtered vel_ne(::px4_msgs::msg::VehicleOpticalFlowVel::_vel_ne_type arg)
   {
     msg_.vel_ne = std::move(arg);
-    return Init_VehicleOpticalFlowVel_flow_rate_uncompensated(msg_);
+    return Init_VehicleOpticalFlowVel_vel_body_filtered(msg_);
   }
 
 private:

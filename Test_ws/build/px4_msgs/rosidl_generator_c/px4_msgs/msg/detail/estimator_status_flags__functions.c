@@ -22,7 +22,7 @@ px4_msgs__msg__EstimatorStatusFlags__init(px4_msgs__msg__EstimatorStatusFlags * 
   // control_status_changes
   // cs_tilt_align
   // cs_yaw_align
-  // cs_gps
+  // cs_gnss_pos
   // cs_opt_flow
   // cs_mag_hdg
   // cs_mag_3d
@@ -42,12 +42,12 @@ px4_msgs__msg__EstimatorStatusFlags__init(px4_msgs__msg__EstimatorStatusFlags * 
   // cs_fuse_aspd
   // cs_gnd_effect
   // cs_rng_stuck
-  // cs_gps_yaw
+  // cs_gnss_yaw
   // cs_mag_aligned_in_flight
   // cs_ev_vel
   // cs_synthetic_mag_z
   // cs_vehicle_at_rest
-  // cs_gps_yaw_fault
+  // cs_gnss_yaw_fault
   // cs_rng_fault
   // cs_inertial_dead_reckoning
   // cs_wind_dead_reckoning
@@ -59,6 +59,12 @@ px4_msgs__msg__EstimatorStatusFlags__init(px4_msgs__msg__EstimatorStatusFlags * 
   // cs_ev_yaw_fault
   // cs_mag_heading_consistent
   // cs_aux_gpos
+  // cs_rng_terrain
+  // cs_opt_flow_terrain
+  // cs_valid_fake_pos
+  // cs_constant_pos
+  // cs_baro_fault
+  // cs_gnss_vel
   // fault_status_changes
   // fs_bad_mag_x
   // fs_bad_mag_y
@@ -69,7 +75,6 @@ px4_msgs__msg__EstimatorStatusFlags__init(px4_msgs__msg__EstimatorStatusFlags * 
   // fs_bad_sideslip
   // fs_bad_optflow_x
   // fs_bad_optflow_y
-  // fs_bad_acc_bias
   // fs_bad_acc_vertical
   // fs_bad_acc_clipping
   // innovation_fault_status_changes
@@ -97,7 +102,7 @@ px4_msgs__msg__EstimatorStatusFlags__fini(px4_msgs__msg__EstimatorStatusFlags * 
   // control_status_changes
   // cs_tilt_align
   // cs_yaw_align
-  // cs_gps
+  // cs_gnss_pos
   // cs_opt_flow
   // cs_mag_hdg
   // cs_mag_3d
@@ -117,12 +122,12 @@ px4_msgs__msg__EstimatorStatusFlags__fini(px4_msgs__msg__EstimatorStatusFlags * 
   // cs_fuse_aspd
   // cs_gnd_effect
   // cs_rng_stuck
-  // cs_gps_yaw
+  // cs_gnss_yaw
   // cs_mag_aligned_in_flight
   // cs_ev_vel
   // cs_synthetic_mag_z
   // cs_vehicle_at_rest
-  // cs_gps_yaw_fault
+  // cs_gnss_yaw_fault
   // cs_rng_fault
   // cs_inertial_dead_reckoning
   // cs_wind_dead_reckoning
@@ -134,6 +139,12 @@ px4_msgs__msg__EstimatorStatusFlags__fini(px4_msgs__msg__EstimatorStatusFlags * 
   // cs_ev_yaw_fault
   // cs_mag_heading_consistent
   // cs_aux_gpos
+  // cs_rng_terrain
+  // cs_opt_flow_terrain
+  // cs_valid_fake_pos
+  // cs_constant_pos
+  // cs_baro_fault
+  // cs_gnss_vel
   // fault_status_changes
   // fs_bad_mag_x
   // fs_bad_mag_y
@@ -144,7 +155,6 @@ px4_msgs__msg__EstimatorStatusFlags__fini(px4_msgs__msg__EstimatorStatusFlags * 
   // fs_bad_sideslip
   // fs_bad_optflow_x
   // fs_bad_optflow_y
-  // fs_bad_acc_bias
   // fs_bad_acc_vertical
   // fs_bad_acc_clipping
   // innovation_fault_status_changes
@@ -186,8 +196,8 @@ px4_msgs__msg__EstimatorStatusFlags__are_equal(const px4_msgs__msg__EstimatorSta
   if (lhs->cs_yaw_align != rhs->cs_yaw_align) {
     return false;
   }
-  // cs_gps
-  if (lhs->cs_gps != rhs->cs_gps) {
+  // cs_gnss_pos
+  if (lhs->cs_gnss_pos != rhs->cs_gnss_pos) {
     return false;
   }
   // cs_opt_flow
@@ -266,8 +276,8 @@ px4_msgs__msg__EstimatorStatusFlags__are_equal(const px4_msgs__msg__EstimatorSta
   if (lhs->cs_rng_stuck != rhs->cs_rng_stuck) {
     return false;
   }
-  // cs_gps_yaw
-  if (lhs->cs_gps_yaw != rhs->cs_gps_yaw) {
+  // cs_gnss_yaw
+  if (lhs->cs_gnss_yaw != rhs->cs_gnss_yaw) {
     return false;
   }
   // cs_mag_aligned_in_flight
@@ -286,8 +296,8 @@ px4_msgs__msg__EstimatorStatusFlags__are_equal(const px4_msgs__msg__EstimatorSta
   if (lhs->cs_vehicle_at_rest != rhs->cs_vehicle_at_rest) {
     return false;
   }
-  // cs_gps_yaw_fault
-  if (lhs->cs_gps_yaw_fault != rhs->cs_gps_yaw_fault) {
+  // cs_gnss_yaw_fault
+  if (lhs->cs_gnss_yaw_fault != rhs->cs_gnss_yaw_fault) {
     return false;
   }
   // cs_rng_fault
@@ -334,6 +344,30 @@ px4_msgs__msg__EstimatorStatusFlags__are_equal(const px4_msgs__msg__EstimatorSta
   if (lhs->cs_aux_gpos != rhs->cs_aux_gpos) {
     return false;
   }
+  // cs_rng_terrain
+  if (lhs->cs_rng_terrain != rhs->cs_rng_terrain) {
+    return false;
+  }
+  // cs_opt_flow_terrain
+  if (lhs->cs_opt_flow_terrain != rhs->cs_opt_flow_terrain) {
+    return false;
+  }
+  // cs_valid_fake_pos
+  if (lhs->cs_valid_fake_pos != rhs->cs_valid_fake_pos) {
+    return false;
+  }
+  // cs_constant_pos
+  if (lhs->cs_constant_pos != rhs->cs_constant_pos) {
+    return false;
+  }
+  // cs_baro_fault
+  if (lhs->cs_baro_fault != rhs->cs_baro_fault) {
+    return false;
+  }
+  // cs_gnss_vel
+  if (lhs->cs_gnss_vel != rhs->cs_gnss_vel) {
+    return false;
+  }
   // fault_status_changes
   if (lhs->fault_status_changes != rhs->fault_status_changes) {
     return false;
@@ -372,10 +406,6 @@ px4_msgs__msg__EstimatorStatusFlags__are_equal(const px4_msgs__msg__EstimatorSta
   }
   // fs_bad_optflow_y
   if (lhs->fs_bad_optflow_y != rhs->fs_bad_optflow_y) {
-    return false;
-  }
-  // fs_bad_acc_bias
-  if (lhs->fs_bad_acc_bias != rhs->fs_bad_acc_bias) {
     return false;
   }
   // fs_bad_acc_vertical
@@ -451,8 +481,8 @@ px4_msgs__msg__EstimatorStatusFlags__copy(
   output->cs_tilt_align = input->cs_tilt_align;
   // cs_yaw_align
   output->cs_yaw_align = input->cs_yaw_align;
-  // cs_gps
-  output->cs_gps = input->cs_gps;
+  // cs_gnss_pos
+  output->cs_gnss_pos = input->cs_gnss_pos;
   // cs_opt_flow
   output->cs_opt_flow = input->cs_opt_flow;
   // cs_mag_hdg
@@ -491,8 +521,8 @@ px4_msgs__msg__EstimatorStatusFlags__copy(
   output->cs_gnd_effect = input->cs_gnd_effect;
   // cs_rng_stuck
   output->cs_rng_stuck = input->cs_rng_stuck;
-  // cs_gps_yaw
-  output->cs_gps_yaw = input->cs_gps_yaw;
+  // cs_gnss_yaw
+  output->cs_gnss_yaw = input->cs_gnss_yaw;
   // cs_mag_aligned_in_flight
   output->cs_mag_aligned_in_flight = input->cs_mag_aligned_in_flight;
   // cs_ev_vel
@@ -501,8 +531,8 @@ px4_msgs__msg__EstimatorStatusFlags__copy(
   output->cs_synthetic_mag_z = input->cs_synthetic_mag_z;
   // cs_vehicle_at_rest
   output->cs_vehicle_at_rest = input->cs_vehicle_at_rest;
-  // cs_gps_yaw_fault
-  output->cs_gps_yaw_fault = input->cs_gps_yaw_fault;
+  // cs_gnss_yaw_fault
+  output->cs_gnss_yaw_fault = input->cs_gnss_yaw_fault;
   // cs_rng_fault
   output->cs_rng_fault = input->cs_rng_fault;
   // cs_inertial_dead_reckoning
@@ -525,6 +555,18 @@ px4_msgs__msg__EstimatorStatusFlags__copy(
   output->cs_mag_heading_consistent = input->cs_mag_heading_consistent;
   // cs_aux_gpos
   output->cs_aux_gpos = input->cs_aux_gpos;
+  // cs_rng_terrain
+  output->cs_rng_terrain = input->cs_rng_terrain;
+  // cs_opt_flow_terrain
+  output->cs_opt_flow_terrain = input->cs_opt_flow_terrain;
+  // cs_valid_fake_pos
+  output->cs_valid_fake_pos = input->cs_valid_fake_pos;
+  // cs_constant_pos
+  output->cs_constant_pos = input->cs_constant_pos;
+  // cs_baro_fault
+  output->cs_baro_fault = input->cs_baro_fault;
+  // cs_gnss_vel
+  output->cs_gnss_vel = input->cs_gnss_vel;
   // fault_status_changes
   output->fault_status_changes = input->fault_status_changes;
   // fs_bad_mag_x
@@ -545,8 +587,6 @@ px4_msgs__msg__EstimatorStatusFlags__copy(
   output->fs_bad_optflow_x = input->fs_bad_optflow_x;
   // fs_bad_optflow_y
   output->fs_bad_optflow_y = input->fs_bad_optflow_y;
-  // fs_bad_acc_bias
-  output->fs_bad_acc_bias = input->fs_bad_acc_bias;
   // fs_bad_acc_vertical
   output->fs_bad_acc_vertical = input->fs_bad_acc_vertical;
   // fs_bad_acc_clipping

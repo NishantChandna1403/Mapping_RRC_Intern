@@ -108,6 +108,15 @@ enum
   px4_msgs__msg__EstimatorStatus__GPS_CHECK_FAIL_MAX_VERT_SPD_ERR = 9
 };
 
+/// Constant 'GPS_CHECK_FAIL_SPOOFED'.
+/**
+  * 10 : GPS signal is spoofed
+ */
+enum
+{
+  px4_msgs__msg__EstimatorStatus__GPS_CHECK_FAIL_SPOOFED = 10
+};
+
 /// Constant 'CS_TILT_ALIGN'.
 /**
   * 0 - true if the filter tilt alignment is complete
@@ -126,13 +135,13 @@ enum
   px4_msgs__msg__EstimatorStatus__CS_YAW_ALIGN = 1
 };
 
-/// Constant 'CS_GPS'.
+/// Constant 'CS_GNSS_POS'.
 /**
-  * 2 - true if GPS measurements are being fused
+  * 2 - true if GNSS position measurements are being fused
  */
 enum
 {
-  px4_msgs__msg__EstimatorStatus__CS_GPS = 2
+  px4_msgs__msg__EstimatorStatus__CS_GNSS_POS = 2
 };
 
 /// Constant 'CS_OPT_FLOW'.
@@ -191,7 +200,7 @@ enum
 
 /// Constant 'CS_BARO_HGT'.
 /**
-  * 9 - true when baro height is being fused as a primary height reference
+  * 9 - true when baro data is being fused
  */
 enum
 {
@@ -200,7 +209,7 @@ enum
 
 /// Constant 'CS_RNG_HGT'.
 /**
-  * 10 - true when range finder height is being fused as a primary height reference
+  * 10 - true when range finder data is being fused for height aiding
  */
 enum
 {
@@ -209,7 +218,7 @@ enum
 
 /// Constant 'CS_GPS_HGT'.
 /**
-  * 11 - true when GPS height is being fused as a primary height reference
+  * 11 - true when GPS altitude is being fused
  */
 enum
 {
@@ -369,6 +378,15 @@ enum
   px4_msgs__msg__EstimatorStatus__CS_RNG_FAULT = 28
 };
 
+/// Constant 'CS_GNSS_VEL'.
+/**
+  * 44 - true if GNSS velocity measurements are being fused
+ */
+enum
+{
+  px4_msgs__msg__EstimatorStatus__CS_GNSS_VEL = 44
+};
+
 /// Struct defined in msg/EstimatorStatus in the package px4_msgs.
 typedef struct px4_msgs__msg__EstimatorStatus
 {
@@ -406,33 +424,19 @@ typedef struct px4_msgs__msg__EstimatorStatus
   float pos_horiz_accuracy;
   /// 1-Sigma estimated vertical position accuracy relative to the estimators origin (m)
   float pos_vert_accuracy;
-  /// Bitmask to indicate pass/fail status of innovation consistency checks
-  uint16_t innovation_check_flags;
-  /// 0 - true if velocity observations have been rejected
-  /// 1 - true if horizontal position observations have been rejected
-  /// 2 - true if true if vertical position observations have been rejected
-  /// 3 - true if the X magnetometer observation has been rejected
-  /// 4 - true if the Y magnetometer observation has been rejected
-  /// 5 - true if the Z magnetometer observation has been rejected
-  /// 6 - true if the yaw observation has been rejected
-  /// 7 - true if the airspeed observation has been rejected
-  /// 8 - true if the synthetic sideslip observation has been rejected
-  /// 9 - true if the height above ground observation has been rejected
-  /// 10 - true if the X optical flow observation has been rejected
-  /// 11 - true if the Y optical flow observation has been rejected
-  /// ratio of the largest magnetometer innovation component to the innovation test limit
-  float mag_test_ratio;
-  /// ratio of the largest velocity innovation component to the innovation test limit
+  /// low-pass filtered ratio of the largest heading innovation component to the innovation test limit
+  float hdg_test_ratio;
+  /// low-pass filtered ratio of the largest velocity innovation component to the innovation test limit
   float vel_test_ratio;
-  /// ratio of the largest horizontal position innovation component to the innovation test limit
+  /// low-pass filtered ratio of the largest horizontal position innovation component to the innovation test limit
   float pos_test_ratio;
-  /// ratio of the vertical position innovation to the innovation test limit
+  /// low-pass filtered ratio of the vertical position innovation to the innovation test limit
   float hgt_test_ratio;
-  /// ratio of the true airspeed innovation to the innovation test limit
+  /// low-pass filtered ratio of the true airspeed innovation to the innovation test limit
   float tas_test_ratio;
-  /// ratio of the height above ground innovation to the innovation test limit
+  /// low-pass filtered ratio of the height above ground innovation to the innovation test limit
   float hagl_test_ratio;
-  /// ratio of the synthetic sideslip innovation to the innovation test limit
+  /// low-pass filtered ratio of the synthetic sideslip innovation to the innovation test limit
   float beta_test_ratio;
   /// Bitmask indicating which filter kinematic state outputs are valid for flight control use.
   uint16_t solution_status_flags;
@@ -461,9 +465,10 @@ typedef struct px4_msgs__msg__EstimatorStatus
   /// cumulative amount of time in seconds that the EKF inertial calculation has slipped relative to system time
   float time_slip;
   bool pre_flt_fail_innov_heading;
+  bool pre_flt_fail_innov_height;
+  bool pre_flt_fail_innov_pos_horiz;
   bool pre_flt_fail_innov_vel_horiz;
   bool pre_flt_fail_innov_vel_vert;
-  bool pre_flt_fail_innov_height;
   bool pre_flt_fail_mag_field_disturbed;
   uint32_t accel_device_id;
   uint32_t gyro_device_id;

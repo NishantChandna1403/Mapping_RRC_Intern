@@ -6,10 +6,11 @@
 module px4_msgs {
   module msg {
     module VehicleStatus_Constants {
+      const uint32 MESSAGE_VERSION = 1;
       const uint8 ARMING_STATE_DISARMED = 1;
       const uint8 ARMING_STATE_ARMED = 2;
       const uint8 ARM_DISARM_REASON_TRANSITION_TO_STANDBY = 0;
-      const uint8 ARM_DISARM_REASON_RC_STICK = 1;
+      const uint8 ARM_DISARM_REASON_STICK_GESTURE = 1;
       const uint8 ARM_DISARM_REASON_RC_SWITCH = 2;
       const uint8 ARM_DISARM_REASON_COMMAND_INTERNAL = 3;
       const uint8 ARM_DISARM_REASON_COMMAND_EXTERNAL = 4;
@@ -113,11 +114,9 @@ module px4_msgs {
       const uint16 FAILURE_MOTOR = 128;
       const uint8 HIL_STATE_OFF = 0;
       const uint8 HIL_STATE_ON = 1;
-      const uint8 VEHICLE_TYPE_UNKNOWN = 0;
-      const uint8 VEHICLE_TYPE_ROTARY_WING = 1;
-      const uint8 VEHICLE_TYPE_FIXED_WING = 2;
-      const uint8 VEHICLE_TYPE_ROVER = 3;
-      const uint8 VEHICLE_TYPE_AIRSHIP = 4;
+      const uint8 VEHICLE_TYPE_ROTARY_WING = 0;
+      const uint8 VEHICLE_TYPE_FIXED_WING = 1;
+      const uint8 VEHICLE_TYPE_ROVER = 2;
       const uint8 FAILSAFE_DEFER_STATE_DISABLED = 0;
       const uint8 FAILSAFE_DEFER_STATE_ENABLED = 1;
       @verbatim (language="comment", text=
@@ -176,7 +175,7 @@ module px4_msgs {
       uint8 hil_state;
 
       @verbatim (language="comment", text=
-        "If it's a VTOL, then the value will be VEHICLE_TYPE_ROTARY_WING while flying as a multicopter, and VEHICLE_TYPE_FIXED_WING when flying as a fixed-wing")
+        "Current vehicle locomotion method. A vehicle can have different methods (e.g. VTOL transitions from RW to FW method)")
       uint8 vehicle_type;
 
       @verbatim (language="comment", text=
@@ -257,14 +256,6 @@ module px4_msgs {
       boolean parachute_system_present;
 
       boolean parachute_system_healthy;
-
-      @verbatim (language="comment", text=
-        "Set to true if avoidance system is enabled via COM_OBS_AVOID parameter")
-      boolean avoidance_system_required;
-
-      @verbatim (language="comment", text=
-        "Status of the obstacle avoidance system")
-      boolean avoidance_system_valid;
 
       boolean rc_calibration_in_progress;
 

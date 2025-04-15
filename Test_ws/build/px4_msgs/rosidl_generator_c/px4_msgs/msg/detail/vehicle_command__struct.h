@@ -17,6 +17,12 @@ extern "C"
 
 // Constants defined in the message
 
+/// Constant 'MESSAGE_VERSION'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__MESSAGE_VERSION = 0ul
+};
+
 /// Constant 'VEHICLE_CMD_CUSTOM_0'.
 /**
   * test command
@@ -890,6 +896,12 @@ enum
   px4_msgs__msg__VehicleCommand__VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE = 43003
 };
 
+/// Constant 'VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE = 43004
+};
+
 /// Constant 'VEHICLE_CMD_PX4_INTERNAL_START'.
 /**
   * PX4 vehicle commands (beyond 16 bit mavlink commands)
@@ -1201,6 +1213,45 @@ enum
 enum
 {
   px4_msgs__msg__VehicleCommand__SPEED_TYPE_DESCEND_SPEED = 3
+};
+
+/// Constant 'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER'.
+/**
+  * used as param3 in CMD_DO_ORBIT
+ */
+enum
+{
+  px4_msgs__msg__VehicleCommand__ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER = 0
+};
+
+/// Constant 'ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING = 1
+};
+
+/// Constant 'ORBIT_YAW_BEHAVIOUR_UNCONTROLLED'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__ORBIT_YAW_BEHAVIOUR_UNCONTROLLED = 2
+};
+
+/// Constant 'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE = 3
+};
+
+/// Constant 'ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED = 4
+};
+
+/// Constant 'ORBIT_YAW_BEHAVIOUR_UNCHANGED'.
+enum
+{
+  px4_msgs__msg__VehicleCommand__ORBIT_YAW_BEHAVIOUR_UNCHANGED = 5
 };
 
 /// Constant 'ARMING_ACTION_DISARM'.

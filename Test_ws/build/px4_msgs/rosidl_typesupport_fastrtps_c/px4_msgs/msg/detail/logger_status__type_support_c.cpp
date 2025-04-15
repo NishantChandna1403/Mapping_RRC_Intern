@@ -64,6 +64,11 @@ static bool _LoggerStatus__cdr_serialize(
     cdr << ros_message->backend;
   }
 
+  // Field name: is_logging
+  {
+    cdr << (ros_message->is_logging ? true : false);
+  }
+
   // Field name: total_written_kb
   {
     cdr << ros_message->total_written_kb;
@@ -124,6 +129,13 @@ static bool _LoggerStatus__cdr_deserialize(
   // Field name: backend
   {
     cdr >> ros_message->backend;
+  }
+
+  // Field name: is_logging
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->is_logging = tmp ? true : false;
   }
 
   // Field name: total_written_kb
@@ -193,6 +205,12 @@ size_t get_serialized_size_px4_msgs__msg__LoggerStatus(
   // field.name backend
   {
     size_t item_size = sizeof(ros_message->backend);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name is_logging
+  {
+    size_t item_size = sizeof(ros_message->is_logging);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -283,6 +301,13 @@ size_t max_serialized_size_px4_msgs__msg__LoggerStatus(
     current_alignment += array_size * sizeof(uint8_t);
   }
   // member: backend
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: is_logging
   {
     size_t array_size = 1;
 

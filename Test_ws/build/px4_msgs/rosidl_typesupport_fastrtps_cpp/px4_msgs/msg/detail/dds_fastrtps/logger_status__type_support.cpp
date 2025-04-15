@@ -38,6 +38,8 @@ cdr_serialize(
   cdr << ros_message.type;
   // Member: backend
   cdr << ros_message.backend;
+  // Member: is_logging
+  cdr << (ros_message.is_logging ? true : false);
   // Member: total_written_kb
   cdr << ros_message.total_written_kb;
   // Member: write_rate_kb_s
@@ -69,6 +71,13 @@ cdr_deserialize(
 
   // Member: backend
   cdr >> ros_message.backend;
+
+  // Member: is_logging
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.is_logging = tmp ? true : false;
+  }
 
   // Member: total_written_kb
   cdr >> ros_message.total_written_kb;
@@ -122,6 +131,12 @@ get_serialized_size(
   // Member: backend
   {
     size_t item_size = sizeof(ros_message.backend);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: is_logging
+  {
+    size_t item_size = sizeof(ros_message.is_logging);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -209,6 +224,14 @@ max_serialized_size_LoggerStatus(
   }
 
   // Member: backend
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: is_logging
   {
     size_t array_size = 1;
 

@@ -125,8 +125,10 @@ typedef struct px4_msgs__msg__PositionSetpoint
   float loiter_orientation;
   /// loitern pattern to follow
   uint8_t loiter_pattern;
-  /// navigation acceptance_radius if we're doing waypoint navigation
+  /// horizontal acceptance_radius (meters)
   float acceptance_radius;
+  /// vertical acceptance radius, only used for fixed wing guidance, NAN = let guidance choose (meters)
+  float alt_acceptance_radius;
   /// the generally desired cruising speed (not a hard constraint)
   float cruising_speed;
   /// commands the vehicle to glide if the capability is available (fixed wing only)

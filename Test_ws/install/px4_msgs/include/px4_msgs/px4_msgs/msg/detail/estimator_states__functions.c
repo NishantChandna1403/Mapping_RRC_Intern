@@ -53,7 +53,7 @@ px4_msgs__msg__EstimatorStates__are_equal(const px4_msgs__msg__EstimatorStates *
     return false;
   }
   // states
-  for (size_t i = 0; i < 24; ++i) {
+  for (size_t i = 0; i < 25; ++i) {
     if (lhs->states[i] != rhs->states[i]) {
       return false;
     }
@@ -63,7 +63,7 @@ px4_msgs__msg__EstimatorStates__are_equal(const px4_msgs__msg__EstimatorStates *
     return false;
   }
   // covariances
-  for (size_t i = 0; i < 23; ++i) {
+  for (size_t i = 0; i < 24; ++i) {
     if (lhs->covariances[i] != rhs->covariances[i]) {
       return false;
     }
@@ -84,13 +84,13 @@ px4_msgs__msg__EstimatorStates__copy(
   // timestamp_sample
   output->timestamp_sample = input->timestamp_sample;
   // states
-  for (size_t i = 0; i < 24; ++i) {
+  for (size_t i = 0; i < 25; ++i) {
     output->states[i] = input->states[i];
   }
   // n_states
   output->n_states = input->n_states;
   // covariances
-  for (size_t i = 0; i < 23; ++i) {
+  for (size_t i = 0; i < 24; ++i) {
     output->covariances[i] = input->covariances[i];
   }
   return true;

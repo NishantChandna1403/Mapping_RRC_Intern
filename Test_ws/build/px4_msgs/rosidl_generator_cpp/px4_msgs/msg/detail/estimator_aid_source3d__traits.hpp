@@ -114,6 +114,24 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: innovation_filtered
+  {
+    if (msg.innovation_filtered.size() == 0) {
+      out << "innovation_filtered: []";
+    } else {
+      out << "innovation_filtered: [";
+      size_t pending_items = msg.innovation_filtered.size();
+      for (auto item : msg.innovation_filtered) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
   // member: innovation_variance
   {
     if (msg.innovation_variance.size() == 0) {
@@ -140,6 +158,24 @@ inline void to_flow_style_yaml(
       out << "test_ratio: [";
       size_t pending_items = msg.test_ratio.size();
       for (auto item : msg.test_ratio) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: test_ratio_filtered
+  {
+    if (msg.test_ratio_filtered.size() == 0) {
+      out << "test_ratio_filtered: []";
+    } else {
+      out << "test_ratio_filtered: [";
+      size_t pending_items = msg.test_ratio_filtered.size();
+      for (auto item : msg.test_ratio_filtered) {
         rosidl_generator_traits::value_to_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -279,6 +315,26 @@ inline void to_block_style_yaml(
     }
   }
 
+  // member: innovation_filtered
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.innovation_filtered.size() == 0) {
+      out << "innovation_filtered: []\n";
+    } else {
+      out << "innovation_filtered:\n";
+      for (auto item : msg.innovation_filtered) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
   // member: innovation_variance
   {
     if (indentation > 0) {
@@ -309,6 +365,26 @@ inline void to_block_style_yaml(
     } else {
       out << "test_ratio:\n";
       for (auto item : msg.test_ratio) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: test_ratio_filtered
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.test_ratio_filtered.size() == 0) {
+      out << "test_ratio_filtered: []\n";
+    } else {
+      out << "test_ratio_filtered:\n";
+      for (auto item : msg.test_ratio_filtered) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

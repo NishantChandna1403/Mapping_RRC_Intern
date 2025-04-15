@@ -35,9 +35,10 @@ class Metaclass_EstimatorStatus(type):
         'GPS_CHECK_FAIL_MAX_VERT_DRIFT': 7,
         'GPS_CHECK_FAIL_MAX_HORZ_SPD_ERR': 8,
         'GPS_CHECK_FAIL_MAX_VERT_SPD_ERR': 9,
+        'GPS_CHECK_FAIL_SPOOFED': 10,
         'CS_TILT_ALIGN': 0,
         'CS_YAW_ALIGN': 1,
-        'CS_GPS': 2,
+        'CS_GNSS_POS': 2,
         'CS_OPT_FLOW': 3,
         'CS_MAG_HDG': 4,
         'CS_MAG_3D': 5,
@@ -64,6 +65,7 @@ class Metaclass_EstimatorStatus(type):
         'CS_VEHICLE_AT_REST': 26,
         'CS_GPS_YAW_FAULT': 27,
         'CS_RNG_FAULT': 28,
+        'CS_GNSS_VEL': 44,
     }
 
     @classmethod
@@ -102,9 +104,10 @@ class Metaclass_EstimatorStatus(type):
             'GPS_CHECK_FAIL_MAX_VERT_DRIFT': cls.__constants['GPS_CHECK_FAIL_MAX_VERT_DRIFT'],
             'GPS_CHECK_FAIL_MAX_HORZ_SPD_ERR': cls.__constants['GPS_CHECK_FAIL_MAX_HORZ_SPD_ERR'],
             'GPS_CHECK_FAIL_MAX_VERT_SPD_ERR': cls.__constants['GPS_CHECK_FAIL_MAX_VERT_SPD_ERR'],
+            'GPS_CHECK_FAIL_SPOOFED': cls.__constants['GPS_CHECK_FAIL_SPOOFED'],
             'CS_TILT_ALIGN': cls.__constants['CS_TILT_ALIGN'],
             'CS_YAW_ALIGN': cls.__constants['CS_YAW_ALIGN'],
-            'CS_GPS': cls.__constants['CS_GPS'],
+            'CS_GNSS_POS': cls.__constants['CS_GNSS_POS'],
             'CS_OPT_FLOW': cls.__constants['CS_OPT_FLOW'],
             'CS_MAG_HDG': cls.__constants['CS_MAG_HDG'],
             'CS_MAG_3D': cls.__constants['CS_MAG_3D'],
@@ -131,6 +134,7 @@ class Metaclass_EstimatorStatus(type):
             'CS_VEHICLE_AT_REST': cls.__constants['CS_VEHICLE_AT_REST'],
             'CS_GPS_YAW_FAULT': cls.__constants['CS_GPS_YAW_FAULT'],
             'CS_RNG_FAULT': cls.__constants['CS_RNG_FAULT'],
+            'CS_GNSS_VEL': cls.__constants['CS_GNSS_VEL'],
         }
 
     @property
@@ -184,6 +188,11 @@ class Metaclass_EstimatorStatus(type):
         return Metaclass_EstimatorStatus.__constants['GPS_CHECK_FAIL_MAX_VERT_SPD_ERR']
 
     @property
+    def GPS_CHECK_FAIL_SPOOFED(self):
+        """Message constant 'GPS_CHECK_FAIL_SPOOFED'."""
+        return Metaclass_EstimatorStatus.__constants['GPS_CHECK_FAIL_SPOOFED']
+
+    @property
     def CS_TILT_ALIGN(self):
         """Message constant 'CS_TILT_ALIGN'."""
         return Metaclass_EstimatorStatus.__constants['CS_TILT_ALIGN']
@@ -194,9 +203,9 @@ class Metaclass_EstimatorStatus(type):
         return Metaclass_EstimatorStatus.__constants['CS_YAW_ALIGN']
 
     @property
-    def CS_GPS(self):
-        """Message constant 'CS_GPS'."""
-        return Metaclass_EstimatorStatus.__constants['CS_GPS']
+    def CS_GNSS_POS(self):
+        """Message constant 'CS_GNSS_POS'."""
+        return Metaclass_EstimatorStatus.__constants['CS_GNSS_POS']
 
     @property
     def CS_OPT_FLOW(self):
@@ -328,6 +337,11 @@ class Metaclass_EstimatorStatus(type):
         """Message constant 'CS_RNG_FAULT'."""
         return Metaclass_EstimatorStatus.__constants['CS_RNG_FAULT']
 
+    @property
+    def CS_GNSS_VEL(self):
+        """Message constant 'CS_GNSS_VEL'."""
+        return Metaclass_EstimatorStatus.__constants['CS_GNSS_VEL']
+
 
 class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
     """
@@ -344,9 +358,10 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
       GPS_CHECK_FAIL_MAX_VERT_DRIFT
       GPS_CHECK_FAIL_MAX_HORZ_SPD_ERR
       GPS_CHECK_FAIL_MAX_VERT_SPD_ERR
+      GPS_CHECK_FAIL_SPOOFED
       CS_TILT_ALIGN
       CS_YAW_ALIGN
-      CS_GPS
+      CS_GNSS_POS
       CS_OPT_FLOW
       CS_MAG_HDG
       CS_MAG_3D
@@ -373,6 +388,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
       CS_VEHICLE_AT_REST
       CS_GPS_YAW_FAULT
       CS_RNG_FAULT
+      CS_GNSS_VEL
     """
 
     __slots__ = [
@@ -384,8 +400,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         '_filter_fault_flags',
         '_pos_horiz_accuracy',
         '_pos_vert_accuracy',
-        '_innovation_check_flags',
-        '_mag_test_ratio',
+        '_hdg_test_ratio',
         '_vel_test_ratio',
         '_pos_test_ratio',
         '_hgt_test_ratio',
@@ -400,9 +415,10 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         '_reset_count_quat',
         '_time_slip',
         '_pre_flt_fail_innov_heading',
+        '_pre_flt_fail_innov_height',
+        '_pre_flt_fail_innov_pos_horiz',
         '_pre_flt_fail_innov_vel_horiz',
         '_pre_flt_fail_innov_vel_vert',
-        '_pre_flt_fail_innov_height',
         '_pre_flt_fail_mag_field_disturbed',
         '_accel_device_id',
         '_gyro_device_id',
@@ -425,8 +441,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         'filter_fault_flags': 'uint32',
         'pos_horiz_accuracy': 'float',
         'pos_vert_accuracy': 'float',
-        'innovation_check_flags': 'uint16',
-        'mag_test_ratio': 'float',
+        'hdg_test_ratio': 'float',
         'vel_test_ratio': 'float',
         'pos_test_ratio': 'float',
         'hgt_test_ratio': 'float',
@@ -441,9 +456,10 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         'reset_count_quat': 'uint8',
         'time_slip': 'float',
         'pre_flt_fail_innov_heading': 'boolean',
+        'pre_flt_fail_innov_height': 'boolean',
+        'pre_flt_fail_innov_pos_horiz': 'boolean',
         'pre_flt_fail_innov_vel_horiz': 'boolean',
         'pre_flt_fail_innov_vel_vert': 'boolean',
-        'pre_flt_fail_innov_height': 'boolean',
         'pre_flt_fail_mag_field_disturbed': 'boolean',
         'accel_device_id': 'uint32',
         'gyro_device_id': 'uint32',
@@ -466,7 +482,6 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -481,6 +496,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
@@ -514,8 +530,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         self.filter_fault_flags = kwargs.get('filter_fault_flags', int())
         self.pos_horiz_accuracy = kwargs.get('pos_horiz_accuracy', float())
         self.pos_vert_accuracy = kwargs.get('pos_vert_accuracy', float())
-        self.innovation_check_flags = kwargs.get('innovation_check_flags', int())
-        self.mag_test_ratio = kwargs.get('mag_test_ratio', float())
+        self.hdg_test_ratio = kwargs.get('hdg_test_ratio', float())
         self.vel_test_ratio = kwargs.get('vel_test_ratio', float())
         self.pos_test_ratio = kwargs.get('pos_test_ratio', float())
         self.hgt_test_ratio = kwargs.get('hgt_test_ratio', float())
@@ -530,9 +545,10 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         self.reset_count_quat = kwargs.get('reset_count_quat', int())
         self.time_slip = kwargs.get('time_slip', float())
         self.pre_flt_fail_innov_heading = kwargs.get('pre_flt_fail_innov_heading', bool())
+        self.pre_flt_fail_innov_height = kwargs.get('pre_flt_fail_innov_height', bool())
+        self.pre_flt_fail_innov_pos_horiz = kwargs.get('pre_flt_fail_innov_pos_horiz', bool())
         self.pre_flt_fail_innov_vel_horiz = kwargs.get('pre_flt_fail_innov_vel_horiz', bool())
         self.pre_flt_fail_innov_vel_vert = kwargs.get('pre_flt_fail_innov_vel_vert', bool())
-        self.pre_flt_fail_innov_height = kwargs.get('pre_flt_fail_innov_height', bool())
         self.pre_flt_fail_mag_field_disturbed = kwargs.get('pre_flt_fail_mag_field_disturbed', bool())
         self.accel_device_id = kwargs.get('accel_device_id', int())
         self.gyro_device_id = kwargs.get('gyro_device_id', int())
@@ -590,9 +606,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
             return False
         if self.pos_vert_accuracy != other.pos_vert_accuracy:
             return False
-        if self.innovation_check_flags != other.innovation_check_flags:
-            return False
-        if self.mag_test_ratio != other.mag_test_ratio:
+        if self.hdg_test_ratio != other.hdg_test_ratio:
             return False
         if self.vel_test_ratio != other.vel_test_ratio:
             return False
@@ -622,11 +636,13 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
             return False
         if self.pre_flt_fail_innov_heading != other.pre_flt_fail_innov_heading:
             return False
+        if self.pre_flt_fail_innov_height != other.pre_flt_fail_innov_height:
+            return False
+        if self.pre_flt_fail_innov_pos_horiz != other.pre_flt_fail_innov_pos_horiz:
+            return False
         if self.pre_flt_fail_innov_vel_horiz != other.pre_flt_fail_innov_vel_horiz:
             return False
         if self.pre_flt_fail_innov_vel_vert != other.pre_flt_fail_innov_vel_vert:
-            return False
-        if self.pre_flt_fail_innov_height != other.pre_flt_fail_innov_height:
             return False
         if self.pre_flt_fail_mag_field_disturbed != other.pre_flt_fail_mag_field_disturbed:
             return False
@@ -794,34 +810,19 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         self._pos_vert_accuracy = value
 
     @builtins.property
-    def innovation_check_flags(self):
-        """Message field 'innovation_check_flags'."""
-        return self._innovation_check_flags
+    def hdg_test_ratio(self):
+        """Message field 'hdg_test_ratio'."""
+        return self._hdg_test_ratio
 
-    @innovation_check_flags.setter
-    def innovation_check_flags(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'innovation_check_flags' field must be of type 'int'"
-            assert value >= 0 and value < 65536, \
-                "The 'innovation_check_flags' field must be an unsigned integer in [0, 65535]"
-        self._innovation_check_flags = value
-
-    @builtins.property
-    def mag_test_ratio(self):
-        """Message field 'mag_test_ratio'."""
-        return self._mag_test_ratio
-
-    @mag_test_ratio.setter
-    def mag_test_ratio(self, value):
+    @hdg_test_ratio.setter
+    def hdg_test_ratio(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'mag_test_ratio' field must be of type 'float'"
+                "The 'hdg_test_ratio' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'mag_test_ratio' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._mag_test_ratio = value
+                "The 'hdg_test_ratio' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hdg_test_ratio = value
 
     @builtins.property
     def vel_test_ratio(self):
@@ -1032,6 +1033,32 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         self._pre_flt_fail_innov_heading = value
 
     @builtins.property
+    def pre_flt_fail_innov_height(self):
+        """Message field 'pre_flt_fail_innov_height'."""
+        return self._pre_flt_fail_innov_height
+
+    @pre_flt_fail_innov_height.setter
+    def pre_flt_fail_innov_height(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'pre_flt_fail_innov_height' field must be of type 'bool'"
+        self._pre_flt_fail_innov_height = value
+
+    @builtins.property
+    def pre_flt_fail_innov_pos_horiz(self):
+        """Message field 'pre_flt_fail_innov_pos_horiz'."""
+        return self._pre_flt_fail_innov_pos_horiz
+
+    @pre_flt_fail_innov_pos_horiz.setter
+    def pre_flt_fail_innov_pos_horiz(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'pre_flt_fail_innov_pos_horiz' field must be of type 'bool'"
+        self._pre_flt_fail_innov_pos_horiz = value
+
+    @builtins.property
     def pre_flt_fail_innov_vel_horiz(self):
         """Message field 'pre_flt_fail_innov_vel_horiz'."""
         return self._pre_flt_fail_innov_vel_horiz
@@ -1056,19 +1083,6 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
                 isinstance(value, bool), \
                 "The 'pre_flt_fail_innov_vel_vert' field must be of type 'bool'"
         self._pre_flt_fail_innov_vel_vert = value
-
-    @builtins.property
-    def pre_flt_fail_innov_height(self):
-        """Message field 'pre_flt_fail_innov_height'."""
-        return self._pre_flt_fail_innov_height
-
-    @pre_flt_fail_innov_height.setter
-    def pre_flt_fail_innov_height(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, bool), \
-                "The 'pre_flt_fail_innov_height' field must be of type 'bool'"
-        self._pre_flt_fail_innov_height = value
 
     @builtins.property
     def pre_flt_fail_mag_field_disturbed(self):

@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target core[0m
-[ 14%] Built target metrics
-[ 21%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o[0m
-[ 35%] Built target odometry_node

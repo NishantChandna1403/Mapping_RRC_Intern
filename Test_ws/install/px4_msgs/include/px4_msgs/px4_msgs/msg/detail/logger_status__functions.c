@@ -20,6 +20,7 @@ px4_msgs__msg__LoggerStatus__init(px4_msgs__msg__LoggerStatus * msg)
   // timestamp
   // type
   // backend
+  // is_logging
   // total_written_kb
   // write_rate_kb_s
   // dropouts
@@ -39,6 +40,7 @@ px4_msgs__msg__LoggerStatus__fini(px4_msgs__msg__LoggerStatus * msg)
   // timestamp
   // type
   // backend
+  // is_logging
   // total_written_kb
   // write_rate_kb_s
   // dropouts
@@ -64,6 +66,10 @@ px4_msgs__msg__LoggerStatus__are_equal(const px4_msgs__msg__LoggerStatus * lhs, 
   }
   // backend
   if (lhs->backend != rhs->backend) {
+    return false;
+  }
+  // is_logging
+  if (lhs->is_logging != rhs->is_logging) {
     return false;
   }
   // total_written_kb
@@ -111,6 +117,8 @@ px4_msgs__msg__LoggerStatus__copy(
   output->type = input->type;
   // backend
   output->backend = input->backend;
+  // is_logging
+  output->is_logging = input->is_logging;
   // total_written_kb
   output->total_written_kb = input->total_written_kb;
   // write_rate_kb_s

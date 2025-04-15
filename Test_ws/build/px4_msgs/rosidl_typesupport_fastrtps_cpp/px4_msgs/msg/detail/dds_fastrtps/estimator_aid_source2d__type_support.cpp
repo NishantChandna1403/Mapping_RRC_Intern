@@ -54,6 +54,10 @@ cdr_serialize(
   {
     cdr << ros_message.innovation;
   }
+  // Member: innovation_filtered
+  {
+    cdr << ros_message.innovation_filtered;
+  }
   // Member: innovation_variance
   {
     cdr << ros_message.innovation_variance;
@@ -61,6 +65,10 @@ cdr_serialize(
   // Member: test_ratio
   {
     cdr << ros_message.test_ratio;
+  }
+  // Member: test_ratio_filtered
+  {
+    cdr << ros_message.test_ratio_filtered;
   }
   // Member: innovation_rejected
   cdr << (ros_message.innovation_rejected ? true : false);
@@ -105,6 +113,11 @@ cdr_deserialize(
     cdr >> ros_message.innovation;
   }
 
+  // Member: innovation_filtered
+  {
+    cdr >> ros_message.innovation_filtered;
+  }
+
   // Member: innovation_variance
   {
     cdr >> ros_message.innovation_variance;
@@ -113,6 +126,11 @@ cdr_deserialize(
   // Member: test_ratio
   {
     cdr >> ros_message.test_ratio;
+  }
+
+  // Member: test_ratio_filtered
+  {
+    cdr >> ros_message.test_ratio_filtered;
   }
 
   // Member: innovation_rejected
@@ -196,6 +214,13 @@ get_serialized_size(
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: innovation_filtered
+  {
+    size_t array_size = 2;
+    size_t item_size = sizeof(ros_message.innovation_filtered[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: innovation_variance
   {
     size_t array_size = 2;
@@ -207,6 +232,13 @@ get_serialized_size(
   {
     size_t array_size = 2;
     size_t item_size = sizeof(ros_message.test_ratio[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: test_ratio_filtered
+  {
+    size_t array_size = 2;
+    size_t item_size = sizeof(ros_message.test_ratio_filtered[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -294,9 +326,9 @@ max_serialized_size_EstimatorAidSource2d(
   {
     size_t array_size = 2;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   // Member: observation_variance
@@ -317,6 +349,15 @@ max_serialized_size_EstimatorAidSource2d(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: innovation_filtered
+  {
+    size_t array_size = 2;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Member: innovation_variance
   {
     size_t array_size = 2;
@@ -327,6 +368,15 @@ max_serialized_size_EstimatorAidSource2d(
   }
 
   // Member: test_ratio
+  {
+    size_t array_size = 2;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: test_ratio_filtered
   {
     size_t array_size = 2;
 

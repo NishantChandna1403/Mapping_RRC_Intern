@@ -54,11 +54,6 @@ static bool _NavigatorMissionItem__cdr_serialize(
     cdr << ros_message->timestamp;
   }
 
-  // Field name: instance_count
-  {
-    cdr << ros_message->instance_count;
-  }
-
   // Field name: sequence_current
   {
     cdr << ros_message->sequence_current;
@@ -154,11 +149,6 @@ static bool _NavigatorMissionItem__cdr_deserialize(
   // Field name: timestamp
   {
     cdr >> ros_message->timestamp;
-  }
-
-  // Field name: instance_count
-  {
-    cdr >> ros_message->instance_count;
   }
 
   // Field name: sequence_current
@@ -271,12 +261,6 @@ size_t get_serialized_size_px4_msgs__msg__NavigatorMissionItem(
   // field.name timestamp
   {
     size_t item_size = sizeof(ros_message->timestamp);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name instance_count
-  {
-    size_t item_size = sizeof(ros_message->instance_count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -412,14 +396,6 @@ size_t max_serialized_size_px4_msgs__msg__NavigatorMissionItem(
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: instance_count
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: sequence_current
   {

@@ -220,6 +220,8 @@ struct VehicleCommand_
   }
 
   // constant declarations
+  static constexpr uint32_t MESSAGE_VERSION =
+    0u;
   static constexpr uint16_t VEHICLE_CMD_CUSTOM_0 =
     0u;
   static constexpr uint16_t VEHICLE_CMD_CUSTOM_1 =
@@ -416,6 +418,8 @@ struct VehicleCommand_
     42600u;
   static constexpr uint16_t VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE =
     43003u;
+  static constexpr uint16_t VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE =
+    43004u;
   static constexpr uint32_t VEHICLE_CMD_PX4_INTERNAL_START =
     65537u;
   static constexpr uint32_t VEHICLE_CMD_SET_GPS_GLOBAL_ORIGIN =
@@ -506,6 +510,18 @@ struct VehicleCommand_
     2u;
   static constexpr uint8_t SPEED_TYPE_DESCEND_SPEED =
     3u;
+  static constexpr uint8_t ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER =
+    0u;
+  static constexpr uint8_t ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING =
+    1u;
+  static constexpr uint8_t ORBIT_YAW_BEHAVIOUR_UNCONTROLLED =
+    2u;
+  static constexpr uint8_t ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE =
+    3u;
+  static constexpr uint8_t ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED =
+    4u;
+  static constexpr uint8_t ORBIT_YAW_BEHAVIOUR_UNCHANGED =
+    5u;
   static constexpr int8_t ARMING_ACTION_DISARM =
     0;
   static constexpr int8_t ARMING_ACTION_ARM =
@@ -617,6 +633,11 @@ using VehicleCommand =
   px4_msgs::msg::VehicleCommand_<std::allocator<void>>;
 
 // constant definitions
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint32_t VehicleCommand_<ContainerAllocator>::MESSAGE_VERSION;
+#endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
@@ -1110,6 +1131,11 @@ constexpr uint16_t VehicleCommand_<ContainerAllocator>::VEHICLE_CMD_EXTERNAL_POS
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
+constexpr uint16_t VehicleCommand_<ContainerAllocator>::VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
 constexpr uint32_t VehicleCommand_<ContainerAllocator>::VEHICLE_CMD_PX4_INTERNAL_START;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
@@ -1331,6 +1357,36 @@ constexpr uint8_t VehicleCommand_<ContainerAllocator>::SPEED_TYPE_CLIMB_SPEED;
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr uint8_t VehicleCommand_<ContainerAllocator>::SPEED_TYPE_DESCEND_SPEED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleCommand_<ContainerAllocator>::ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleCommand_<ContainerAllocator>::ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleCommand_<ContainerAllocator>::ORBIT_YAW_BEHAVIOUR_UNCONTROLLED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleCommand_<ContainerAllocator>::ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleCommand_<ContainerAllocator>::ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t VehicleCommand_<ContainerAllocator>::ORBIT_YAW_BEHAVIOUR_UNCHANGED;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17

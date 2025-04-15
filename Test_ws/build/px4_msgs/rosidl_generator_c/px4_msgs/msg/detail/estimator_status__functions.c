@@ -25,8 +25,7 @@ px4_msgs__msg__EstimatorStatus__init(px4_msgs__msg__EstimatorStatus * msg)
   // filter_fault_flags
   // pos_horiz_accuracy
   // pos_vert_accuracy
-  // innovation_check_flags
-  // mag_test_ratio
+  // hdg_test_ratio
   // vel_test_ratio
   // pos_test_ratio
   // hgt_test_ratio
@@ -41,9 +40,10 @@ px4_msgs__msg__EstimatorStatus__init(px4_msgs__msg__EstimatorStatus * msg)
   // reset_count_quat
   // time_slip
   // pre_flt_fail_innov_heading
+  // pre_flt_fail_innov_height
+  // pre_flt_fail_innov_pos_horiz
   // pre_flt_fail_innov_vel_horiz
   // pre_flt_fail_innov_vel_vert
-  // pre_flt_fail_innov_height
   // pre_flt_fail_mag_field_disturbed
   // accel_device_id
   // gyro_device_id
@@ -72,8 +72,7 @@ px4_msgs__msg__EstimatorStatus__fini(px4_msgs__msg__EstimatorStatus * msg)
   // filter_fault_flags
   // pos_horiz_accuracy
   // pos_vert_accuracy
-  // innovation_check_flags
-  // mag_test_ratio
+  // hdg_test_ratio
   // vel_test_ratio
   // pos_test_ratio
   // hgt_test_ratio
@@ -88,9 +87,10 @@ px4_msgs__msg__EstimatorStatus__fini(px4_msgs__msg__EstimatorStatus * msg)
   // reset_count_quat
   // time_slip
   // pre_flt_fail_innov_heading
+  // pre_flt_fail_innov_height
+  // pre_flt_fail_innov_pos_horiz
   // pre_flt_fail_innov_vel_horiz
   // pre_flt_fail_innov_vel_vert
-  // pre_flt_fail_innov_height
   // pre_flt_fail_mag_field_disturbed
   // accel_device_id
   // gyro_device_id
@@ -144,12 +144,8 @@ px4_msgs__msg__EstimatorStatus__are_equal(const px4_msgs__msg__EstimatorStatus *
   if (lhs->pos_vert_accuracy != rhs->pos_vert_accuracy) {
     return false;
   }
-  // innovation_check_flags
-  if (lhs->innovation_check_flags != rhs->innovation_check_flags) {
-    return false;
-  }
-  // mag_test_ratio
-  if (lhs->mag_test_ratio != rhs->mag_test_ratio) {
+  // hdg_test_ratio
+  if (lhs->hdg_test_ratio != rhs->hdg_test_ratio) {
     return false;
   }
   // vel_test_ratio
@@ -208,16 +204,20 @@ px4_msgs__msg__EstimatorStatus__are_equal(const px4_msgs__msg__EstimatorStatus *
   if (lhs->pre_flt_fail_innov_heading != rhs->pre_flt_fail_innov_heading) {
     return false;
   }
+  // pre_flt_fail_innov_height
+  if (lhs->pre_flt_fail_innov_height != rhs->pre_flt_fail_innov_height) {
+    return false;
+  }
+  // pre_flt_fail_innov_pos_horiz
+  if (lhs->pre_flt_fail_innov_pos_horiz != rhs->pre_flt_fail_innov_pos_horiz) {
+    return false;
+  }
   // pre_flt_fail_innov_vel_horiz
   if (lhs->pre_flt_fail_innov_vel_horiz != rhs->pre_flt_fail_innov_vel_horiz) {
     return false;
   }
   // pre_flt_fail_innov_vel_vert
   if (lhs->pre_flt_fail_innov_vel_vert != rhs->pre_flt_fail_innov_vel_vert) {
-    return false;
-  }
-  // pre_flt_fail_innov_height
-  if (lhs->pre_flt_fail_innov_height != rhs->pre_flt_fail_innov_height) {
     return false;
   }
   // pre_flt_fail_mag_field_disturbed
@@ -293,10 +293,8 @@ px4_msgs__msg__EstimatorStatus__copy(
   output->pos_horiz_accuracy = input->pos_horiz_accuracy;
   // pos_vert_accuracy
   output->pos_vert_accuracy = input->pos_vert_accuracy;
-  // innovation_check_flags
-  output->innovation_check_flags = input->innovation_check_flags;
-  // mag_test_ratio
-  output->mag_test_ratio = input->mag_test_ratio;
+  // hdg_test_ratio
+  output->hdg_test_ratio = input->hdg_test_ratio;
   // vel_test_ratio
   output->vel_test_ratio = input->vel_test_ratio;
   // pos_test_ratio
@@ -325,12 +323,14 @@ px4_msgs__msg__EstimatorStatus__copy(
   output->time_slip = input->time_slip;
   // pre_flt_fail_innov_heading
   output->pre_flt_fail_innov_heading = input->pre_flt_fail_innov_heading;
+  // pre_flt_fail_innov_height
+  output->pre_flt_fail_innov_height = input->pre_flt_fail_innov_height;
+  // pre_flt_fail_innov_pos_horiz
+  output->pre_flt_fail_innov_pos_horiz = input->pre_flt_fail_innov_pos_horiz;
   // pre_flt_fail_innov_vel_horiz
   output->pre_flt_fail_innov_vel_horiz = input->pre_flt_fail_innov_vel_horiz;
   // pre_flt_fail_innov_vel_vert
   output->pre_flt_fail_innov_vel_vert = input->pre_flt_fail_innov_vel_vert;
-  // pre_flt_fail_innov_height
-  output->pre_flt_fail_innov_height = input->pre_flt_fail_innov_height;
   // pre_flt_fail_mag_field_disturbed
   output->pre_flt_fail_mag_field_disturbed = input->pre_flt_fail_mag_field_disturbed;
   // accel_device_id

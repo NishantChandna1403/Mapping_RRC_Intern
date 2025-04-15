@@ -28,6 +28,10 @@ typedef struct px4_msgs__msg__VehicleOpticalFlowVel
   float vel_body[2];
   /// same as vel_body but in local frame (m/s)
   float vel_ne[2];
+  /// filtered velocity obtained from gyro-compensated and distance-scaled optical flow raw measurements in body frame(m/s)
+  float vel_body_filtered[2];
+  /// filtered same as vel_body_filtered but in local frame (m/s)
+  float vel_ne_filtered[2];
   /// integrated optical flow measurement (rad/s)
   float flow_rate_uncompensated[2];
   /// integrated optical flow measurement compensated for angular motion (rad/s)

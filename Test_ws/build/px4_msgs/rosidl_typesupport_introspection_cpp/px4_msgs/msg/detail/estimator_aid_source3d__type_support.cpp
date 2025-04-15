@@ -151,6 +151,44 @@ void assign_function__EstimatorAidSource3d__innovation(
   item = value;
 }
 
+size_t size_function__EstimatorAidSource3d__innovation_filtered(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 3;
+}
+
+const void * get_const_function__EstimatorAidSource3d__innovation_filtered(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<float, 3> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__EstimatorAidSource3d__innovation_filtered(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<float, 3> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__EstimatorAidSource3d__innovation_filtered(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__EstimatorAidSource3d__innovation_filtered(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__EstimatorAidSource3d__innovation_filtered(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__EstimatorAidSource3d__innovation_filtered(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
 size_t size_function__EstimatorAidSource3d__innovation_variance(const void * untyped_member)
 {
   (void)untyped_member;
@@ -227,7 +265,45 @@ void assign_function__EstimatorAidSource3d__test_ratio(
   item = value;
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorAidSource3d_message_member_array[12] = {
+size_t size_function__EstimatorAidSource3d__test_ratio_filtered(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 3;
+}
+
+const void * get_const_function__EstimatorAidSource3d__test_ratio_filtered(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<float, 3> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__EstimatorAidSource3d__test_ratio_filtered(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<float, 3> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__EstimatorAidSource3d__test_ratio_filtered(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__EstimatorAidSource3d__test_ratio_filtered(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__EstimatorAidSource3d__test_ratio_filtered(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__EstimatorAidSource3d__test_ratio_filtered(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorAidSource3d_message_member_array[14] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -365,6 +441,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorAidS
     nullptr  // resize(index) function pointer
   },
   {
+    "innovation_filtered",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    3,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::EstimatorAidSource3d, innovation_filtered),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__EstimatorAidSource3d__innovation_filtered,  // size() function pointer
+    get_const_function__EstimatorAidSource3d__innovation_filtered,  // get_const(index) function pointer
+    get_function__EstimatorAidSource3d__innovation_filtered,  // get(index) function pointer
+    fetch_function__EstimatorAidSource3d__innovation_filtered,  // fetch(index, &value) function pointer
+    assign_function__EstimatorAidSource3d__innovation_filtered,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "innovation_variance",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -396,6 +489,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorAidS
     get_function__EstimatorAidSource3d__test_ratio,  // get(index) function pointer
     fetch_function__EstimatorAidSource3d__test_ratio,  // fetch(index, &value) function pointer
     assign_function__EstimatorAidSource3d__test_ratio,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "test_ratio_filtered",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    3,  // array size
+    false,  // is upper bound
+    offsetof(px4_msgs::msg::EstimatorAidSource3d, test_ratio_filtered),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__EstimatorAidSource3d__test_ratio_filtered,  // size() function pointer
+    get_const_function__EstimatorAidSource3d__test_ratio_filtered,  // get_const(index) function pointer
+    get_function__EstimatorAidSource3d__test_ratio_filtered,  // get(index) function pointer
+    fetch_function__EstimatorAidSource3d__test_ratio_filtered,  // fetch(index, &value) function pointer
+    assign_function__EstimatorAidSource3d__test_ratio_filtered,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
   },
   {
@@ -437,7 +547,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember EstimatorAidS
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers EstimatorAidSource3d_message_members = {
   "px4_msgs::msg",  // message namespace
   "EstimatorAidSource3d",  // message name
-  12,  // number of fields
+  14,  // number of fields
   sizeof(px4_msgs::msg::EstimatorAidSource3d),
   EstimatorAidSource3d_message_member_array,  // message members
   EstimatorAidSource3d_init_function,  // function to initialize message memory (memory has to be allocated)

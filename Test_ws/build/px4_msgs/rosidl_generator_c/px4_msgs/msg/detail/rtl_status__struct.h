@@ -19,7 +19,7 @@ extern "C"
 
 /// Constant 'RTL_STATUS_TYPE_NONE'.
 /**
-  * RTL type is pending if evaluation can't pe performed currently e.g. when it is still loading the safe points
+  * pending if evaluation can't pe performed currently e.g. when it is still loading the safe points
  */
 enum
 {
@@ -28,7 +28,7 @@ enum
 
 /// Constant 'RTL_STATUS_TYPE_DIRECT_SAFE_POINT'.
 /**
-  * RTL type is chosen to directly go to a safe point or home position
+  * chosen to directly go to a safe point or home position
  */
 enum
 {
@@ -37,7 +37,7 @@ enum
 
 /// Constant 'RTL_STATUS_TYPE_DIRECT_MISSION_LAND'.
 /**
-  * RTL type is going straight to the beginning of the mission landing
+  * going straight to the beginning of the mission landing
  */
 enum
 {
@@ -46,7 +46,7 @@ enum
 
 /// Constant 'RTL_STATUS_TYPE_FOLLOW_MISSION'.
 /**
-  * RTL type is following the mission from closest point to mission landing
+  * Following the mission from start index to mission landing. Start index is current WP if in Mission mode, and closest WP otherwise.
  */
 enum
 {
@@ -55,7 +55,7 @@ enum
 
 /// Constant 'RTL_STATUS_TYPE_FOLLOW_MISSION_REVERSE'.
 /**
-  * RTL type is following the mission in reverse to the start position
+  * Following the mission in reverse from start index to the beginning of the mission. Start index is previous WP if in Mission mode, and closest WP otherwise.
  */
 enum
 {

@@ -1,3 +1,4 @@
+from px4_msgs.msg._ackermann_velocity_setpoint import AckermannVelocitySetpoint  # noqa: F401
 from px4_msgs.msg._action_request import ActionRequest  # noqa: F401
 from px4_msgs.msg._actuator_armed import ActuatorArmed  # noqa: F401
 from px4_msgs.msg._actuator_controls_status import ActuatorControlsStatus  # noqa: F401
@@ -14,7 +15,6 @@ from px4_msgs.msg._arming_check_reply import ArmingCheckReply  # noqa: F401
 from px4_msgs.msg._arming_check_request import ArmingCheckRequest  # noqa: F401
 from px4_msgs.msg._autotune_attitude_control_status import AutotuneAttitudeControlStatus  # noqa: F401
 from px4_msgs.msg._battery_status import BatteryStatus  # noqa: F401
-from px4_msgs.msg._buffer128 import Buffer128  # noqa: F401
 from px4_msgs.msg._button_event import ButtonEvent  # noqa: F401
 from px4_msgs.msg._camera_capture import CameraCapture  # noqa: F401
 from px4_msgs.msg._camera_status import CameraStatus  # noqa: F401
@@ -22,7 +22,6 @@ from px4_msgs.msg._camera_trigger import CameraTrigger  # noqa: F401
 from px4_msgs.msg._can_interface_status import CanInterfaceStatus  # noqa: F401
 from px4_msgs.msg._cellular_status import CellularStatus  # noqa: F401
 from px4_msgs.msg._collision_constraints import CollisionConstraints  # noqa: F401
-from px4_msgs.msg._collision_report import CollisionReport  # noqa: F401
 from px4_msgs.msg._config_overrides import ConfigOverrides  # noqa: F401
 from px4_msgs.msg._control_allocator_status import ControlAllocatorStatus  # noqa: F401
 from px4_msgs.msg._cpuload import Cpuload  # noqa: F401
@@ -32,9 +31,9 @@ from px4_msgs.msg._debug_array import DebugArray  # noqa: F401
 from px4_msgs.msg._debug_key_value import DebugKeyValue  # noqa: F401
 from px4_msgs.msg._debug_value import DebugValue  # noqa: F401
 from px4_msgs.msg._debug_vect import DebugVect  # noqa: F401
-from px4_msgs.msg._differential_drive_setpoint import DifferentialDriveSetpoint  # noqa: F401
 from px4_msgs.msg._differential_pressure import DifferentialPressure  # noqa: F401
 from px4_msgs.msg._distance_sensor import DistanceSensor  # noqa: F401
+from px4_msgs.msg._distance_sensor_mode_change_request import DistanceSensorModeChangeRequest  # noqa: F401
 from px4_msgs.msg._ekf2_timestamps import Ekf2Timestamps  # noqa: F401
 from px4_msgs.msg._esc_report import EscReport  # noqa: F401
 from px4_msgs.msg._esc_status import EscStatus  # noqa: F401
@@ -59,6 +58,7 @@ from px4_msgs.msg._flight_phase_estimation import FlightPhaseEstimation  # noqa:
 from px4_msgs.msg._follow_target import FollowTarget  # noqa: F401
 from px4_msgs.msg._follow_target_estimator import FollowTargetEstimator  # noqa: F401
 from px4_msgs.msg._follow_target_status import FollowTargetStatus  # noqa: F401
+from px4_msgs.msg._fuel_tank_status import FuelTankStatus  # noqa: F401
 from px4_msgs.msg._generator_status import GeneratorStatus  # noqa: F401
 from px4_msgs.msg._geofence_result import GeofenceResult  # noqa: F401
 from px4_msgs.msg._geofence_status import GeofenceStatus  # noqa: F401
@@ -83,6 +83,7 @@ from px4_msgs.msg._heater_status import HeaterStatus  # noqa: F401
 from px4_msgs.msg._home_position import HomePosition  # noqa: F401
 from px4_msgs.msg._hover_thrust_estimate import HoverThrustEstimate  # noqa: F401
 from px4_msgs.msg._input_rc import InputRc  # noqa: F401
+from px4_msgs.msg._internal_combustion_engine_control import InternalCombustionEngineControl  # noqa: F401
 from px4_msgs.msg._internal_combustion_engine_status import InternalCombustionEngineStatus  # noqa: F401
 from px4_msgs.msg._iridiumsbd_status import IridiumsbdStatus  # noqa: F401
 from px4_msgs.msg._irlock_report import IrlockReport  # noqa: F401
@@ -107,11 +108,16 @@ from px4_msgs.msg._mission_result import MissionResult  # noqa: F401
 from px4_msgs.msg._mode_completed import ModeCompleted  # noqa: F401
 from px4_msgs.msg._mount_orientation import MountOrientation  # noqa: F401
 from px4_msgs.msg._navigator_mission_item import NavigatorMissionItem  # noqa: F401
+from px4_msgs.msg._navigator_status import NavigatorStatus  # noqa: F401
 from px4_msgs.msg._normalized_unsigned_setpoint import NormalizedUnsignedSetpoint  # noqa: F401
 from px4_msgs.msg._npfg_status import NpfgStatus  # noqa: F401
 from px4_msgs.msg._obstacle_distance import ObstacleDistance  # noqa: F401
 from px4_msgs.msg._offboard_control_mode import OffboardControlMode  # noqa: F401
 from px4_msgs.msg._onboard_computer_status import OnboardComputerStatus  # noqa: F401
+from px4_msgs.msg._open_drone_id_arm_status import OpenDroneIdArmStatus  # noqa: F401
+from px4_msgs.msg._open_drone_id_operator_id import OpenDroneIdOperatorId  # noqa: F401
+from px4_msgs.msg._open_drone_id_self_id import OpenDroneIdSelfId  # noqa: F401
+from px4_msgs.msg._open_drone_id_system import OpenDroneIdSystem  # noqa: F401
 from px4_msgs.msg._orb_test import OrbTest  # noqa: F401
 from px4_msgs.msg._orb_test_large import OrbTestLarge  # noqa: F401
 from px4_msgs.msg._orb_test_medium import OrbTestMedium  # noqa: F401
@@ -129,6 +135,7 @@ from px4_msgs.msg._position_setpoint_triplet import PositionSetpointTriplet  # n
 from px4_msgs.msg._power_button_state import PowerButtonState  # noqa: F401
 from px4_msgs.msg._power_monitor import PowerMonitor  # noqa: F401
 from px4_msgs.msg._pps_capture import PpsCapture  # noqa: F401
+from px4_msgs.msg._pure_pursuit_status import PurePursuitStatus  # noqa: F401
 from px4_msgs.msg._pwm_input import PwmInput  # noqa: F401
 from px4_msgs.msg._px4io_status import Px4ioStatus  # noqa: F401
 from px4_msgs.msg._qshell_req import QshellReq  # noqa: F401
@@ -139,6 +146,14 @@ from px4_msgs.msg._rc_channels import RcChannels  # noqa: F401
 from px4_msgs.msg._rc_parameter_map import RcParameterMap  # noqa: F401
 from px4_msgs.msg._register_ext_component_reply import RegisterExtComponentReply  # noqa: F401
 from px4_msgs.msg._register_ext_component_request import RegisterExtComponentRequest  # noqa: F401
+from px4_msgs.msg._rover_attitude_setpoint import RoverAttitudeSetpoint  # noqa: F401
+from px4_msgs.msg._rover_attitude_status import RoverAttitudeStatus  # noqa: F401
+from px4_msgs.msg._rover_position_setpoint import RoverPositionSetpoint  # noqa: F401
+from px4_msgs.msg._rover_rate_setpoint import RoverRateSetpoint  # noqa: F401
+from px4_msgs.msg._rover_rate_status import RoverRateStatus  # noqa: F401
+from px4_msgs.msg._rover_steering_setpoint import RoverSteeringSetpoint  # noqa: F401
+from px4_msgs.msg._rover_throttle_setpoint import RoverThrottleSetpoint  # noqa: F401
+from px4_msgs.msg._rover_velocity_status import RoverVelocityStatus  # noqa: F401
 from px4_msgs.msg._rpm import Rpm  # noqa: F401
 from px4_msgs.msg._rtl_status import RtlStatus  # noqa: F401
 from px4_msgs.msg._rtl_time_estimate import RtlTimeEstimate  # noqa: F401
@@ -169,9 +184,7 @@ from px4_msgs.msg._tecs_status import TecsStatus  # noqa: F401
 from px4_msgs.msg._telemetry_status import TelemetryStatus  # noqa: F401
 from px4_msgs.msg._tiltrotor_extra_controls import TiltrotorExtraControls  # noqa: F401
 from px4_msgs.msg._timesync_status import TimesyncStatus  # noqa: F401
-from px4_msgs.msg._trajectory_bezier import TrajectoryBezier  # noqa: F401
 from px4_msgs.msg._trajectory_setpoint import TrajectorySetpoint  # noqa: F401
-from px4_msgs.msg._trajectory_waypoint import TrajectoryWaypoint  # noqa: F401
 from px4_msgs.msg._transponder_report import TransponderReport  # noqa: F401
 from px4_msgs.msg._tune_control import TuneControl  # noqa: F401
 from px4_msgs.msg._uavcan_parameter_request import UavcanParameterRequest  # noqa: F401
@@ -204,8 +217,6 @@ from px4_msgs.msg._vehicle_roi import VehicleRoi  # noqa: F401
 from px4_msgs.msg._vehicle_status import VehicleStatus  # noqa: F401
 from px4_msgs.msg._vehicle_thrust_setpoint import VehicleThrustSetpoint  # noqa: F401
 from px4_msgs.msg._vehicle_torque_setpoint import VehicleTorqueSetpoint  # noqa: F401
-from px4_msgs.msg._vehicle_trajectory_bezier import VehicleTrajectoryBezier  # noqa: F401
-from px4_msgs.msg._vehicle_trajectory_waypoint import VehicleTrajectoryWaypoint  # noqa: F401
 from px4_msgs.msg._velocity_limits import VelocityLimits  # noqa: F401
 from px4_msgs.msg._vtol_vehicle_status import VtolVehicleStatus  # noqa: F401
 from px4_msgs.msg._wheel_encoders import WheelEncoders  # noqa: F401

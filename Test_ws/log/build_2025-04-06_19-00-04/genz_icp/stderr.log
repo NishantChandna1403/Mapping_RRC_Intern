@@ -1,7 +1,0 @@
-[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&)[m[K’:
-[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:81:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SE3d[m[K’ {aka ‘[01m[Kconst class Sophus::SE3<double>[m[K’} has no member named ‘[01m[KisApprox[m[K’
-   81 |         initial_guess = last_pose * (imu_pose.[01;31m[KisApprox[m[K(Sophus::SE3d()) ? prediction : imu_pose);
-      |                                               [01;31m[K^~~~~~~~[m[K
-gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

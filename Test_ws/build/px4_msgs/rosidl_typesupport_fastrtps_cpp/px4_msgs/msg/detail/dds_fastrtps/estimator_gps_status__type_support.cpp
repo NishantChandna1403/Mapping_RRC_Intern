@@ -58,6 +58,8 @@ cdr_serialize(
   cdr << (ros_message.check_fail_max_horz_spd_err ? true : false);
   // Member: check_fail_max_vert_spd_err
   cdr << (ros_message.check_fail_max_vert_spd_err ? true : false);
+  // Member: check_fail_spoofed_gps
+  cdr << (ros_message.check_fail_spoofed_gps ? true : false);
   // Member: position_drift_rate_horizontal_m_s
   cdr << ros_message.position_drift_rate_horizontal_m_s;
   // Member: position_drift_rate_vertical_m_s
@@ -154,6 +156,13 @@ cdr_deserialize(
     uint8_t tmp;
     cdr >> tmp;
     ros_message.check_fail_max_vert_spd_err = tmp ? true : false;
+  }
+
+  // Member: check_fail_spoofed_gps
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.check_fail_spoofed_gps = tmp ? true : false;
   }
 
   // Member: position_drift_rate_horizontal_m_s
@@ -256,6 +265,12 @@ get_serialized_size(
   // Member: check_fail_max_vert_spd_err
   {
     size_t item_size = sizeof(ros_message.check_fail_max_vert_spd_err);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: check_fail_spoofed_gps
+  {
+    size_t item_size = sizeof(ros_message.check_fail_spoofed_gps);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -400,6 +415,14 @@ max_serialized_size_EstimatorGpsStatus(
   }
 
   // Member: check_fail_max_vert_spd_err
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: check_fail_spoofed_gps
   {
     size_t array_size = 1;
 

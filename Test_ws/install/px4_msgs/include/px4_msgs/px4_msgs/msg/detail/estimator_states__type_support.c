@@ -35,7 +35,7 @@ size_t px4_msgs__msg__EstimatorStates__rosidl_typesupport_introspection_c__size_
   const void * untyped_member)
 {
   (void)untyped_member;
-  return 24;
+  return 25;
 }
 
 const void * px4_msgs__msg__EstimatorStates__rosidl_typesupport_introspection_c__get_const_function__EstimatorStates__states(
@@ -80,7 +80,7 @@ size_t px4_msgs__msg__EstimatorStates__rosidl_typesupport_introspection_c__size_
   const void * untyped_member)
 {
   (void)untyped_member;
-  return 23;
+  return 24;
 }
 
 const void * px4_msgs__msg__EstimatorStates__rosidl_typesupport_introspection_c__get_const_function__EstimatorStates__covariances(
@@ -162,7 +162,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Estimato
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
-    24,  // array size
+    25,  // array size
     false,  // is upper bound
     offsetof(px4_msgs__msg__EstimatorStates, states),  // bytes offset in struct
     NULL,  // default value
@@ -196,7 +196,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Estimato
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
-    23,  // array size
+    24,  // array size
     false,  // is upper bound
     offsetof(px4_msgs__msg__EstimatorStates, covariances),  // bytes offset in struct
     NULL,  // default value

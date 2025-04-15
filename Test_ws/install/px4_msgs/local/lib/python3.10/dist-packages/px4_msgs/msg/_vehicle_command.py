@@ -22,6 +22,7 @@ class Metaclass_VehicleCommand(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
         'VEHICLE_CMD_CUSTOM_0': 0,
         'VEHICLE_CMD_CUSTOM_1': 1,
         'VEHICLE_CMD_CUSTOM_2': 2,
@@ -120,6 +121,7 @@ class Metaclass_VehicleCommand(type):
         'VEHICLE_CMD_FIXED_MAG_CAL_YAW': 42006,
         'VEHICLE_CMD_DO_WINCH': 42600,
         'VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE': 43003,
+        'VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE': 43004,
         'VEHICLE_CMD_PX4_INTERNAL_START': 65537,
         'VEHICLE_CMD_SET_GPS_GLOBAL_ORIGIN': 100000,
         'VEHICLE_CMD_SET_NAV_STATE': 100001,
@@ -165,6 +167,12 @@ class Metaclass_VehicleCommand(type):
         'SPEED_TYPE_GROUNDSPEED': 1,
         'SPEED_TYPE_CLIMB_SPEED': 2,
         'SPEED_TYPE_DESCEND_SPEED': 3,
+        'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER': 0,
+        'ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING': 1,
+        'ORBIT_YAW_BEHAVIOUR_UNCONTROLLED': 2,
+        'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE': 3,
+        'ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED': 4,
+        'ORBIT_YAW_BEHAVIOUR_UNCHANGED': 5,
         'ARMING_ACTION_DISARM': 0,
         'ARMING_ACTION_ARM': 1,
         'GRIPPER_ACTION_RELEASE': 0,
@@ -199,6 +207,7 @@ class Metaclass_VehicleCommand(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
             'VEHICLE_CMD_CUSTOM_0': cls.__constants['VEHICLE_CMD_CUSTOM_0'],
             'VEHICLE_CMD_CUSTOM_1': cls.__constants['VEHICLE_CMD_CUSTOM_1'],
             'VEHICLE_CMD_CUSTOM_2': cls.__constants['VEHICLE_CMD_CUSTOM_2'],
@@ -297,6 +306,7 @@ class Metaclass_VehicleCommand(type):
             'VEHICLE_CMD_FIXED_MAG_CAL_YAW': cls.__constants['VEHICLE_CMD_FIXED_MAG_CAL_YAW'],
             'VEHICLE_CMD_DO_WINCH': cls.__constants['VEHICLE_CMD_DO_WINCH'],
             'VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE': cls.__constants['VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE'],
+            'VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE': cls.__constants['VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE'],
             'VEHICLE_CMD_PX4_INTERNAL_START': cls.__constants['VEHICLE_CMD_PX4_INTERNAL_START'],
             'VEHICLE_CMD_SET_GPS_GLOBAL_ORIGIN': cls.__constants['VEHICLE_CMD_SET_GPS_GLOBAL_ORIGIN'],
             'VEHICLE_CMD_SET_NAV_STATE': cls.__constants['VEHICLE_CMD_SET_NAV_STATE'],
@@ -342,6 +352,12 @@ class Metaclass_VehicleCommand(type):
             'SPEED_TYPE_GROUNDSPEED': cls.__constants['SPEED_TYPE_GROUNDSPEED'],
             'SPEED_TYPE_CLIMB_SPEED': cls.__constants['SPEED_TYPE_CLIMB_SPEED'],
             'SPEED_TYPE_DESCEND_SPEED': cls.__constants['SPEED_TYPE_DESCEND_SPEED'],
+            'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER': cls.__constants['ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER'],
+            'ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING': cls.__constants['ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING'],
+            'ORBIT_YAW_BEHAVIOUR_UNCONTROLLED': cls.__constants['ORBIT_YAW_BEHAVIOUR_UNCONTROLLED'],
+            'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE': cls.__constants['ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE'],
+            'ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED': cls.__constants['ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED'],
+            'ORBIT_YAW_BEHAVIOUR_UNCHANGED': cls.__constants['ORBIT_YAW_BEHAVIOUR_UNCHANGED'],
             'ARMING_ACTION_DISARM': cls.__constants['ARMING_ACTION_DISARM'],
             'ARMING_ACTION_ARM': cls.__constants['ARMING_ACTION_ARM'],
             'GRIPPER_ACTION_RELEASE': cls.__constants['GRIPPER_ACTION_RELEASE'],
@@ -349,6 +365,11 @@ class Metaclass_VehicleCommand(type):
             'ORB_QUEUE_LENGTH': cls.__constants['ORB_QUEUE_LENGTH'],
             'COMPONENT_MODE_EXECUTOR_START': cls.__constants['COMPONENT_MODE_EXECUTOR_START'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_VehicleCommand.__constants['MESSAGE_VERSION']
 
     @property
     def VEHICLE_CMD_CUSTOM_0(self):
@@ -841,6 +862,11 @@ class Metaclass_VehicleCommand(type):
         return Metaclass_VehicleCommand.__constants['VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE']
 
     @property
+    def VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE(self):
+        """Message constant 'VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE'."""
+        return Metaclass_VehicleCommand.__constants['VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE']
+
+    @property
     def VEHICLE_CMD_PX4_INTERNAL_START(self):
         """Message constant 'VEHICLE_CMD_PX4_INTERNAL_START'."""
         return Metaclass_VehicleCommand.__constants['VEHICLE_CMD_PX4_INTERNAL_START']
@@ -1066,6 +1092,36 @@ class Metaclass_VehicleCommand(type):
         return Metaclass_VehicleCommand.__constants['SPEED_TYPE_DESCEND_SPEED']
 
     @property
+    def ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER(self):
+        """Message constant 'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER'."""
+        return Metaclass_VehicleCommand.__constants['ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER']
+
+    @property
+    def ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING(self):
+        """Message constant 'ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING'."""
+        return Metaclass_VehicleCommand.__constants['ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING']
+
+    @property
+    def ORBIT_YAW_BEHAVIOUR_UNCONTROLLED(self):
+        """Message constant 'ORBIT_YAW_BEHAVIOUR_UNCONTROLLED'."""
+        return Metaclass_VehicleCommand.__constants['ORBIT_YAW_BEHAVIOUR_UNCONTROLLED']
+
+    @property
+    def ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE(self):
+        """Message constant 'ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE'."""
+        return Metaclass_VehicleCommand.__constants['ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE']
+
+    @property
+    def ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED(self):
+        """Message constant 'ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED'."""
+        return Metaclass_VehicleCommand.__constants['ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED']
+
+    @property
+    def ORBIT_YAW_BEHAVIOUR_UNCHANGED(self):
+        """Message constant 'ORBIT_YAW_BEHAVIOUR_UNCHANGED'."""
+        return Metaclass_VehicleCommand.__constants['ORBIT_YAW_BEHAVIOUR_UNCHANGED']
+
+    @property
     def ARMING_ACTION_DISARM(self):
         """Message constant 'ARMING_ACTION_DISARM'."""
         return Metaclass_VehicleCommand.__constants['ARMING_ACTION_DISARM']
@@ -1101,6 +1157,7 @@ class VehicleCommand(metaclass=Metaclass_VehicleCommand):
     Message class 'VehicleCommand'.
 
     Constants:
+      MESSAGE_VERSION
       VEHICLE_CMD_CUSTOM_0
       VEHICLE_CMD_CUSTOM_1
       VEHICLE_CMD_CUSTOM_2
@@ -1199,6 +1256,7 @@ class VehicleCommand(metaclass=Metaclass_VehicleCommand):
       VEHICLE_CMD_FIXED_MAG_CAL_YAW
       VEHICLE_CMD_DO_WINCH
       VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE
+      VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE
       VEHICLE_CMD_PX4_INTERNAL_START
       VEHICLE_CMD_SET_GPS_GLOBAL_ORIGIN
       VEHICLE_CMD_SET_NAV_STATE
@@ -1244,6 +1302,12 @@ class VehicleCommand(metaclass=Metaclass_VehicleCommand):
       SPEED_TYPE_GROUNDSPEED
       SPEED_TYPE_CLIMB_SPEED
       SPEED_TYPE_DESCEND_SPEED
+      ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER
+      ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING
+      ORBIT_YAW_BEHAVIOUR_UNCONTROLLED
+      ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE
+      ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED
+      ORBIT_YAW_BEHAVIOUR_UNCHANGED
       ARMING_ACTION_DISARM
       ARMING_ACTION_ARM
       GRIPPER_ACTION_RELEASE

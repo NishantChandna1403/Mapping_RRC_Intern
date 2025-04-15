@@ -46,6 +46,13 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: altitude_time_constant
+  {
+    out << "altitude_time_constant: ";
+    rosidl_generator_traits::value_to_yaml(msg.altitude_time_constant, out);
+    out << ", ";
+  }
+
   // member: height_rate_reference
   {
     out << "height_rate_reference: ";
@@ -183,6 +190,13 @@ inline void to_flow_style_yaml(
   {
     out << "underspeed_ratio: ";
     rosidl_generator_traits::value_to_yaml(msg.underspeed_ratio, out);
+    out << ", ";
+  }
+
+  // member: fast_descend_ratio
+  {
+    out << "fast_descend_ratio: ";
+    rosidl_generator_traits::value_to_yaml(msg.fast_descend_ratio, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -221,6 +235,16 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
+  // member: altitude_time_constant
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "altitude_time_constant: ";
+    rosidl_generator_traits::value_to_yaml(msg.altitude_time_constant, out);
+    out << "\n";
+  }
+
   // member: height_rate_reference
   {
     if (indentation > 0) {
@@ -418,6 +442,16 @@ inline void to_block_style_yaml(
     }
     out << "underspeed_ratio: ";
     rosidl_generator_traits::value_to_yaml(msg.underspeed_ratio, out);
+    out << "\n";
+  }
+
+  // member: fast_descend_ratio
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "fast_descend_ratio: ";
+    rosidl_generator_traits::value_to_yaml(msg.fast_descend_ratio, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

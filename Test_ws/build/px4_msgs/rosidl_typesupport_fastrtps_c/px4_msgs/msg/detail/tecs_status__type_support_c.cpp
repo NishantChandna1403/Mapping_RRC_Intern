@@ -64,6 +64,11 @@ static bool _TecsStatus__cdr_serialize(
     cdr << ros_message->altitude_reference;
   }
 
+  // Field name: altitude_time_constant
+  {
+    cdr << ros_message->altitude_time_constant;
+  }
+
   // Field name: height_rate_reference
   {
     cdr << ros_message->height_rate_reference;
@@ -164,6 +169,11 @@ static bool _TecsStatus__cdr_serialize(
     cdr << ros_message->underspeed_ratio;
   }
 
+  // Field name: fast_descend_ratio
+  {
+    cdr << ros_message->fast_descend_ratio;
+  }
+
   return true;
 }
 
@@ -189,6 +199,11 @@ static bool _TecsStatus__cdr_deserialize(
   // Field name: altitude_reference
   {
     cdr >> ros_message->altitude_reference;
+  }
+
+  // Field name: altitude_time_constant
+  {
+    cdr >> ros_message->altitude_time_constant;
   }
 
   // Field name: height_rate_reference
@@ -291,6 +306,11 @@ static bool _TecsStatus__cdr_deserialize(
     cdr >> ros_message->underspeed_ratio;
   }
 
+  // Field name: fast_descend_ratio
+  {
+    cdr >> ros_message->fast_descend_ratio;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -323,6 +343,12 @@ size_t get_serialized_size_px4_msgs__msg__TecsStatus(
   // field.name altitude_reference
   {
     size_t item_size = sizeof(ros_message->altitude_reference);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name altitude_time_constant
+  {
+    size_t item_size = sizeof(ros_message->altitude_time_constant);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -446,6 +472,12 @@ size_t get_serialized_size_px4_msgs__msg__TecsStatus(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name fast_descend_ratio
+  {
+    size_t item_size = sizeof(ros_message->fast_descend_ratio);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -492,6 +524,14 @@ size_t max_serialized_size_px4_msgs__msg__TecsStatus(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: altitude_reference
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: altitude_time_constant
   {
     size_t array_size = 1;
 
@@ -659,6 +699,14 @@ size_t max_serialized_size_px4_msgs__msg__TecsStatus(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: fast_descend_ratio
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -668,7 +716,7 @@ size_t max_serialized_size_px4_msgs__msg__TecsStatus(
     using DataType = px4_msgs__msg__TecsStatus;
     is_plain =
       (
-      offsetof(DataType, underspeed_ratio) +
+      offsetof(DataType, fast_descend_ratio) +
       last_member_size
       ) == ret_val;
   }

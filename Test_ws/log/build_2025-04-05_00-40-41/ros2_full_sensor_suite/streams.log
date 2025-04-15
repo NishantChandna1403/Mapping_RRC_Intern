@@ -1,6 +1,0 @@
-[0.033s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite -- -j12 -l12
-[0.094s] [  9%] [32mBuilding CXX object CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/src/gazebo_ros_realsense_camera.cpp.o[0m
-[3.397s] gmake[2]: *** [CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/build.make:76: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/src/gazebo_ros_realsense_camera.cpp.o] Interrupt
-[3.399s] gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/all] Interrupt
-[3.399s] gmake: *** [Makefile:146: all] Interrupt
-[3.421s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/ros2_full_sensor_suite -- -j12 -l12

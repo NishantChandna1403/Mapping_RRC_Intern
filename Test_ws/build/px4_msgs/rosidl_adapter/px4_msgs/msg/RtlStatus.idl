@@ -7,19 +7,19 @@ module px4_msgs {
   module msg {
     module RtlStatus_Constants {
       @verbatim (language="comment", text=
-        "RTL type is pending if evaluation can't pe performed currently e.g. when it is still loading the safe points")
+        "pending if evaluation can't pe performed currently e.g. when it is still loading the safe points")
       const uint8 RTL_STATUS_TYPE_NONE = 0;
       @verbatim (language="comment", text=
-        "RTL type is chosen to directly go to a safe point or home position")
+        "chosen to directly go to a safe point or home position")
       const uint8 RTL_STATUS_TYPE_DIRECT_SAFE_POINT = 1;
       @verbatim (language="comment", text=
-        "RTL type is going straight to the beginning of the mission landing")
+        "going straight to the beginning of the mission landing")
       const uint8 RTL_STATUS_TYPE_DIRECT_MISSION_LAND = 2;
       @verbatim (language="comment", text=
-        "RTL type is following the mission from closest point to mission landing")
+        "Following the mission from start index to mission landing. Start index is current WP if in Mission mode, and closest WP otherwise.")
       const uint8 RTL_STATUS_TYPE_FOLLOW_MISSION = 3;
       @verbatim (language="comment", text=
-        "RTL type is following the mission in reverse to the start position")
+        "Following the mission in reverse from start index to the beginning of the mission. Start index is previous WP if in Mission mode, and closest WP otherwise.")
       const uint8 RTL_STATUS_TYPE_FOLLOW_MISSION_REVERSE = 4;
     };
     struct RtlStatus {

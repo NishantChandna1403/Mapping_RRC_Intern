@@ -1,0 +1,8 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePoses(const SE3d&, const SE3d&, const SE3d&, size_t)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:26:54:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kdouble[m[K’ may change value [[01;31m[K-Werror=conversion[m[K]
+   26 |     double icp_weight = std::min(1.0, std::max(0.0, ([01;31m[Knum_points[m[K - min_points) / (max_points - min_points)));
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

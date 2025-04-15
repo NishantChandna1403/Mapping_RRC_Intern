@@ -1,1 +1,16 @@
-/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite/models/full_sensor_suite/materials/scripts/script.material
+material full_sensor_suite/fur
+        {
+          receive_shadows off
+          technique
+          {
+            pass
+            {
+              texture_unit
+              {
+                texture sheep.png
+                filtering anistropic
+                max_anisotropy 16
+              }
+            }
+          }
+        }

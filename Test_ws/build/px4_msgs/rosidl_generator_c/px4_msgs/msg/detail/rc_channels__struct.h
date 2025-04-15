@@ -185,6 +185,12 @@ enum
   px4_msgs__msg__RcChannels__FUNCTION_ENGAGE_MAIN_MOTOR = 27
 };
 
+/// Constant 'FUNCTION_PAYLOAD_POWER'.
+enum
+{
+  px4_msgs__msg__RcChannels__FUNCTION_PAYLOAD_POWER = 28
+};
+
 /// Constant 'FUNCTION_FLTBTN_SLOT_COUNT'.
 enum
 {
@@ -203,7 +209,7 @@ typedef struct px4_msgs__msg__RcChannels
   /// Number of valid channels
   uint8_t channel_count;
   /// Functions mapping
-  int8_t function[28];
+  int8_t function[29];
   /// Receive signal strength index
   uint8_t rssi;
   /// Control signal lost, should be checked together with topic timeout

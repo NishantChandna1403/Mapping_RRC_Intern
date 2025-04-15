@@ -25,6 +25,14 @@ module px4_msgs {
       float__2 vel_ne;
 
       @verbatim (language="comment", text=
+        "filtered velocity obtained from gyro-compensated and distance-scaled optical flow raw measurements in body frame(m/s)")
+      float__2 vel_body_filtered;
+
+      @verbatim (language="comment", text=
+        "filtered same as vel_body_filtered but in local frame (m/s)")
+      float__2 vel_ne_filtered;
+
+      @verbatim (language="comment", text=
         "integrated optical flow measurement (rad/s)")
       float__2 flow_rate_uncompensated;
 

@@ -31,7 +31,7 @@ void px4_msgs__msg__NavigatorMissionItem__rosidl_typesupport_introspection_c__Na
   px4_msgs__msg__NavigatorMissionItem__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__NavigatorMissionItem__rosidl_typesupport_introspection_c__NavigatorMissionItem_message_member_array[18] = {
+static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__NavigatorMissionItem__rosidl_typesupport_introspection_c__NavigatorMissionItem_message_member_array[17] = {
   {
     "timestamp",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT64,  // type
@@ -41,23 +41,6 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Navigato
     0,  // array size
     false,  // is upper bound
     offsetof(px4_msgs__msg__NavigatorMissionItem, timestamp),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "instance_count",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs__msg__NavigatorMissionItem, instance_count),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -343,7 +326,7 @@ static rosidl_typesupport_introspection_c__MessageMember px4_msgs__msg__Navigato
 static const rosidl_typesupport_introspection_c__MessageMembers px4_msgs__msg__NavigatorMissionItem__rosidl_typesupport_introspection_c__NavigatorMissionItem_message_members = {
   "px4_msgs__msg",  // message namespace
   "NavigatorMissionItem",  // message name
-  18,  // number of fields
+  17,  // number of fields
   sizeof(px4_msgs__msg__NavigatorMissionItem),
   px4_msgs__msg__NavigatorMissionItem__rosidl_typesupport_introspection_c__NavigatorMissionItem_message_member_array,  // message members
   px4_msgs__msg__NavigatorMissionItem__rosidl_typesupport_introspection_c__NavigatorMissionItem_init_function,  // function to initialize message memory (memory has to be allocated)

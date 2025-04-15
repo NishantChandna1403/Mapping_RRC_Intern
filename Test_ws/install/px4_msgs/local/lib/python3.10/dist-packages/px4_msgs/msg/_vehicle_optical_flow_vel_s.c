@@ -119,6 +119,54 @@ bool px4_msgs__msg__vehicle_optical_flow_vel__convert_from_py(PyObject * _pymsg,
     }
     Py_DECREF(field);
   }
+  {  // vel_body_filtered
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vel_body_filtered");
+    if (!field) {
+      return false;
+    }
+    {
+      // TODO(dirk-thomas) use a better way to check the type before casting
+      assert(field->ob_type != NULL);
+      assert(field->ob_type->tp_name != NULL);
+      assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+      PyArrayObject * seq_field = (PyArrayObject *)field;
+      Py_INCREF(seq_field);
+      assert(PyArray_NDIM(seq_field) == 1);
+      assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
+      Py_ssize_t size = 2;
+      float * dest = ros_message->vel_body_filtered;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        float tmp = *(npy_float32 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(float));
+      }
+      Py_DECREF(seq_field);
+    }
+    Py_DECREF(field);
+  }
+  {  // vel_ne_filtered
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vel_ne_filtered");
+    if (!field) {
+      return false;
+    }
+    {
+      // TODO(dirk-thomas) use a better way to check the type before casting
+      assert(field->ob_type != NULL);
+      assert(field->ob_type->tp_name != NULL);
+      assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+      PyArrayObject * seq_field = (PyArrayObject *)field;
+      Py_INCREF(seq_field);
+      assert(PyArray_NDIM(seq_field) == 1);
+      assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
+      Py_ssize_t size = 2;
+      float * dest = ros_message->vel_ne_filtered;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        float tmp = *(npy_float32 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(float));
+      }
+      Py_DECREF(seq_field);
+    }
+    Py_DECREF(field);
+  }
   {  // flow_rate_uncompensated
     PyObject * field = PyObject_GetAttrString(_pymsg, "flow_rate_uncompensated");
     if (!field) {
@@ -316,6 +364,42 @@ PyObject * px4_msgs__msg__vehicle_optical_flow_vel__convert_to_py(void * raw_ros
     assert(sizeof(npy_float32) == sizeof(float));
     npy_float32 * dst = (npy_float32 *)PyArray_GETPTR1(seq_field, 0);
     float * src = &(ros_message->vel_ne[0]);
+    memcpy(dst, src, 2 * sizeof(float));
+    Py_DECREF(field);
+  }
+  {  // vel_body_filtered
+    PyObject * field = NULL;
+    field = PyObject_GetAttrString(_pymessage, "vel_body_filtered");
+    if (!field) {
+      return NULL;
+    }
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
+    assert(sizeof(npy_float32) == sizeof(float));
+    npy_float32 * dst = (npy_float32 *)PyArray_GETPTR1(seq_field, 0);
+    float * src = &(ros_message->vel_body_filtered[0]);
+    memcpy(dst, src, 2 * sizeof(float));
+    Py_DECREF(field);
+  }
+  {  // vel_ne_filtered
+    PyObject * field = NULL;
+    field = PyObject_GetAttrString(_pymessage, "vel_ne_filtered");
+    if (!field) {
+      return NULL;
+    }
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
+    assert(sizeof(npy_float32) == sizeof(float));
+    npy_float32 * dst = (npy_float32 *)PyArray_GETPTR1(seq_field, 0);
+    float * src = &(ros_message->vel_ne_filtered[0]);
     memcpy(dst, src, 2 * sizeof(float));
     Py_DECREF(field);
   }

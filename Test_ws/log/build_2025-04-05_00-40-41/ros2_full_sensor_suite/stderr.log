@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/build.make:76: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/src/gazebo_ros_realsense_camera.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/gazebo_ros_realsense_camera_plugin.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

@@ -56,7 +56,7 @@ class IridiumsbdStatus(metaclass=Metaclass_IridiumsbdStatus):
 
     __slots__ = [
         '_timestamp',
-        '_last_heartbeat',
+        '_last_at_ok_timestamp',
         '_tx_buf_write_index',
         '_rx_buf_read_index',
         '_rx_buf_end_index',
@@ -74,7 +74,7 @@ class IridiumsbdStatus(metaclass=Metaclass_IridiumsbdStatus):
 
     _fields_and_field_types = {
         'timestamp': 'uint64',
-        'last_heartbeat': 'uint64',
+        'last_at_ok_timestamp': 'uint64',
         'tx_buf_write_index': 'uint16',
         'rx_buf_read_index': 'uint16',
         'rx_buf_end_index': 'uint16',
@@ -113,7 +113,7 @@ class IridiumsbdStatus(metaclass=Metaclass_IridiumsbdStatus):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.timestamp = kwargs.get('timestamp', int())
-        self.last_heartbeat = kwargs.get('last_heartbeat', int())
+        self.last_at_ok_timestamp = kwargs.get('last_at_ok_timestamp', int())
         self.tx_buf_write_index = kwargs.get('tx_buf_write_index', int())
         self.rx_buf_read_index = kwargs.get('rx_buf_read_index', int())
         self.rx_buf_end_index = kwargs.get('rx_buf_end_index', int())
@@ -159,7 +159,7 @@ class IridiumsbdStatus(metaclass=Metaclass_IridiumsbdStatus):
             return False
         if self.timestamp != other.timestamp:
             return False
-        if self.last_heartbeat != other.last_heartbeat:
+        if self.last_at_ok_timestamp != other.last_at_ok_timestamp:
             return False
         if self.tx_buf_write_index != other.tx_buf_write_index:
             return False
@@ -210,19 +210,19 @@ class IridiumsbdStatus(metaclass=Metaclass_IridiumsbdStatus):
         self._timestamp = value
 
     @builtins.property
-    def last_heartbeat(self):
-        """Message field 'last_heartbeat'."""
-        return self._last_heartbeat
+    def last_at_ok_timestamp(self):
+        """Message field 'last_at_ok_timestamp'."""
+        return self._last_at_ok_timestamp
 
-    @last_heartbeat.setter
-    def last_heartbeat(self, value):
+    @last_at_ok_timestamp.setter
+    def last_at_ok_timestamp(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'last_heartbeat' field must be of type 'int'"
+                "The 'last_at_ok_timestamp' field must be of type 'int'"
             assert value >= 0 and value < 18446744073709551616, \
-                "The 'last_heartbeat' field must be an unsigned integer in [0, 18446744073709551615]"
-        self._last_heartbeat = value
+                "The 'last_at_ok_timestamp' field must be an unsigned integer in [0, 18446744073709551615]"
+        self._last_at_ok_timestamp = value
 
     @builtins.property
     def tx_buf_write_index(self):

@@ -75,6 +75,42 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: vel_body_filtered
+  {
+    if (msg.vel_body_filtered.size() == 0) {
+      out << "vel_body_filtered: []";
+    } else {
+      out << "vel_body_filtered: [";
+      size_t pending_items = msg.vel_body_filtered.size();
+      for (auto item : msg.vel_body_filtered) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: vel_ne_filtered
+  {
+    if (msg.vel_ne_filtered.size() == 0) {
+      out << "vel_ne_filtered: []";
+    } else {
+      out << "vel_ne_filtered: [";
+      size_t pending_items = msg.vel_ne_filtered.size();
+      for (auto item : msg.vel_ne_filtered) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
   // member: flow_rate_uncompensated
   {
     if (msg.flow_rate_uncompensated.size() == 0) {
@@ -220,6 +256,46 @@ inline void to_block_style_yaml(
     } else {
       out << "vel_ne:\n";
       for (auto item : msg.vel_ne) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: vel_body_filtered
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.vel_body_filtered.size() == 0) {
+      out << "vel_body_filtered: []\n";
+    } else {
+      out << "vel_body_filtered:\n";
+      for (auto item : msg.vel_body_filtered) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: vel_ne_filtered
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.vel_ne_filtered.size() == 0) {
+      out << "vel_ne_filtered: []\n";
+    } else {
+      out << "vel_ne_filtered:\n";
+      for (auto item : msg.vel_ne_filtered) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

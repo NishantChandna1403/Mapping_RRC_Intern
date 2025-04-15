@@ -405,6 +405,30 @@ px4_msgs__py/fast:
 	$(MAKE) $(MAKESILENT) -f px4_msgs__py/CMakeFiles/px4_msgs__py.dir/build.make px4_msgs__py/CMakeFiles/px4_msgs__py.dir/build
 .PHONY : px4_msgs__py/fast
 
+rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.c.s
+
 rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.o: rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.o
 
@@ -789,30 +813,6 @@ rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.c.s
 
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.o: rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.i: rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.s: rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.c.s
-
 rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.o: rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.o
 
@@ -980,30 +980,6 @@ rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.s: rosid
 rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.c.s
-
-rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.o: rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.i: rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.s: rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.o: rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.o
@@ -1221,30 +1197,6 @@ rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.c.s
 
-rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.c.s
-
 rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.o: rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.o
 
@@ -1292,6 +1244,30 @@ rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.s: rosidl_gene
 rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.o: rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.i: rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.s: rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.o: rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.o
@@ -1869,6 +1845,30 @@ rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.c.s
 
+rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.c.s
+
 rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.o
 
@@ -2444,6 +2444,30 @@ rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.s: rosidl_generator_c
 rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.o: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.i: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.s: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.o
@@ -3021,6 +3045,30 @@ rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.c.s
 
+rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.c.s
+
 rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.o
 
@@ -3140,6 +3188,102 @@ rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.s: ros
 rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.o: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.i: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.s: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.o: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.i: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.s: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.o: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.i: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.s: rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.o: rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.o
@@ -3549,6 +3693,30 @@ rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.c.s
 
+rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.c.s
+
 rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.o: rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.o
 
@@ -3788,6 +3956,198 @@ rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions
 rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.c.s
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.o
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.i: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.i
+
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.s: rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s
+.PHONY : rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.o: rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.o
@@ -4509,30 +4869,6 @@ rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.c.s
 
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.o: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.i: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.s: rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.c.s
-
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.o
 
@@ -4556,30 +4892,6 @@ rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.s: rosidl_
 rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.c.s
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.c.s
 
 rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.o: rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.o
@@ -5349,54 +5661,6 @@ rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.s
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c.s
 
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.i: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.s: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c.s
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.o: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.o
-
-# target to build an object file
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.o
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.i: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.i
-
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.s: rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_c.dir/rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s
-.PHONY : rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c.s
-
 rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.o: rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.c.o
 .PHONY : rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.o
 
@@ -5612,6 +5876,30 @@ rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.s
 rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
+
+rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_action_request_s.o: rosidl_generator_py/px4_msgs/msg/_action_request_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_action_request_s.o
@@ -5997,30 +6285,6 @@ rosidl_generator_py/px4_msgs/msg/_battery_status_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_battery_status_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_battery_status_s.c.s
 
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.o: rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_buffer128_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.i: rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_buffer128_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.s: rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_buffer128_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_buffer128_s.c.s
-
 rosidl_generator_py/px4_msgs/msg/_button_event_s.o: rosidl_generator_py/px4_msgs/msg/_button_event_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_button_event_s.o
 
@@ -6188,30 +6452,6 @@ rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.s: rosidl_generator_py
 rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.c.s
-
-rosidl_generator_py/px4_msgs/msg/_collision_report_s.o: rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_collision_report_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_collision_report_s.i: rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_collision_report_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_collision_report_s.s: rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_collision_report_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_collision_report_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_config_overrides_s.o: rosidl_generator_py/px4_msgs/msg/_config_overrides_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_config_overrides_s.o
@@ -6429,30 +6669,6 @@ rosidl_generator_py/px4_msgs/msg/_debug_vect_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_debug_vect_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_debug_vect_s.c.s
 
-rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.c.s
-
 rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.o: rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.o
 
@@ -6476,6 +6692,30 @@ rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.s: rosidl_generator_py
 rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.o: rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.i: rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.s: rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.o: rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.o
@@ -7077,6 +7317,30 @@ rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.c.s
 
+rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.o: rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.i: rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.s: rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.c.s
+
 rosidl_generator_py/px4_msgs/msg/_generator_status_s.o: rosidl_generator_py/px4_msgs/msg/_generator_status_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_generator_status_s.o
 
@@ -7652,6 +7916,30 @@ rosidl_generator_py/px4_msgs/msg/_input_rc_s.s: rosidl_generator_py/px4_msgs/msg
 rosidl_generator_py/px4_msgs/msg/_input_rc_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_input_rc_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_input_rc_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.o: rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.i: rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.s: rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.o: rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.o
@@ -8229,6 +8517,30 @@ rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.c.s
 
+rosidl_generator_py/px4_msgs/msg/_navigator_status_s.o: rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_navigator_status_s.i: rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_navigator_status_s.s: rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_navigator_status_s.c.s
+
 rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.o
 
@@ -8348,6 +8660,102 @@ rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.s: rosidl_generator_
 rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.o: rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.i: rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.s: rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.o: rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.i: rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.s: rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.o: rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.i: rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.s: rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.o: rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.i: rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.s: rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.o: rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.o
@@ -8757,6 +9165,30 @@ rosidl_generator_py/px4_msgs/msg/_pps_capture_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_pps_capture_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_pps_capture_s.c.s
 
+rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.o: rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.i: rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.s: rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.c.s
+
 rosidl_generator_py/px4_msgs/msg/_pwm_input_s.o: rosidl_generator_py/px4_msgs/msg/_pwm_input_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_pwm_input_s.o
 
@@ -8996,6 +9428,198 @@ rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.s: rosidl_gen
 rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.o: rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.i: rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.s: rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.o: rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.i: rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.s: rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.i: rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.s: rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.c.s
+
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.o: rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.o
+
+# target to build an object file
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.o
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.o
+
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.i: rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.i
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.i
+
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.s: rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.s
+.PHONY : rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_rpm_s.o: rosidl_generator_py/px4_msgs/msg/_rpm_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_rpm_s.o
@@ -9717,30 +10341,6 @@ rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_timesync_status_s.c.s
 
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.o: rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.i: rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.s: rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.c.s
-
 rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.o: rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.o
 
@@ -9764,30 +10364,6 @@ rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.s: rosidl_generator_py/p
 rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.c.s
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.o: rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.i: rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.s: rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.c.s
 
 rosidl_generator_py/px4_msgs/msg/_transponder_report_s.o: rosidl_generator_py/px4_msgs/msg/_transponder_report_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_transponder_report_s.o
@@ -10557,54 +11133,6 @@ rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.c.s
 
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.o: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.i: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.s: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.c.s
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.o: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.o
-
-# target to build an object file
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.o
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.o
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.i: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.i
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.i
-
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.s: rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.s
-.PHONY : rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.c.s
-
 rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.o: rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.c.o
 .PHONY : rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.o
 
@@ -10748,6 +11276,30 @@ rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.s: rosidl_generator_py/px4_m
 rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_generator_py.dir/build.make CMakeFiles/px4_msgs__rosidl_generator_py.dir/rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.c.s
 .PHONY : rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.c.s
+
+rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.o: rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.o
@@ -11133,30 +11685,6 @@ rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.cpp.s
 
-rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.o: rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.i: rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.s: rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.cpp.s
-
 rosidl_typesupport_c/px4_msgs/msg/button_event__type_support.o: rosidl_typesupport_c/px4_msgs/msg/button_event__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/button_event__type_support.o
 
@@ -11324,30 +11852,6 @@ rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.s: rosidl_
 rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.cpp.s
-
-rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.o: rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.i: rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.s: rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/config_overrides__type_support.o: rosidl_typesupport_c/px4_msgs/msg/config_overrides__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/config_overrides__type_support.o
@@ -11565,30 +12069,6 @@ rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.cpp.s
 
-rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s
-
 rosidl_typesupport_c/px4_msgs/msg/differential_pressure__type_support.o: rosidl_typesupport_c/px4_msgs/msg/differential_pressure__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/differential_pressure__type_support.o
 
@@ -11636,6 +12116,30 @@ rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.s: rosidl_typesu
 rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.o: rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.i: rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.s: rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/ekf2_timestamps__type_support.o: rosidl_typesupport_c/px4_msgs/msg/ekf2_timestamps__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/ekf2_timestamps__type_support.o
@@ -12213,6 +12717,30 @@ rosidl_typesupport_c/px4_msgs/msg/follow_target_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/follow_target_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/follow_target_status__type_support.cpp.s
 
+rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.cpp.s
+
 rosidl_typesupport_c/px4_msgs/msg/generator_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/generator_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/generator_status__type_support.o
 
@@ -12788,6 +13316,30 @@ rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.s: rosidl_typesupport_c
 rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.o: rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.i: rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.s: rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_status__type_support.o
@@ -13365,6 +13917,30 @@ rosidl_typesupport_c/px4_msgs/msg/navigator_mission_item__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/navigator_mission_item__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_mission_item__type_support.cpp.s
 
+rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.cpp.s
+
 rosidl_typesupport_c/px4_msgs/msg/normalized_unsigned_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/normalized_unsigned_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/normalized_unsigned_setpoint__type_support.o
 
@@ -13484,6 +14060,102 @@ rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.s: rosid
 rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.o: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.i: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.s: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.o: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.i: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.s: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.o: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.i: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.s: rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/orb_test__type_support.o: rosidl_typesupport_c/px4_msgs/msg/orb_test__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/orb_test__type_support.o
@@ -13893,6 +14565,30 @@ rosidl_typesupport_c/px4_msgs/msg/pps_capture__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/pps_capture__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/pps_capture__type_support.cpp.s
 
+rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s
+
 rosidl_typesupport_c/px4_msgs/msg/pwm_input__type_support.o: rosidl_typesupport_c/px4_msgs/msg/pwm_input__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/pwm_input__type_support.o
 
@@ -14132,6 +14828,198 @@ rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.s
 rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s
+
+rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.o
+
+rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.i: rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.i
+
+rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.s: rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/rpm__type_support.o: rosidl_typesupport_c/px4_msgs/msg/rpm__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/rpm__type_support.o
@@ -14853,30 +15741,6 @@ rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.cpp.s
 
-rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.o: rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.i: rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.s: rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.cpp.s
-
 rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.o
 
@@ -14900,30 +15764,6 @@ rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.s: rosidl_ty
 rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.cpp.s
-
-rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s
 
 rosidl_typesupport_c/px4_msgs/msg/transponder_report__type_support.o: rosidl_typesupport_c/px4_msgs/msg/transponder_report__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/transponder_report__type_support.o
@@ -15693,54 +16533,6 @@ rosidl_typesupport_c/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.s
 
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.o: rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.i: rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.s: rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s
-
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.o: rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.i: rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.s: rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s
-
 rosidl_typesupport_c/px4_msgs/msg/velocity_limits__type_support.o: rosidl_typesupport_c/px4_msgs/msg/velocity_limits__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/px4_msgs/msg/velocity_limits__type_support.o
 
@@ -15884,6 +16676,30 @@ rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.s: rosidl_typesu
 rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.o
@@ -16269,30 +17085,6 @@ rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.cpp.s
 
-rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.cpp.s
-
 rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.o
 
@@ -16460,30 +17252,6 @@ rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.s: rosid
 rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.cpp.s
-
-rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.o
@@ -16701,30 +17469,6 @@ rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.cpp.s
 
-rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.cpp.s
-
 rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.o
 
@@ -16772,6 +17516,30 @@ rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.s: rosidl_type
 rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.o
@@ -17349,6 +18117,30 @@ rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.cpp.s
 
+rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.cpp.s
+
 rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.o
 
@@ -17924,6 +18716,30 @@ rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.s: rosidl_typesupport
 rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.o
@@ -18501,6 +19317,30 @@ rosidl_typesupport_cpp/px4_msgs/msg/navigator_mission_item__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/navigator_mission_item__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_mission_item__type_support.cpp.s
 
+rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.cpp.s
+
 rosidl_typesupport_cpp/px4_msgs/msg/normalized_unsigned_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/normalized_unsigned_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/normalized_unsigned_setpoint__type_support.o
 
@@ -18620,6 +19460,102 @@ rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.s: ros
 rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/orb_test__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/orb_test__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/orb_test__type_support.o
@@ -19029,6 +19965,30 @@ rosidl_typesupport_cpp/px4_msgs/msg/pps_capture__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/pps_capture__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pps_capture__type_support.cpp.s
 
+rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.cpp.s
+
 rosidl_typesupport_cpp/px4_msgs/msg/pwm_input__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/pwm_input__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/pwm_input__type_support.o
 
@@ -19268,6 +20228,198 @@ rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support
 rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.cpp.s
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/rpm__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/rpm__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/rpm__type_support.o
@@ -19989,30 +21141,6 @@ rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.cpp.s
 
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.cpp.s
-
 rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.o
 
@@ -20036,30 +21164,6 @@ rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.s: rosidl_
 rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.cpp.s
-
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.cpp.s
 
 rosidl_typesupport_cpp/px4_msgs/msg/transponder_report__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/transponder_report__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/transponder_report__type_support.o
@@ -20829,54 +21933,6 @@ rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.cpp.s
 
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.cpp.s
-
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.i: rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.s: rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.cpp.s
-
 rosidl_typesupport_cpp/px4_msgs/msg/velocity_limits__type_support.o: rosidl_typesupport_cpp/px4_msgs/msg/velocity_limits__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/px4_msgs/msg/velocity_limits__type_support.o
 
@@ -21020,6 +22076,30 @@ rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.s: rosidl_type
 rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__type_support_c.o
@@ -21405,30 +22485,6 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.cpp.s
-
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/button_event__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/button_event__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/button_event__type_support_c.o
 
@@ -21596,30 +22652,6 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_su
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/config_overrides__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/config_overrides__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/config_overrides__type_support_c.o
@@ -21837,30 +22869,6 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.cpp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.cpp.s
-
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_pressure__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_pressure__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_pressure__type_support_c.o
 
@@ -21908,6 +22916,30 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ekf2_timestamps__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ekf2_timestamps__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ekf2_timestamps__type_support_c.o
@@ -22485,6 +23517,30 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/follow_target_status__type_sup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/follow_target_status__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/follow_target_status__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/generator_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/generator_status__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/generator_status__type_support_c.o
 
@@ -23060,6 +24116,30 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.s: ro
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support_c.o
@@ -23637,6 +24717,30 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.o
 
@@ -23756,6 +24860,102 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.o
@@ -24165,6 +25365,30 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.cp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.o
 
@@ -24404,6 +25628,198 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.o
@@ -25125,30 +26541,6 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.cpp.s
-
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.o
 
@@ -25172,30 +26564,6 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_supp
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.o
@@ -25965,54 +27333,6 @@ rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.i: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.s: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.cpp.s
-
 rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/velocity_limits__type_support_c.o: rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/velocity_limits__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/velocity_limits__type_support_c.o
 
@@ -26156,6 +27476,30 @@ rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_
 rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.o
@@ -26541,30 +27885,6 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.cpp.s
-
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.o
 
@@ -26732,30 +28052,6 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_const
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.o
@@ -26973,30 +28269,6 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.cpp.s
-
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.o
 
@@ -27044,6 +28316,30 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.o
@@ -27621,6 +28917,30 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_status__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.o
 
@@ -28196,6 +29516,30 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.o
@@ -28773,6 +30117,30 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_missi
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_mission_item__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_mission_item__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.o
 
@@ -28892,6 +30260,102 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_compute
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.o
@@ -29301,6 +30765,30 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__ty
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.o
 
@@ -29540,6 +31028,198 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_co
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.o
@@ -30261,30 +31941,6 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.cpp.s
-
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.o
 
@@ -30308,30 +31964,6 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setp
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.o
@@ -31101,54 +32733,6 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_setpoint__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.i: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.s: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.cpp.s
-
 rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/velocity_limits__type_support.o: rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/velocity_limits__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/velocity_limits__type_support.o
 
@@ -31292,6 +32876,30 @@ rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command
 rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.cpp.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.o
@@ -31677,30 +33285,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_supp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_support.c.s
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.c.s
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.o
 
@@ -31868,30 +33452,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__ty
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__type_support.c.s
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/config_overrides__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/config_overrides__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/config_overrides__type_support.o
@@ -32109,30 +33669,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.c.s
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.c.s
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.o
 
@@ -32180,6 +33716,30 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_sup
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.o
@@ -32757,6 +34317,30 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/follow_target_status__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/follow_target_status__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/follow_target_status__type_support.c.s
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.c.s
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.o
 
@@ -33332,6 +34916,30 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.s:
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.o
@@ -33909,6 +35517,30 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__t
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.c.s
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.c.s
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.o
 
@@ -34028,6 +35660,102 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test__type_support.o
@@ -34437,6 +36165,30 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support.c.s
 
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.c.s
+
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.o
 
@@ -34676,6 +36428,198 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_re
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.c.s
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.o
@@ -35397,30 +37341,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_sup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_support.c.s
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.c.s
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.o
 
@@ -35444,30 +37364,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.c.s
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.c.s
 
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.o
@@ -36237,54 +38133,6 @@ rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.c.s
 
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c.s
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.o
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.i: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.i
-
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.s: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c.s
-
 rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.o: rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.o
 
@@ -36428,6 +38276,30 @@ rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_sup
 rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.o
@@ -36813,30 +38685,6 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_su
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.s
-
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.o
 
@@ -37004,30 +38852,6 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.o
@@ -37245,30 +39069,6 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_suppor
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.cpp.s
-
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.o
 
@@ -37316,6 +39116,30 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_s
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.o
@@ -37893,6 +39717,30 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__t
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.o
 
@@ -38468,6 +40316,30 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.o
@@ -39045,6 +40917,30 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_mission_item_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_mission_item__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_mission_item__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.o
 
@@ -39164,6 +41060,102 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test__type_support.o
@@ -39573,6 +41565,30 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_suppo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.o
 
@@ -39812,6 +41828,198 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.o
@@ -40533,30 +42741,6 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp.s
-
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.o
 
@@ -40580,30 +42764,6 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__ty
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.o
@@ -41373,54 +43533,6 @@ rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.i: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.s: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp.s
-
 rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/velocity_limits__type_support.o: rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/velocity_limits__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/velocity_limits__type_support.o
 
@@ -41596,6 +43708,9 @@ help:
 	@echo "... px4_msgs__rosidl_typesupport_introspection_c"
 	@echo "... px4_msgs__rosidl_typesupport_introspection_c__pyext"
 	@echo "... px4_msgs__rosidl_typesupport_introspection_cpp"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/action_request__functions.s"
@@ -41644,9 +43759,6 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/battery_status__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/buffer128__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/button_event__functions.s"
@@ -41668,9 +43780,6 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/collision_constraints__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/collision_report__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/config_overrides__functions.s"
@@ -41698,15 +43807,15 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/differential_drive_setpoint__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/differential_pressure__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/distance_sensor__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.s"
@@ -41779,6 +43888,9 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/follow_target_status__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/fuel_tank_status__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/generator_status__functions.s"
@@ -41851,6 +43963,9 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/input_rc__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_control__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/internal_combustion_engine_status__functions.s"
@@ -41923,6 +44038,9 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/navigator_mission_item__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/navigator_status__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.s"
@@ -41938,6 +44056,18 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/onboard_computer_status__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_arm_status__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_operator_id__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_self_id__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/open_drone_id_system__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/orb_test__functions.s"
@@ -41989,6 +44119,9 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pps_capture__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pure_pursuit_status__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/pwm_input__functions.s"
@@ -42019,6 +44152,30 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/register_ext_component_request__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_status__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_position_setpoint__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_rate_setpoint__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_rate_status__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_steering_setpoint__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_throttle_setpoint__functions.s"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.o"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.i"
+	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rover_velocity_status__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/rpm__functions.s"
@@ -42109,15 +44266,9 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/timesync_status__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_bezier__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/trajectory_waypoint__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/transponder_report__functions.s"
@@ -42214,12 +44365,6 @@ help:
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.s"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.o"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.i"
-	@echo "... rosidl_generator_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.s"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.o"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.i"
 	@echo "... rosidl_generator_c/px4_msgs/msg/detail/velocity_limits__functions.s"
@@ -42247,6 +44392,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/px4_msgs/_px4_msgs_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_ackermann_velocity_setpoint_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_action_request_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_action_request_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_action_request_s.s"
@@ -42295,9 +44443,6 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_battery_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_battery_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_battery_status_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_buffer128_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_buffer128_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_buffer128_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_button_event_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_button_event_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_button_event_s.s"
@@ -42319,9 +44464,6 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_collision_constraints_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_collision_report_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_collision_report_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_collision_report_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_config_overrides_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_config_overrides_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_config_overrides_s.s"
@@ -42349,12 +44491,12 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_debug_vect_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_debug_vect_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_debug_vect_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_differential_drive_setpoint_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_differential_pressure_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_distance_sensor_mode_change_request_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_distance_sensor_s.s"
@@ -42430,6 +44572,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_follow_target_status_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_fuel_tank_status_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_generator_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_generator_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_generator_status_s.s"
@@ -42502,6 +44647,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_input_rc_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_input_rc_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_input_rc_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_control_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_internal_combustion_engine_status_s.s"
@@ -42574,6 +44722,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_navigator_mission_item_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_navigator_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_navigator_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_navigator_status_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_normalized_unsigned_setpoint_s.s"
@@ -42589,6 +44740,18 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_onboard_computer_status_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_arm_status_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_operator_id_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_self_id_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_open_drone_id_system_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_orb_test_large_s.s"
@@ -42640,6 +44803,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_pps_capture_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_pps_capture_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_pps_capture_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_pure_pursuit_status_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_pwm_input_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_pwm_input_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_pwm_input_s.s"
@@ -42670,6 +44836,30 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_register_ext_component_request_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_attitude_setpoint_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_attitude_status_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_position_setpoint_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_rate_setpoint_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_rate_status_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_steering_setpoint_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_throttle_setpoint_s.s"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.o"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.i"
+	@echo "... rosidl_generator_py/px4_msgs/msg/_rover_velocity_status_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_rpm_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_rpm_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_rpm_s.s"
@@ -42760,15 +44950,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_timesync_status_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_timesync_status_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_timesync_status_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_bezier_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_setpoint_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_trajectory_waypoint_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_transponder_report_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_transponder_report_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_transponder_report_s.s"
@@ -42865,12 +45049,6 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_torque_setpoint_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_bezier_s.s"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.o"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.i"
-	@echo "... rosidl_generator_py/px4_msgs/msg/_vehicle_trajectory_waypoint_s.s"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/msg/_velocity_limits_s.s"
@@ -42889,6 +45067,9 @@ help:
 	@echo "... rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.o"
 	@echo "... rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.i"
 	@echo "... rosidl_generator_py/px4_msgs/srv/_vehicle_command_s.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/ackermann_velocity_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/action_request__type_support.s"
@@ -42937,9 +45118,6 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/battery_status__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/buffer128__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/button_event__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/button_event__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/button_event__type_support.s"
@@ -42961,9 +45139,6 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/collision_constraints__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/collision_report__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/config_overrides__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/config_overrides__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/config_overrides__type_support.s"
@@ -42991,15 +45166,15 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/debug_vect__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/differential_drive_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/differential_pressure__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/differential_pressure__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/differential_pressure__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/distance_sensor__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/distance_sensor_mode_change_request__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/ekf2_timestamps__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/ekf2_timestamps__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/ekf2_timestamps__type_support.s"
@@ -43072,6 +45247,9 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/follow_target_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/follow_target_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/follow_target_status__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/fuel_tank_status__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/generator_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/generator_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/generator_status__type_support.s"
@@ -43144,6 +45322,9 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/input_rc__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_control__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/internal_combustion_engine_status__type_support.s"
@@ -43216,6 +45397,9 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/navigator_mission_item__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/navigator_mission_item__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/navigator_mission_item__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/navigator_status__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/normalized_unsigned_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/normalized_unsigned_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/normalized_unsigned_setpoint__type_support.s"
@@ -43231,6 +45415,18 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/onboard_computer_status__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_arm_status__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_operator_id__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_self_id__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/open_drone_id_system__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/orb_test__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/orb_test__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/orb_test__type_support.s"
@@ -43282,6 +45478,9 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/pps_capture__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/pps_capture__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/pps_capture__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/pure_pursuit_status__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/pwm_input__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/pwm_input__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/pwm_input__type_support.s"
@@ -43312,6 +45511,30 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/register_ext_component_request__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_attitude_status__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_position_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_rate_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_rate_status__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_steering_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_throttle_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.o"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.i"
+	@echo "... rosidl_typesupport_c/px4_msgs/msg/rover_velocity_status__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/rpm__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/rpm__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/rpm__type_support.s"
@@ -43402,15 +45625,9 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/timesync_status__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_bezier__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/transponder_report__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/transponder_report__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/transponder_report__type_support.s"
@@ -43507,12 +45724,6 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_torque_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_torque_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_torque_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_bezier__type_support.s"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_c/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/velocity_limits__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/velocity_limits__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/msg/velocity_limits__type_support.s"
@@ -43531,6 +45742,9 @@ help:
 	@echo "... rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.o"
 	@echo "... rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.i"
 	@echo "... rosidl_typesupport_c/px4_msgs/srv/vehicle_command__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/ackermann_velocity_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/action_request__type_support.s"
@@ -43579,9 +45793,6 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/battery_status__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/buffer128__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/button_event__type_support.s"
@@ -43603,9 +45814,6 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/collision_constraints__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/collision_report__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/config_overrides__type_support.s"
@@ -43633,15 +45841,15 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/debug_vect__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/differential_drive_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/differential_pressure__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/distance_sensor_mode_change_request__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/ekf2_timestamps__type_support.s"
@@ -43714,6 +45922,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/follow_target_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/fuel_tank_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/generator_status__type_support.s"
@@ -43786,6 +45997,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/input_rc__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_control__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/internal_combustion_engine_status__type_support.s"
@@ -43858,6 +46072,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/navigator_mission_item__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/navigator_mission_item__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/navigator_mission_item__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/navigator_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/normalized_unsigned_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/normalized_unsigned_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/normalized_unsigned_setpoint__type_support.s"
@@ -43873,6 +46090,18 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/onboard_computer_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_arm_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_operator_id__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_self_id__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/open_drone_id_system__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/orb_test__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/orb_test__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/orb_test__type_support.s"
@@ -43924,6 +46153,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pps_capture__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pps_capture__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pps_capture__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pure_pursuit_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pwm_input__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pwm_input__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/pwm_input__type_support.s"
@@ -43954,6 +46186,30 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/register_ext_component_request__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_attitude_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_position_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_rate_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_steering_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_throttle_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rover_velocity_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rpm__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rpm__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/rpm__type_support.s"
@@ -44044,15 +46300,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/timesync_status__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_bezier__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/transponder_report__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/transponder_report__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/transponder_report__type_support.s"
@@ -44149,12 +46399,6 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_torque_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_bezier__type_support.s"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/vehicle_trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/velocity_limits__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/velocity_limits__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/msg/velocity_limits__type_support.s"
@@ -44173,6 +46417,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.o"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.i"
 	@echo "... rosidl_typesupport_cpp/px4_msgs/srv/vehicle_command__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/action_request__type_support_c.s"
@@ -44221,9 +46468,6 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/battery_status__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/buffer128__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/button_event__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/button_event__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/button_event__type_support_c.s"
@@ -44245,9 +46489,6 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_constraints__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/collision_report__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/config_overrides__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/config_overrides__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/config_overrides__type_support_c.s"
@@ -44275,15 +46516,15 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/debug_vect__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_pressure__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_pressure__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/differential_pressure__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ekf2_timestamps__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ekf2_timestamps__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/ekf2_timestamps__type_support_c.s"
@@ -44356,6 +46597,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/follow_target_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/follow_target_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/follow_target_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/fuel_tank_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/generator_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/generator_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/generator_status__type_support_c.s"
@@ -44428,6 +46672,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/input_rc__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support_c.s"
@@ -44500,6 +46747,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_mission_item__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/navigator_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support_c.s"
@@ -44515,6 +46765,18 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/onboard_computer_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/open_drone_id_system__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/orb_test__type_support_c.s"
@@ -44566,6 +46828,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pps_capture__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pure_pursuit_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/pwm_input__type_support_c.s"
@@ -44596,6 +46861,30 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/register_ext_component_request__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_attitude_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_position_setpoint__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_rate_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rover_velocity_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/rpm__type_support_c.s"
@@ -44686,15 +46975,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/timesync_status__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_bezier__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_setpoint__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/trajectory_waypoint__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/transponder_report__type_support_c.s"
@@ -44791,12 +47074,6 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/velocity_limits__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/velocity_limits__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/msg/detail/velocity_limits__type_support_c.s"
@@ -44815,6 +47092,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/px4_msgs/srv/detail/vehicle_command__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ackermann_velocity_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/action_request__type_support.s"
@@ -44863,9 +47143,6 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/battery_status__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/buffer128__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/button_event__type_support.s"
@@ -44887,9 +47164,6 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_constraints__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/collision_report__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/config_overrides__type_support.s"
@@ -44917,15 +47191,15 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/debug_vect__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_drive_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/differential_pressure__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/distance_sensor_mode_change_request__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/ekf2_timestamps__type_support.s"
@@ -44998,6 +47272,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/follow_target_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/fuel_tank_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/generator_status__type_support.s"
@@ -45070,6 +47347,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/input_rc__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_control__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/internal_combustion_engine_status__type_support.s"
@@ -45142,6 +47422,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_mission_item__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_mission_item__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_mission_item__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/navigator_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/normalized_unsigned_setpoint__type_support.s"
@@ -45157,6 +47440,18 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/onboard_computer_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_arm_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_operator_id__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_self_id__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/open_drone_id_system__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/orb_test__type_support.s"
@@ -45208,6 +47503,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pps_capture__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pure_pursuit_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/pwm_input__type_support.s"
@@ -45238,6 +47536,30 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/register_ext_component_request__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_attitude_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_position_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_rate_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_steering_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_throttle_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rover_velocity_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/rpm__type_support.s"
@@ -45328,15 +47650,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/timesync_status__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_bezier__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/transponder_report__type_support.s"
@@ -45433,12 +47749,6 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_torque_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_bezier__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/vehicle_trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/velocity_limits__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/velocity_limits__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/msg/detail/dds_fastrtps/velocity_limits__type_support.s"
@@ -45457,6 +47767,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/px4_msgs/srv/detail/dds_fastrtps/vehicle_command__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/action_request__type_support.s"
@@ -45505,9 +47818,6 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/battery_status__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/buffer128__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/button_event__type_support.s"
@@ -45529,9 +47839,6 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_constraints__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/collision_report__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/config_overrides__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/config_overrides__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/config_overrides__type_support.s"
@@ -45559,15 +47866,15 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/debug_vect__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_drive_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/differential_pressure__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.s"
@@ -45640,6 +47947,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/follow_target_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/follow_target_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/follow_target_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/fuel_tank_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/generator_status__type_support.s"
@@ -45712,6 +48022,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/input_rc__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.s"
@@ -45784,6 +48097,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_mission_item__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/navigator_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.s"
@@ -45799,6 +48115,18 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/onboard_computer_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_self_id__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/open_drone_id_system__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/orb_test__type_support.s"
@@ -45850,6 +48178,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pps_capture__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pure_pursuit_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/pwm_input__type_support.s"
@@ -45880,6 +48211,30 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/register_ext_component_request__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_attitude_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_position_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_rate_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_steering_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rover_velocity_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/rpm__type_support.s"
@@ -45970,15 +48325,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/timesync_status__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_bezier__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/transponder_report__type_support.s"
@@ -46075,12 +48424,6 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/msg/detail/velocity_limits__type_support.s"
@@ -46099,6 +48442,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/px4_msgs/srv/detail/vehicle_command__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ackermann_velocity_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.s"
@@ -46147,9 +48493,6 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.s"
@@ -46171,9 +48514,6 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_constraints__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/collision_report__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/config_overrides__type_support.s"
@@ -46201,15 +48541,15 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/debug_vect__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_drive_setpoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/differential_pressure__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/ekf2_timestamps__type_support.s"
@@ -46282,6 +48622,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/follow_target_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/fuel_tank_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/generator_status__type_support.s"
@@ -46354,6 +48697,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/input_rc__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_control__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.s"
@@ -46426,6 +48772,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_mission_item__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_mission_item__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_mission_item__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/navigator_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.s"
@@ -46441,6 +48790,18 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/onboard_computer_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_self_id__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/open_drone_id_system__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/orb_test__type_support.s"
@@ -46492,6 +48853,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pps_capture__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pure_pursuit_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/pwm_input__type_support.s"
@@ -46522,6 +48886,30 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/register_ext_component_request__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_attitude_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_position_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_rate_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_steering_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_throttle_setpoint__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rover_velocity_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/rpm__type_support.s"
@@ -46612,15 +49000,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/timesync_status__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_bezier__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/transponder_report__type_support.s"
@@ -46717,12 +49099,6 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/velocity_limits__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/velocity_limits__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/velocity_limits__type_support.s"

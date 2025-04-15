@@ -28,8 +28,8 @@ module px4_msgs {
       boolean cs_yaw_align;
 
       @verbatim (language="comment", text=
-        "2 - true if GPS measurement fusion is intended")
-      boolean cs_gps;
+        "2 - true if GNSS position measurement fusion is intended")
+      boolean cs_gnss_pos;
 
       @verbatim (language="comment", text=
         "3 - true if optical flow measurements fusion is intended")
@@ -56,15 +56,15 @@ module px4_msgs {
       boolean cs_wind;
 
       @verbatim (language="comment", text=
-        "9 - true when baro height is being fused as a primary height reference")
+        "9 - true when baro data is being fused")
       boolean cs_baro_hgt;
 
       @verbatim (language="comment", text=
-        "10 - true when range finder height is being fused as a primary height reference")
+        "10 - true when range finder data is being fused for height aiding")
       boolean cs_rng_hgt;
 
       @verbatim (language="comment", text=
-        "11 - true when GPS height is being fused as a primary height reference")
+        "11 - true when GPS altitude is being fused")
       boolean cs_gps_hgt;
 
       @verbatim (language="comment", text=
@@ -109,7 +109,7 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "22 - true when yaw (not ground course) data fusion from a GPS receiver is intended")
-      boolean cs_gps_yaw;
+      boolean cs_gnss_yaw;
 
       @verbatim (language="comment", text=
         "23 - true when the in-flight mag field alignment has been completed")
@@ -129,7 +129,7 @@ module px4_msgs {
 
       @verbatim (language="comment", text=
         "27 - true when the GNSS heading has been declared faulty and is no longer being used")
-      boolean cs_gps_yaw_fault;
+      boolean cs_gnss_yaw_fault;
 
       @verbatim (language="comment", text=
         "28 - true when the range finder has been declared faulty and is no longer being used")
@@ -176,6 +176,30 @@ module px4_msgs {
       boolean cs_aux_gpos;
 
       @verbatim (language="comment", text=
+        "39 - true if we are fusing range finder data for terrain")
+      boolean cs_rng_terrain;
+
+      @verbatim (language="comment", text=
+        "40 - true if we are fusing flow data for terrain")
+      boolean cs_opt_flow_terrain;
+
+      @verbatim (language="comment", text=
+        "41 - true if a valid constant position is being fused")
+      boolean cs_valid_fake_pos;
+
+      @verbatim (language="comment", text=
+        "42 - true if the vehicle is at a constant position")
+      boolean cs_constant_pos;
+
+      @verbatim (language="comment", text=
+        "43 - true when the current baro has been declared faulty and is no longer being used")
+      boolean cs_baro_fault;
+
+      @verbatim (language="comment", text=
+        "44 - true if GNSS velocity measurement fusion is intended")
+      boolean cs_gnss_vel;
+
+      @verbatim (language="comment", text=
         "fault status" "\n"
         "number of filter fault status (fs) changes")
       uint32 fault_status_changes;
@@ -215,10 +239,6 @@ module px4_msgs {
       @verbatim (language="comment", text=
         "8 - true if fusion of the optical flow Y axis has encountered a numerical error")
       boolean fs_bad_optflow_y;
-
-      @verbatim (language="comment", text=
-        "9 - true if bad delta velocity bias estimates have been detected")
-      boolean fs_bad_acc_bias;
 
       @verbatim (language="comment", text=
         "10 - true if bad vertical accelerometer data has been detected")

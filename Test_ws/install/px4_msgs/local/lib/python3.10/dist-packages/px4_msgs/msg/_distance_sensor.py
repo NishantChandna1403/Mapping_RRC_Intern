@@ -44,6 +44,9 @@ class Metaclass_DistanceSensor(type):
         'ROTATION_UPWARD_FACING': 24,
         'ROTATION_DOWNWARD_FACING': 25,
         'ROTATION_CUSTOM': 100,
+        'MODE_UNKNOWN': 0,
+        'MODE_ENABLED': 1,
+        'MODE_DISABLED': 2,
     }
 
     @classmethod
@@ -91,6 +94,9 @@ class Metaclass_DistanceSensor(type):
             'ROTATION_UPWARD_FACING': cls.__constants['ROTATION_UPWARD_FACING'],
             'ROTATION_DOWNWARD_FACING': cls.__constants['ROTATION_DOWNWARD_FACING'],
             'ROTATION_CUSTOM': cls.__constants['ROTATION_CUSTOM'],
+            'MODE_UNKNOWN': cls.__constants['MODE_UNKNOWN'],
+            'MODE_ENABLED': cls.__constants['MODE_ENABLED'],
+            'MODE_DISABLED': cls.__constants['MODE_DISABLED'],
         }
 
     @property
@@ -188,6 +194,21 @@ class Metaclass_DistanceSensor(type):
         """Message constant 'ROTATION_CUSTOM'."""
         return Metaclass_DistanceSensor.__constants['ROTATION_CUSTOM']
 
+    @property
+    def MODE_UNKNOWN(self):
+        """Message constant 'MODE_UNKNOWN'."""
+        return Metaclass_DistanceSensor.__constants['MODE_UNKNOWN']
+
+    @property
+    def MODE_ENABLED(self):
+        """Message constant 'MODE_ENABLED'."""
+        return Metaclass_DistanceSensor.__constants['MODE_ENABLED']
+
+    @property
+    def MODE_DISABLED(self):
+        """Message constant 'MODE_DISABLED'."""
+        return Metaclass_DistanceSensor.__constants['MODE_DISABLED']
+
 
 class DistanceSensor(metaclass=Metaclass_DistanceSensor):
     """
@@ -213,6 +234,9 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
       ROTATION_UPWARD_FACING
       ROTATION_DOWNWARD_FACING
       ROTATION_CUSTOM
+      MODE_UNKNOWN
+      MODE_ENABLED
+      MODE_DISABLED
     """
 
     __slots__ = [
@@ -228,6 +252,7 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
         '_v_fov',
         '_q',
         '_orientation',
+        '_mode',
     ]
 
     _fields_and_field_types = {
@@ -243,6 +268,7 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
         'v_fov': 'float',
         'q': 'float[4]',
         'orientation': 'uint8',
+        'mode': 'uint8',
     }
 
     SLOT_TYPES = (
@@ -257,6 +283,7 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 4),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
@@ -280,6 +307,7 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
             self.q = numpy.array(kwargs.get('q'), dtype=numpy.float32)
             assert self.q.shape == (4, )
         self.orientation = kwargs.get('orientation', int())
+        self.mode = kwargs.get('mode', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -333,6 +361,8 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
         if all(self.q != other.q):
             return False
         if self.orientation != other.orientation:
+            return False
+        if self.mode != other.mode:
             return False
         return True
 
@@ -536,3 +566,18 @@ class DistanceSensor(metaclass=Metaclass_DistanceSensor):
             assert value >= 0 and value < 256, \
                 "The 'orientation' field must be an unsigned integer in [0, 255]"
         self._orientation = value
+
+    @builtins.property
+    def mode(self):
+        """Message field 'mode'."""
+        return self._mode
+
+    @mode.setter
+    def mode(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'mode' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'mode' field must be an unsigned integer in [0, 255]"
+        self._mode = value

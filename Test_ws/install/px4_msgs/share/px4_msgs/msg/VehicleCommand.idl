@@ -6,6 +6,7 @@
 module px4_msgs {
   module msg {
     module VehicleCommand_Constants {
+      const uint32 MESSAGE_VERSION = 0;
       @verbatim (language="comment", text=
         "test command")
       const uint16 VEHICLE_CMD_CUSTOM_0 = 0;
@@ -294,6 +295,7 @@ module px4_msgs {
       @verbatim (language="comment", text=
         "external reset of estimator global position when deadreckoning")
       const uint16 VEHICLE_CMD_EXTERNAL_POSITION_ESTIMATE = 43003;
+      const uint16 VEHICLE_CMD_EXTERNAL_WIND_ESTIMATE = 43004;
       @verbatim (language="comment", text=
         "PX4 vehicle commands (beyond 16 bit mavlink commands)" "\n"        "start of PX4 internal only vehicle commands (> UINT16_MAX)")
       const uint32 VEHICLE_CMD_PX4_INTERNAL_START = 65537;
@@ -367,6 +369,14 @@ module px4_msgs {
       const uint8 SPEED_TYPE_GROUNDSPEED = 1;
       const uint8 SPEED_TYPE_CLIMB_SPEED = 2;
       const uint8 SPEED_TYPE_DESCEND_SPEED = 3;
+      @verbatim (language="comment", text=
+        "used as param3 in CMD_DO_ORBIT")
+      const uint8 ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER = 0;
+      const uint8 ORBIT_YAW_BEHAVIOUR_HOLD_INITIAL_HEADING = 1;
+      const uint8 ORBIT_YAW_BEHAVIOUR_UNCONTROLLED = 2;
+      const uint8 ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TANGENT_TO_CIRCLE = 3;
+      const uint8 ORBIT_YAW_BEHAVIOUR_RC_CONTROLLED = 4;
+      const uint8 ORBIT_YAW_BEHAVIOUR_UNCHANGED = 5;
       @verbatim (language="comment", text=
         "used as param1 in ARM_DISARM command")
       const int8 ARMING_ACTION_DISARM = 0;

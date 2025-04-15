@@ -11,6 +11,8 @@ import math  # noqa: E402, I100
 
 # Member 'vel_body'
 # Member 'vel_ne'
+# Member 'vel_body_filtered'
+# Member 'vel_ne_filtered'
 # Member 'flow_rate_uncompensated'
 # Member 'flow_rate_compensated'
 # Member 'gyro_rate'
@@ -70,6 +72,8 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
         '_timestamp_sample',
         '_vel_body',
         '_vel_ne',
+        '_vel_body_filtered',
+        '_vel_ne_filtered',
         '_flow_rate_uncompensated',
         '_flow_rate_compensated',
         '_gyro_rate',
@@ -82,6 +86,8 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
         'timestamp_sample': 'uint64',
         'vel_body': 'float[2]',
         'vel_ne': 'float[2]',
+        'vel_body_filtered': 'float[2]',
+        'vel_ne_filtered': 'float[2]',
         'flow_rate_uncompensated': 'float[2]',
         'flow_rate_compensated': 'float[2]',
         'gyro_rate': 'float[3]',
@@ -92,6 +98,8 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
@@ -117,6 +125,16 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
         else:
             self.vel_ne = numpy.array(kwargs.get('vel_ne'), dtype=numpy.float32)
             assert self.vel_ne.shape == (2, )
+        if 'vel_body_filtered' not in kwargs:
+            self.vel_body_filtered = numpy.zeros(2, dtype=numpy.float32)
+        else:
+            self.vel_body_filtered = numpy.array(kwargs.get('vel_body_filtered'), dtype=numpy.float32)
+            assert self.vel_body_filtered.shape == (2, )
+        if 'vel_ne_filtered' not in kwargs:
+            self.vel_ne_filtered = numpy.zeros(2, dtype=numpy.float32)
+        else:
+            self.vel_ne_filtered = numpy.array(kwargs.get('vel_ne_filtered'), dtype=numpy.float32)
+            assert self.vel_ne_filtered.shape == (2, )
         if 'flow_rate_uncompensated' not in kwargs:
             self.flow_rate_uncompensated = numpy.zeros(2, dtype=numpy.float32)
         else:
@@ -179,6 +197,10 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
         if all(self.vel_body != other.vel_body):
             return False
         if all(self.vel_ne != other.vel_ne):
+            return False
+        if all(self.vel_body_filtered != other.vel_body_filtered):
+            return False
+        if all(self.vel_ne_filtered != other.vel_ne_filtered):
             return False
         if all(self.flow_rate_uncompensated != other.flow_rate_uncompensated):
             return False
@@ -288,6 +310,68 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
                 "The 'vel_ne' field must be a set or sequence with length 2 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._vel_ne = numpy.array(value, dtype=numpy.float32)
+
+    @builtins.property
+    def vel_body_filtered(self):
+        """Message field 'vel_body_filtered'."""
+        return self._vel_body_filtered
+
+    @vel_body_filtered.setter
+    def vel_body_filtered(self, value):
+        if isinstance(value, numpy.ndarray):
+            assert value.dtype == numpy.float32, \
+                "The 'vel_body_filtered' numpy.ndarray() must have the dtype of 'numpy.float32'"
+            assert value.size == 2, \
+                "The 'vel_body_filtered' numpy.ndarray() must have a size of 2"
+            self._vel_body_filtered = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) == 2 and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'vel_body_filtered' field must be a set or sequence with length 2 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._vel_body_filtered = numpy.array(value, dtype=numpy.float32)
+
+    @builtins.property
+    def vel_ne_filtered(self):
+        """Message field 'vel_ne_filtered'."""
+        return self._vel_ne_filtered
+
+    @vel_ne_filtered.setter
+    def vel_ne_filtered(self, value):
+        if isinstance(value, numpy.ndarray):
+            assert value.dtype == numpy.float32, \
+                "The 'vel_ne_filtered' numpy.ndarray() must have the dtype of 'numpy.float32'"
+            assert value.size == 2, \
+                "The 'vel_ne_filtered' numpy.ndarray() must have a size of 2"
+            self._vel_ne_filtered = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) == 2 and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'vel_ne_filtered' field must be a set or sequence with length 2 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._vel_ne_filtered = numpy.array(value, dtype=numpy.float32)
 
     @builtins.property
     def flow_rate_uncompensated(self):

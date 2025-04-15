@@ -22,6 +22,7 @@ class Metaclass_AirspeedValidated(type):
     _TYPE_SUPPORT = None
 
     __constants = {
+        'MESSAGE_VERSION': 0,
     }
 
     @classmethod
@@ -50,11 +51,22 @@ class Metaclass_AirspeedValidated(type):
         # the message class under "Data and other attributes defined here:"
         # as well as populate each message instance
         return {
+            'MESSAGE_VERSION': cls.__constants['MESSAGE_VERSION'],
         }
+
+    @property
+    def MESSAGE_VERSION(self):
+        """Message constant 'MESSAGE_VERSION'."""
+        return Metaclass_AirspeedValidated.__constants['MESSAGE_VERSION']
 
 
 class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
-    """Message class 'AirspeedValidated'."""
+    """
+    Message class 'AirspeedValidated'.
+
+    Constants:
+      MESSAGE_VERSION
+    """
 
     __slots__ = [
         '_timestamp',
@@ -65,6 +77,9 @@ class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
         '_true_ground_minus_wind_m_s',
         '_airspeed_sensor_measurement_valid',
         '_selected_airspeed_index',
+        '_airspeed_derivative_filtered',
+        '_throttle_filtered',
+        '_pitch_filtered',
     ]
 
     _fields_and_field_types = {
@@ -76,6 +91,9 @@ class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
         'true_ground_minus_wind_m_s': 'float',
         'airspeed_sensor_measurement_valid': 'boolean',
         'selected_airspeed_index': 'int8',
+        'airspeed_derivative_filtered': 'float',
+        'throttle_filtered': 'float',
+        'pitch_filtered': 'float',
     }
 
     SLOT_TYPES = (
@@ -87,6 +105,9 @@ class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('int8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -101,6 +122,9 @@ class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
         self.true_ground_minus_wind_m_s = kwargs.get('true_ground_minus_wind_m_s', float())
         self.airspeed_sensor_measurement_valid = kwargs.get('airspeed_sensor_measurement_valid', bool())
         self.selected_airspeed_index = kwargs.get('selected_airspeed_index', int())
+        self.airspeed_derivative_filtered = kwargs.get('airspeed_derivative_filtered', float())
+        self.throttle_filtered = kwargs.get('throttle_filtered', float())
+        self.pitch_filtered = kwargs.get('pitch_filtered', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -146,6 +170,12 @@ class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
         if self.airspeed_sensor_measurement_valid != other.airspeed_sensor_measurement_valid:
             return False
         if self.selected_airspeed_index != other.selected_airspeed_index:
+            return False
+        if self.airspeed_derivative_filtered != other.airspeed_derivative_filtered:
+            return False
+        if self.throttle_filtered != other.throttle_filtered:
+            return False
+        if self.pitch_filtered != other.pitch_filtered:
             return False
         return True
 
@@ -271,3 +301,48 @@ class AirspeedValidated(metaclass=Metaclass_AirspeedValidated):
             assert value >= -128 and value < 128, \
                 "The 'selected_airspeed_index' field must be an integer in [-128, 127]"
         self._selected_airspeed_index = value
+
+    @builtins.property
+    def airspeed_derivative_filtered(self):
+        """Message field 'airspeed_derivative_filtered'."""
+        return self._airspeed_derivative_filtered
+
+    @airspeed_derivative_filtered.setter
+    def airspeed_derivative_filtered(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'airspeed_derivative_filtered' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'airspeed_derivative_filtered' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._airspeed_derivative_filtered = value
+
+    @builtins.property
+    def throttle_filtered(self):
+        """Message field 'throttle_filtered'."""
+        return self._throttle_filtered
+
+    @throttle_filtered.setter
+    def throttle_filtered(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'throttle_filtered' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'throttle_filtered' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._throttle_filtered = value
+
+    @builtins.property
+    def pitch_filtered(self):
+        """Message field 'pitch_filtered'."""
+        return self._pitch_filtered
+
+    @pitch_filtered.setter
+    def pitch_filtered(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'pitch_filtered' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'pitch_filtered' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._pitch_filtered = value

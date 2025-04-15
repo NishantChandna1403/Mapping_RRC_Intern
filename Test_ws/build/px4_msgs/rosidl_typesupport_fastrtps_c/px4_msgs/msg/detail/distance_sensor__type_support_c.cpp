@@ -111,6 +111,11 @@ static bool _DistanceSensor__cdr_serialize(
     cdr << ros_message->orientation;
   }
 
+  // Field name: mode
+  {
+    cdr << ros_message->mode;
+  }
+
   return true;
 }
 
@@ -183,6 +188,11 @@ static bool _DistanceSensor__cdr_deserialize(
   // Field name: orientation
   {
     cdr >> ros_message->orientation;
+  }
+
+  // Field name: mode
+  {
+    cdr >> ros_message->mode;
   }
 
   return true;
@@ -274,6 +284,12 @@ size_t get_serialized_size_px4_msgs__msg__DistanceSensor(
   // field.name orientation
   {
     size_t item_size = sizeof(ros_message->orientation);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name mode
+  {
+    size_t item_size = sizeof(ros_message->mode);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -399,6 +415,13 @@ size_t max_serialized_size_px4_msgs__msg__DistanceSensor(
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
+  // member: mode
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -408,7 +431,7 @@ size_t max_serialized_size_px4_msgs__msg__DistanceSensor(
     using DataType = px4_msgs__msg__DistanceSensor;
     is_plain =
       (
-      offsetof(DataType, orientation) +
+      offsetof(DataType, mode) +
       last_member_size
       ) == ret_val;
   }

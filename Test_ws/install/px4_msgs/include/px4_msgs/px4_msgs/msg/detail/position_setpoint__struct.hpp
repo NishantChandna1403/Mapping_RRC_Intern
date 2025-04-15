@@ -54,6 +54,7 @@ struct PositionSetpoint_
       this->loiter_orientation = 0.0f;
       this->loiter_pattern = 0;
       this->acceptance_radius = 0.0f;
+      this->alt_acceptance_radius = 0.0f;
       this->cruising_speed = 0.0f;
       this->gliding_enabled = false;
       this->cruising_throttle = 0.0f;
@@ -82,6 +83,7 @@ struct PositionSetpoint_
       this->loiter_orientation = 0.0f;
       this->loiter_pattern = 0;
       this->acceptance_radius = 0.0f;
+      this->alt_acceptance_radius = 0.0f;
       this->cruising_speed = 0.0f;
       this->gliding_enabled = false;
       this->cruising_throttle = 0.0f;
@@ -137,6 +139,9 @@ struct PositionSetpoint_
   using _acceptance_radius_type =
     float;
   _acceptance_radius_type acceptance_radius;
+  using _alt_acceptance_radius_type =
+    float;
+  _alt_acceptance_radius_type alt_acceptance_radius;
   using _cruising_speed_type =
     float;
   _cruising_speed_type cruising_speed;
@@ -242,6 +247,12 @@ struct PositionSetpoint_
     const float & _arg)
   {
     this->acceptance_radius = _arg;
+    return *this;
+  }
+  Type & set__alt_acceptance_radius(
+    const float & _arg)
+  {
+    this->alt_acceptance_radius = _arg;
     return *this;
   }
   Type & set__cruising_speed(
@@ -367,6 +378,9 @@ struct PositionSetpoint_
       return false;
     }
     if (this->acceptance_radius != other.acceptance_radius) {
+      return false;
+    }
+    if (this->alt_acceptance_radius != other.alt_acceptance_radius) {
       return false;
     }
     if (this->cruising_speed != other.cruising_speed) {

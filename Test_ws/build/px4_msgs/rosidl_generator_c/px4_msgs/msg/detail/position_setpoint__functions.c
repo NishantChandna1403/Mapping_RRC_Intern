@@ -33,6 +33,7 @@ px4_msgs__msg__PositionSetpoint__init(px4_msgs__msg__PositionSetpoint * msg)
   // loiter_orientation
   // loiter_pattern
   // acceptance_radius
+  // alt_acceptance_radius
   // cruising_speed
   // gliding_enabled
   // cruising_throttle
@@ -61,6 +62,7 @@ px4_msgs__msg__PositionSetpoint__fini(px4_msgs__msg__PositionSetpoint * msg)
   // loiter_orientation
   // loiter_pattern
   // acceptance_radius
+  // alt_acceptance_radius
   // cruising_speed
   // gliding_enabled
   // cruising_throttle
@@ -136,6 +138,10 @@ px4_msgs__msg__PositionSetpoint__are_equal(const px4_msgs__msg__PositionSetpoint
   if (lhs->acceptance_radius != rhs->acceptance_radius) {
     return false;
   }
+  // alt_acceptance_radius
+  if (lhs->alt_acceptance_radius != rhs->alt_acceptance_radius) {
+    return false;
+  }
   // cruising_speed
   if (lhs->cruising_speed != rhs->cruising_speed) {
     return false;
@@ -191,6 +197,8 @@ px4_msgs__msg__PositionSetpoint__copy(
   output->loiter_pattern = input->loiter_pattern;
   // acceptance_radius
   output->acceptance_radius = input->acceptance_radius;
+  // alt_acceptance_radius
+  output->alt_acceptance_radius = input->alt_acceptance_radius;
   // cruising_speed
   output->cruising_speed = input->cruising_speed;
   // gliding_enabled

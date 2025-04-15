@@ -129,6 +129,11 @@ static bool _PositionSetpoint__cdr_serialize(
     cdr << ros_message->acceptance_radius;
   }
 
+  // Field name: alt_acceptance_radius
+  {
+    cdr << ros_message->alt_acceptance_radius;
+  }
+
   // Field name: cruising_speed
   {
     cdr << ros_message->cruising_speed;
@@ -238,6 +243,11 @@ static bool _PositionSetpoint__cdr_deserialize(
   // Field name: acceptance_radius
   {
     cdr >> ros_message->acceptance_radius;
+  }
+
+  // Field name: alt_acceptance_radius
+  {
+    cdr >> ros_message->alt_acceptance_radius;
   }
 
   // Field name: cruising_speed
@@ -367,6 +377,12 @@ size_t get_serialized_size_px4_msgs__msg__PositionSetpoint(
   // field.name acceptance_radius
   {
     size_t item_size = sizeof(ros_message->acceptance_radius);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name alt_acceptance_radius
+  {
+    size_t item_size = sizeof(ros_message->alt_acceptance_radius);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -534,6 +550,14 @@ size_t max_serialized_size_px4_msgs__msg__PositionSetpoint(
     current_alignment += array_size * sizeof(uint8_t);
   }
   // member: acceptance_radius
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: alt_acceptance_radius
   {
     size_t array_size = 1;
 

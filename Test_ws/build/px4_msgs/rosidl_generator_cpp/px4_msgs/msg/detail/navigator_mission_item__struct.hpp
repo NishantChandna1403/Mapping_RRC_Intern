@@ -39,7 +39,6 @@ struct NavigatorMissionItem_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->timestamp = 0ull;
-      this->instance_count = 0ul;
       this->sequence_current = 0;
       this->nav_cmd = 0;
       this->latitude = 0.0f;
@@ -66,7 +65,6 @@ struct NavigatorMissionItem_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->timestamp = 0ull;
-      this->instance_count = 0ul;
       this->sequence_current = 0;
       this->nav_cmd = 0;
       this->latitude = 0.0f;
@@ -90,9 +88,6 @@ struct NavigatorMissionItem_
   using _timestamp_type =
     uint64_t;
   _timestamp_type timestamp;
-  using _instance_count_type =
-    uint32_t;
-  _instance_count_type instance_count;
   using _sequence_current_type =
     uint16_t;
   _sequence_current_type sequence_current;
@@ -147,12 +142,6 @@ struct NavigatorMissionItem_
     const uint64_t & _arg)
   {
     this->timestamp = _arg;
-    return *this;
-  }
-  Type & set__instance_count(
-    const uint32_t & _arg)
-  {
-    this->instance_count = _arg;
     return *this;
   }
   Type & set__sequence_current(
@@ -295,9 +284,6 @@ struct NavigatorMissionItem_
   bool operator==(const NavigatorMissionItem_ & other) const
   {
     if (this->timestamp != other.timestamp) {
-      return false;
-    }
-    if (this->instance_count != other.instance_count) {
       return false;
     }
     if (this->sequence_current != other.sequence_current) {

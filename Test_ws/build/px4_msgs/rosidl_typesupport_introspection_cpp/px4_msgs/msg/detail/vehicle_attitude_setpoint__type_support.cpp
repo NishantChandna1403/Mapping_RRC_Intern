@@ -113,7 +113,7 @@ void assign_function__VehicleAttitudeSetpoint__thrust_body(
   item = value;
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleAttitudeSetpoint_message_member_array[9] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleAttitudeSetpoint_message_member_array[6] = {
   {
     "timestamp",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT64,  // type
@@ -123,57 +123,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleAttitu
     0,  // array size
     false,  // is upper bound
     offsetof(px4_msgs::msg::VehicleAttitudeSetpoint, timestamp),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "roll_body",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs::msg::VehicleAttitudeSetpoint, roll_body),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "pitch_body",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs::msg::VehicleAttitudeSetpoint, pitch_body),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "yaw_body",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(px4_msgs::msg::VehicleAttitudeSetpoint, yaw_body),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -272,7 +221,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember VehicleAttitu
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers VehicleAttitudeSetpoint_message_members = {
   "px4_msgs::msg",  // message namespace
   "VehicleAttitudeSetpoint",  // message name
-  9,  // number of fields
+  6,  // number of fields
   sizeof(px4_msgs::msg::VehicleAttitudeSetpoint),
   VehicleAttitudeSetpoint_message_member_array,  // message members
   VehicleAttitudeSetpoint_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -69,16 +69,32 @@ private:
   ::px4_msgs::msg::PositionSetpoint msg_;
 };
 
+class Init_PositionSetpoint_alt_acceptance_radius
+{
+public:
+  explicit Init_PositionSetpoint_alt_acceptance_radius(::px4_msgs::msg::PositionSetpoint & msg)
+  : msg_(msg)
+  {}
+  Init_PositionSetpoint_cruising_speed alt_acceptance_radius(::px4_msgs::msg::PositionSetpoint::_alt_acceptance_radius_type arg)
+  {
+    msg_.alt_acceptance_radius = std::move(arg);
+    return Init_PositionSetpoint_cruising_speed(msg_);
+  }
+
+private:
+  ::px4_msgs::msg::PositionSetpoint msg_;
+};
+
 class Init_PositionSetpoint_acceptance_radius
 {
 public:
   explicit Init_PositionSetpoint_acceptance_radius(::px4_msgs::msg::PositionSetpoint & msg)
   : msg_(msg)
   {}
-  Init_PositionSetpoint_cruising_speed acceptance_radius(::px4_msgs::msg::PositionSetpoint::_acceptance_radius_type arg)
+  Init_PositionSetpoint_alt_acceptance_radius acceptance_radius(::px4_msgs::msg::PositionSetpoint::_acceptance_radius_type arg)
   {
     msg_.acceptance_radius = std::move(arg);
-    return Init_PositionSetpoint_cruising_speed(msg_);
+    return Init_PositionSetpoint_alt_acceptance_radius(msg_);
   }
 
 private:

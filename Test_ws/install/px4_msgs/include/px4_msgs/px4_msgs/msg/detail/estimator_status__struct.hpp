@@ -46,8 +46,7 @@ struct EstimatorStatus_
       this->filter_fault_flags = 0ul;
       this->pos_horiz_accuracy = 0.0f;
       this->pos_vert_accuracy = 0.0f;
-      this->innovation_check_flags = 0;
-      this->mag_test_ratio = 0.0f;
+      this->hdg_test_ratio = 0.0f;
       this->vel_test_ratio = 0.0f;
       this->pos_test_ratio = 0.0f;
       this->hgt_test_ratio = 0.0f;
@@ -62,9 +61,10 @@ struct EstimatorStatus_
       this->reset_count_quat = 0;
       this->time_slip = 0.0f;
       this->pre_flt_fail_innov_heading = false;
+      this->pre_flt_fail_innov_height = false;
+      this->pre_flt_fail_innov_pos_horiz = false;
       this->pre_flt_fail_innov_vel_horiz = false;
       this->pre_flt_fail_innov_vel_vert = false;
-      this->pre_flt_fail_innov_height = false;
       this->pre_flt_fail_mag_field_disturbed = false;
       this->accel_device_id = 0ul;
       this->gyro_device_id = 0ul;
@@ -93,8 +93,7 @@ struct EstimatorStatus_
       this->filter_fault_flags = 0ul;
       this->pos_horiz_accuracy = 0.0f;
       this->pos_vert_accuracy = 0.0f;
-      this->innovation_check_flags = 0;
-      this->mag_test_ratio = 0.0f;
+      this->hdg_test_ratio = 0.0f;
       this->vel_test_ratio = 0.0f;
       this->pos_test_ratio = 0.0f;
       this->hgt_test_ratio = 0.0f;
@@ -109,9 +108,10 @@ struct EstimatorStatus_
       this->reset_count_quat = 0;
       this->time_slip = 0.0f;
       this->pre_flt_fail_innov_heading = false;
+      this->pre_flt_fail_innov_height = false;
+      this->pre_flt_fail_innov_pos_horiz = false;
       this->pre_flt_fail_innov_vel_horiz = false;
       this->pre_flt_fail_innov_vel_vert = false;
-      this->pre_flt_fail_innov_height = false;
       this->pre_flt_fail_mag_field_disturbed = false;
       this->accel_device_id = 0ul;
       this->gyro_device_id = 0ul;
@@ -151,12 +151,9 @@ struct EstimatorStatus_
   using _pos_vert_accuracy_type =
     float;
   _pos_vert_accuracy_type pos_vert_accuracy;
-  using _innovation_check_flags_type =
-    uint16_t;
-  _innovation_check_flags_type innovation_check_flags;
-  using _mag_test_ratio_type =
+  using _hdg_test_ratio_type =
     float;
-  _mag_test_ratio_type mag_test_ratio;
+  _hdg_test_ratio_type hdg_test_ratio;
   using _vel_test_ratio_type =
     float;
   _vel_test_ratio_type vel_test_ratio;
@@ -199,15 +196,18 @@ struct EstimatorStatus_
   using _pre_flt_fail_innov_heading_type =
     bool;
   _pre_flt_fail_innov_heading_type pre_flt_fail_innov_heading;
+  using _pre_flt_fail_innov_height_type =
+    bool;
+  _pre_flt_fail_innov_height_type pre_flt_fail_innov_height;
+  using _pre_flt_fail_innov_pos_horiz_type =
+    bool;
+  _pre_flt_fail_innov_pos_horiz_type pre_flt_fail_innov_pos_horiz;
   using _pre_flt_fail_innov_vel_horiz_type =
     bool;
   _pre_flt_fail_innov_vel_horiz_type pre_flt_fail_innov_vel_horiz;
   using _pre_flt_fail_innov_vel_vert_type =
     bool;
   _pre_flt_fail_innov_vel_vert_type pre_flt_fail_innov_vel_vert;
-  using _pre_flt_fail_innov_height_type =
-    bool;
-  _pre_flt_fail_innov_height_type pre_flt_fail_innov_height;
   using _pre_flt_fail_mag_field_disturbed_type =
     bool;
   _pre_flt_fail_mag_field_disturbed_type pre_flt_fail_mag_field_disturbed;
@@ -291,16 +291,10 @@ struct EstimatorStatus_
     this->pos_vert_accuracy = _arg;
     return *this;
   }
-  Type & set__innovation_check_flags(
-    const uint16_t & _arg)
-  {
-    this->innovation_check_flags = _arg;
-    return *this;
-  }
-  Type & set__mag_test_ratio(
+  Type & set__hdg_test_ratio(
     const float & _arg)
   {
-    this->mag_test_ratio = _arg;
+    this->hdg_test_ratio = _arg;
     return *this;
   }
   Type & set__vel_test_ratio(
@@ -387,6 +381,18 @@ struct EstimatorStatus_
     this->pre_flt_fail_innov_heading = _arg;
     return *this;
   }
+  Type & set__pre_flt_fail_innov_height(
+    const bool & _arg)
+  {
+    this->pre_flt_fail_innov_height = _arg;
+    return *this;
+  }
+  Type & set__pre_flt_fail_innov_pos_horiz(
+    const bool & _arg)
+  {
+    this->pre_flt_fail_innov_pos_horiz = _arg;
+    return *this;
+  }
   Type & set__pre_flt_fail_innov_vel_horiz(
     const bool & _arg)
   {
@@ -397,12 +403,6 @@ struct EstimatorStatus_
     const bool & _arg)
   {
     this->pre_flt_fail_innov_vel_vert = _arg;
-    return *this;
-  }
-  Type & set__pre_flt_fail_innov_height(
-    const bool & _arg)
-  {
-    this->pre_flt_fail_innov_height = _arg;
     return *this;
   }
   Type & set__pre_flt_fail_mag_field_disturbed(
@@ -493,11 +493,13 @@ struct EstimatorStatus_
     8u;
   static constexpr uint8_t GPS_CHECK_FAIL_MAX_VERT_SPD_ERR =
     9u;
+  static constexpr uint8_t GPS_CHECK_FAIL_SPOOFED =
+    10u;
   static constexpr uint8_t CS_TILT_ALIGN =
     0u;
   static constexpr uint8_t CS_YAW_ALIGN =
     1u;
-  static constexpr uint8_t CS_GPS =
+  static constexpr uint8_t CS_GNSS_POS =
     2u;
   static constexpr uint8_t CS_OPT_FLOW =
     3u;
@@ -551,6 +553,8 @@ struct EstimatorStatus_
     27u;
   static constexpr uint8_t CS_RNG_FAULT =
     28u;
+  static constexpr uint8_t CS_GNSS_VEL =
+    44u;
 
   // pointer types
   using RawPtr =
@@ -616,10 +620,7 @@ struct EstimatorStatus_
     if (this->pos_vert_accuracy != other.pos_vert_accuracy) {
       return false;
     }
-    if (this->innovation_check_flags != other.innovation_check_flags) {
-      return false;
-    }
-    if (this->mag_test_ratio != other.mag_test_ratio) {
+    if (this->hdg_test_ratio != other.hdg_test_ratio) {
       return false;
     }
     if (this->vel_test_ratio != other.vel_test_ratio) {
@@ -664,13 +665,16 @@ struct EstimatorStatus_
     if (this->pre_flt_fail_innov_heading != other.pre_flt_fail_innov_heading) {
       return false;
     }
+    if (this->pre_flt_fail_innov_height != other.pre_flt_fail_innov_height) {
+      return false;
+    }
+    if (this->pre_flt_fail_innov_pos_horiz != other.pre_flt_fail_innov_pos_horiz) {
+      return false;
+    }
     if (this->pre_flt_fail_innov_vel_horiz != other.pre_flt_fail_innov_vel_horiz) {
       return false;
     }
     if (this->pre_flt_fail_innov_vel_vert != other.pre_flt_fail_innov_vel_vert) {
-      return false;
-    }
-    if (this->pre_flt_fail_innov_height != other.pre_flt_fail_innov_height) {
       return false;
     }
     if (this->pre_flt_fail_mag_field_disturbed != other.pre_flt_fail_mag_field_disturbed) {
@@ -772,6 +776,11 @@ constexpr uint8_t EstimatorStatus_<ContainerAllocator>::GPS_CHECK_FAIL_MAX_VERT_
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
+constexpr uint8_t EstimatorStatus_<ContainerAllocator>::GPS_CHECK_FAIL_SPOOFED;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
 constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_TILT_ALIGN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
@@ -782,7 +791,7 @@ constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_YAW_ALIGN;
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_GPS;
+constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_GNSS_POS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
@@ -913,6 +922,11 @@ constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_GPS_YAW_FAULT;
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
 constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_RNG_FAULT;
+#endif  // __cplusplus < 201703L
+#if __cplusplus < 201703L
+// static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
+template<typename ContainerAllocator>
+constexpr uint8_t EstimatorStatus_<ContainerAllocator>::CS_GNSS_VEL;
 #endif  // __cplusplus < 201703L
 
 }  // namespace msg
