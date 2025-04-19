@@ -1,0 +1,19 @@
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kbool genz_icp::pipeline::IMUResidual::operator()(const T*, T*) const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:79:129:[m[K [01;31m[Kerror: [m[K‘[01m[K国内外[m[K’ was not declared in this scope
+   79 |         Eigen::Quaternion<T> q_diff = q.conjugate() * Eigen::Quaternion<T>(T(imu_quat_.w()), T(imu_quat_.x()), T(imu_quat_.y()),[01;31m[K国内外[m[K
+      |                                                                                                                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePoses(const SE3d&, const SE3d&, const SE3d&, size_t)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:100:43:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kdouble[m[K’ may change value [[01;31m[K-Werror=conversion[m[K]
+  100 |     double icp_uncertainty = 1.0 / (1.0 + [01;31m[Knum_points[m[K / min_points);  // Heuristic: more points -> lower uncertainty
+      |                                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:99:18:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kmax_points[m[K’ [[01;31m[K-Werror=unused-variable[m[K]
+   99 |     const double [01;31m[Kmax_points[m[K = 400000.0;
+      |                  [01;31m[K^~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

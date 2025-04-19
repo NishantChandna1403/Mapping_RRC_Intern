@@ -1,0 +1,43 @@
+[ 14%] Built target odometry_node
+[ 42%] Built target metrics
+[ 71%] Built target core
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:91:14:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePoses(const SE3d&, const SE3d&, const SE3d&, size_t)[m[K’
+   91 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePoses(const Sophus::SE3d& icp_pose,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:91:14:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePoses(const SE3d&, const SE3d&, const SE3d&, size_t)[m[K’
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   60 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:156:30:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’
+  156 | GenZICP::Vector3dVectorTuple [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                              [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:76:25:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   76 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:75:25:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+   75 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame);
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   60 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:308:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, <brace-enclosed initializer list>, Sophus::SE3d, Sophus::SE3d)[m[K’
+  308 |     return [01;31m[KRegisterFrame(frame, {}, Sophus::SE3d(), Sophus::SE3d())[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:306:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+  306 | GenZICP::Vector3dVectorTuple [01;36m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
+      |                              [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:306:30:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:76:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   76 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:76:25:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

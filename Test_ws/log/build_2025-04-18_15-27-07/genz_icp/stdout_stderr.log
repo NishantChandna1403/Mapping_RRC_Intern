@@ -1,0 +1,11 @@
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kvoid genz_icp::pipeline::GenZICP::optimize()[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:433:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+  433 |                 Eigen::Quaterniond q_opt([01;31m[Kq[m[K[0], q[1], q[2], q[3]); // Fixed indexing
+      |                                          [01;31m[K^[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

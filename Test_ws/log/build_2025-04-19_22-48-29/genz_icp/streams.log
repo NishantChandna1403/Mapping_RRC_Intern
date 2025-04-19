@@ -1,0 +1,44 @@
+[0.016s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.056s] [ 14%] Built target metrics
+[0.060s] [ 57%] Built target core
+[0.066s] [ 71%] Built target odometry_node
+[0.084s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[3.369s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[3.433s] [ 85%] Built target pipeline
+[3.457s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[3.482s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[10.694s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’:
+[10.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:157:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Klatest_imu_pose_[m[K’?
+[10.695s]   157 |     [01;31m[Klatest_imu_time_[m[K = this->now().seconds();
+[10.695s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[10.695s]       |     [32m[Klatest_imu_pose_[m[K
+[10.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::LocalPositionCallback(const ConstSharedPtr&)[m[K’:
+[10.695s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:179:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_velocity_[m[K’ was not declared in this scope
+[10.695s]   179 |     [01;31m[Klatest_velocity_[m[K = velocity;
+[10.695s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[10.696s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:180:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_eph_[m[K’ was not declared in this scope
+[10.696s]   180 |     [01;31m[Klatest_eph_[m[K = eph;
+[10.696s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.696s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:181:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_epv_[m[K’ was not declared in this scope
+[10.696s]   181 |     [01;31m[Klatest_epv_[m[K = epv;
+[10.696s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[10.696s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:182:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_gps_time_[m[K’ was not declared in this scope
+[10.696s]   182 |     [01;31m[Klatest_gps_time_[m[K = this->now().seconds();
+[10.697s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[10.697s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[10.697s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:202:66:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_gps_time_[m[K’ was not declared in this scope
+[10.697s]   202 |     double dt = first_local_position_received_ ? (current_time - [01;31m[Klatest_gps_time_[m[K) : 0.0;
+[10.697s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[10.697s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:209:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_eph_[m[K’ was not declared in this scope
+[10.697s]   209 |         first_local_position_received_ ? [01;31m[Klatest_eph_[m[K : config_.gps_accuracy,
+[10.697s]       |                                          [01;31m[K^~~~~~~~~~~[m[K
+[10.698s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:210:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_epv_[m[K’ was not declared in this scope
+[10.698s]   210 |         first_local_position_received_ ? [01;31m[Klatest_epv_[m[K : config_.gps_accuracy,
+[10.698s]       |                                          [01;31m[K^~~~~~~~~~~[m[K
+[10.698s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:211:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_velocity_[m[K’ was not declared in this scope
+[10.698s]   211 |         first_local_position_received_ ? [01;31m[Klatest_velocity_[m[K : Eigen::Vector3d::Zero(),
+[10.699s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[10.699s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[10.699s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[10.699s] gmake: *** [Makefile:146: all] Error 2
+[10.702s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

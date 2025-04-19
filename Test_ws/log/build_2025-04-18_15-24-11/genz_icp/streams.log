@@ -1,0 +1,45 @@
+[0.013s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target metrics[0m
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target odometry_node[0m
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target core[0m
+[0.063s] [ 14%] Built target metrics
+[0.068s] [ 28%] Built target odometry_node
+[0.073s] [ 71%] Built target core
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.099s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[0.127s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[0.166s] [ 85%] Built target pipeline
+[0.177s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.195s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[0.226s] [100%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[0.523s] [100%] Built target odometry_component
+[0.546s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '0': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.546s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/genz_icp
+[0.553s] -- Install configuration: "Release"
+[0.554s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node
+[0.554s] -- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node" to ""
+[0.554s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so
+[0.556s] -- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so" to ""
+[0.556s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch
+[0.556s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch.py
+[0.556s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch
+[0.556s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz
+[0.556s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros1.rviz
+[0.557s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros2.rviz
+[0.557s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/package_run_dependencies/genz_icp
+[0.557s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/parent_prefix_path/genz_icp
+[0.558s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.sh
+[0.558s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.dsv
+[0.558s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.sh
+[0.558s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.dsv
+[0.558s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.bash
+[0.558s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.sh
+[0.559s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.zsh
+[0.559s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.dsv
+[0.559s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.dsv
+[0.559s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/packages/genz_icp
+[0.559s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/rclcpp_components/genz_icp
+[0.559s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig.cmake
+[0.560s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig-version.cmake
+[0.560s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.xml
+[0.562s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '0': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/genz_icp

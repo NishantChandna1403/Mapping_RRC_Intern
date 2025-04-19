@@ -1,0 +1,11 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:2:9:[m[K [01;31m[Kerror: [m[K#pragma once in main file [[01;31m[K-Werror[m[K]
+    2 | #pragma [01;31m[Konce[m[K
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kgenz_icp/core/AdaptiveThreshold.hpp: No such file or directory
+    8 | #include [01;31m[K"genz_icp/core/AdaptiveThreshold.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+compilation terminated.
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

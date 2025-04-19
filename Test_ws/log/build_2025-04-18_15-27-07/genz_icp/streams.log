@@ -1,0 +1,13 @@
+[0.010s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.051s] [ 14%] Built target metrics
+[0.060s] [ 28%] Built target odometry_node
+[0.063s] [ 71%] Built target core
+[0.086s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[2.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kvoid genz_icp::pipeline::GenZICP::optimize()[m[K’:
+[2.358s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:433:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+[2.358s]   433 |                 Eigen::Quaterniond q_opt([01;31m[Kq[m[K[0], q[1], q[2], q[3]); // Fixed indexing
+[2.358s]       |                                          [01;31m[K^[m[K
+[2.360s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[2.360s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[2.360s] gmake: *** [Makefile:146: all] Error 2
+[2.363s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

@@ -1,3 +1,26 @@
+// MIT License
+//
+// Copyright (c) 2022 Ignacio Vizzo, Tiziano Guadagnino, Benedikt Mersch, Cyrill Stachniss.
+// Modified by Daehan Lee, Hyungtae Lim, and Soohee Han, 2024
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 #include "GenZICP.hpp"
 
 #include <Eigen/Core>
@@ -8,6 +31,9 @@
 #include <deque>
 #include <algorithm>
 
+#include <ceres/ceres.h>
+#include <ceres/rotation.h>
+
 #include "genz_icp/core/Deskew.hpp"
 #include "genz_icp/core/Preprocessing.hpp"
 #include "genz_icp/core/Registration.hpp"
@@ -15,40 +41,164 @@
 
 namespace genz_icp::pipeline {
 
-Sophus::SE3d GenZICP::fusePoses(const Sophus::SE3d& icp_pose,
-                                const Sophus::SE3d& imu_orientation,
-                                const Sophus::SE3d& local_position_pose,
-                                size_t num_points) {
-    std::cout << "[DEBUG] Fusing poses with " << num_points << " points" << std::endl;
+struct ICPResidual {
+    ICPResidual(const Sophus::SE3d& icp_pose, double weight)
+        : icp_pose_(icp_pose), weight_(weight) {}
 
+    template <typename T>
+    bool operator()(const T* const trans, const T* const quat, T* residual) const {
+        Eigen::Map<const Eigen::Matrix<T, 3, 1>> t(trans);
+        Eigen::Quaternion<T> q(quat[3], quat[0], quat[1], quat[2]); // w, x, y, z
+
+        Eigen::Vector3d icp_t = icp_pose_.translation();
+        Eigen::Quaterniond icp_q = icp_pose_.unit_quaternion();
+
+        residual[0] = weight_ * (t[0] - T(icp_t[0]));
+        residual[1] = weight_ * (t[1] - T(icp_t[1]));
+        residual[2] = weight_ * (t[2] - T(icp_t[2]));
+
+        Eigen::Quaternion<T> q_diff = q.conjugate() * Eigen::Quaternion<T>(T(icp_q.w()), T(icp_q.x()), T(icp_q.y()), T(icp_q.z()));
+        residual[3] = weight_ * T(2.0) * q_diff.x();
+        residual[4] = weight_ * T(2.0) * q_diff.y();
+        residual[5] = weight_ * T(2.0) * q_diff.z();
+
+        return true;
+    }
+
+private:
+    Sophus::SE3d icp_pose_;
+    double weight_;
+};
+
+struct GPSResidual {
+    GPSResidual(const Eigen::Vector3d& gps_trans, double weight)
+        : gps_trans_(gps_trans), weight_(weight) {}
+
+    template <typename T>
+    bool operator()(const T* const trans, T* residual) const {
+        Eigen::Map<const Eigen::Matrix<T, 3, 1>> t(trans);
+        residual[0] = weight_ * (t[0] - T(gps_trans_[0]));
+        residual[1] = weight_ * (t[1] - T(gps_trans_[1]));
+        residual[2] = weight_ * (t[2] - T(gps_trans_[2]));
+        return true;
+    }
+
+private:
+    Eigen::Vector3d gps_trans_;
+    double weight_;
+};
+
+struct IMUResidual {
+    IMUResidual(const Eigen::Quaterniond& imu_quat, double weight)
+        : imu_quat_(imu_quat), weight_(weight) {}
+
+    template <typename T>
+    bool operator()(const T* const quat, T* residual) const {
+        Eigen::Quaternion<T> q(quat[3], quat[0], quat[1], quat[2]); // w, x, y, z
+        Eigen::Quaternion<T> q_diff = q.conjugate() * Eigen::Quaternion<T>(T(imu_quat_.w()), T(imu_quat_.x()), T(imu_quat_.y()), T(imu_quat_.z()));
+        residual[0] = weight_ * T(2.0) * q_diff.x();
+        residual[1] = weight_ * T(2.0) * q_diff.y();
+        residual[2] = weight_ * T(2.0) * q_diff.z();
+        return true;
+    }
+
+private:
+    Eigen::Quaterniond imu_quat_;
+    double weight_;
+};
+
+Sophus::SE3d GenZICP::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+                                         const Sophus::SE3d& imu_orientation,
+                                         const Sophus::SE3d& local_position_pose,
+                                         const Vector3dVector& planar_points,
+                                         const Vector3dVector& non_planar_points,
+                                         double eph,
+                                         double epv,
+                                         const Eigen::Vector3d &velocity,
+                                         double dt) {
+    std::cout << "[DEBUG] Optimizing pose with " << planar_points.size() << " planar points and "
+              << non_planar_points.size() << " non-planar points" << std::endl;
+    std::cout << "[DEBUG] GPS params - eph: " << eph << ", epv: " << epv
+              << ", velocity: [" << velocity.transpose() << "], dt: " << dt << std::endl;
+
+    // Compute weights
     const double min_points = 50000.0;
-    const double max_points = 1000000.0;
-    double icp_weight = std::min(1.0, std::max(0.0, (static_cast<double>(num_points) - min_points) / (max_points - min_points)));
-    double gps_imu_weight = 1.0 - icp_weight;
+    size_t total_points = planar_points.size() + non_planar_points.size();
+    double icp_uncertainty = 1.0 / (1.0 + static_cast<double>(total_points) / min_points);
+    double icp_weight = 1.0 / icp_uncertainty;
 
-    std::cout << "[DEBUG] Weights - ICP: " << icp_weight << ", GPS+IMU: " << gps_imu_weight << std::endl;
+    double gps_uncertainty = std::sqrt(eph * eph + epv * epv);
+    if (gps_uncertainty < 0.1 || std::isnan(gps_uncertainty)) {
+        gps_uncertainty = config_.gps_accuracy;
+        std::cout << "[DEBUG] Invalid GPS uncertainty, using config_.gps_accuracy: " << gps_uncertainty << std::endl;
+    }
+    double gps_weight = 1.0 / gps_uncertainty;
 
-    Sophus::SE3d gps_imu_pose(imu_orientation.unit_quaternion(), local_position_pose.translation());
+    double imu_weight = 10.0;
 
-    Eigen::Vector3d fused_trans = icp_weight * icp_pose.translation() +
-                                  gps_imu_weight * gps_imu_pose.translation();
+    std::cout << "[DEBUG] Weights - ICP: " << icp_weight << ", GPS: " << gps_weight << ", IMU: " << imu_weight << std::endl;
 
-    Eigen::Quaterniond icp_quat = icp_pose.unit_quaternion();
-    Eigen::Quaterniond gps_imu_quat = gps_imu_pose.unit_quaternion();
-    Eigen::Quaterniond fused_quat = icp_quat.slerp(gps_imu_weight, gps_imu_quat);
+    // Predict GPS position using velocity if dt is provided
+    Eigen::Vector3d gps_trans = local_position_pose.translation();
+    if (dt > 0.0 && velocity.norm() > 1e-6) {
+        gps_trans += velocity * dt;
+        std::cout << "[DEBUG] Applied velocity correction: " << (velocity * dt).transpose() << std::endl;
+    }
+    std::cout << "[DEBUG] GPS translation: " << gps_trans.transpose() << std::endl;
+
+    // Initialize optimization state
+    Eigen::Vector3d init_trans = icp_pose.translation();
+    Eigen::Quaterniond init_quat = imu_orientation.unit_quaternion();
+    double trans[3] = {init_trans[0], init_trans[1], init_trans[2]};
+    double quat[4] = {init_quat.x(), init_quat.y(), init_quat.z(), init_quat.w()};
+
+    // Set up Ceres problem
+    ceres::Problem problem;
+    problem.AddParameterBlock(trans, 3);
+    problem.AddParameterBlock(quat, 4, new ceres::QuaternionParameterization());
+
+    // Add residuals
+    problem.AddResidualBlock(
+        new ceres::AutoDiffCostFunction<ICPResidual, 6, 3, 4>(new ICPResidual(icp_pose, icp_weight)),
+        nullptr, trans, quat);
+    problem.AddResidualBlock(
+        new ceres::AutoDiffCostFunction<GPSResidual, 3, 3>(new GPSResidual(gps_trans, gps_weight)),
+        nullptr, trans);
+    problem.AddResidualBlock(
+        new ceres::AutoDiffCostFunction<IMUResidual, 3, 4>(new IMUResidual(imu_orientation.unit_quaternion(), imu_weight)),
+        nullptr, quat);
+
+    // Solve
+    ceres::Solver::Options options;
+    options.linear_solver_type = ceres::DENSE_QR;
+    options.minimizer_progress_to_stdout = false;
+    options.max_num_iterations = config_.max_num_iterations;
+    options.function_tolerance = config_.convergence_criterion;
+    ceres::Solver::Summary summary;
+    ceres::Solve(options, &problem, &summary);
+
+    std::cout << "[DEBUG] Ceres Solver: " << summary.BriefReport() << std::endl;
+
+    // Construct optimized pose
+    Eigen::Vector3d fused_trans(trans[0], trans[1], trans[2]);
+    Eigen::Quaterniond fused_quat(quat[3], quat[0], quat[1], quat[2]);
     fused_quat.normalize();
 
-    std::cout << "[DEBUG] Fused - Translation: " << fused_trans.transpose()
+    std::cout << "[DEBUG] Optimized - Translation: " << fused_trans.transpose()
               << ", Quaternion: " << fused_quat.coeffs().transpose() << std::endl;
 
     return Sophus::SE3d(fused_quat, fused_trans);
 }
 
 GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                                   const std::vector<double> timestamps,
+                                                   const std::vector<double> &timestamps,
                                                    const Sophus::SE3d &imu_orientation,
-                                                   const Sophus::SE3d &local_position_pose) {
-    std::cout << "[DEBUG] Entering RegisterFrame" << std::endl;
+                                                   const Sophus::SE3d &local_position_pose,
+                                                   double eph,
+                                                   double epv,
+                                                   const Eigen::Vector3d &velocity,
+                                                   double dt) {
+    std::cout << "[DEBUG] Entering RegisterFrame (enhanced)" << std::endl;
     std::cout << "[DEBUG] Raw input frame size: " << frame.size() << std::endl;
 
     auto to_yaw = [](const Sophus::SE3d& pose) -> double {
@@ -165,7 +315,7 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         std::cout << "[DEBUG] ICP pose - Translation: " << icp_pose.translation().transpose()
                   << ", Quaternion: " << icp_pose.unit_quaternion().coeffs().transpose() << std::endl;
 
-        new_pose = fusePoses(icp_pose, imu_orientation, local_position_pose, deskew_frame.size());
+        new_pose = fusePosesWithCeres(icp_pose, imu_orientation, local_position_pose, planar_points, non_planar_points, eph, epv, velocity, dt);
 
         std::cout << "[DEBUG] Updating local map and threshold" << std::endl;
         const auto model_deviation = initial_guess.inverse() * new_pose;
@@ -194,8 +344,23 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
     return {planar_points, non_planar_points};
 }
 
+GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+                                                   const std::vector<double> &timestamps,
+                                                   const Sophus::SE3d &imu_orientation,
+                                                   const Sophus::SE3d &local_position_pose) {
+    std::cout << "[DEBUG] Calling RegisterFrame (standard)" << std::endl;
+    return RegisterFrame(frame, timestamps, imu_orientation, local_position_pose,
+                         config_.gps_accuracy, config_.gps_accuracy, Eigen::Vector3d::Zero(), 0.0);
+}
+
+GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+                                                   const std::vector<double> &timestamps) {
+    std::cout << "[DEBUG] Calling RegisterFrame (timestamps)" << std::endl;
+    return RegisterFrame(frame, timestamps, Sophus::SE3d(), Sophus::SE3d());
+}
+
 GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
-    std::cout << "[DEBUG] Calling RegisterFrame overload with default poses" << std::endl;
+    std::cout << "[DEBUG] Calling RegisterFrame (frame only)" << std::endl;
     return RegisterFrame(frame, {}, Sophus::SE3d(), Sophus::SE3d());
 }
 
@@ -239,4 +404,4 @@ bool GenZICP::HasMoved() {
     return moved;
 }
 
-}  // namespace genz_icp::pipeline
+}  

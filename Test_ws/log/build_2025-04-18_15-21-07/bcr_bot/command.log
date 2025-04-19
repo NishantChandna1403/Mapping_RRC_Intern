@@ -1,0 +1,6 @@
+Invoking command in '/home/nishant/RRC_Project/Test_ws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/Test_ws/src/bcr_bot -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/Test_ws/install/bcr_bot
+Invoked command in '/home/nishant/RRC_Project/Test_ws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/Test_ws/src/bcr_bot -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/Test_ws/install/bcr_bot
+Invoking command in '/home/nishant/RRC_Project/Test_ws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/bcr_bot -- -j12 -l12
+Invoked command in '/home/nishant/RRC_Project/Test_ws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/bcr_bot -- -j12 -l12
+Invoking command in '/home/nishant/RRC_Project/Test_ws/build/bcr_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/bcr_bot
+Invoked command in '/home/nishant/RRC_Project/Test_ws/build/bcr_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/bcr_bot

@@ -1,0 +1,16 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:338:30:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+  338 | GenZICP::Vector3dVectorTuple [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d>& frame,
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:183:30:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’
+  183 | GenZICP::Vector3dVectorTuple [01;36m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                              [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:333:30:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+  333 | GenZICP::Vector3dVectorTuple [01;36m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
+      |                              [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   52 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

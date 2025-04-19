@@ -36,7 +36,6 @@
 // ROS 2 headers
 #include <tf2_ros/static_transform_broadcaster.h>
 #include <tf2_ros/transform_broadcaster.h>
-
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <nav_msgs/msg/odometry.hpp>
@@ -46,7 +45,7 @@
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <px4_msgs/msg/vehicle_attitude.hpp>
-#include <px4_msgs/msg/vehicle_local_position.hpp> // Added for local position
+#include <px4_msgs/msg/vehicle_local_position.hpp>
 
 namespace genz_icp_ros {
 
@@ -74,7 +73,7 @@ OdometryServer::OdometryServer(const rclcpp::NodeOptions &options)
     config_.initial_threshold = declare_parameter<double>("initial_threshold", config_.initial_threshold);
     config_.min_motion_th = declare_parameter<double>("min_motion_th", config_.min_motion_th);
     if (config_.max_range < config_.min_range) {
-        RCLCPP_WARN(get_logger(), "[WARNING] max_range is smaller than min_range, settng min_range to 0.0");
+        RCLCPP_WARN(get_logger(), "[WARNING] max_range is smaller than min_range, setting min_range to 0.0");
         config_.min_range = 0.0;
     }
     // clang-format on
@@ -107,9 +106,9 @@ OdometryServer::OdometryServer(const rclcpp::NodeOptions &options)
         non_planar_points_publisher_ = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/non_planar_points", qos);
     }
 
-    // Initialize the transform broadcaster
+    // Initialize the transform broadcaster with increased buffer
+    tf2_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock(), tf2::durationFromSec(10.0));
     tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
-    tf2_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
     tf2_buffer_->setUsingDedicatedThread(true);
     tf2_listener_ = std::make_unique<tf2_ros::TransformListener>(*tf2_buffer_);
 
@@ -140,7 +139,7 @@ void OdometryServer::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::Cons
     imu_odom_msg.header.frame_id = odom_frame_;
     imu_odom_msg.child_frame_id = base_frame_.empty() ? "imu_link" : base_frame_;
 
-    // Set position to zero (since we only care about orientation for now)
+    // Set position to zero (since we only care about orientation)
     imu_odom_msg.pose.pose.position.x = 0.0;
     imu_odom_msg.pose.pose.position.y = 0.0;
     imu_odom_msg.pose.pose.position.z = 0.0;
@@ -151,18 +150,16 @@ void OdometryServer::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::Cons
     imu_odom_msg.pose.pose.orientation.z = msg->q[3];
     imu_odom_msg.pose.pose.orientation.w = msg->q[0];
 
-    // Manually convert to Sophus::SE3d
-    Eigen::Vector3d translation(imu_odom_msg.pose.pose.position.x,
-                                imu_odom_msg.pose.pose.position.y,
-                                imu_odom_msg.pose.pose.position.z);
-    Eigen::Quaterniond quaternion(imu_odom_msg.pose.pose.orientation.w,
-                                  imu_odom_msg.pose.pose.orientation.x,
-                                  imu_odom_msg.pose.pose.orientation.y,
-                                  imu_odom_msg.pose.pose.orientation.z);
+    // Convert to Sophus::SE3d
+    Eigen::Vector3d translation(0.0, 0.0, 0.0);
+    Eigen::Quaterniond quaternion(msg->q[0], msg->q[1], msg->q[2], msg->q[3]);
     latest_imu_pose_ = Sophus::SE3d(quaternion, translation);
+    latest_imu_time_ = this->now().seconds();
 
     if (!first_imu_received_) {
         first_imu_received_ = true;
+        RCLCPP_INFO(this->get_logger(), "[IMU] First attitude received: Quaternion [%.3f, %.3f, %.3f, %.3f]",
+                    msg->q[1], msg->q[2], msg->q[3], msg->q[0]);
     }
 
     // Publish the IMU odometry
@@ -170,16 +167,24 @@ void OdometryServer::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::Cons
 }
 
 void OdometryServer::LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg) {
-    // Extract position from VehicleLocalPosition (NED frame)
+    // Extract position and velocity (NED frame)
     Eigen::Vector3d translation(msg->x, msg->y, msg->z);
+    Eigen::Vector3d velocity(msg->vx, msg->vy, msg->vz);
+    double eph = msg->eph; // Horizontal position accuracy
+    double epv = msg->epv; // Vertical position accuracy
 
-    // Since VehicleLocalPosition doesn’t provide orientation, use identity quaternion
-    // (orientation will come from IMU anyway)
+    // Use identity quaternion (orientation from IMU)
     Eigen::Quaterniond quaternion(1.0, 0.0, 0.0, 0.0);
     latest_local_position_pose_ = Sophus::SE3d(quaternion, translation);
+    latest_velocity_ = velocity;
+    latest_eph_ = eph;
+    latest_epv_ = epv;
+    latest_gps_time_ = this->now().seconds();
 
     if (!first_local_position_received_) {
         first_local_position_received_ = true;
+        RCLCPP_INFO(this->get_logger(), "[GPS] First position received: Translation [%.3f, %.3f, %.3f], Velocity [%.3f, %.3f, %.3f], eph: %.3f, epv: %.3f",
+                    msg->x, msg->y, msg->z, msg->vx, msg->vy, msg->vz, eph, epv);
     }
 }
 
@@ -192,11 +197,19 @@ void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSha
     }();
     const auto egocentric_estimation = (base_frame_.empty() || base_frame_ == cloud_frame_id);
 
-    // Pass the latest IMU and local position poses to GenZ-ICP
+    // Compute dt (time since last GPS message)
+    double current_time = (msg->header.stamp.sec + msg->header.stamp.nanosec * 1e-9);
+    double dt = first_local_position_received_ ? (current_time - latest_gps_time_) : 0.0;
+
+    // Use enhanced RegisterFrame with eph, epv, velocity, and dt
     const auto &[planar_points, non_planar_points] = odometry_.RegisterFrame(
         points, timestamps,
         first_imu_received_ ? latest_imu_pose_ : Sophus::SE3d(),
-        first_local_position_received_ ? latest_local_position_pose_ : Sophus::SE3d());
+        first_local_position_received_ ? latest_local_position_pose_ : Sophus::SE3d(),
+        first_local_position_received_ ? latest_eph_ : config_.gps_accuracy,
+        first_local_position_received_ ? latest_epv_ : config_.gps_accuracy,
+        first_local_position_received_ ? latest_velocity_ : Eigen::Vector3d::Zero(),
+        dt);
 
     // Compute the pose using GenZ, ego-centric to the LiDAR
     const Sophus::SE3d genz_pose = odometry_.poses().back();
@@ -208,16 +221,16 @@ void OdometryServer::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSha
         return cloud2base * genz_pose * cloud2base.inverse();
     }();
 
-    // Publish the current estimated pose to ROS msgs
-    PublishOdometry(pose, msg->header.stamp, cloud_frame_id);
+    // Publish with current ROS time
+    PublishOdometry(pose, this->now(), cloud_frame_id);
     if (publish_debug_clouds_) {
-        PublishClouds(msg->header.stamp, cloud_frame_id, planar_points, non_planar_points);
+        PublishClouds(this->now(), cloud_frame_id, planar_points, non_planar_points);
     }
 }
 
 void OdometryServer::PublishOdometry(const Sophus::SE3d &pose,
-                                     const rclcpp::Time &stamp,
-                                     const std::string &cloud_frame_id) {
+                                    const rclcpp::Time &stamp,
+                                    const std::string &cloud_frame_id) {
     // Broadcast the tf
     if (publish_odom_tf_) {
         geometry_msgs::msg::TransformStamped transform_msg;
@@ -240,14 +253,15 @@ void OdometryServer::PublishOdometry(const Sophus::SE3d &pose,
     nav_msgs::msg::Odometry odom_msg;
     odom_msg.header.stamp = stamp;
     odom_msg.header.frame_id = odom_frame_;
+    odom_msg.child_frame_id = base_frame_.empty() ? cloud_frame_id : base_frame_;
     odom_msg.pose.pose = tf2::sophusToPose(pose);
     odom_publisher_->publish(std::move(odom_msg));
 }
 
 void OdometryServer::PublishClouds(const rclcpp::Time &stamp,
-                                   const std::string &cloud_frame_id,
-                                   const std::vector<Eigen::Vector3d> &planar_points,
-                                   const std::vector<Eigen::Vector3d> &non_planar_points) {
+                                  const std::string &cloud_frame_id,
+                                  const std::vector<Eigen::Vector3d> &planar_points,
+                                  const std::vector<Eigen::Vector3d> &non_planar_points) {
     std_msgs::msg::Header odom_header;
     odom_header.stamp = stamp;
     odom_header.frame_id = odom_frame_;
@@ -280,7 +294,4 @@ void OdometryServer::PublishClouds(const rclcpp::Time &stamp,
     }
 }
 
-}  // namespace genz_icp_ros
-
-#include "rclcpp_components/register_node_macro.hpp"
-RCLCPP_COMPONENTS_REGISTER_NODE(genz_icp_ros::OdometryServer)
+}

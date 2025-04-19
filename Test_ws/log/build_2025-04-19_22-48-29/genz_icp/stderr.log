@@ -1,0 +1,34 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:157:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Klatest_imu_pose_[m[K’?
+  157 |     [01;31m[Klatest_imu_time_[m[K = this->now().seconds();
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Klatest_imu_pose_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::LocalPositionCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:179:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_velocity_[m[K’ was not declared in this scope
+  179 |     [01;31m[Klatest_velocity_[m[K = velocity;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:180:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_eph_[m[K’ was not declared in this scope
+  180 |     [01;31m[Klatest_eph_[m[K = eph;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:181:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_epv_[m[K’ was not declared in this scope
+  181 |     [01;31m[Klatest_epv_[m[K = epv;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:182:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_gps_time_[m[K’ was not declared in this scope
+  182 |     [01;31m[Klatest_gps_time_[m[K = this->now().seconds();
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:202:66:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_gps_time_[m[K’ was not declared in this scope
+  202 |     double dt = first_local_position_received_ ? (current_time - [01;31m[Klatest_gps_time_[m[K) : 0.0;
+      |                                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:209:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_eph_[m[K’ was not declared in this scope
+  209 |         first_local_position_received_ ? [01;31m[Klatest_eph_[m[K : config_.gps_accuracy,
+      |                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:210:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_epv_[m[K’ was not declared in this scope
+  210 |         first_local_position_received_ ? [01;31m[Klatest_epv_[m[K : config_.gps_accuracy,
+      |                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:211:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_velocity_[m[K’ was not declared in this scope
+  211 |         first_local_position_received_ ? [01;31m[Klatest_velocity_[m[K : Eigen::Vector3d::Zero(),
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

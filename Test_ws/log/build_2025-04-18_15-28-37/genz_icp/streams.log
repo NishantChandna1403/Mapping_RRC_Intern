@@ -1,0 +1,48 @@
+[0.009s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.052s] [ 14%] Built target odometry_node
+[0.057s] [ 28%] Built target metrics
+[0.063s] [ 71%] Built target core
+[0.071s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.086s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[3.415s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[3.450s] [ 85%] Built target pipeline
+[3.470s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[3.490s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[10.496s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[10.497s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:83:52:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kgenz_icp::pipeline::GenZICP& genz_icp::pipeline::GenZICP::operator=(const genz_icp::pipeline::GenZICP&)[m[K’
+[10.497s]    83 |     odometry_ = genz_icp::pipeline::GenZICP(config_[01;31m[K)[m[K;
+[10.497s]       |                                                    [01;31m[K^[m[K
+[10.497s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:42[m[K,
+[10.497s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[10.497s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:66:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp::pipeline::GenZICP& genz_icp::pipeline::GenZICP::operator=(const genz_icp::pipeline::GenZICP&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[10.498s]    66 | class [01;36m[KGenZICP[m[K {
+[10.498s]       |       [01;36m[K^~~~~~~[m[K
+[10.498s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:66:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::mutex& std::mutex::operator=(const std::mutex&)[m[K’
+[10.498s] In file included from [01m[K/usr/include/c++/11/bits/atomic_wait.h:49[m[K,
+[10.498s]                  from [01m[K/usr/include/c++/11/bits/atomic_base.h:41[m[K,
+[10.498s]                  from [01m[K/usr/include/c++/11/atomic:41[m[K,
+[10.498s]                  from [01m[K/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:14[m[K,
+[10.498s]                  from [01m[K/usr/include/eigen3/Eigen/Core:331[m[K,
+[10.498s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:23[m[K:
+[10.498s] [01m[K/usr/include/c++/11/bits/std_mutex.h:95:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.498s]    95 |     mutex& [01;36m[Koperator[m[K=(const mutex&) = delete;
+[10.498s]       |            [01;36m[K^~~~~~~~[m[K
+[10.498s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:42[m[K,
+[10.499s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[10.499s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:66:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::thread& std::thread::operator=(const std::thread&)[m[K’
+[10.499s]    66 | class [01;31m[KGenZICP[m[K {
+[10.499s]       |       [01;31m[K^~~~~~~[m[K
+[10.499s] In file included from [01m[K/usr/include/c++/11/stop_token:35[m[K,
+[10.499s]                  from [01m[K/usr/include/c++/11/condition_variable:47[m[K,
+[10.499s]                  from [01m[K/usr/include/c++/11/future:39[m[K,
+[10.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[10.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.499s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31[m[K,
+[10.499s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[10.499s] [01m[K/usr/include/c++/11/bits/std_thread.h:160:13:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.499s]   160 |     thread& [01;36m[Koperator[m[K=(const thread&) = delete;
+[10.500s]       |             [01;36m[K^~~~~~~~[m[K
+[10.501s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[10.501s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[10.501s] gmake: *** [Makefile:146: all] Error 2
+[10.504s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

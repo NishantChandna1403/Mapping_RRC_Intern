@@ -1,0 +1,41 @@
+[35m[1mConsolidate compiler generated dependencies of target metrics[0m
+[35m[1mConsolidate compiler generated dependencies of target odometry_node[0m
+[35m[1mConsolidate compiler generated dependencies of target core[0m
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[100%] Built target odometry_component
+-- Install configuration: "Release"
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch.py
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros1.rviz
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros2.rviz
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/package_run_dependencies/genz_icp
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/parent_prefix_path/genz_icp
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.dsv
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.dsv
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.bash
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.zsh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.dsv
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.dsv
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/packages/genz_icp
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/rclcpp_components/genz_icp
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig.cmake
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig-version.cmake
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.xml

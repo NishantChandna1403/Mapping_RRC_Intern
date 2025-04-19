@@ -1,0 +1,59 @@
+[0.014s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.183s] [ 14%] Built target metrics
+[0.184s] [ 28%] Built target odometry_node
+[0.184s] [ 71%] Built target core
+[0.184s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[2.015s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:39:24:[m[K [01;31m[Kerror: [m[K‘[01m[KConfig[m[K’ does not name a type
+[2.015s]    39 | GenZICP::GenZICP(const [01;31m[KConfig[m[K& config) : config_(config), WGPS_T_WICP_(Sophus::SE3d()) {
+[2.015s]       |                        [01;31m[K^~~~~~[m[K
+[2.015s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:39:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const int&)[m[K’
+[2.015s]    39 | [01;31m[KGenZICP[m[K::GenZICP(const Config& config) : config_(config), WGPS_T_WICP_(Sophus::SE3d()) {
+[2.015s]       | [01;31m[K^~~~~~~[m[K
+[2.015s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.016s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp::pipeline::GenZICP&&)[m[K’
+[2.016s]    52 | class [01;36m[KGenZICP[m[K {
+[2.016s]       |       [01;36m[K^~~~~~~[m[K
+[2.016s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZICP&)[m[K’
+[2.016s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.016s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:64:5:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+[2.016s]    64 |     [01;36m[KGenZICP[m[K() : GenZICP(GenZConfig{}) {}
+[2.016s]       |     [01;36m[K^~~~~~~[m[K
+[2.016s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.016s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:58:14:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+[2.016s]    58 |     explicit [01;36m[KGenZICP[m[K(const GenZConfig &config)
+[2.016s]       |              [01;36m[K^~~~~~~[m[K
+[2.017s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+[2.017s]    52 | class [01;36m[KGenZICP[m[K {
+[2.017s]       |       [01;36m[K^~~~~~~[m[K
+[2.017s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:43:19:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kgenz_icp::pipeline::GenZICP::~GenZICP()[m[K’
+[2.017s]    43 | GenZICP::~GenZICP([01;31m[K)[m[K = default;
+[2.017s]       |                   [01;31m[K^[m[K
+[2.017s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:140:14:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres()[m[K’
+[2.017s]   140 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePosesWithCeres() {
+[2.017s]       |              [01;31m[K^~~~~~~[m[K
+[2.017s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.017s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:82:18:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&)[m[K’
+[2.017s]    82 |     Sophus::SE3d [01;36m[KfusePosesWithCeres[m[K(const Sophus::SE3d& icp_pose,
+[2.018s]       |                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.018s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.018s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+[2.018s]    52 | class [01;36m[KGenZICP[m[K {
+[2.018s]       |       [01;36m[K^~~~~~~[m[K
+[2.018s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:250:30:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+[2.018s]   250 | GenZICP::Vector3dVectorTuple [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d>& frame,
+[2.018s]       |                              [01;31m[K^~~~~~~[m[K
+[2.018s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.018s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:25:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’
+[2.018s]    68 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+[2.018s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[2.018s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:67:25:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+[2.019s]    67 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame);
+[2.019s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[2.019s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:21[m[K:
+[2.019s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+[2.019s]    52 | class [01;36m[KGenZICP[m[K {
+[2.019s]       |       [01;36m[K^~~~~~~[m[K
+[2.022s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[2.023s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[2.023s] gmake: *** [Makefile:146: all] Error 2
+[2.025s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
