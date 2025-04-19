@@ -22,20 +22,22 @@
 // SOFTWARE.
 #pragma once
 
+#include <memory>
+#include <string>
+#include <vector>
+
+#include <sophus/se3.hpp>
+
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <nav_msgs/msg/path.hpp>
-#include <geometry_msgs/msg/transform_stamped.hpp>
-#include <tf2_ros/transform_broadcaster.h>
+#include <px4_msgs/msg/vehicle_attitude.hpp>
+#include <px4_msgs/msg/vehicle_local_position.hpp> // Added for local position
+
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
-#include <px4_msgs/msg/vehicle_attitude.hpp>
-#include <px4_msgs/msg/vehicle_local_position.hpp>
-
-#include <Eigen/Core>
-#include <memory>
-#include <string>
+#include <tf2_ros/transform_broadcaster.h>
 
 #include "genz_icp/pipeline/GenZICP.hpp"
 
@@ -45,21 +47,25 @@ class OdometryServer : public rclcpp::Node {
 public:
     explicit OdometryServer(const rclcpp::NodeOptions &options);
 
-    Sophus::SE3d LookupTransform(const std::string &target_frame, const std::string &source_frame) const;
-
 private:
+    Sophus::SE3d LookupTransform(const std::string &target_frame,
+                                 const std::string &source_frame) const;
+
     void RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg);
     void AttitudeCallback(const px4_msgs::msg::VehicleAttitude::ConstSharedPtr &msg);
-    void LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg);
-    void PublishOdometry(const Sophus::SE3d &pose, const rclcpp::Time &stamp, const std::string &cloud_frame_id);
+    void LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg); // Added
+    void PublishOdometry(const Sophus::SE3d &pose,
+                         const rclcpp::Time &stamp,
+                         const std::string &cloud_frame_id);
     void PublishClouds(const rclcpp::Time &stamp,
                        const std::string &cloud_frame_id,
                        const std::vector<Eigen::Vector3d> &planar_points,
                        const std::vector<Eigen::Vector3d> &non_planar_points);
 
 private:
-    genz_icp::pipeline::GenZICP odometry_;
     genz_icp::pipeline::GenZConfig config_;
+    genz_icp::pipeline::GenZICP odometry_;
+
     std::string base_frame_ = "base_link";
     std::string odom_frame_ = "odom";
     bool publish_odom_tf_ = true;
@@ -68,32 +74,29 @@ private:
     // Subscribers
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud_sub_;
     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr attitude_sub_;
-    rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_position_sub_;
+    rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr local_position_sub_; // Added
 
     // Publishers
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;
-    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_publisher_;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr imu_odom_publisher_;
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr traj_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr map_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr planar_points_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr non_planar_points_publisher_;
 
-    // TF
+    nav_msgs::msg::Path path_msg_;
+
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
     std::unique_ptr<tf2_ros::Buffer> tf2_buffer_;
     std::unique_ptr<tf2_ros::TransformListener> tf2_listener_;
 
-    // State
-    nav_msgs::msg::Path path_msg_;
-    bool first_imu_received_ = false;
-    bool first_local_position_received_ = false;
-    Sophus::SE3d latest_imu_pose_;
-    Sophus::SE3d latest_local_position_pose_;
-    double latest_imu_time_ = 0.0;
-    Eigen::Vector3d latest_velocity_ = Eigen::Vector3d::Zero();
-    double latest_eph_ = 1.0;
-    double latest_epv_ = 1.0;
-    double latest_gps_time_ = 0.0;
+    // IMU-related members
+    Sophus::SE3d latest_imu_pose_; // Store the latest IMU pose
+    bool first_imu_received_ = false; // Flag to track first IMU measurement
+
+    // Local position-related members
+    Sophus::SE3d latest_local_position_pose_; // Store the latest local position pose
+    bool first_local_position_received_ = false; // Flag to track first local position measurement
 };
 
-} 
+}  // namespace genz_icp_ros
