@@ -1,0 +1,4 @@
+source;share/genz_icp/local_setup.bash
+source;share/genz_icp/local_setup.dsv
+source;share/genz_icp/local_setup.sh
+source;share/genz_icp/local_setup.zsh

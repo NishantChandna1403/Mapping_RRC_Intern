@@ -1,0 +1,15 @@
+[0.014s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/Test_ws/src/kiss-icp/ros -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/Test_ws/install/kiss_icp
+[0.372s] -- The CXX compiler identification is GNU 11.4.0
+[0.391s] -- Detecting CXX compiler ABI info
+[0.456s] -- Detecting CXX compiler ABI info - done
+[0.461s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.462s] -- Detecting CXX compile features
+[0.463s] -- Detecting CXX compile features - done
+[0.463s] -- Using ccache: /usr/bin/ccache
+[2.524s] [31mCMake Error at /home/nishant/RRC_Project/Test_ws/build/kiss_icp/_deps/sophus-src/CMakeLists.txt:1 (cmake_minimum_required):
+[2.524s]   CMake 3.24 or higher is required.  You are running version 3.22.1
+[2.524s] 
+[2.525s] [0m
+[2.525s] -- Configuring incomplete, errors occurred!
+[2.525s] See also "/home/nishant/RRC_Project/Test_ws/build/kiss_icp/CMakeFiles/CMakeOutput.log".
+[2.528s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/Test_ws/src/kiss-icp/ros -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/Test_ws/install/kiss_icp

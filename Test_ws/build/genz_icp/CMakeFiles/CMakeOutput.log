@@ -495,3 +495,99 @@ int main(void)
   return 0;
 }
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_783da/fast && gmake[1]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_783da.dir/build.make CMakeFiles/cmTC_783da.dir/build
+gmake[2]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_783da.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -fPIE -o CMakeFiles/cmTC_783da.dir/CheckFunctionExists.cxx.o -c /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_783da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_783da.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_783da.dir/CheckFunctionExists.cxx.o -o cmTC_783da  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+gmake[2]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e445c/fast && gmake[1]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e445c.dir/build.make CMakeFiles/cmTC_e445c.dir/build
+gmake[2]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e445c.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=gethostbyname -fPIE -o CMakeFiles/cmTC_e445c.dir/CheckFunctionExists.cxx.o -c /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_e445c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e445c.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_e445c.dir/CheckFunctionExists.cxx.o -o cmTC_e445c 
+gmake[2]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_af620/fast && gmake[1]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_af620.dir/build.make CMakeFiles/cmTC_af620.dir/build
+gmake[2]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_af620.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=connect -fPIE -o CMakeFiles/cmTC_af620.dir/CheckFunctionExists.cxx.o -c /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_af620
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af620.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_af620.dir/CheckFunctionExists.cxx.o -o cmTC_af620 
+gmake[2]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_48929/fast && gmake[1]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_48929.dir/build.make CMakeFiles/cmTC_48929.dir/build
+gmake[2]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_48929.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=remove -fPIE -o CMakeFiles/cmTC_48929.dir/CheckFunctionExists.cxx.o -c /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_48929
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48929.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_48929.dir/CheckFunctionExists.cxx.o -o cmTC_48929 
+gmake[2]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5ebf2/fast && gmake[1]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5ebf2.dir/build.make CMakeFiles/cmTC_5ebf2.dir/build
+gmake[2]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ebf2.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=shmat -fPIE -o CMakeFiles/cmTC_5ebf2.dir/CheckFunctionExists.cxx.o -c /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CheckFunctionExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_5ebf2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ebf2.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_5ebf2.dir/CheckFunctionExists.cxx.o -o cmTC_5ebf2 
+gmake[2]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_42898/fast && gmake[1]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_42898.dir/build.make CMakeFiles/cmTC_42898.dir/build
+gmake[2]: Entering directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42898.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -fPIE -o CMakeFiles/cmTC_42898.dir/CheckFunctionExists.cxx.o -c /home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_42898
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42898.dir/link.txt --verbose=1
+/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_42898.dir/CheckFunctionExists.cxx.o -o cmTC_42898  -lICE 
+gmake[2]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nishant/RRC_Project/Test_ws/build/genz_icp/CMakeFiles/CMakeTmp'
+
+
+

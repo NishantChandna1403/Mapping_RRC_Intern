@@ -1,0 +1,202 @@
+[0.000000] (-) TimerEvent: {}
+[0.000344] (-) JobUnselected: {'identifier': 'bcr_bot'}
+[0.000377] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000389] (-) JobUnselected: {'identifier': 'px4_offboard'}
+[0.000397] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000405] (-) JobUnselected: {'identifier': 'ros2_full_sensor_suite'}
+[0.000420] (genz_icp) JobQueued: {'identifier': 'genz_icp', 'dependencies': OrderedDict([('px4_msgs', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs')])}
+[0.000914] (genz_icp) JobStarted: {'identifier': 'genz_icp'}
+[0.007959] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'cmake'}
+[0.008249] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'build'}
+[0.008877] (genz_icp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nishant/RRC_Project/Test_ws/build/genz_icp', '--', '-j12', '-l12'], 'cwd': '/home/nishant/RRC_Project/Test_ws/build/genz_icp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'nishant'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nishant'), ('OLDPWD', '/home/nishant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nishant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nishant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/nishant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nishant:@/tmp/.ICE-unix/2075,unix/nishant:/tmp/.ICE-unix/2075'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/34a7b088_e284_42f6_817d_7e27fd82ea0b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nishant/RRC_Project/Test_ws/build/genz_icp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble')]), 'shell': False}
+[0.058695] (genz_icp) StdoutLine: {'line': b'[ 14%] Built target odometry_node\n'}
+[0.059643] (genz_icp) StdoutLine: {'line': b'[ 28%] Built target metrics\n'}
+[0.065478] (genz_icp) StdoutLine: {'line': b'[ 71%] Built target core\n'}
+[0.096357] (genz_icp) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o\x1b[0m\n'}
+[0.099998] (-) TimerEvent: {}
+[0.200323] (-) TimerEvent: {}
+[0.300762] (-) TimerEvent: {}
+[0.401117] (-) TimerEvent: {}
+[0.501413] (-) TimerEvent: {}
+[0.601822] (-) TimerEvent: {}
+[0.702127] (-) TimerEvent: {}
+[0.802548] (-) TimerEvent: {}
+[0.902963] (-) TimerEvent: {}
+[1.003382] (-) TimerEvent: {}
+[1.103723] (-) TimerEvent: {}
+[1.204261] (-) TimerEvent: {}
+[1.304663] (-) TimerEvent: {}
+[1.405187] (-) TimerEvent: {}
+[1.505628] (-) TimerEvent: {}
+[1.606043] (-) TimerEvent: {}
+[1.706381] (-) TimerEvent: {}
+[1.806792] (-) TimerEvent: {}
+[1.907220] (-) TimerEvent: {}
+[2.007648] (-) TimerEvent: {}
+[2.108081] (-) TimerEvent: {}
+[2.208515] (-) TimerEvent: {}
+[2.295490] (genz_icp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1\x1b[m\x1b[K:\n'}
+[2.295715] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:122:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K#endif without #if\n'}
+[2.295806] (genz_icp) StderrLine: {'line': b'  122 | #\x1b[01;31m\x1b[Kendif\x1b[m\x1b[K\n'}
+[2.295908] (genz_icp) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.308737] (-) TimerEvent: {}
+[2.409208] (-) TimerEvent: {}
+[2.509860] (-) TimerEvent: {}
+[2.610206] (-) TimerEvent: {}
+[2.710535] (-) TimerEvent: {}
+[2.810951] (-) TimerEvent: {}
+[2.911451] (-) TimerEvent: {}
+[3.011830] (-) TimerEvent: {}
+[3.112103] (-) TimerEvent: {}
+[3.212374] (-) TimerEvent: {}
+[3.312659] (-) TimerEvent: {}
+[3.412894] (-) TimerEvent: {}
+[3.513173] (-) TimerEvent: {}
+[3.613646] (-) TimerEvent: {}
+[3.714255] (-) TimerEvent: {}
+[3.814536] (-) TimerEvent: {}
+[3.914839] (-) TimerEvent: {}
+[4.015215] (-) TimerEvent: {}
+[4.115993] (-) TimerEvent: {}
+[4.216253] (-) TimerEvent: {}
+[4.316583] (-) TimerEvent: {}
+[4.416923] (-) TimerEvent: {}
+[4.517170] (-) TimerEvent: {}
+[4.617506] (-) TimerEvent: {}
+[4.717953] (-) TimerEvent: {}
+[4.818499] (-) TimerEvent: {}
+[4.918849] (-) TimerEvent: {}
+[5.019080] (-) TimerEvent: {}
+[5.119349] (-) TimerEvent: {}
+[5.219676] (-) TimerEvent: {}
+[5.320007] (-) TimerEvent: {}
+[5.420354] (-) TimerEvent: {}
+[5.520624] (-) TimerEvent: {}
+[5.620954] (-) TimerEvent: {}
+[5.721200] (-) TimerEvent: {}
+[5.732532] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KSophus::SE3d genz_icp::pipeline::toSophusSE3d(const gtsam::Pose3&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.732707] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass gtsam::Rot3\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kw\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.732758] (genz_icp) StderrLine: {'line': b'  117 |     Eigen::Quaterniond quat(R.\x1b[01;31m\x1b[Kw\x1b[m\x1b[K(), R.x(), R.y(), R.z());\n'}
+[5.732803] (genz_icp) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.732856] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass gtsam::Rot3\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KRx\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.732900] (genz_icp) StderrLine: {'line': b'  117 |     Eigen::Quaterniond quat(R.w(), R.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K(), R.y(), R.z());\n'}
+[5.732945] (genz_icp) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.732988] (genz_icp) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[KRx\x1b[m\x1b[K\n'}
+[5.733026] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass gtsam::Rot3\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KRy\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.733065] (genz_icp) StderrLine: {'line': b'  117 |     Eigen::Quaterniond quat(R.w(), R.x(), R.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K(), R.z());\n'}
+[5.733104] (genz_icp) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.733141] (genz_icp) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[KRy\x1b[m\x1b[K\n'}
+[5.733177] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass gtsam::Rot3\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kz\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KRz\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.733214] (genz_icp) StderrLine: {'line': b'  117 |     Eigen::Quaterniond quat(R.w(), R.x(), R.y(), R.\x1b[01;31m\x1b[Kz\x1b[m\x1b[K());\n'}
+[5.733251] (genz_icp) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.733287] (genz_icp) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[KRz\x1b[m\x1b[K\n'}
+[5.755614] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KSophus::SE3d genz_icp::pipeline::preIntegrateIMU(const Vector3d&, const Vector3d&, double, const SE3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.755751] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:127:106:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::AngleAxis<double>::Matrix3\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 3, 3>\x1b[m\x1b[K\xe2\x80\x99} to non-scalar type \xe2\x80\x98\x1b[01m\x1b[KEigen::Quaterniond\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Quaternion<double>\x1b[m\x1b[K\xe2\x80\x99} requested\n'}
+[5.755799] (genz_icp) StderrLine: {'line': b'  127 | \x1b[01;31m\x1b[Kn::AngleAxisd(delta_r.norm(), delta_r.normalized()).toRotationMatrix()\x1b[m\x1b[K;\n'}
+[5.755848] (genz_icp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.755885] (genz_icp) StderrLine: {'line': b'\n'}
+[5.756641] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:\x1b[m\x1b[K At global scope:\n'}
+[5.756688] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:132:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kgenz_icp::pipeline::GenZICP::GenZICP()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.756722] (genz_icp) StderrLine: {'line': b'  132 | \x1b[01;31m\x1b[KGenZICP\x1b[m\x1b[K::GenZICP() {\n'}
+[5.756754] (genz_icp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.756785] (genz_icp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1\x1b[m\x1b[K:\n'}
+[5.756817] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidates are: \xe2\x80\x98\x1b[01m\x1b[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZICP&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.756893] (genz_icp) StderrLine: {'line': b'   45 | class \x1b[01;36m\x1b[KGenZICP\x1b[m\x1b[K {\n'}
+[5.756921] (genz_icp) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.756948] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:51:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.756981] (genz_icp) StderrLine: {'line': b'   51 |     explicit \x1b[01;36m\x1b[KGenZICP\x1b[m\x1b[K(const GenZConfig &config = GenZConfig());\n'}
+[5.757008] (genz_icp) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.757033] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass genz_icp::pipeline::GenZICP\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[5.757060] (genz_icp) StderrLine: {'line': b'   45 | class \x1b[01;36m\x1b[KGenZICP\x1b[m\x1b[K {\n'}
+[5.757087] (genz_icp) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[5.806354] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid genz_icp::pipeline::GenZICP::addGPSFactor(const Vector3d&, double, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.806506] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:235:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.806546] (genz_icp) StderrLine: {'line': b'  235 |     pcl::PointXYZ curr_pose(\x1b[01;31m\x1b[Kposes_.back().translation().x()\x1b[m\x1b[K,\n'}
+[5.806577] (genz_icp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.806607] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:236:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.806654] (genz_icp) StderrLine: {'line': b'  236 |                             \x1b[01;31m\x1b[Kposes_.back().translation().y()\x1b[m\x1b[K,\n'}
+[5.806682] (genz_icp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.806709] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:237:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.806737] (genz_icp) StderrLine: {'line': b'  237 |                             \x1b[01;31m\x1b[Kposes_.back().translation().z()\x1b[m\x1b[K);\n'}
+[5.806763] (genz_icp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.808159] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:259:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.808261] (genz_icp) StderrLine: {'line': b'  259 |     last_gps_point_ = pcl::PointXYZ(\x1b[01;31m\x1b[Kgps_trans.x()\x1b[m\x1b[K, gps_trans.y(), gps_trans.z());\n'}
+[5.808301] (genz_icp) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.808331] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:259:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.808364] (genz_icp) StderrLine: {'line': b'  259 |   last_gps_point_ = pcl::PointXYZ(gps_trans.x(), \x1b[01;31m\x1b[Kgps_trans.y()\x1b[m\x1b[K, gps_trans.z());\n'}
+[5.808394] (genz_icp) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.808421] (genz_icp) StderrLine: {'line': b'\n'}
+[5.808449] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:259:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.808485] (genz_icp) StderrLine: {'line': b'  259 | ps_point_ = pcl::PointXYZ(gps_trans.x(), gps_trans.y(), \x1b[01;31m\x1b[Kgps_trans.z()\x1b[m\x1b[K);\n'}
+[5.808515] (genz_icp) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.808543] (genz_icp) StderrLine: {'line': b'\n'}
+[5.809615] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool genz_icp::pipeline::GenZICP::detectLoopClosure(size_t, size_t&, Sophus::SE3d&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.809652] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:271:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.809683] (genz_icp) StderrLine: {'line': b'  271 |     pcl::PointXYZ curr_pose(\x1b[01;31m\x1b[Kposes_[curr_idx].translation().x()\x1b[m\x1b[K,\n'}
+[5.809710] (genz_icp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.809738] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:272:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.809768] (genz_icp) StderrLine: {'line': b'  272 |                             \x1b[01;31m\x1b[Kposes_[curr_idx].translation().y()\x1b[m\x1b[K,\n'}
+[5.809795] (genz_icp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.809823] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:273:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.809859] (genz_icp) StderrLine: {'line': b'  273 |                             \x1b[01;31m\x1b[Kposes_[curr_idx].translation().z()\x1b[m\x1b[K);\n'}
+[5.809886] (genz_icp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.815335] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:288:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KIterativeClosestPoint\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99 does not name a template type\n'}
+[5.815420] (genz_icp) StderrLine: {'line': b'  288 |         static pcl::\x1b[01;31m\x1b[KIterativeClosestPoint\x1b[m\x1b[K<pcl::PointXYZ, pcl::PointXYZ> icp;\n'}
+[5.815462] (genz_icp) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.821290] (-) TimerEvent: {}
+[5.824100] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:289:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kicp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.824194] (genz_icp) StderrLine: {'line': b'  289 |         \x1b[01;31m\x1b[Kicp\x1b[m\x1b[K.setMaxCorrespondenceDistance(config_.historyKeyframeSearchRadius * 2);\n'}
+[5.824227] (genz_icp) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.877418] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid genz_icp::pipeline::GenZICP::updatePoses()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.877567] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:335:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.877613] (genz_icp) StderrLine: {'line': b'  335 |         keyframe_poses_->points[i].x = \x1b[01;31m\x1b[Kposes_[i].translation().x()\x1b[m\x1b[K;\n'}
+[5.877650] (genz_icp) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.877685] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:336:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.877739] (genz_icp) StderrLine: {'line': b'  336 |         keyframe_poses_->points[i].y = \x1b[01;31m\x1b[Kposes_[i].translation().y()\x1b[m\x1b[K;\n'}
+[5.877777] (genz_icp) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.877811] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:337:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 may change value [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion\x07-Werror=float-conversion\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.877855] (genz_icp) StderrLine: {'line': b'  337 |         keyframe_poses_->points[i].z = \x1b[01;31m\x1b[Kposes_[i].translation().z()\x1b[m\x1b[K;\n'}
+[5.877894] (genz_icp) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[5.921422] (-) TimerEvent: {}
+[6.021762] (-) TimerEvent: {}
+[6.122106] (-) TimerEvent: {}
+[6.222631] (-) TimerEvent: {}
+[6.323309] (-) TimerEvent: {}
+[6.423645] (-) TimerEvent: {}
+[6.523970] (-) TimerEvent: {}
+[6.624305] (-) TimerEvent: {}
+[6.724643] (-) TimerEvent: {}
+[6.824990] (-) TimerEvent: {}
+[6.925264] (-) TimerEvent: {}
+[7.025636] (-) TimerEvent: {}
+[7.126189] (-) TimerEvent: {}
+[7.226531] (-) TimerEvent: {}
+[7.326894] (-) TimerEvent: {}
+[7.427254] (-) TimerEvent: {}
+[7.527604] (-) TimerEvent: {}
+[7.628140] (-) TimerEvent: {}
+[7.728497] (-) TimerEvent: {}
+[7.828828] (-) TimerEvent: {}
+[7.929172] (-) TimerEvent: {}
+[8.029508] (-) TimerEvent: {}
+[8.129774] (-) TimerEvent: {}
+[8.230049] (-) TimerEvent: {}
+[8.330381] (-) TimerEvent: {}
+[8.430718] (-) TimerEvent: {}
+[8.531087] (-) TimerEvent: {}
+[8.631454] (-) TimerEvent: {}
+[8.731825] (-) TimerEvent: {}
+[8.832160] (-) TimerEvent: {}
+[8.932509] (-) TimerEvent: {}
+[9.032850] (-) TimerEvent: {}
+[9.133229] (-) TimerEvent: {}
+[9.233783] (-) TimerEvent: {}
+[9.334391] (-) TimerEvent: {}
+[9.406385] (genz_icp) StderrLine: {'line': b'cc1plus: all warnings being treated as errors\n'}
+[9.434520] (-) TimerEvent: {}
+[9.441800] (genz_icp) StderrLine: {'line': b'gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1\n'}
+[9.442097] (genz_icp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2\n'}
+[9.442252] (genz_icp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.443996] (genz_icp) CommandEnded: {'returncode': 2}
+[9.451670] (genz_icp) JobEnded: {'identifier': 'genz_icp', 'rc': 2}
+[9.462115] (-) EventReactorShutdown: {}

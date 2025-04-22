@@ -1,0 +1,90 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:122:2:[m[K [01;31m[Kerror: [m[K#endif without #if
+  122 | #[01;31m[Kendif[m[K
+      |  [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In function ‘[01m[KSophus::SE3d genz_icp::pipeline::toSophusSE3d(const gtsam::Pose3&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gtsam::Rot3[m[K’ has no member named ‘[01m[Kw[m[K’
+  117 |     Eigen::Quaterniond quat(R.[01;31m[Kw[m[K(), R.x(), R.y(), R.z());
+      |                               [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gtsam::Rot3[m[K’ has no member named ‘[01m[Kx[m[K’; did you mean ‘[01m[KRx[m[K’?
+  117 |     Eigen::Quaterniond quat(R.w(), R.[01;31m[Kx[m[K(), R.y(), R.z());
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[KRx[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gtsam::Rot3[m[K’ has no member named ‘[01m[Ky[m[K’; did you mean ‘[01m[KRy[m[K’?
+  117 |     Eigen::Quaterniond quat(R.w(), R.x(), R.[01;31m[Ky[m[K(), R.z());
+      |                                             [01;31m[K^[m[K
+      |                                             [32m[KRy[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:117:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass gtsam::Rot3[m[K’ has no member named ‘[01m[Kz[m[K’; did you mean ‘[01m[KRz[m[K’?
+  117 |     Eigen::Quaterniond quat(R.w(), R.x(), R.y(), R.[01;31m[Kz[m[K());
+      |                                                    [01;31m[K^[m[K
+      |                                                    [32m[KRz[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In function ‘[01m[KSophus::SE3d genz_icp::pipeline::preIntegrateIMU(const Vector3d&, const Vector3d&, double, const SE3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:127:106:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::AngleAxis<double>::Matrix3[m[K’ {aka ‘[01m[KEigen::Matrix<double, 3, 3>[m[K’} to non-scalar type ‘[01m[KEigen::Quaterniond[m[K’ {aka ‘[01m[KEigen::Quaternion<double>[m[K’} requested
+  127 | [01;31m[Kn::AngleAxisd(delta_r.norm(), delta_r.normalized()).toRotationMatrix()[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:132:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+  132 | [01;31m[KGenZICP[m[K::GenZICP() {
+      | [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZICP&)[m[K’
+   45 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:51:14:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+   51 |     explicit [01;36m[KGenZICP[m[K(const GenZConfig &config = GenZConfig());
+      |              [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   45 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kvoid genz_icp::pipeline::GenZICP::addGPSFactor(const Vector3d&, double, size_t)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:235:58:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  235 |     pcl::PointXYZ curr_pose([01;31m[Kposes_.back().translation().x()[m[K,
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:236:58:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  236 |                             [01;31m[Kposes_.back().translation().y()[m[K,
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:237:58:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  237 |                             [01;31m[Kposes_.back().translation().z()[m[K);
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:259:48:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  259 |     last_gps_point_ = pcl::PointXYZ([01;31m[Kgps_trans.x()[m[K, gps_trans.y(), gps_trans.z());
+      |                                     [01;31m[K~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:259:63:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  259 |   last_gps_point_ = pcl::PointXYZ(gps_trans.x(), [01;31m[Kgps_trans.y()[m[K, gps_trans.z());
+      |                                                  [01;31m[K~~~~~~~~~~~^~[m[K
+
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:259:78:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  259 | ps_point_ = pcl::PointXYZ(gps_trans.x(), gps_trans.y(), [01;31m[Kgps_trans.z()[m[K);
+      |                                                         [01;31m[K~~~~~~~~~~~^~[m[K
+
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kbool genz_icp::pipeline::GenZICP::detectLoopClosure(size_t, size_t&, Sophus::SE3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:271:61:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  271 |     pcl::PointXYZ curr_pose([01;31m[Kposes_[curr_idx].translation().x()[m[K,
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:272:61:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  272 |                             [01;31m[Kposes_[curr_idx].translation().y()[m[K,
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:273:61:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  273 |                             [01;31m[Kposes_[curr_idx].translation().z()[m[K);
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:288:21:[m[K [01;31m[Kerror: [m[K‘[01m[KIterativeClosestPoint[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a template type
+  288 |         static pcl::[01;31m[KIterativeClosestPoint[m[K<pcl::PointXYZ, pcl::PointXYZ> icp;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:289:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kicp[m[K’ was not declared in this scope
+  289 |         [01;31m[Kicp[m[K.setMaxCorrespondenceDistance(config_.historyKeyframeSearchRadius * 2);
+      |         [01;31m[K^~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kvoid genz_icp::pipeline::GenZICP::updatePoses()[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:335:65:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  335 |         keyframe_poses_->points[i].x = [01;31m[Kposes_[i].translation().x()[m[K;
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:336:65:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  336 |         keyframe_poses_->points[i].y = [01;31m[Kposes_[i].translation().y()[m[K;
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:337:65:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[KEigen::DenseCoeffsBase<Eigen::Matrix<double, 3, 1>, 1>::Scalar[m[K’ {aka ‘[01m[Kdouble[m[K’} to ‘[01m[Kfloat[m[K’ may change value [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wfloat-conversion-Werror=float-conversion]8;;[m[K]
+  337 |         keyframe_poses_->points[i].z = [01;31m[Kposes_[i].translation().z()[m[K;
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

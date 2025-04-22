@@ -1,0 +1,90 @@
+-- Using ccache: /usr/bin/ccache
+-- Turning basic logging ON
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65") found components: serialization system filesystem thread program_options date_time timer chrono regex 
+-- GTSAM include directory:  /usr/lib/cmake/GTSAM/../../../include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nishant/RRC_Project/Test_ws/build/kiss_icp
+[  4%] [32mBuilding CXX object CMakeFiles/odometry_node.dir/rclcpp_components/node_main_odometry_node.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/lio_node.dir/rclcpp_components/node_main_lio_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Registration.cpp.o[0m
+[ 13%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Deskew.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/ins_node.dir/rclcpp_components/node_main_ins_node.cpp.o[0m
+[ 27%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/VoxelHashMap.cpp.o[0m
+[ 31%] [32mBuilding CXX object kiss_icp/metrics/CMakeFiles/metrics.dir/Metrics.cpp.o[0m
+[ 36%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Preprocessing.cpp.o[0m
+[ 40%] [32mBuilding CXX object kiss_icp/core/CMakeFiles/core.dir/Threshold.cpp.o[0m
+[ 45%] [32m[1mLinking CXX executable ins_node[0m
+[ 50%] [32m[1mLinking CXX executable lio_node[0m
+[ 54%] [32m[1mLinking CXX executable odometry_node[0m
+[ 54%] Built target ins_node
+[ 54%] Built target lio_node
+[ 54%] Built target odometry_node
+[ 59%] [32m[1mLinking CXX static library libcore.a[0m
+[ 59%] Built target core
+[ 63%] [32m[1mLinking CXX static library libmetrics.a[0m
+[ 63%] Built target metrics
+[ 68%] [32mBuilding CXX object kiss_icp/pipeline/CMakeFiles/pipeline.dir/KissICP.cpp.o[0m
+[ 72%] [32m[1mLinking CXX static library libpipeline.a[0m
+[ 72%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/src/OdometryServer.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[ 81%] Built target odometry_component
+[ 86%] [32mBuilding CXX object CMakeFiles/lio_component.dir/src/imuPreintegration.cpp.o[0m
+[ 90%] [32m[1mLinking CXX shared library liblio_component.so[0m
+[ 90%] Built target lio_component
+[ 95%] [32mBuilding CXX object CMakeFiles/eskf_component.dir/src/ESKF.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libeskf_component.so[0m
+[100%] Built target eskf_component
+-- Install configuration: "Release"
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/odometry_node
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/odometry_node" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/ins_node
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/ins_node" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/lio_node
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/lio_node" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libodometry_component.so
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libodometry_component.so" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libeskf_component.so
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libeskf_component.so" to ""
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/liblio_component.so
+-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/liblio_component.so" to ""
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/launch
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/launch/odometry.launch.py
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/rviz
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/rviz/kiss_icp.rviz
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/config
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/config/params.yaml
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/urdf
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/urdf/av21.urdf
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/path.sh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.bash
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.sh
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/package.dsv
+-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+-- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/package.xml

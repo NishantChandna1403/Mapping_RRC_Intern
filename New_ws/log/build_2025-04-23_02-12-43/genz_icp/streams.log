@@ -1,0 +1,99 @@
+[0.009s] Invoking command in '/home/nishant/RRC_Project/New_ws/build/genz_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/New_ws/src/genz-icp/ros -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/New_ws/install/genz_icp
+[0.271s] -- The CXX compiler identification is GNU 11.4.0
+[0.281s] -- Detecting CXX compiler ABI info
+[0.372s] -- Detecting CXX compiler ABI info - done
+[0.377s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.377s] -- Detecting CXX compile features
+[0.378s] -- Detecting CXX compile features - done
+[0.379s] -- Using ccache: /usr/bin/ccache
+[3.483s] -- The C compiler identification is GNU 11.4.0
+[3.491s] -- Detecting C compiler ABI info
+[3.570s] -- Detecting C compiler ABI info - done
+[3.580s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.580s] -- Detecting C compile features
+[3.580s] -- Detecting C compile features - done
+[3.584s] -- Turning basic logging ON
+[6.094s] -- GenZ-ICP ROS 2 wrapper will be compiled
+[6.100s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.257s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.316s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.349s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[6.353s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[6.404s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.409s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.422s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.436s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.509s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[6.548s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.551s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.641s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.668s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.701s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.714s] -- Looking for C++ include pthread.h
+[6.817s] -- Looking for C++ include pthread.h - found
+[6.817s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.909s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.910s] -- Found Threads: TRUE  
+[6.960s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[6.987s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.004s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[7.135s] -- Configuring done
+[7.152s] -- Generating done
+[7.156s] -- Build files have been written to: /home/nishant/RRC_Project/New_ws/build/genz_icp
+[7.163s] Invoked command in '/home/nishant/RRC_Project/New_ws/build/genz_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nishant/RRC_Project/New_ws/src/genz-icp/ros -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nishant/RRC_Project/New_ws/install/genz_icp
+[7.164s] Invoking command in '/home/nishant/RRC_Project/New_ws/build/genz_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/New_ws/build/genz_icp -- -j12 -l12
+[7.215s] [  7%] [32mBuilding CXX object CMakeFiles/odometry_node.dir/rclcpp_components/node_main_odometry_node.cpp.o[0m
+[7.218s] [ 14%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Registration.cpp.o[0m
+[7.218s] [ 21%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/VoxelHashMap.cpp.o[0m
+[7.219s] [ 28%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Preprocessing.cpp.o[0m
+[7.219s] [ 35%] [32mBuilding CXX object genz_icp/metrics/CMakeFiles/metrics.dir/Metrics.cpp.o[0m
+[7.222s] [ 42%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Deskew.cpp.o[0m
+[7.223s] [ 50%] [32mBuilding CXX object genz_icp/core/CMakeFiles/core.dir/Threshold.cpp.o[0m
+[10.104s] [ 57%] [32m[1mLinking CXX executable odometry_node[0m
+[10.250s] [ 57%] Built target odometry_node
+[11.890s] [ 64%] [32m[1mLinking CXX static library libcore.a[0m
+[11.929s] [ 64%] Built target core
+[11.951s] [ 71%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[13.319s] [ 78%] [32m[1mLinking CXX static library libpipeline.a[0m
+[13.355s] [ 78%] Built target pipeline
+[13.376s] [ 85%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[17.330s] [ 92%] [32m[1mLinking CXX static library libmetrics.a[0m
+[17.366s] [ 92%] Built target metrics
+[27.031s] [100%] [32m[1mLinking CXX shared library libodometry_component.so[0m
+[27.248s] [100%] Built target odometry_component
+[27.256s] Invoked command in '/home/nishant/RRC_Project/New_ws/build/genz_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/New_ws/build/genz_icp -- -j12 -l12
+[27.267s] Invoking command in '/home/nishant/RRC_Project/New_ws/build/genz_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/New_ws/build/genz_icp
+[27.277s] -- Install configuration: "Release"
+[27.278s] -- Execute custom install script
+[27.279s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/lib/genz_icp/odometry_node
+[27.288s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/lib/libodometry_component.so
+[27.298s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//launch/odometry.launch
+[27.308s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//launch/odometry.launch.py
+[27.318s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros1.rviz
+[27.328s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros2.rviz
+[27.338s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/corridor.yaml
+[27.348s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/exp07.yaml
+[27.358s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/indoor.yaml
+[27.368s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/kitti.yaml
+[27.378s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/long_corridor.yaml
+[27.388s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/newer_college.yaml
+[27.398s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/outdoor.yaml
+[27.406s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp//config/parameter_tuning_guide.md
+[27.415s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/ament_index/resource_index/package_run_dependencies/genz_icp
+[27.426s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/ament_index/resource_index/parent_prefix_path/genz_icp
+[27.437s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.sh
+[27.447s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.dsv
+[27.454s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/environment/path.sh
+[27.463s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/environment/path.dsv
+[27.473s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/local_setup.bash
+[27.483s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/local_setup.sh
+[27.493s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/local_setup.zsh
+[27.502s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/local_setup.dsv
+[27.512s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/package.dsv
+[27.522s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/ament_index/resource_index/packages/genz_icp
+[27.532s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/ament_index/resource_index/rclcpp_components/genz_icp
+[27.541s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig.cmake
+[27.552s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig-version.cmake
+[27.562s] -- Symlinking: /home/nishant/RRC_Project/New_ws/install/genz_icp/share/genz_icp/package.xml
+[27.575s] Invoked command in '/home/nishant/RRC_Project/New_ws/build/genz_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/New_ws/build/genz_icp

@@ -1,0 +1,288 @@
+[0.000000] (-) TimerEvent: {}
+[0.000481] (-) JobUnselected: {'identifier': 'bcr_bot'}
+[0.000524] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000548] (-) JobUnselected: {'identifier': 'px4_offboard'}
+[0.000655] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000693] (-) JobUnselected: {'identifier': 'ros2_full_sensor_suite'}
+[0.000867] (genz_icp) JobQueued: {'identifier': 'genz_icp', 'dependencies': OrderedDict([('px4_msgs', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs')])}
+[0.000900] (genz_icp) JobStarted: {'identifier': 'genz_icp'}
+[0.007483] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'cmake'}
+[0.008025] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'build'}
+[0.008664] (genz_icp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nishant/RRC_Project/Test_ws/build/genz_icp', '--', '-j12', '-l12'], 'cwd': '/home/nishant/RRC_Project/Test_ws/build/genz_icp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'nishant'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nishant'), ('OLDPWD', '/home/nishant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nishant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nishant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/nishant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nishant:@/tmp/.ICE-unix/2075,unix/nishant:/tmp/.ICE-unix/2075'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/34a7b088_e284_42f6_817d_7e27fd82ea0b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nishant/RRC_Project/Test_ws/build/genz_icp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble')]), 'shell': False}
+[0.064757] (genz_icp) StdoutLine: {'line': b'[ 14%] Built target metrics\n'}
+[0.069298] (genz_icp) StdoutLine: {'line': b'[ 28%] Built target odometry_node\n'}
+[0.071661] (genz_icp) StdoutLine: {'line': b'[ 71%] Built target core\n'}
+[0.082708] (genz_icp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pipeline\x1b[0m\n'}
+[0.099892] (-) TimerEvent: {}
+[0.127386] (genz_icp) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o\x1b[0m\n'}
+[0.200263] (-) TimerEvent: {}
+[0.300595] (-) TimerEvent: {}
+[0.400846] (-) TimerEvent: {}
+[0.501142] (-) TimerEvent: {}
+[0.601375] (-) TimerEvent: {}
+[0.701701] (-) TimerEvent: {}
+[0.802026] (-) TimerEvent: {}
+[0.902360] (-) TimerEvent: {}
+[1.002613] (-) TimerEvent: {}
+[1.102961] (-) TimerEvent: {}
+[1.203307] (-) TimerEvent: {}
+[1.303664] (-) TimerEvent: {}
+[1.404001] (-) TimerEvent: {}
+[1.504259] (-) TimerEvent: {}
+[1.604614] (-) TimerEvent: {}
+[1.704955] (-) TimerEvent: {}
+[1.805333] (-) TimerEvent: {}
+[1.905684] (-) TimerEvent: {}
+[2.006024] (-) TimerEvent: {}
+[2.106491] (-) TimerEvent: {}
+[2.207171] (-) TimerEvent: {}
+[2.307403] (-) TimerEvent: {}
+[2.407739] (-) TimerEvent: {}
+[2.508092] (-) TimerEvent: {}
+[2.608548] (-) TimerEvent: {}
+[2.709239] (-) TimerEvent: {}
+[2.809571] (-) TimerEvent: {}
+[2.909904] (-) TimerEvent: {}
+[3.010219] (-) TimerEvent: {}
+[3.110795] (-) TimerEvent: {}
+[3.211097] (-) TimerEvent: {}
+[3.311318] (-) TimerEvent: {}
+[3.411569] (-) TimerEvent: {}
+[3.511900] (-) TimerEvent: {}
+[3.598251] (genz_icp) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX static library libpipeline.a\x1b[0m\n'}
+[3.612029] (-) TimerEvent: {}
+[3.650768] (genz_icp) StdoutLine: {'line': b'[ 85%] Built target pipeline\n'}
+[3.666169] (genz_icp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odometry_component\x1b[0m\n'}
+[3.690323] (genz_icp) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o\x1b[0m\n'}
+[3.712231] (-) TimerEvent: {}
+[3.812711] (-) TimerEvent: {}
+[3.913172] (-) TimerEvent: {}
+[4.013488] (-) TimerEvent: {}
+[4.113887] (-) TimerEvent: {}
+[4.214244] (-) TimerEvent: {}
+[4.314551] (-) TimerEvent: {}
+[4.414929] (-) TimerEvent: {}
+[4.515287] (-) TimerEvent: {}
+[4.615691] (-) TimerEvent: {}
+[4.716117] (-) TimerEvent: {}
+[4.816528] (-) TimerEvent: {}
+[4.916936] (-) TimerEvent: {}
+[5.017230] (-) TimerEvent: {}
+[5.119794] (-) TimerEvent: {}
+[5.220420] (-) TimerEvent: {}
+[5.320940] (-) TimerEvent: {}
+[5.421232] (-) TimerEvent: {}
+[5.521681] (-) TimerEvent: {}
+[5.622113] (-) TimerEvent: {}
+[5.722471] (-) TimerEvent: {}
+[5.822883] (-) TimerEvent: {}
+[5.923173] (-) TimerEvent: {}
+[6.023580] (-) TimerEvent: {}
+[6.123870] (-) TimerEvent: {}
+[6.224482] (-) TimerEvent: {}
+[6.324779] (-) TimerEvent: {}
+[6.425104] (-) TimerEvent: {}
+[6.525406] (-) TimerEvent: {}
+[6.625748] (-) TimerEvent: {}
+[6.726192] (-) TimerEvent: {}
+[6.826505] (-) TimerEvent: {}
+[6.926933] (-) TimerEvent: {}
+[7.027367] (-) TimerEvent: {}
+[7.127776] (-) TimerEvent: {}
+[7.228209] (-) TimerEvent: {}
+[7.328633] (-) TimerEvent: {}
+[7.429048] (-) TimerEvent: {}
+[7.529433] (-) TimerEvent: {}
+[7.629855] (-) TimerEvent: {}
+[7.730307] (-) TimerEvent: {}
+[7.830727] (-) TimerEvent: {}
+[7.931064] (-) TimerEvent: {}
+[8.031377] (-) TimerEvent: {}
+[8.131758] (-) TimerEvent: {}
+[8.232168] (-) TimerEvent: {}
+[8.332590] (-) TimerEvent: {}
+[8.433021] (-) TimerEvent: {}
+[8.533345] (-) TimerEvent: {}
+[8.633724] (-) TimerEvent: {}
+[8.734085] (-) TimerEvent: {}
+[8.834498] (-) TimerEvent: {}
+[8.934894] (-) TimerEvent: {}
+[9.035326] (-) TimerEvent: {}
+[9.135608] (-) TimerEvent: {}
+[9.235913] (-) TimerEvent: {}
+[9.336340] (-) TimerEvent: {}
+[9.436616] (-) TimerEvent: {}
+[9.536953] (-) TimerEvent: {}
+[9.637233] (-) TimerEvent: {}
+[9.737514] (-) TimerEvent: {}
+[9.837841] (-) TimerEvent: {}
+[9.938180] (-) TimerEvent: {}
+[10.038511] (-) TimerEvent: {}
+[10.138887] (-) TimerEvent: {}
+[10.239213] (-) TimerEvent: {}
+[10.339474] (-) TimerEvent: {}
+[10.439809] (-) TimerEvent: {}
+[10.540148] (-) TimerEvent: {}
+[10.640512] (-) TimerEvent: {}
+[10.740799] (-) TimerEvent: {}
+[10.841144] (-) TimerEvent: {}
+[10.941394] (-) TimerEvent: {}
+[11.041638] (-) TimerEvent: {}
+[11.141882] (-) TimerEvent: {}
+[11.242145] (-) TimerEvent: {}
+[11.342372] (-) TimerEvent: {}
+[11.442604] (-) TimerEvent: {}
+[11.542840] (-) TimerEvent: {}
+[11.643097] (-) TimerEvent: {}
+[11.743325] (-) TimerEvent: {}
+[11.843593] (-) TimerEvent: {}
+[11.943904] (-) TimerEvent: {}
+[12.044184] (-) TimerEvent: {}
+[12.144491] (-) TimerEvent: {}
+[12.244802] (-) TimerEvent: {}
+[12.345084] (-) TimerEvent: {}
+[12.445338] (-) TimerEvent: {}
+[12.545621] (-) TimerEvent: {}
+[12.645996] (-) TimerEvent: {}
+[12.746371] (-) TimerEvent: {}
+[12.846640] (-) TimerEvent: {}
+[12.946899] (-) TimerEvent: {}
+[13.047134] (-) TimerEvent: {}
+[13.147365] (-) TimerEvent: {}
+[13.247619] (-) TimerEvent: {}
+[13.347860] (-) TimerEvent: {}
+[13.448143] (-) TimerEvent: {}
+[13.548371] (-) TimerEvent: {}
+[13.648639] (-) TimerEvent: {}
+[13.748858] (-) TimerEvent: {}
+[13.849096] (-) TimerEvent: {}
+[13.949382] (-) TimerEvent: {}
+[14.049720] (-) TimerEvent: {}
+[14.150086] (-) TimerEvent: {}
+[14.250331] (-) TimerEvent: {}
+[14.350677] (-) TimerEvent: {}
+[14.450998] (-) TimerEvent: {}
+[14.551240] (-) TimerEvent: {}
+[14.651539] (-) TimerEvent: {}
+[14.751901] (-) TimerEvent: {}
+[14.852177] (-) TimerEvent: {}
+[14.952439] (-) TimerEvent: {}
+[15.052697] (-) TimerEvent: {}
+[15.152962] (-) TimerEvent: {}
+[15.253220] (-) TimerEvent: {}
+[15.353477] (-) TimerEvent: {}
+[15.453756] (-) TimerEvent: {}
+[15.553979] (-) TimerEvent: {}
+[15.654231] (-) TimerEvent: {}
+[15.754489] (-) TimerEvent: {}
+[15.854715] (-) TimerEvent: {}
+[15.955041] (-) TimerEvent: {}
+[16.055321] (-) TimerEvent: {}
+[16.155620] (-) TimerEvent: {}
+[16.255989] (-) TimerEvent: {}
+[16.356374] (-) TimerEvent: {}
+[16.456711] (-) TimerEvent: {}
+[16.557002] (-) TimerEvent: {}
+[16.657249] (-) TimerEvent: {}
+[16.757491] (-) TimerEvent: {}
+[16.857823] (-) TimerEvent: {}
+[16.958099] (-) TimerEvent: {}
+[17.058329] (-) TimerEvent: {}
+[17.158552] (-) TimerEvent: {}
+[17.258876] (-) TimerEvent: {}
+[17.359210] (-) TimerEvent: {}
+[17.459438] (-) TimerEvent: {}
+[17.559657] (-) TimerEvent: {}
+[17.659878] (-) TimerEvent: {}
+[17.760279] (-) TimerEvent: {}
+[17.861211] (-) TimerEvent: {}
+[17.961480] (-) TimerEvent: {}
+[18.061710] (-) TimerEvent: {}
+[18.162019] (-) TimerEvent: {}
+[18.262257] (-) TimerEvent: {}
+[18.362487] (-) TimerEvent: {}
+[18.462747] (-) TimerEvent: {}
+[18.563083] (-) TimerEvent: {}
+[18.663316] (-) TimerEvent: {}
+[18.763618] (-) TimerEvent: {}
+[18.864041] (-) TimerEvent: {}
+[18.964274] (-) TimerEvent: {}
+[19.064521] (-) TimerEvent: {}
+[19.164842] (-) TimerEvent: {}
+[19.265152] (-) TimerEvent: {}
+[19.365481] (-) TimerEvent: {}
+[19.465861] (-) TimerEvent: {}
+[19.566160] (-) TimerEvent: {}
+[19.666472] (-) TimerEvent: {}
+[19.766782] (-) TimerEvent: {}
+[19.867166] (-) TimerEvent: {}
+[19.967583] (-) TimerEvent: {}
+[20.067987] (-) TimerEvent: {}
+[20.168298] (-) TimerEvent: {}
+[20.268617] (-) TimerEvent: {}
+[20.368922] (-) TimerEvent: {}
+[20.469250] (-) TimerEvent: {}
+[20.569557] (-) TimerEvent: {}
+[20.669856] (-) TimerEvent: {}
+[20.770164] (-) TimerEvent: {}
+[20.870454] (-) TimerEvent: {}
+[20.970831] (-) TimerEvent: {}
+[21.071217] (-) TimerEvent: {}
+[21.171540] (-) TimerEvent: {}
+[21.271931] (-) TimerEvent: {}
+[21.372231] (-) TimerEvent: {}
+[21.472515] (-) TimerEvent: {}
+[21.572839] (-) TimerEvent: {}
+[21.673206] (-) TimerEvent: {}
+[21.773506] (-) TimerEvent: {}
+[21.873922] (-) TimerEvent: {}
+[21.974247] (-) TimerEvent: {}
+[22.074607] (-) TimerEvent: {}
+[22.174928] (-) TimerEvent: {}
+[22.275239] (-) TimerEvent: {}
+[22.375541] (-) TimerEvent: {}
+[22.475902] (-) TimerEvent: {}
+[22.576407] (-) TimerEvent: {}
+[22.676885] (-) TimerEvent: {}
+[22.777175] (-) TimerEvent: {}
+[22.877560] (-) TimerEvent: {}
+[22.910794] (genz_icp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libodometry_component.so\x1b[0m\n'}
+[22.977678] (-) TimerEvent: {}
+[23.078174] (-) TimerEvent: {}
+[23.178665] (-) TimerEvent: {}
+[23.279099] (-) TimerEvent: {}
+[23.379396] (-) TimerEvent: {}
+[23.479786] (-) TimerEvent: {}
+[23.481152] (genz_icp) StdoutLine: {'line': b'[100%] Built target odometry_component\n'}
+[23.490726] (genz_icp) CommandEnded: {'returncode': 0}
+[23.491386] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'install'}
+[23.500470] (genz_icp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nishant/RRC_Project/Test_ws/build/genz_icp'], 'cwd': '/home/nishant/RRC_Project/Test_ws/build/genz_icp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'nishant'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nishant'), ('OLDPWD', '/home/nishant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nishant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nishant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/nishant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nishant:@/tmp/.ICE-unix/2075,unix/nishant:/tmp/.ICE-unix/2075'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/34a7b088_e284_42f6_817d_7e27fd82ea0b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nishant/RRC_Project/Test_ws/build/genz_icp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble')]), 'shell': False}
+[23.512254] (genz_icp) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[23.514064] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/genz_icp/odometry_node\n'}
+[23.515763] (genz_icp) StdoutLine: {'line': b'-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so\n'}
+[23.521840] (genz_icp) StdoutLine: {'line': b'-- Set runtime path of "/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib/libodometry_component.so" to ""\n'}
+[23.522033] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch\n'}
+[23.522136] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch.py\n'}
+[23.522269] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//launch/odometry.launch\n'}
+[23.522444] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz\n'}
+[23.522518] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros1.rviz\n'}
+[23.522608] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp//rviz/genz_icp_ros2.rviz\n'}
+[23.522676] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/package_run_dependencies/genz_icp\n'}
+[23.522747] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/parent_prefix_path/genz_icp\n'}
+[23.522814] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.sh\n'}
+[23.522934] (genz_icp) StdoutLine: {'line': b'-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/ament_prefix_path.dsv\n'}
+[23.523044] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.sh\n'}
+[23.523126] (genz_icp) StdoutLine: {'line': b'-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/environment/path.dsv\n'}
+[23.523195] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.bash\n'}
+[23.523262] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.sh\n'}
+[23.523327] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.zsh\n'}
+[23.523393] (genz_icp) StdoutLine: {'line': b'-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/local_setup.dsv\n'}
+[23.523458] (genz_icp) StdoutLine: {'line': b'-- Installing: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.dsv\n'}
+[23.523521] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/packages/genz_icp\n'}
+[23.523586] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/ament_index/resource_index/rclcpp_components/genz_icp\n'}
+[23.523686] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig.cmake\n'}
+[23.523804] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/cmake/genz_icpConfig-version.cmake\n'}
+[23.523871] (genz_icp) StdoutLine: {'line': b'-- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/genz_icp/share/genz_icp/package.xml\n'}
+[23.525685] (genz_icp) CommandEnded: {'returncode': 0}
+[23.541720] (genz_icp) JobEnded: {'identifier': 'genz_icp', 'rc': 0}
+[23.542285] (-) EventReactorShutdown: {}

@@ -1,0 +1,158 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (-) JobUnselected: {'identifier': 'bcr_bot'}
+[0.000528] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000617] (-) JobUnselected: {'identifier': 'px4_offboard'}
+[0.000652] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000677] (-) JobUnselected: {'identifier': 'ros2_full_sensor_suite'}
+[0.000703] (genz_icp) JobQueued: {'identifier': 'genz_icp', 'dependencies': OrderedDict([('px4_msgs', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs')])}
+[0.000871] (genz_icp) JobStarted: {'identifier': 'genz_icp'}
+[0.007392] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'cmake'}
+[0.008264] (genz_icp) JobProgress: {'identifier': 'genz_icp', 'progress': 'build'}
+[0.008312] (genz_icp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nishant/RRC_Project/Test_ws/build/genz_icp', '--', '-j12', '-l12'], 'cwd': '/home/nishant/RRC_Project/Test_ws/build/genz_icp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'nishant'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nishant'), ('OLDPWD', '/home/nishant'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2240'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nishant'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nishant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/nishant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nishant:@/tmp/.ICE-unix/2075,unix/nishant:/tmp/.ICE-unix/2075'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/34a7b088_e284_42f6_817d_7e27fd82ea0b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nishant/RRC_Project/Test_ws/build/genz_icp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble')]), 'shell': False}
+[0.100125] (-) TimerEvent: {}
+[0.122284] (genz_icp) StdoutLine: {'line': b'-- Using ccache: /usr/bin/ccache\n'}
+[0.200246] (-) TimerEvent: {}
+[0.236064] (genz_icp) StdoutLine: {'line': b'-- Turning basic logging ON\n'}
+[0.300393] (-) TimerEvent: {}
+[0.343827] (genz_icp) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3\n'}
+[0.349807] (genz_icp) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[0.350895] (genz_icp) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[0.351997] (genz_icp) StdoutLine: {'line': b'-- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]\n'}
+[0.376155] (genz_icp) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.392999] (genz_icp) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.400478] (-) TimerEvent: {}
+[0.429689] (genz_icp) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.429883] (genz_icp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.455617] (genz_icp) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[0.500596] (-) TimerEvent: {}
+[0.535926] (genz_icp) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[0.554470] (genz_icp) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[0.600737] (-) TimerEvent: {}
+[0.602983] (genz_icp) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[0.604416] (genz_icp) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[0.604554] (genz_icp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.662753] (genz_icp) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[0.662968] (genz_icp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.663121] (genz_icp) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.663222] (genz_icp) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[0.700827] (-) TimerEvent: {}
+[0.701900] (genz_icp) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[0.710311] (genz_icp) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[0.717580] (genz_icp) StdoutLine: {'line': b'-- Could NOT find MPI (missing: MPI_C_FOUND C) \n'}
+[0.717697] (genz_icp) StdoutLine: {'line': b"    Reason given by package: MPI component 'C' was requested, but language C is not enabled.  \n"}
+[0.717737] (genz_icp) StdoutLine: {'line': b'\n'}
+[0.719630] (genz_icp) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[0.726353] (genz_icp) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[0.739118] (genz_icp) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[0.772950] (genz_icp) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[0.800906] (-) TimerEvent: {}
+[0.866633] (genz_icp) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[0.867415] (genz_icp) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[0.901036] (-) TimerEvent: {}
+[1.001390] (-) TimerEvent: {}
+[1.043014] (genz_icp) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.043262] (genz_icp) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.101556] (-) TimerEvent: {}
+[1.114563] (genz_icp) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.114795] (genz_icp) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.194902] (genz_icp) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.195033] (genz_icp) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.201661] (-) TimerEvent: {}
+[1.273294] (genz_icp) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.273425] (genz_icp) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.301870] (-) TimerEvent: {}
+[1.355518] (genz_icp) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.355751] (genz_icp) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.402002] (-) TimerEvent: {}
+[1.433259] (genz_icp) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.502147] (-) TimerEvent: {}
+[1.517058] (genz_icp) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.519910] (genz_icp) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.523596] (genz_icp) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.526422] (genz_icp) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.587661] (genz_icp) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.592570] (genz_icp) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.596623] (genz_icp) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.600638] (genz_icp) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.602204] (-) TimerEvent: {}
+[1.629194] (genz_icp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.629356] (genz_icp) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.630015] (genz_icp) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.630156] (genz_icp) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.631854] (genz_icp) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.631982] (genz_icp) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.632752] (genz_icp) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.633028] (genz_icp) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt  \n'}
+[1.635492] (genz_icp) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3\n'}
+[1.636545] (genz_icp) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[1.636991] (genz_icp) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[1.637109] (genz_icp) StdoutLine: {'line': b'-- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]\n'}
+[1.637168] (genz_icp) StdoutLine: {'line': b'-- GenZ-ICP ROS 2 wrapper will be compiled\n'}
+[1.637714] (genz_icp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.702354] (-) TimerEvent: {}
+[1.763099] (genz_icp) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/home/nishant/RRC_Project/Test_ws/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[1.802454] (-) TimerEvent: {}
+[1.803042] (genz_icp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.806219] (genz_icp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.813558] (genz_icp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.823994] (genz_icp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.836536] (genz_icp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.856824] (genz_icp) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.896766] (genz_icp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.902513] (-) TimerEvent: {}
+[1.936846] (genz_icp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.939111] (genz_icp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.002633] (-) TimerEvent: {}
+[2.024985] (genz_icp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.067227] (genz_icp) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[2.087213] (genz_icp) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.102519] (genz_icp) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.102684] (-) TimerEvent: {}
+[2.202902] (-) TimerEvent: {}
+[2.249629] (genz_icp) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.300177] (genz_icp) StdoutLine: {'line': b'-- Generating done\n'}
+[2.302960] (-) TimerEvent: {}
+[2.308744] (genz_icp) StdoutLine: {'line': b'-- Build files have been written to: /home/nishant/RRC_Project/Test_ws/build/genz_icp\n'}
+[2.332167] (genz_icp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target metrics\x1b[0m\n'}
+[2.334789] (genz_icp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odometry_node\x1b[0m\n'}
+[2.338254] (genz_icp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target core\x1b[0m\n'}
+[2.341978] (genz_icp) StdoutLine: {'line': b'[ 14%] Built target metrics\n'}
+[2.347358] (genz_icp) StdoutLine: {'line': b'[ 28%] Built target odometry_node\n'}
+[2.353496] (genz_icp) StdoutLine: {'line': b'[ 71%] Built target core\n'}
+[2.362751] (genz_icp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pipeline\x1b[0m\n'}
+[2.374938] (genz_icp) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o\x1b[0m\n'}
+[2.403051] (-) TimerEvent: {}
+[2.503367] (-) TimerEvent: {}
+[2.603736] (-) TimerEvent: {}
+[2.704109] (-) TimerEvent: {}
+[2.804354] (-) TimerEvent: {}
+[2.904692] (-) TimerEvent: {}
+[3.005031] (-) TimerEvent: {}
+[3.105465] (-) TimerEvent: {}
+[3.206169] (-) TimerEvent: {}
+[3.306584] (-) TimerEvent: {}
+[3.406956] (-) TimerEvent: {}
+[3.507328] (-) TimerEvent: {}
+[3.607861] (-) TimerEvent: {}
+[3.708487] (-) TimerEvent: {}
+[3.808906] (-) TimerEvent: {}
+[3.909253] (-) TimerEvent: {}
+[4.009648] (-) TimerEvent: {}
+[4.110005] (-) TimerEvent: {}
+[4.210361] (-) TimerEvent: {}
+[4.310700] (-) TimerEvent: {}
+[4.411073] (-) TimerEvent: {}
+[4.511378] (-) TimerEvent: {}
+[4.611662] (-) TimerEvent: {}
+[4.650898] (genz_icp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1\x1b[m\x1b[K:\n'}
+[4.651070] (genz_icp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:16:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KSophus/se3.hpp: No such file or directory\n'}
+[4.651127] (genz_icp) StderrLine: {'line': b'   16 | #include \x1b[01;31m\x1b[K<Sophus/se3.hpp>\x1b[m\x1b[K\n'}
+[4.651176] (genz_icp) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.651222] (genz_icp) StderrLine: {'line': b'compilation terminated.\n'}
+[4.711897] (-) TimerEvent: {}
+[4.760875] (genz_icp) StderrLine: {'line': b'gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1\n'}
+[4.761743] (genz_icp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2\n'}
+[4.762409] (genz_icp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.767678] (genz_icp) CommandEnded: {'returncode': 2}
+[4.787081] (genz_icp) JobEnded: {'identifier': 'genz_icp', 'rc': 2}
+[4.798230] (-) EventReactorShutdown: {}

@@ -180,11 +180,11 @@ inline std::vector<Eigen::Vector3d> PointCloud2ToEigen(const PointCloud2::ConstS
     std::vector<Eigen::Vector3d> points;
     points.reserve(msg->height * msg->width);
 
-    // Transformation matrix: Camera Optical (Z forward, X right, Y down) to ROS Standard (X forward, Y left, Z up)
+    // Transformation matrix: Camera Optical (Z forward, X right, Y down) to ENU (X East, Y North, Z Up)
     Eigen::Matrix3d transform;
-    transform << 0,  0,  1,   // Z -> X
-                -1,  0,  0,   // X -> -Y
-                 0, -1,  0;   // Y -> -Z
+    transform << 1,  0,  0,   // Z -> X (forward to East)
+                 0,  0,  1,   // X -> Y (right to North)
+                 0, -1,  0;   // -Y -> Z (up to Up)
 
     sensor_msgs::PointCloud2ConstIterator<float> msg_x(*msg, "x");
     sensor_msgs::PointCloud2ConstIterator<float> msg_y(*msg, "y");
@@ -192,9 +192,9 @@ inline std::vector<Eigen::Vector3d> PointCloud2ToEigen(const PointCloud2::ConstS
     for (size_t i = 0; i < msg->height * msg->width; ++i, ++msg_x, ++msg_y, ++msg_z) {
         // Read point in Camera Optical frame
         Eigen::Vector3d point(*msg_x, *msg_y, *msg_z);
-        // Filter points: z <= 50.0 and y <= -1.0 in Camera Optical frame
+        // Apply filtering if needed (adjust as necessary for your setup)
         if (point.z() <= 50.0 && point.y() <= -1.0) {
-            // Apply transformation to ROS Standard frame
+            // Apply transformation to ENU frame
             points.emplace_back(transform * point);
         }
     }
@@ -227,3 +227,6 @@ inline std::unique_ptr<PointCloud2> EigenToPointCloud2(const std::vector<Eigen::
     return msg;
 }
 }  // namespace genz_icp_ros::utils
+
+
+

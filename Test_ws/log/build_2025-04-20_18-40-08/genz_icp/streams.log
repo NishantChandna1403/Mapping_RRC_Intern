@@ -1,0 +1,99 @@
+[0.009s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.122s] -- Using ccache: /usr/bin/ccache
+[0.235s] -- Turning basic logging ON
+[0.343s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[0.349s] -- Found required Ceres dependency: glog
+[0.350s] -- Found required Ceres dependency: gflags
+[0.351s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[0.375s] -- Checking for module 'eigen3'
+[0.392s] --   Found eigen3, version 3.4.0
+[0.429s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.429s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.455s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.535s] -- Checking for module 'libusb-1.0'
+[0.554s] --   Found libusb-1.0, version 1.0.25
+[0.602s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[0.604s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[0.604s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.662s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[0.662s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.662s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.662s] [0m** WARNING ** io features related to png will be disabled[0m
+[0.701s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[0.709s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[0.717s] -- Could NOT find MPI (missing: MPI_C_FOUND C) 
+[0.717s]     Reason given by package: MPI component 'C' was requested, but language C is not enabled.  
+[0.717s] 
+[0.719s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[0.725s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[0.738s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[0.772s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[0.866s] -- Found X11: /usr/include   
+[0.867s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.042s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.042s] -- Looking for gethostbyname
+[1.114s] -- Looking for gethostbyname - found
+[1.114s] -- Looking for connect
+[1.194s] -- Looking for connect - found
+[1.194s] -- Looking for remove
+[1.272s] -- Looking for remove - found
+[1.272s] -- Looking for shmat
+[1.355s] -- Looking for shmat - found
+[1.355s] -- Looking for IceConnectionNumber in ICE
+[1.432s] -- Looking for IceConnectionNumber in ICE - found
+[1.516s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[1.519s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[1.523s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[1.526s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[1.587s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[1.592s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[1.596s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[1.600s] -- Found utf8cpp: /usr/include/utf8cpp  
+[1.628s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.628s] -- looking for PCL_COMMON
+[1.629s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.629s] -- looking for PCL_OCTREE
+[1.631s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.631s] -- looking for PCL_IO
+[1.632s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.632s] -- Found PCL: pcl_common;pcl_octree;pcl_io;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt  
+[1.635s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[1.636s] -- Found required Ceres dependency: glog
+[1.636s] -- Found required Ceres dependency: gflags
+[1.636s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[1.636s] -- GenZ-ICP ROS 2 wrapper will be compiled
+[1.637s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.762s] -- Found px4_msgs: 2.0.1 (/home/nishant/RRC_Project/Test_ws/install/px4_msgs/share/px4_msgs/cmake)
+[1.802s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.805s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.813s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.823s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.836s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.856s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.897s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.936s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.938s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.024s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.066s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.086s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.102s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.249s] -- Configuring done
+[2.299s] -- Generating done
+[2.308s] -- Build files have been written to: /home/nishant/RRC_Project/Test_ws/build/genz_icp
+[2.331s] [35m[1mConsolidate compiler generated dependencies of target metrics[0m
+[2.334s] [35m[1mConsolidate compiler generated dependencies of target odometry_node[0m
+[2.337s] [35m[1mConsolidate compiler generated dependencies of target core[0m
+[2.341s] [ 14%] Built target metrics
+[2.347s] [ 28%] Built target odometry_node
+[2.353s] [ 71%] Built target core
+[2.362s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[2.374s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[4.650s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:1[m[K:
+[4.650s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:16:10:[m[K [01;31m[Kfatal error: [m[KSophus/se3.hpp: No such file or directory
+[4.650s]    16 | #include [01;31m[K<Sophus/se3.hpp>[m[K
+[4.650s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.650s] compilation terminated.
+[4.760s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[4.761s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[4.762s] gmake: *** [Makefile:146: all] Error 2
+[4.767s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

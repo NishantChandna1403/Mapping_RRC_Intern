@@ -1,0 +1,256 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-30a1aef538fd61b1674a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						3,
+						4,
+						7
+					]
+				},
+				{
+					"build" : "genz_icp",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-genz_icp-Release-d2b2ce3e28a6cdc48208.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/nishant/RRC_Project/New_ws/src/genz-icp/cpp/genz_icp"
+				},
+				{
+					"build" : "_deps/sophus-build",
+					"jsonFile" : "directory-_deps.sophus-build-Release-49618be32607778f64a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "/home/nishant/RRC_Project/New_ws/build/genz_icp/_deps/sophus-src",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "_deps/tessil-build",
+					"jsonFile" : "directory-_deps.tessil-build-Release-949de2fbf55025cdea98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "/home/nishant/RRC_Project/New_ws/build/genz_icp/_deps/tessil-src"
+				},
+				{
+					"build" : "genz_icp/core",
+					"jsonFile" : "directory-genz_icp.core-Release-a37e152e8b6564b6ef22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/nishant/RRC_Project/New_ws/src/genz-icp/cpp/genz_icp/core",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "genz_icp/metrics",
+					"jsonFile" : "directory-genz_icp.metrics-Release-969fcef0c4ac2b416885.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/nishant/RRC_Project/New_ws/src/genz-icp/cpp/genz_icp/metrics",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "genz_icp/pipeline",
+					"jsonFile" : "directory-genz_icp.pipeline-Release-1dd7866059cc2feadec3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/nishant/RRC_Project/New_ws/src/genz-icp/cpp/genz_icp/pipeline",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "genz_icp",
+					"targetIndexes" : 
+					[
+						1,
+						3,
+						4,
+						7
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						4,
+						5,
+						6
+					],
+					"name" : "genz_icp_cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Sophus",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "tsl-robin-map",
+					"parentIndex" : 1
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "core::@e62335894f78ed876799",
+					"jsonFile" : "target-core-Release-5664ab9ae0c1a45ff1ba.json",
+					"name" : "core",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "genz_icp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-genz_icp_uninstall-Release-3cb5aaa83ea91c941801.json",
+					"name" : "genz_icp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "metrics::@ac5a8c687369824c2827",
+					"jsonFile" : "target-metrics-Release-ae9b3b1b22e211706231.json",
+					"name" : "metrics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odometry_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odometry_component-Release-bc847723c3ae9e57e5d7.json",
+					"name" : "odometry_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odometry_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odometry_node-Release-4f0873cfe90bce548d09.json",
+					"name" : "odometry_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "other::@0ea949b180ce896eafe4",
+					"jsonFile" : "target-other-Release-f09f4bec6f37d10e4b84.json",
+					"name" : "other",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "pipeline::@03dceec3c0d56f50821e",
+					"jsonFile" : "target-pipeline-Release-301defaa099cfa3be1f7.json",
+					"name" : "pipeline",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-3cb5ff2925b3134d63dc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nishant/RRC_Project/New_ws/build/genz_icp",
+		"source" : "/home/nishant/RRC_Project/New_ws/src/genz-icp/ros"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

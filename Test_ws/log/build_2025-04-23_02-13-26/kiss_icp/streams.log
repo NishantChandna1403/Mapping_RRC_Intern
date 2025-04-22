@@ -1,0 +1,44 @@
+[0.011s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/kiss_icp -- -j12 -l12
+[0.078s] [  9%] Built target metrics
+[0.081s] [ 18%] Built target odometry_node
+[0.081s] [ 31%] Built target ins_node
+[0.081s] [ 36%] Built target lio_node
+[0.093s] [ 63%] Built target core
+[0.121s] [ 72%] Built target pipeline
+[0.154s] [ 81%] Built target eskf_component
+[0.154s] [ 90%] Built target odometry_component
+[0.203s] [100%] Built target lio_component
+[0.211s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/kiss_icp -- -j12 -l12
+[0.220s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/kiss_icp
+[0.227s] -- Install configuration: "Release"
+[0.229s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/odometry_node
+[0.230s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/ins_node
+[0.231s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/kiss_icp/lio_node
+[0.233s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libodometry_component.so
+[0.235s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/libeskf_component.so
+[0.236s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib/liblio_component.so
+[0.237s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/launch
+[0.238s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/launch/odometry.launch.py
+[0.238s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/rviz
+[0.239s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/rviz/kiss_icp.rviz
+[0.239s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/config
+[0.239s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/config/params.yaml
+[0.240s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/urdf
+[0.240s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/urdf/av21.urdf
+[0.241s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/package_run_dependencies/kiss_icp
+[0.241s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/parent_prefix_path/kiss_icp
+[0.241s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.sh
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/ament_prefix_path.dsv
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/path.sh
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/environment/path.dsv
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.bash
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.sh
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.zsh
+[0.242s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/local_setup.dsv
+[0.242s] -- Installing: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/package.dsv
+[0.243s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/packages/kiss_icp
+[0.243s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/ament_index/resource_index/rclcpp_components/kiss_icp
+[0.243s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig.cmake
+[0.243s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/cmake/kiss_icpConfig-version.cmake
+[0.243s] -- Up-to-date: /home/nishant/RRC_Project/Test_ws/install/kiss_icp/share/kiss_icp/package.xml
+[0.245s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/kiss_icp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nishant/RRC_Project/Test_ws/build/kiss_icp

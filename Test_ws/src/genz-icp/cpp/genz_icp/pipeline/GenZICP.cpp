@@ -125,7 +125,7 @@ Sophus::SE3d GenZICP::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
     const double min_points = 50000.0;
     size_t total_points = planar_points.size() + non_planar_points.size();
     double icp_uncertainty = 1.0 / (1.0 + static_cast<double>(total_points) / min_points);
-    double icp_weight = 1.0 / icp_uncertainty;
+    double icp_weight = 0.0 / icp_uncertainty;
 
     double gps_uncertainty = std::sqrt(eph * eph + epv * epv);
     if (gps_uncertainty < 0.1 || std::isnan(gps_uncertainty)) {
@@ -134,7 +134,7 @@ Sophus::SE3d GenZICP::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
     }
     double gps_weight = 1.0 / gps_uncertainty;
 
-    double imu_weight = 10.0;
+    double imu_weight = 0.5;
 
     std::cout << "[DEBUG] Weights - ICP: " << icp_weight << ", GPS: " << gps_weight << ", IMU: " << imu_weight << std::endl;
 
@@ -201,15 +201,18 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
     std::cout << "[DEBUG] Entering RegisterFrame (enhanced)" << std::endl;
     std::cout << "[DEBUG] Raw input frame size: " << frame.size() << std::endl;
 
-    auto to_yaw = [](const Sophus::SE3d& pose) -> double {
+    auto to_euler = [](const Sophus::SE3d& pose) -> Eigen::Vector3d {
         Eigen::Quaterniond q = pose.unit_quaternion();
-        Eigen::Vector3d euler = q.toRotationMatrix().eulerAngles(2, 1, 0);
-        return euler[0];
+        Eigen::Matrix3d R = q.toRotationMatrix();
+        Eigen::Vector3d euler = R.eulerAngles(2, 1, 0); // yaw (z), pitch (y), roll (x)
+        return Eigen::Vector3d(euler[2], euler[1], euler[0]); // roll, pitch, yaw
     };
 
-    static std::deque<double> yaw_history;
+    static std::deque<Eigen::Vector3d> euler_history;
     const size_t max_history_size = 2;
     const size_t min_points_for_icp = 100;
+    const double roll_threshold_deg = 0.4;
+    const double pitch_threshold_deg = 0.4;
     const double yaw_threshold_deg = 0.4;
 
     const auto &deskew_frame = [&]() -> std::vector<Eigen::Vector3d> {
@@ -234,31 +237,43 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         std::cout << "[DEBUG] No points after cropping, using GPS+IMU" << std::endl;
         new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
         poses_.push_back(new_pose);
-        double new_yaw = to_yaw(new_pose);
-        yaw_history.push_back(new_yaw);
-        if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+        Eigen::Vector3d new_euler = to_euler(new_pose);
+        euler_history.push_back(new_euler);
+        if (euler_history.size() > max_history_size) euler_history.pop_front();
         std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
                   << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
         return {{}, {}};
     }
 
-    // Check for yaw change
+    // Check for roll, pitch, and yaw changes
     if (!first_frame_ && !poses_.empty()) {
-        double current_yaw = to_yaw(imu_orientation);
-        double reference_yaw = to_yaw(poses_.back());
-        double yaw_diff = std::atan2(std::sin(current_yaw - reference_yaw),
-                                     std::cos(current_yaw - reference_yaw));
-        double yaw_diff_deg = std::abs(yaw_diff * 180.0 / M_PI);
+        Eigen::Vector3d current_euler = to_euler(imu_orientation); // roll, pitch, yaw
+        Eigen::Vector3d reference_euler = to_euler(poses_.back());
 
-        std::cout << "[DEBUG] Yaw difference from last frame: " << yaw_diff_deg << " degrees" << std::endl;
+        // Compute angular differences, handling wraparound
+        Eigen::Vector3d euler_diff;
+        for (int i = 0; i < 3; ++i) {
+            double diff = current_euler[i] - reference_euler[i];
+            euler_diff[i] = std::atan2(std::sin(diff), std::cos(diff));
+        }
+        Eigen::Vector3d euler_diff_deg = euler_diff * 180.0 / M_PI;
+        double roll_diff_deg = std::abs(euler_diff_deg[0]);
+        double pitch_diff_deg = std::abs(euler_diff_deg[1]);
+        double yaw_diff_deg = std::abs(euler_diff_deg[2]);
 
-        if (yaw_diff_deg > yaw_threshold_deg) {
-            std::cout << "[DEBUG] Significant yaw change detected, skipping ICP and using GPS+IMU" << std::endl;
+        std::cout << "[DEBUG] Euler differences - Roll: " << roll_diff_deg
+                  << ", Pitch: " << pitch_diff_deg
+                  << ", Yaw: " << yaw_diff_deg << " degrees" << std::endl;
+
+        if (roll_diff_deg > roll_threshold_deg || pitch_diff_deg > pitch_threshold_deg || yaw_diff_deg > yaw_threshold_deg) {
+            std::cout << "[DEBUG] Significant orientation change detected (Roll: " << roll_diff_deg
+                      << ", Pitch: " << pitch_diff_deg << ", Yaw: " << yaw_diff_deg
+                      << "), skipping ICP and using GPS+IMU" << std::endl;
             new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
             poses_.push_back(new_pose);
-            double new_yaw = to_yaw(new_pose);
-            yaw_history.push_back(new_yaw);
-            if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+            Eigen::Vector3d new_euler = to_euler(new_pose);
+            euler_history.push_back(new_euler);
+            if (euler_history.size() > max_history_size) euler_history.pop_front();
             std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
                       << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
             return {{}, {}};
@@ -281,9 +296,9 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
                       << "), using GPS+IMU" << std::endl;
             new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
             poses_.push_back(new_pose);
-            double new_yaw = to_yaw(new_pose);
-            yaw_history.push_back(new_yaw);
-            if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+            Eigen::Vector3d new_euler = to_euler(new_pose);
+            euler_history.push_back(new_euler);
+            if (euler_history.size() > max_history_size) euler_history.pop_front();
             std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
                       << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
             return {{}, {}};
@@ -325,17 +340,17 @@ GenZICP::Vector3dVectorTuple GenZICP::RegisterFrame(const std::vector<Eigen::Vec
         std::cout << "[DEBUG] ICP exception (" << e.what() << "), using GPS+IMU" << std::endl;
         new_pose = Sophus::SE3d(imu_orientation.unit_quaternion(), local_position_pose.translation());
         poses_.push_back(new_pose);
-        double new_yaw = to_yaw(new_pose);
-        yaw_history.push_back(new_yaw);
-        if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+        Eigen::Vector3d new_euler = to_euler(new_pose);
+        euler_history.push_back(new_euler);
+        if (euler_history.size() > max_history_size) euler_history.pop_front();
         std::cout << "[DEBUG] GPS+IMU - Translation: " << new_pose.translation().transpose()
                   << ", Quaternion: " << new_pose.unit_quaternion().coeffs().transpose() << std::endl;
         return {{}, {}};
     }
 
-    double new_yaw = to_yaw(new_pose);
-    yaw_history.push_back(new_yaw);
-    if (yaw_history.size() > max_history_size) yaw_history.pop_front();
+    Eigen::Vector3d new_euler = to_euler(new_pose);
+    euler_history.push_back(new_euler);
+    if (euler_history.size() > max_history_size) euler_history.pop_front();
 
     poses_.push_back(new_pose);
     std::cout << "[DEBUG] Pose appended to poses_, size: " << poses_.size() << std::endl;
@@ -404,4 +419,4 @@ bool GenZICP::HasMoved() {
     return moved;
 }
 
-}  
+}  // namespace genz_icp::pipeline

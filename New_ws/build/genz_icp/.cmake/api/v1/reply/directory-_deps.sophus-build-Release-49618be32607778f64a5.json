@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/sophus-build",
+		"source" : "/home/nishant/RRC_Project/New_ws/build/genz_icp/_deps/sophus-src"
+	}
+}

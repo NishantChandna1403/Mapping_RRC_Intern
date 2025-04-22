@@ -34,7 +34,7 @@ class PointCloudTransformer(Node):
                                  dtype=[('x', np.float32), ('y', np.float32), ('z', np.float32)])
         header = Header()
         header.stamp = msg.header.stamp
-        header.frame_id = "base_link"
+        header.frame_id = "camera_link"
 
         if cloud_data.shape[0] == 0:
             self.get_logger().warn('Received empty point cloud, publishing empty transformed cloud')
