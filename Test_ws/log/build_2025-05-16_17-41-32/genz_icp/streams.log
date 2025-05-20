@@ -1,0 +1,41 @@
+[0.019s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.269s] [ 14%] Built target odometry_node
+[0.269s] [ 28%] Built target metrics
+[0.269s] [ 71%] Built target core
+[0.270s] [ 85%] Built target pipeline
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.270s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[9.162s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[9.162s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:248:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, Sophus::SE3d, Sophus::SE3d, genz_icp::pipeline::IMUMeasurement)[m[K’
+[9.162s]   248 |     const auto &[planar_points, non_planar_points] = [01;31m[Kodometry_.RegisterFrame([m[K
+[9.162s]       |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[9.162s]   249 | [01;31m[K        points, timestamps,[m[K
+[9.162s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                                  
+[9.162s]   250 | [01;31m[K        first_attitude_received_ ? latest_attitude_pose_ : Sophus::SE3d(),[m[K
+[9.163s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K   
+[9.163s]   251 | [01;31m[K        first_local_position_received_ ? latest_local_position_pose_ : Sophus::SE3d(),[m[K
+[9.163s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.163s]   252 | [01;31m[K        first_sensor_combined_received_ ? imu_measurement : genz_icp::pipeline::IMUMeasurement())[m[K;
+[9.163s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.163s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:44[m[K,
+[9.163s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+[9.163s]    45 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame);
+[9.163s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:46:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+[9.163s]    46 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+[9.163s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:46:25:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 5 provided
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:48:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+[9.163s]    48 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+[9.163s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:48:25:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 5 provided
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+[9.163s]    52 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+[9.163s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[9.163s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:25:[m[K [01;36m[Knote: [m[K  candidate expects 8 arguments, 5 provided
+[9.164s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[9.164s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[9.164s] gmake: *** [Makefile:146: all] Error 2
+[9.166s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

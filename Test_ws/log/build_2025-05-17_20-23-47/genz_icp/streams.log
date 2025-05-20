@@ -1,0 +1,34 @@
+[0.010s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.052s] [ 14%] Built target metrics
+[0.055s] [ 28%] Built target odometry_node
+[0.061s] [ 71%] Built target core
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.085s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[2.166s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.166s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:73:[m[K [01;31m[Kerror: [m[Kdefault member initializer for ‘[01m[Kgenz_icp::pipeline::GenZICP::IMUData::gyro[m[K’ required before the end of its enclosing class
+[2.166s]    68 |                                       const IMUData &imu_data = IMUData([01;31m[K)[m[K);
+[2.166s]       |                                                                         [01;31m[K^[m[K
+[2.166s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.166s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:38:30:[m[K [01;36m[Knote: [m[Kdefined here
+[2.166s]    38 |         Eigen::Vector3d gyro [01;36m[K= Eigen::Vector3d::Zero();[m[K
+[2.166s]       |                              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.166s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.166s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:73:[m[K [01;31m[Kerror: [m[Kdefault member initializer for ‘[01m[Kgenz_icp::pipeline::GenZICP::IMUData::accel[m[K’ required before the end of its enclosing class
+[2.166s]    68 |                                       const IMUData &imu_data = IMUData([01;31m[K)[m[K);
+[2.166s]       |                                                                         [01;31m[K^[m[K
+[2.166s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.166s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:39:31:[m[K [01;36m[Knote: [m[Kdefined here
+[2.167s]    39 |         Eigen::Vector3d accel [01;36m[K= Eigen::Vector3d::Zero();[m[K
+[2.167s]       |                               [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.167s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.167s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:73:[m[K [01;31m[Kerror: [m[Kdefault member initializer for ‘[01m[Kgenz_icp::pipeline::GenZICP::IMUData::timestamp[m[K’ required before the end of its enclosing class
+[2.167s]    68 |                                       const IMUData &imu_data = IMUData([01;31m[K)[m[K);
+[2.167s]       |                                                                         [01;31m[K^[m[K
+[2.167s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.167s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:40:26:[m[K [01;36m[Knote: [m[Kdefined here
+[2.167s]    40 |         double timestamp [01;36m[K= 0.0;[m[K
+[2.167s]       |                          [01;36m[K^~~~~~[m[K
+[2.168s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[2.168s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[2.168s] gmake: *** [Makefile:146: all] Error 2
+[2.169s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

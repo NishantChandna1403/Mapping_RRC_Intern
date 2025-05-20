@@ -1,0 +1,99 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:371:29:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+  371 | GenZICP::Vector3dVectorPair [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                             [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:79:24:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+   79 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:71:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+   71 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:67:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+   67 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:65:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   65 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:64:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+   64 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame);
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   55 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:415:29:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>)[m[K’
+  415 | GenZICP::Vector3dVectorPair [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                             [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:79:24:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+   79 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:71:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+   71 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:67:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+   67 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:65:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   65 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:411:29:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+  411 | GenZICP::Vector3dVectorPair [01;36m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
+      |                             [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   55 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:420:29:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’
+  420 | GenZICP::Vector3dVectorPair [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                             [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:79:24:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+   79 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:71:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+   71 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:67:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+   67 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:65:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   65 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:411:29:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+  411 | GenZICP::Vector3dVectorPair [01;36m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
+      |                             [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   55 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:427:29:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+  427 | GenZICP::Vector3dVectorPair [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                             [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:79:24:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+   79 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:71:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+   71 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:67:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+   67 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:65:24:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   65 |     Vector3dVectorPair [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:411:29:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+  411 | GenZICP::Vector3dVectorPair [01;36m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame) {
+      |                             [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   55 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::Voxelize(const std::vector<Eigen::Matrix<double, 3, 1> >&, double) const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:448:97:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kadaptive_voxel_size[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+  448 | GenZICP::Vector3dVectorPair GenZICP::Voxelize(const std::vector<Eigen::Vector3d> &frame, [01;31m[Kdouble adaptive_voxel_size[m[K) const {
+      |                                                                                          [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

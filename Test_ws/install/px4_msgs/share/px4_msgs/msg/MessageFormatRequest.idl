@@ -21,7 +21,7 @@ module px4_msgs {
       uint16 protocol_version;
 
       @verbatim (language="comment", text=
-        "E.g. /fmu/in/vehicle_command")
+        "E.g. /px4_1/fmu/in/vehicle_command")
       uint8__50 topic_name;
     };
   };

@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8569daa5f703c06c30db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ros2_full_sensor_suite",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_ros_gps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_ros_gps-e388cd6cc2b4f467d4ac.json",
+					"name" : "gazebo_ros_gps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_ros_imu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_ros_imu-415a5720f3304c640b78.json",
+					"name" : "gazebo_ros_imu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_ros_realsense_camera_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_ros_realsense_camera_plugin-afd52a01a2ca53e19829.json",
+					"name" : "gazebo_ros_realsense_camera_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_ros_velodyne_laser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_ros_velodyne_laser-b721d846ef350d0b3347.json",
+					"name" : "gazebo_ros_velodyne_laser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros2_full_sensor_suite_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros2_full_sensor_suite_uninstall-da097cc905424d8c7bfe.json",
+					"name" : "ros2_full_sensor_suite_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor_base_attacher_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor_base_attacher_plugin-175166f6aae882d457ca.json",
+					"name" : "sensor_base_attacher_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-250e4461d2caced58b97.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nishant/RRC_Project/Test_ws/src/build/ros2_full_sensor_suite",
+		"source" : "/home/nishant/RRC_Project/Test_ws/src/ros2_full_sensor_suite"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

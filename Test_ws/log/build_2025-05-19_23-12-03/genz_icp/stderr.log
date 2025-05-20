@@ -1,0 +1,19 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:2[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:34:[m[K [01;31m[Kerror: [m[K‘[01m[KConfig[m[K’ in ‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ does not name a type
+   51 |     genz_icp::pipeline::GenZICP::[01;31m[KConfig[m[K config_;
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:27:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+   27 |     : rclcpp::Node("odometry_node", options), odometry_([01;31m[Kconfig_[m[K) {
+      |                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:211:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+  211 |         if (![01;31m[Kconfig_[m[K.deskew) return {};
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:254:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfig_[m[K’ was not declared in this scope
+  254 |     double eph = [01;31m[Kconfig_[m[K.gps_accuracy;
+      |                  [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

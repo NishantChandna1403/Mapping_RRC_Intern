@@ -1,0 +1,96 @@
+[ 14%] Built target odometry_node
+[ 28%] Built target metrics
+[ 71%] Built target core
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:34[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/Preintegration.hpp:[m[K In constructor ‘[01m[KPreintegration::Preintegration(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&, double, double, double, double, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/Preintegration.hpp:238:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPreintegration::gravity[m[K’ will be initialized after [[01;31m[K-Werror=reorder[m[K]
+  238 |     double [01;31m[Kgravity[m[K;
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/Preintegration.hpp:233:12:[m[K [01;31m[Kerror: [m[K  ‘[01m[Kdouble Preintegration::nf[m[K’ [[01;31m[K-Werror=reorder[m[K]
+  233 |     double [01;31m[Knf[m[K, cf;
+      |            [01;31m[K^~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:34[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/Preintegration.hpp:27:5:[m[K [01;31m[Kerror: [m[K  when initialized here [[01;31m[K-Werror=reorder[m[K]
+   27 |     [01;31m[KPreintegration[m[K(const Vector3d &acc0, const Vector3d &gyr0,
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:88:37:[m[K [01;31m[Kerror: [m[K‘[01m[KIMUPreintegrator[m[K’ does not name a type; did you mean ‘[01m[KPreintegration[m[K’?
+   88 |     IMUPreintegrationResidual(const [01;31m[KIMUPreintegrator[m[K::PreintegratedMeasurement& meas,
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                     [32m[KPreintegration[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:88:79:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   88 |     IMUPreintegrationResidual(const IMUPreintegrator::PreintegratedMeasurement[01;31m[K&[m[K meas,
+      |                                                                               [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:88:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   88 |     IMUPreintegrationResidual[34m[K([m[Kconst IMUPreintegrator::PreintegratedMeasurement[01;31m[K&[m[K meas,
+      |                              [34m[K~[m[K                                                [01;31m[K^[m[K
+      |                                                                               [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:88:79:[m[K [01;31m[Kerror: [m[Kconstructors may not be ref-qualified
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:88:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   88 |     IMUPreintegrationResidual(const IMUPreintegrator::PreintegratedMeasurement[01;31m[K&[m[K meas,
+      |                                                                               [01;31m[K^[m[K
+      |                                                                                [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:88:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kmeas[m[K’ does not name a type
+   88 |     IMUPreintegrationResidual(const IMUPreintegrator::PreintegratedMeasurement& [01;31m[Kmeas[m[K,
+      |                                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:129:5:[m[K [01;31m[Kerror: [m[K‘[01m[KIMUPreintegrator[m[K’ does not name a type; did you mean ‘[01m[KPreintegration[m[K’?
+  129 |     [01;31m[KIMUPreintegrator[m[K::PreintegratedMeasurement meas_;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[KPreintegration[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kbool genz_icp::pipeline::IMUPreintegrationResidual::operator()(const T*, const T*, const T*, T*) const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:103:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmeas_[m[K’ was not declared in this scope
+  103 |         Eigen::Vector3d delta_p = [01;31m[Kmeas_[m[K.delta_pose.translation();
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:141:48:[m[K [01;31m[Kerror: [m[K‘[01m[KIMUPreintegrator[m[K’ does not name a type; did you mean ‘[01m[KPreintegration[m[K’?
+  141 |                                          const [01;31m[KIMUPreintegrator[m[K::PreintegratedMeasurement &imu_meas) {
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[KPreintegration[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:141:91:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  141 |                                          const IMUPreintegrator::PreintegratedMeasurement [01;31m[K&[m[Kimu_meas) {
+      |                                                                                           [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:141:90:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  141 |                                          const IMUPreintegrator::PreintegratedMeasurement[01;31m[K [m[K[32m[K&[m[Kimu_meas) {
+      |                                                                                          [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                          [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:133:41:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  133 | Sophus::SE3d GenZICP::fusePosesWithCeres[01;36m[K([m[Kconst Sophus::SE3d& icp_pose,
+      |                                         [01;36m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:141:92:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kimu_meas[m[K’
+  141 |                                          const IMUPreintegrator::PreintegratedMeasurement &[01;31m[Kimu_meas[m[K) {
+      |                                                                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:213:58:[m[K [01;31m[Kerror: [m[K‘[01m[KIMUData[m[K’ does not name a type
+  213 |                                                    const [01;31m[KIMUData[m[K &imu_data) {
+      |                                                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:206:30:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&, double, double, const Vector3d&, const int&)[m[K’
+  206 | GenZICP::Vector3dVectorTuple [01;31m[KGenZICP[m[K::RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
+      |                              [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:83:25:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&, double, double, const Vector3d&, const Vector3d&, const Quaterniond&, const Vector3d&, const Eigen::Matrix<double, 15, 15>&, const Eigen::Matrix<double, 15, 15>&, double)[m[K’
+   83 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:77:25:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’
+   77 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:73:25:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>)[m[K’
+   73 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:70:25:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+   70 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame);
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:54:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   54 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<double>, const SE3d&, const SE3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:397:95:[m[K [01;31m[Kerror: [m[K‘[01m[KIMUData[m[K’ was not declared in this scope
+  397 |                          config_.gps_accuracy, config_.gps_accuracy, Eigen::Vector3d::Zero(), [01;31m[KIMUData[m[K());
+      |                                                                                               [01;31m[K^~~~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

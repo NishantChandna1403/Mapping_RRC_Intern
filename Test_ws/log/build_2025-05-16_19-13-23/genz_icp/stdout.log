@@ -1,0 +1,4 @@
+[ 42%] Built target core
+[ 57%] Built target metrics
+[ 71%] Built target odometry_node
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m

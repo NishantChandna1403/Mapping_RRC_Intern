@@ -1,0 +1,115 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:13:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ does not name a type
+   13 |         [01;31m[KSophus[m[K::SE3d delta_pose; // Delta position and orientation
+      |         [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:82:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ does not name a type
+   82 |     [01;31m[KSophus[m[K::SE3d delta_pose_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:[m[K In constructor ‘[01m[Kgenz_icp::pipeline::IMUPreintegrator::IMUPreintegrator(double, double, double, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:21:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kgenz_icp::pipeline::IMUPreintegrator[m[K’ does not have any field named ‘[01m[Kdelta_pose_[m[K’
+   21 |           [01;31m[Kdelta_pose_[m[K(Sophus::SE3d()), delta_velocity_(Eigen::Vector3d::Zero()), covariance_(Eigen::Matrix<double, 9, 9>::Zero()),
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:21:23:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+   21 |           delta_pose_([01;31m[KSophus[m[K::SE3d()), delta_velocity_(Eigen::Vector3d::Zero()), covariance_(Eigen::Matrix<double, 9, 9>::Zero()),
+      |                       [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:[m[K In member function ‘[01m[Kvoid genz_icp::pipeline::IMUPreintegrator::Integrate(const Vector3d&, const Vector3d&, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+   32 |         [01;31m[KSophus[m[K::SO3d delta_R;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:34:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_R[m[K’ was not declared in this scope
+   34 |             [01;31m[Kdelta_R[m[K = Sophus::SO3d::exp(omega);
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:34:23:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+   34 |             delta_R = [01;31m[KSophus[m[K::SO3d::exp(omega);
+      |                       [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:36:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_R[m[K’ was not declared in this scope
+   36 |             [01;31m[Kdelta_R[m[K = Sophus::SO3d();
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:36:23:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+   36 |             delta_R = [01;31m[KSophus[m[K::SO3d();
+      |                       [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:38:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_pose_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdelta_time_[m[K’?
+   38 |         [01;31m[Kdelta_pose_[m[K = delta_pose_ * Sophus::SE3d(delta_R, Eigen::Vector3d::Zero());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[Kdelta_time_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:38:37:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+   38 |         delta_pose_ = delta_pose_ * [01;31m[KSophus[m[K::SE3d(delta_R, Eigen::Vector3d::Zero());
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:38:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_R[m[K’ was not declared in this scope
+   38 |         delta_pose_ = delta_pose_ * Sophus::SE3d([01;31m[Kdelta_R[m[K, Eigen::Vector3d::Zero());
+      |                                                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:[m[K In member function ‘[01m[Kvoid genz_icp::pipeline::IMUPreintegrator::Reset()[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:65:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_pose_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdelta_time_[m[K’?
+   65 |         [01;31m[Kdelta_pose_[m[K = Sophus::SE3d();
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[Kdelta_time_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+   65 |         delta_pose_ = [01;31m[KSophus[m[K::SE3d();
+      |                       [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::IMUPreintegrator::Preintegration genz_icp::pipeline::IMUPreintegrator::GetPreintegration() const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:74:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_pose_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdelta_time_[m[K’?
+   74 |         return {[01;31m[Kdelta_pose_[m[K, delta_velocity_, covariance_, delta_time_};
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+      |                 [32m[Kdelta_time_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:74:71:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{<expression error>, ((const genz_icp::pipeline::IMUPreintegrator*)this)->genz_icp::pipeline::IMUPreintegrator::delta_velocity_, ((const genz_icp::pipeline::IMUPreintegrator*)this)->genz_icp::pipeline::IMUPreintegrator::covariance_, ((const genz_icp::pipeline::IMUPreintegrator*)this)->genz_icp::pipeline::IMUPreintegrator::delta_time_}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kgenz_icp::pipeline::IMUPreintegrator::Preintegration[m[K’
+   74 |         return {delta_pose_, delta_velocity_, covariance_, delta_time_[01;31m[K}[m[K;
+      |                                                                       [01;31m[K^[m[K
+      |                                                                       [01;31m[K|[m[K
+      |                                                                       [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:[m[K In member function ‘[01m[Kbool genz_icp::pipeline::IMUPreintegrationResidual::operator()(const T*, const T*, const T*, const T*, const T*, const T*, T*) const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:111:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct genz_icp::pipeline::IMUPreintegrator::Preintegration[m[K’ has no member named ‘[01m[Kdelta_pose[m[K’; did you mean ‘[01m[Kdelta_time[m[K’?
+  111 |         Eigen::Matrix<T, 3, 1> delta_p = preint_.[01;31m[Kdelta_pose[m[K.translation().cast<T>();
+      |                                                  [01;31m[K^~~~~~~~~~[m[K
+      |                                                  [32m[Kdelta_time[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:111:81:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  111 |         Eigen::Matrix<T, 3, 1> delta_p = preint_.delta_pose.translation().cast<T[01;31m[K>[m[K();
+      |                                                                                 [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:111:83:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  111 |         Eigen::Matrix<T, 3, 1> delta_p = preint_.delta_pose.translation().cast<T>([01;31m[K)[m[K;
+      |                                                                                   [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:112:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+  112 |         [01;31m[KSophus[m[K::SO3<T> delta_R = preint_.delta_pose.so3().cast<T>();
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:112:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  112 |         Sophus::SO3<T[01;31m[K>[m[K delta_R = preint_.delta_pose.so3().cast<T>();
+      |                      [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:112:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta_R[m[K’ was not declared in this scope; did you mean ‘[01m[Kdelta_p[m[K’?
+  112 |         Sophus::SO3<T> [01;31m[Kdelta_R[m[K = preint_.delta_pose.so3().cast<T>();
+      |                        [01;31m[K^~~~~~~[m[K
+      |                        [32m[Kdelta_p[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:112:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct genz_icp::pipeline::IMUPreintegrator::Preintegration[m[K’ has no member named ‘[01m[Kdelta_pose[m[K’; did you mean ‘[01m[Kdelta_time[m[K’?
+  112 |         Sophus::SO3<T> delta_R = preint_.[01;31m[Kdelta_pose[m[K.so3().cast<T>();
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+      |                                          [32m[Kdelta_time[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:112:65:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  112 |         Sophus::SO3<T> delta_R = preint_.delta_pose.so3().cast<T[01;31m[K>[m[K();
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:112:67:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  112 |         Sophus::SO3<T> delta_R = preint_.delta_pose.so3().cast<T>([01;31m[K)[m[K;
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+  117 |         [01;31m[KSophus[m[K::SO3<T> q_i_inv = Sophus::SO3<T>(q_i).inverse();
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:117:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  117 |         Sophus::SO3<T[01;31m[K>[m[K q_i_inv = Sophus::SO3<T>(q_i).inverse();
+      |                      [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:117:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_i_inv[m[K’ was not declared in this scope
+  117 |         Sophus::SO3<T> [01;31m[Kq_i_inv[m[K = Sophus::SO3<T>(q_i).inverse();
+      |                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:117:34:[m[K [01;31m[Kerror: [m[K‘[01m[KSophus[m[K’ has not been declared
+  117 |         Sophus::SO3<T> q_i_inv = [01;31m[KSophus[m[K::SO3<T>(q_i).inverse();
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:117:47:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  117 |         Sophus::SO3<T> q_i_inv = Sophus::SO3<T[01;31m[K>[m[K(q_i).inverse();
+      |                                               [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const Vector3dVector&, const std::vector<double>&, const SE3d&, const Vector3d&, const Vector3d&, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:254:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct genz_icp::pipeline::IMUPreintegrator::Preintegration[m[K’ has no member named ‘[01m[Kdelta_pose[m[K’; did you mean ‘[01m[Kdelta_time[m[K’?
+  254 |             initial_guess = poses_.back() * (preint.delta_time > 0.0 ? preint.[01;31m[Kdelta_pose[m[K : GetPredictionModel());
+      |                                                                               [01;31m[K^~~~~~~~~~[m[K
+      |                                                                               [32m[Kdelta_time[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

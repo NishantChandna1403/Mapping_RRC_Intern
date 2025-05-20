@@ -1,0 +1,32 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kbool genz_icp::pipeline::IMUResidual::operator()(const T*, const T*, const T*, const T*, const T*, T*) const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:146:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+  146 |         Eigen::Matrix<T, 3, 1> dr = d_rVP_d_bg.block<3, [01;31m[K3[m[K>(0, 0) * delta_bg + d_rVP_d_ba.block<3, 3>(0, 0) * delta_ba;
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:147:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+  147 |         Eigen::Matrix<T, 3, 1> dv = d_rVP_d_bg.block<3, [01;31m[K3[m[K>(3, 0) * delta_bg + d_rVP_d_ba.block<3, 3>(3, 0) * delta_ba;
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:148:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+  148 |         Eigen::Matrix<T, 3, 1> dp = d_rVP_d_bg.block<3, [01;31m[K3[m[K>(6, 0) * delta_bg + d_rVP_d_ba.block<3, 3>(6, 0) * delta_ba;
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:258:14:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+  258 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d &icp_pose,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:175:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double)[m[K’
+  175 | Sophus::SE3d [01;36m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d &icp_pose,
+      |              [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:33:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   33 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUMeasurement&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:661:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::fusePosesWithCeres(Sophus::SE3d&, const SE3d&, const SE3d&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, double&, double&, const Vector3d&, const double&, const genz_icp::pipeline::IMUMeasurement&)[m[K’
+  661 |         new_pose = [01;31m[KfusePosesWithCeres(icp_pose, attitude_orientation, local_position_pose, planar_points, non_planar_points, config_.gps_accuracy, config_.gps_accuracy, imu_measurement.delta_velocity, imu_measurement.delta_time, imu_measurement)[m[K;
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:175:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double)[m[K’
+  175 | Sophus::SE3d [01;36m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d &icp_pose,
+      |              [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:175:14:[m[K [01;36m[Knote: [m[K  candidate expects 9 arguments, 10 provided
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

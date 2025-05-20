@@ -1,0 +1,32 @@
+[0.011s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.058s] [ 14%] Built target metrics
+[0.058s] [ 28%] Built target odometry_node
+[0.059s] [ 71%] Built target core
+[0.080s] [ 85%] Built target pipeline
+[0.118s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:26:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp_ros::OdometryServer::Config&)[m[K’
+[15.537s]    26 |     : rclcpp::Node("odometry_node", options), [01;31m[Kodometry_(config_)[m[K {
+[15.537s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[15.537s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:22[m[K,
+[15.537s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+[15.537s]    45 |     [01;36m[KGenZICP[m[K() : GenZICP(GenZConfig{}) {}
+[15.537s]       |     [01;36m[K^~~~~~~[m[K
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[15.537s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:22[m[K,
+[15.537s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:38:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+[15.537s]    38 |     explicit [01;36m[KGenZICP[m[K(const GenZConfig &config)
+[15.537s]       |              [01;36m[K^~~~~~~[m[K
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:38:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::OdometryServer::Config[m[K’ to ‘[01m[Kconst genz_icp::pipeline::GenZConfig&[m[K’
+[15.537s]    38 |     explicit GenZICP([01;36m[Kconst GenZConfig &config[m[K)
+[15.537s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:32:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp::pipeline::GenZICP&&)[m[K’
+[15.537s]    32 | class [01;36m[KGenZICP[m[K {
+[15.537s]       |       [01;36m[K^~~~~~~[m[K
+[15.537s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:32:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::OdometryServer::Config[m[K’ to ‘[01m[Kgenz_icp::pipeline::GenZICP&&[m[K’
+[15.538s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[15.538s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[15.539s] gmake: *** [Makefile:146: all] Error 2
+[15.541s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

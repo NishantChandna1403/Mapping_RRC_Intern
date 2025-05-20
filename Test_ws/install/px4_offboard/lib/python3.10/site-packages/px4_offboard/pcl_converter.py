@@ -10,11 +10,11 @@ class PointCloudTransformer(Node):
         super().__init__('pointcloud_transformer')
         self.subscription = self.create_subscription(
             PointCloud2,
-            '/camera/points',
+            '/camera_1/points',
             self.pointcloud_callback,
             50
         )
-        self.publisher = self.create_publisher(PointCloud2, '/camera/points_transformed', 50)
+        self.publisher = self.create_publisher(PointCloud2, '/camera_1/points_transformed', 50)
         
         # Transformation matrix: Camera Optical (Z forward, X right, Y down) -> ROS Standard (X forward, Y left, Z up)
         self.transformation_matrix = np.array([

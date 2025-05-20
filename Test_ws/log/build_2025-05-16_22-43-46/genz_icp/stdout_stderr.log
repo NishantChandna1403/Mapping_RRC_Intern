@@ -1,0 +1,42 @@
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreintegration_[m[K’ was not declared in this scope
+   94 |     [01;31m[Kpreintegration_[m[K = std::make_unique<genz_icp::pipeline::Preintegration>(
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:103:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCalibrateIMU[m[K’ was not declared in this scope
+  103 |     [01;31m[KCalibrateIMU[m[K();
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:143:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::CalibrateIMU()[m[K’
+  143 | void [01;31m[KOdometryServer[m[K::CalibrateIMU() {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:143:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid genz_icp_ros::OdometryServer::CalibrateIMU()[m[K’
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:32[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+   54 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:255:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_gyro_enu_[m[K’ was not declared in this scope
+  255 |     [01;31m[Klatest_gyro_enu_[m[K = ned_to_enu_rot * ned_gyro;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:256:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_acc_enu_[m[K’ was not declared in this scope
+  256 |     [01;31m[Klatest_acc_enu_[m[K = ned_to_enu_rot * ned_accel;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:260:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreintegration_[m[K’ was not declared in this scope
+  260 |     [01;31m[Kpreintegration_[m[K->AddIMUMeasurement(timestamp_sec, latest_gyro_enu_, latest_acc_enu_, dt);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:277:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kpreintegration_[m[K’ was not declared in this scope
+  277 |     auto imu_measurement = [01;31m[Kpreintegration_[m[K->GetPreintegratedMeasurement(cloud_timestamp);
+      |                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

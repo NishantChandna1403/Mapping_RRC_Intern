@@ -7,10 +7,10 @@ The sensor suite consists of following components;
 | Sensor type | Topic Name(s) | Message Type | Update Rate |
 | :---: | :---: | :---: | :---: |
 | LIDAR | /velodyne_points | sensor_msgs::msg::PointCloud2 | 30 |
-| COLOR CAMERA | /camera/color/image_raw | sensor_msgs::msg::Image | 30 |
-| DEPTH CAMERA | /camera/aligned_depth_to_color/image_raw | sensor_msgs::msg::Image | 30 |
-| IR1 CAMERA | /camera/infra1/image_raw | sensor_msgs::msg::Image | 1 |
-| IR2 CAMERA | /camera/infra2/image_raw | sensor_msgs::msg::Image | 1 |
+| COLOR CAMERA | /camera_1/color/image_raw | sensor_msgs::msg::Image | 30 |
+| DEPTH CAMERA | /camera_1/aligned_depth_to_color/image_raw | sensor_msgs::msg::Image | 30 |
+| IR1 CAMERA | /camera_1/infra1/image_raw | sensor_msgs::msg::Image | 1 |
+| IR2 CAMERA | /camera_1/infra2/image_raw | sensor_msgs::msg::Image | 1 |
 | WIDE ANGLE CAMERA | /wide_angle_camera/image_raw | sensor_msgs::msg::Image | 1 |
 | GPS | /gps/fix | sensor_msgs::msg::NavSatFix | 30 |
 | IMU | /imu | sensor_msgs::msg::Imu | 30 |

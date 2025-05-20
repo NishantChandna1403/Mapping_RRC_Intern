@@ -1,0 +1,31 @@
+[0.012s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.054s] [ 14%] Built target metrics
+[0.061s] [ 28%] Built target odometry_node
+[0.070s] [ 71%] Built target core
+[0.094s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[0.119s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[0.159s] [ 85%] Built target pipeline
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[0.190s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[8.103s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[8.103s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:54:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorCombined[m[K’ in namespace ‘[01m[Kpx4_msgs::msg[m[K’ does not name a type
+[8.103s]    58 |     void SensorCombinedCallback(const px4_msgs::msg::[01;31m[KSensorCombined[m[K::ConstSharedPtr &msg); // Already included
+[8.103s]       |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[8.103s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:85:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[8.103s]    58 |     void SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr [01;31m[K&[m[Kmsg); // Already included
+[8.103s]       |                                                                                     [01;31m[K^[m[K
+[8.103s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:84:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[8.103s]    58 |     void SensorCombinedCallback[34m[K([m[Kconst px4_msgs::msg::SensorCombined::ConstSharedPtr[01;31m[K [m[K[32m[K&[m[Kmsg); // Already included
+[8.103s]       |                                [34m[K~[m[K                                                   [01;31m[K^[m[K[32m[K~[m[K
+[8.103s]       |                                                                                    [32m[K)[m[K
+[8.103s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[8.103s]    58 |     void SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr [01;31m[K&[m[Kmsg); // Already included
+[8.103s]       |                                                                                     [01;31m[K^[m[K
+[8.103s]       |                                                                                      [32m[K;[m[K
+[8.103s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[8.104s]    58 |     void SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr &[01;31m[Kmsg[m[K); // Already included
+[8.104s]       |                                                                                      [01;31m[K^~~[m[K
+[8.117s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[8.117s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[8.118s] gmake: *** [Makefile:146: all] Error 2
+[8.120s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

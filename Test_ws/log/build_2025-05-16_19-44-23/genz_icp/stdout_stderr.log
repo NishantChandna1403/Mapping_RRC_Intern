@@ -1,0 +1,18 @@
+[ 14%] Built target metrics
+[ 57%] Built target core
+[ 71%] Built target odometry_node
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:357:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct genz_icp::Registration[m[K’ has no member named ‘[01m[KregisterFrame[m[K’; did you mean ‘[01m[KRegisterFrame[m[K’?
+  357 |         icp_pose = registration_.[01;31m[KregisterFrame[m[K(processed_frame, local_map_, icp_pose); // Replaced Align with registerFrame
+      |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                  [32m[KRegisterFrame[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUData&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:402:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct genz_icp::Registration[m[K’ has no member named ‘[01m[KregisterFrame[m[K’; did you mean ‘[01m[KRegisterFrame[m[K’?
+  402 |         icp_pose = registration_.[01;31m[KregisterFrame[m[K(processed_frame, local_map_, icp_pose); // Replaced Align with registerFrame
+      |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                  [32m[KRegisterFrame[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

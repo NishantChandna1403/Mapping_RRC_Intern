@@ -1,0 +1,30 @@
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[ 85%] Built target pipeline
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:26:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp_ros::OdometryServer::Config&)[m[K’
+   26 |     : rclcpp::Node("odometry_node", options), [01;31m[Kodometry_(config_)[m[K {
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:22[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+   45 |     [01;36m[KGenZICP[m[K() : GenZICP(GenZConfig{}) {}
+      |     [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:22[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:38:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+   38 |     explicit [01;36m[KGenZICP[m[K(const GenZConfig &config)
+      |              [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:38:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::OdometryServer::Config[m[K’ to ‘[01m[Kconst genz_icp::pipeline::GenZConfig&[m[K’
+   38 |     explicit GenZICP([01;36m[Kconst GenZConfig &config[m[K)
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:32:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp::pipeline::GenZICP&&)[m[K’
+   32 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:32:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::OdometryServer::Config[m[K’ to ‘[01m[Kgenz_icp::pipeline::GenZICP&&[m[K’
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

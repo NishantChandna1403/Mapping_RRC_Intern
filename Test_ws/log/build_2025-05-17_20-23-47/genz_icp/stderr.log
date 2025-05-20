@@ -1,0 +1,27 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:73:[m[K [01;31m[Kerror: [m[Kdefault member initializer for ‘[01m[Kgenz_icp::pipeline::GenZICP::IMUData::gyro[m[K’ required before the end of its enclosing class
+   68 |                                       const IMUData &imu_data = IMUData([01;31m[K)[m[K);
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:38:30:[m[K [01;36m[Knote: [m[Kdefined here
+   38 |         Eigen::Vector3d gyro [01;36m[K= Eigen::Vector3d::Zero();[m[K
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:73:[m[K [01;31m[Kerror: [m[Kdefault member initializer for ‘[01m[Kgenz_icp::pipeline::GenZICP::IMUData::accel[m[K’ required before the end of its enclosing class
+   68 |                                       const IMUData &imu_data = IMUData([01;31m[K)[m[K);
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:39:31:[m[K [01;36m[Knote: [m[Kdefined here
+   39 |         Eigen::Vector3d accel [01;36m[K= Eigen::Vector3d::Zero();[m[K
+      |                               [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:73:[m[K [01;31m[Kerror: [m[Kdefault member initializer for ‘[01m[Kgenz_icp::pipeline::GenZICP::IMUData::timestamp[m[K’ required before the end of its enclosing class
+   68 |                                       const IMUData &imu_data = IMUData([01;31m[K)[m[K);
+      |                                                                         [01;31m[K^[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:40:26:[m[K [01;36m[Knote: [m[Kdefined here
+   40 |         double timestamp [01;36m[K= 0.0;[m[K
+      |                          [01;36m[K^~~~~~[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

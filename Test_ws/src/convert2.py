@@ -16,10 +16,10 @@ class Px4GpsConverter(Node):
             durability=QoSDurabilityPolicy.VOLATILE
         )
 
-        # Subscriber for /fmu/out/vehicle_gps_position
+        # Subscriber for /px4_1/fmu/out/vehicle_gps_position
         self.subscription = self.create_subscription(
             SensorGps,
-            '/fmu/out/vehicle_gps_position',
+            '/px4_1/fmu/out/vehicle_gps_position',
             self.callback,
             qos_profile
         )

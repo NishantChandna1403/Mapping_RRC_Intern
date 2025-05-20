@@ -1,0 +1,416 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ does not name a type
+   31 |     void AttitudeCallback(const [01;31m[Kpx4_msgs[m[K::msg::VehicleAttitude::ConstSharedPtr &msg);
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   31 |     void AttitudeCallback(const px4_msgs::msg[01;31m[K::[m[KVehicleAttitude::ConstSharedPtr &msg);
+      |                                              [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   31 |     void AttitudeCallback[34m[K([m[Kconst px4_msgs::msg[01;31m[K:[m[K[32m[K:[m[KVehicleAttitude::ConstSharedPtr &msg);
+      |                          [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                              [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   31 |     void AttitudeCallback(const px4_msgs::[01;31m[Kmsg[m[K::VehicleAttitude::ConstSharedPtr &msg);
+      |                                           [01;31m[K^~~[m[K
+      |                                              [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:48:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleAttitude[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   31 |     void AttitudeCallback(const px4_msgs::msg::[01;31m[KVehicleAttitude[m[K::ConstSharedPtr &msg);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:32:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ does not name a type
+   32 |     void LocalPositionCallback(const [01;31m[Kpx4_msgs[m[K::msg::VehicleLocalPosition::ConstSharedPtr &msg);
+      |                                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:32:51:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   32 |     void LocalPositionCallback(const px4_msgs::msg[01;31m[K::[m[KVehicleLocalPosition::ConstSharedPtr &msg);
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:32:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   32 |     void LocalPositionCallback[34m[K([m[Kconst px4_msgs::msg[01;31m[K:[m[K[32m[K:[m[KVehicleLocalPosition::ConstSharedPtr &msg);
+      |                               [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                   [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:32:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   32 |     void LocalPositionCallback(const px4_msgs::[01;31m[Kmsg[m[K::VehicleLocalPosition::ConstSharedPtr &msg);
+      |                                                [01;31m[K^~~[m[K
+      |                                                   [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:32:53:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleLocalPosition[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   32 |     void LocalPositionCallback(const px4_msgs::msg::[01;31m[KVehicleLocalPosition[m[K::ConstSharedPtr &msg);
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:33:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ does not name a type
+   33 |     void SensorCombinedCallback(const [01;31m[Kpx4_msgs[m[K::msg::SensorCombined::ConstSharedPtr &msg);
+      |                                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:33:52:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   33 |     void SensorCombinedCallback(const px4_msgs::msg[01;31m[K::[m[KSensorCombined::ConstSharedPtr &msg);
+      |                                                    [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:33:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   33 |     void SensorCombinedCallback[34m[K([m[Kconst px4_msgs::msg[01;31m[K:[m[K[32m[K:[m[KSensorCombined::ConstSharedPtr &msg);
+      |                                [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                    [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:33:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   33 |     void SensorCombinedCallback(const px4_msgs::[01;31m[Kmsg[m[K::SensorCombined::ConstSharedPtr &msg);
+      |                                                 [01;31m[K^~~[m[K
+      |                                                    [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:33:54:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorCombined[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   33 |     void SensorCombinedCallback(const px4_msgs::msg::[01;31m[KSensorCombined[m[K::ConstSharedPtr &msg);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+   34 |     void RegisterFrame(const [01;31m[Ksensor_msgs[m[K::msg::PointCloud2::ConstSharedPtr &msg);
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   34 |     void RegisterFrame(const sensor_msgs::msg[01;31m[K::[m[KPointCloud2::ConstSharedPtr &msg);
+      |                                              [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   34 |     void RegisterFrame[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[KPointCloud2::ConstSharedPtr &msg);
+      |                       [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+      |                                              [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   34 |     void RegisterFrame(const sensor_msgs::[01;31m[Kmsg[m[K::PointCloud2::ConstSharedPtr &msg);
+      |                                           [01;31m[K^~~[m[K
+      |                                              [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:48:[m[K [01;31m[Kerror: [m[K‘[01m[KPointCloud2[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   34 |     void RegisterFrame(const sensor_msgs::msg::[01;31m[KPointCloud2[m[K::ConstSharedPtr &msg);
+      |                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+   51 |     rclcpp::Subscription<[01;31m[Ksensor_msgs[m[K::msg::PointCloud2>::SharedPtr pointcloud_sub_;
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2[01;31m[K>[m[K::SharedPtr pointcloud_sub_;
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;31m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                   [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kpointcloud_sub_[m[K’ does not name a type
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr [01;31m[Kpointcloud_sub_[m[K;
+      |                                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ was not declared in this scope
+   52 |     rclcpp::Subscription<[01;31m[Kpx4_msgs[m[K::msg::VehicleAttitude>::SharedPtr attitude_sub_;
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   52 |     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude[01;31m[K>[m[K::SharedPtr attitude_sub_;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   52 |     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::[01;31m[KSharedPtr[m[K attitude_sub_;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:59:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:52:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_sub_[m[K’ does not name a type
+   52 |     rclcpp::Subscription<px4_msgs::msg::VehicleAttitude>::SharedPtr [01;31m[Kattitude_sub_[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ was not declared in this scope
+   53 |     rclcpp::Subscription<[01;31m[Kpx4_msgs[m[K::msg::VehicleLocalPosition>::SharedPtr local_position_sub_;
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   53 |     rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition[01;31m[K>[m[K::SharedPtr local_position_sub_;
+      |                                                             [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   53 |     rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::[01;31m[KSharedPtr[m[K local_position_sub_;
+      |                                                                [01;31m[K^~~~~~~~~[m[K
+      |                                                                         [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:64:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:53:74:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_position_sub_[m[K’ does not name a type
+   53 |     rclcpp::Subscription<px4_msgs::msg::VehicleLocalPosition>::SharedPtr [01;31m[Klocal_position_sub_[m[K;
+      |                                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kpx4_msgs[m[K’ was not declared in this scope
+   54 |     rclcpp::Subscription<[01;31m[Kpx4_msgs[m[K::msg::SensorCombined>::SharedPtr sensor_combined_sub_;
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   54 |     rclcpp::Subscription<px4_msgs::msg::SensorCombined[01;31m[K>[m[K::SharedPtr sensor_combined_sub_;
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:55:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:58:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   54 |     rclcpp::Subscription<px4_msgs::msg::SensorCombined>::[01;31m[KSharedPtr[m[K sensor_combined_sub_;
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+      |                                                                   [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:58:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:54:68:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_combined_sub_[m[K’ does not name a type
+   54 |     rclcpp::Subscription<px4_msgs::msg::SensorCombined>::SharedPtr [01;31m[Ksensor_combined_sub_[m[K;
+      |                                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:56:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   56 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr odom_publisher_;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:56:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |     rclcpp::Publisher<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr odom_publisher_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:56:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   56 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K odom_publisher_;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:56:49:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:56:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   56 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Kodom_publisher_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                           [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:57:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   57 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Path>::SharedPtr traj_publisher_;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:57:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   57 |     rclcpp::Publisher<nav_msgs::msg::Path[01;31m[K>[m[K::SharedPtr traj_publisher_;
+      |                                          [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:57:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   57 |     rclcpp::Publisher<nav_msgs::msg::Path>::[01;31m[KSharedPtr[m[K traj_publisher_;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                      [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:57:45:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:57:55:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   57 |     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr [01;31m[Ktraj_publisher_[m[K;
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                       [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:23:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   58 |     rclcpp::Publisher<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr attitude_odom_publisher_;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   58 |     rclcpp::Publisher<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr attitude_odom_publisher_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   58 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K attitude_odom_publisher_;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:49:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_odom_publisher_[m[K’ does not name a type
+   58 |     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Kattitude_odom_publisher_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:59:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+   59 |     rclcpp::Publisher<[01;31m[Ksensor_msgs[m[K::msg::PointCloud2>::SharedPtr map_publisher_;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:59:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   59 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2[01;31m[K>[m[K::SharedPtr map_publisher_;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:59:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   59 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::[01;31m[KSharedPtr[m[K map_publisher_;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:59:55:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:59:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   59 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr [01;31m[Kmap_publisher_[m[K;
+      |                                                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                 [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:60:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+   60 |     rclcpp::Publisher<[01;31m[Ksensor_msgs[m[K::msg::PointCloud2>::SharedPtr planar_points_publisher_;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:60:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   60 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2[01;31m[K>[m[K::SharedPtr planar_points_publisher_;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:60:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   60 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::[01;31m[KSharedPtr[m[K planar_points_publisher_;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:60:55:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:60:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanar_points_publisher_[m[K’ does not name a type
+   60 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr [01;31m[Kplanar_points_publisher_[m[K;
+      |                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:61:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+   61 |     rclcpp::Publisher<[01;31m[Ksensor_msgs[m[K::msg::PointCloud2>::SharedPtr non_planar_points_publisher_;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:61:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   61 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2[01;31m[K>[m[K::SharedPtr non_planar_points_publisher_;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:61:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   61 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::[01;31m[KSharedPtr[m[K non_planar_points_publisher_;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:61:55:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:51:58:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint genz_icp_ros::OdometryServer::SharedPtr[m[K’
+   51 |     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::[01;36m[KSharedPtr[m[K pointcloud_sub_;
+      |                                                          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:61:65:[m[K [01;31m[Kerror: [m[K‘[01m[Knon_planar_points_publisher_[m[K’ does not name a type
+   61 |     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr [01;31m[Knon_planar_points_publisher_[m[K;
+      |                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:63:30:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+   63 |     std::unique_ptr<tf2_ros::[01;31m[KTransformBroadcaster[m[K> tf_broadcaster_;
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:63:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   63 |     std::unique_ptr<tf2_ros::TransformBroadcaster[01;31m[K>[m[K tf_broadcaster_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:63:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:63:10:[m[K [01;31m[Kerror: [m[K‘[01m[K<expression error>[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+   63 |     std::[01;31m[Kunique_ptr<tf2_ros::TransformBroadcaster>[m[K tf_broadcaster_;
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   67 |     [01;31m[Knav_msgs[m[K::msg::Path path_msg_;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpointcloud_sub_[m[K’ was not declared in this scope
+   64 |     [01;31m[Kpointcloud_sub_[m[K = create_subscription<sensor_msgs::msg::PointCloud2>(
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_sub_[m[K’ was not declared in this scope
+   68 |     [01;31m[Kattitude_sub_[m[K = create_subscription<px4_msgs::msg::VehicleAttitude>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:72:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_position_sub_[m[K’ was not declared in this scope
+   72 |     [01;31m[Klocal_position_sub_[m[K = create_subscription<px4_msgs::msg::VehicleLocalPosition>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_combined_sub_[m[K’ was not declared in this scope
+   76 |     [01;31m[Ksensor_combined_sub_[m[K = create_subscription<px4_msgs::msg::SensorCombined>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_publishers[m[K’?
+   81 |     [01;31m[Kodom_publisher_[m[K = create_publisher<nav_msgs::msg::Odometry>("/genz/odometry", qos);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[Kcount_publishers[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:82:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   82 |     [01;31m[Ktraj_publisher_[m[K = create_publisher<nav_msgs::msg::Path>("/genz/trajectory", qos);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:83:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_odom_publisher_[m[K’ was not declared in this scope
+   83 |     [01;31m[Kattitude_odom_publisher_[m[K = create_publisher<nav_msgs::msg::Odometry>("/attitude/odometry", qos);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:84:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_msg_[m[K’ was not declared in this scope
+   84 |     [01;31m[Kpath_msg_[m[K.header.frame_id = odom_frame_;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:86:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   86 |         [01;31m[Kmap_publisher_[m[K = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/local_map", qos);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:87:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanar_points_publisher_[m[K’ was not declared in this scope
+   87 |         [01;31m[Kplanar_points_publisher_[m[K = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/planar_points", qos);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:88:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knon_planar_points_publisher_[m[K’ was not declared in this scope
+   88 |         [01;31m[Knon_planar_points_publisher_[m[K = create_publisher<sensor_msgs::msg::PointCloud2>("/genz/non_planar_points", qos);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+   91 |     [01;31m[Ktf_broadcaster_[m[K = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:115:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(const ConstSharedPtr&)[m[K’
+  115 | void [01;31m[KOdometryServer[m[K::AttitudeCallback(const px4_msgs::msg::VehicleAttitude::ConstSharedPtr &msg) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid genz_icp_ros::OdometryServer::AttitudeCallback(...)[m[K’
+   31 |     void [01;36m[KAttitudeCallback[m[K(const px4_msgs::msg::VehicleAttitude::ConstSharedPtr &msg);
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+   24 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:148:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::LocalPositionCallback(const ConstSharedPtr&)[m[K’
+  148 | void [01;31m[KOdometryServer[m[K::LocalPositionCallback(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:32:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid genz_icp_ros::OdometryServer::LocalPositionCallback(...)[m[K’
+   32 |     void [01;36m[KLocalPositionCallback[m[K(const px4_msgs::msg::VehicleLocalPosition::ConstSharedPtr &msg);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+   24 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:177:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’
+  177 | void [01;31m[KOdometryServer[m[K::SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr &msg) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:33:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(...)[m[K’
+   33 |     void [01;36m[KSensorCombinedCallback[m[K(const px4_msgs::msg::SensorCombined::ConstSharedPtr &msg);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+   24 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:209:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’
+  209 | void [01;31m[KOdometryServer[m[K::RegisterFrame(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(...)[m[K’
+   34 |     void [01;36m[KRegisterFrame[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr &msg);
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+   24 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::PublishOdometry(const SE3d&, const rclcpp::Time&, const string&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:285:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+  285 |         [01;31m[Ktf_broadcaster_[m[K->sendTransform(transform_msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:295:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_msg_[m[K’ was not declared in this scope
+  295 |     [01;31m[Kpath_msg_[m[K.poses.push_back(pose_msg);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:297:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+  297 |     [01;31m[Ktraj_publisher_[m[K->publish(path_msg_);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:304:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_publishers[m[K’?
+  304 |     [01;31m[Kodom_publisher_[m[K->publish(std::move(odom_msg));
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[Kcount_publishers[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::PublishClouds(const rclcpp::Time&, const string&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:322:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+  322 |         [01;31m[Kmap_publisher_[m[K->publish(std::move(EigenToPointCloud2(genz_map, odom_header)));
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:323:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanar_points_publisher_[m[K’ was not declared in this scope
+  323 |         [01;31m[Kplanar_points_publisher_[m[K->publish(std::move(EigenToPointCloud2(planar_points, cloud_header)));
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:324:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knon_planar_points_publisher_[m[K’ was not declared in this scope
+  324 |         [01;31m[Knon_planar_points_publisher_[m[K->publish(std::move(EigenToPointCloud2(non_planar_points, cloud_header)));
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:329:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanar_points_publisher_[m[K’ was not declared in this scope
+  329 |     [01;31m[Kplanar_points_publisher_[m[K->publish(std::move(EigenToPointCloud2(planar_points, odom_header)));
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:330:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knon_planar_points_publisher_[m[K’ was not declared in this scope
+  330 |     [01;31m[Knon_planar_points_publisher_[m[K->publish(std::move(EigenToPointCloud2(non_planar_points, odom_header)));
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:334:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+  334 |         [01;31m[Kmap_publisher_[m[K->publish(std::move(EigenToPointCloud2(genz_map, cloud2base, odom_header)));
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:336:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+  336 |         [01;31m[Kmap_publisher_[m[K->publish(std::move(EigenToPointCloud2(genz_map, odom_header)));
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:10[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)> >[m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; CallbackT = std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)>; MessageT = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; CallbackT = std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; CallbackT = std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; CallbackT = std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::PointCloud2_<std::allocator<void> >; CallbackT = std::_Bind<void (genz_icp_ros::OdometryServer::*(genz_icp_ros::OdometryServer*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, sensor_msgs::msg::PointCloud2_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:64:73:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

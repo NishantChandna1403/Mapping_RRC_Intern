@@ -1,0 +1,22 @@
+[ 14%] Built target odometry_node
+[ 28%] Built target metrics
+[ 71%] Built target core
+[35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double, const genz_icp::pipeline::Preintegration*, const Vector3d*, const Vector3d*)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:279:20:[m[K [01;31m[Kerror: [m[K‘[01m[KAutoDiff[m[K’ in namespace ‘[01m[Kceres[m[K’ does not name a type
+  279 |         new ceres::[01;31m[KAutoDiff[m[K прогрессCeresResidual<GPSResidual, 3, 3>(new GPSResidual(gps_trans, gps_weight)),
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:279:68:[m[K [01;31m[Kerror: [m[KISO C++ forbids comparison between pointer and integer [[01;31m[K-fpermissive[m[K]
+  279 |         new ceres::AutoDiff прогрессCeresResidual<GPSResidual, 3, [01;31m[K3>(new GPSResidual(gps_trans, gps_weight))[m[K,
+      |                                                                   [01;31m[K~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:214:65:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kvel_i[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+  214 |                                          [01;31m[Kconst Eigen::Vector3d* vel_i[m[K,
+      |                                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:215:65:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kvel_j[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+  215 |                                          [01;31m[Kconst Eigen::Vector3d* vel_j[m[K) {
+      |                                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

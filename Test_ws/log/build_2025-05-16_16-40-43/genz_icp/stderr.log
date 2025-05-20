@@ -1,0 +1,86 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:171:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_combined_buf_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_combined_sub_[m[K’?
+  171 |     [01;31m[Ksensor_combined_buf_[m[K.push_back(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Ksensor_combined_sub_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:174:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_sensor_combined_[m[K’ was not declared in this scope; did you mean ‘[01m[Kfirst_sensor_combined_received_[m[K’?
+  174 |     if ([01;31m[Kfirst_sensor_combined_[m[K) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kfirst_sensor_combined_received_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:175:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_sensor_combined_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_combined_sub_[m[K’?
+  175 |         [01;31m[Klast_sensor_combined_time_[m[K = current_time;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Ksensor_combined_sub_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:180:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_sensor_combined_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_combined_sub_[m[K’?
+  180 |     [01;31m[Klast_sensor_combined_time_[m[K = current_time;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Ksensor_combined_sub_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:194:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_combined_buf_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_combined_sub_[m[K’?
+  194 |     while (![01;31m[Ksensor_combined_buf_[m[K.empty() && (sensor_combined_buf_.front()->timestamp / 1e6) <= cloud_time) {
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[Ksensor_combined_sub_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:200:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorCombinedData[m[K’ was not declared in this scope; did you mean ‘[01m[KSensorCombinedCallback[m[K’?
+  200 |     std::shared_ptr<[01;31m[KSensorCombinedData[m[K> sensor_combined_data = nullptr;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KSensorCombinedCallback[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:200:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  200 |     std::shared_ptr<SensorCombinedData[01;31m[K>[m[K sensor_combined_data = nullptr;
+      |                                       [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:200:64:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kint[m[K’ in initialization
+  200 |     std::shared_ptr<SensorCombinedData> sensor_combined_data = [01;31m[Knullptr[m[K;
+      |                                                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:201:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_combined_buf_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksensor_combined_sub_[m[K’?
+  201 |     if (![01;31m[Ksensor_combined_buf_[m[K.empty()) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |          [32m[Ksensor_combined_sub_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:203:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<SensorCombinedData>()[m[K’
+  203 |         sensor_combined_data = [01;31m[Kstd::make_shared<SensorCombinedData>()[m[K;
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:2[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:204:29:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  204 |         sensor_combined_data[01;31m[K->[m[Kaccelerometer = Eigen::Vector3d(
+      |                             [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:208:29:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  208 |         sensor_combined_data[01;31m[K->[m[Kgyroscope = Eigen::Vector3d(
+      |                             [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:212:29:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+  212 |         sensor_combined_data[01;31m[K->[m[Ktimestamp = latest_msg->timestamp / 1e6; // Convert to seconds
+      |                             [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:216:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, Sophus::SE3d, Sophus::SE3d, int&)[m[K’
+  216 |     const auto &[planar_points, non_planar_points] = [01;31m[Kodometry_.RegisterFrame([m[K
+      |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  217 | [01;31m[K        points, timestamps,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                                  
+  218 | [01;31m[K        first_attitude_received_ ? latest_attitude_pose_ : Sophus::SE3d(),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K   
+  219 | [01;31m[K        first_local_position_received_ ? latest_local_position_pose_ : Sophus::SE3d(),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  220 | [01;31m[K        sensor_combined_data)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~[m[K                                                
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:44[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’
+   45 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame);
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:45:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:46:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&)[m[K’
+   46 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:46:25:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 5 provided
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:48:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&)[m[K’
+   48 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:48:25:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 5 provided
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’
+   52 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const std::vector<Eigen::Vector3d> &frame,
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:52:25:[m[K [01;36m[Knote: [m[K  candidate expects 8 arguments, 5 provided
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,61 @@
+[0.013s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.271s] [ 14%] Built target metrics
+[0.271s] [ 28%] Built target odometry_node
+[0.272s] [ 71%] Built target core
+[0.272s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.272s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[3.525s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[3.559s] [ 85%] Built target pipeline
+[3.572s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[3.591s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[12.644s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[12.644s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:55:44:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KGenZICP()[m[K’ is ambiguous
+[12.644s]    55 |     : rclcpp::Node("odometry_node", options[01;31m[K)[m[K {
+[12.644s]       |                                            [01;31m[K^[m[K
+[12.644s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:44[m[K,
+[12.644s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[12.644s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:68:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+[12.644s]    68 |     [01;36m[KGenZICP[m[K(); // Default constructor
+[12.644s]       |     [01;36m[K^~~~~~~[m[K
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:67:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+[12.645s]    67 |     explicit [01;36m[KGenZICP[m[K(const GenZConfig &config = GenZConfig{});
+[12.645s]       |              [01;36m[K^~~~~~~[m[K
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:211:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPointCloud2ToEigen[m[K’ was not declared in this scope; did you mean ‘[01m[Kgenz_icp_ros::utils::PointCloud2ToEigen[m[K’?
+[12.645s]   211 |     const auto points = [01;31m[KPointCloud2ToEigen[m[K(msg);
+[12.645s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[12.645s]       |                         [32m[Kgenz_icp_ros::utils::PointCloud2ToEigen[m[K
+[12.645s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:31[m[K:
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:179:37:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp_ros::utils::PointCloud2ToEigen[m[K’ declared here
+[12.645s]   179 | inline std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const PointCloud2::ConstSharedPtr msg) {
+[12.645s]       |                                     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:214:16:[m[K [01;31m[Kerror: [m[K‘[01m[KGetTimestamps[m[K’ was not declared in this scope; did you mean ‘[01m[Kgenz_icp_ros::utils::GetTimestamps[m[K’?
+[12.645s]   214 |         return [01;31m[KGetTimestamps[m[K(msg);
+[12.645s]       |                [01;31m[K^~~~~~~~~~~~~[m[K
+[12.645s]       |                [32m[Kgenz_icp_ros::utils::GetTimestamps[m[K
+[12.645s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:31[m[K:
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:170:28:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp_ros::utils::GetTimestamps[m[K’ declared here
+[12.645s]   170 | inline std::vector<double> [01;36m[KGetTimestamps[m[K(const PointCloud2::ConstSharedPtr msg) {
+[12.645s]       |                            [01;36m[K^~~~~~~~~~~~~[m[K
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::PublishClouds(const rclcpp::Time&, const string&, const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[12.645s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:305:43:[m[K [01;31m[Kerror: [m[K‘[01m[KEigenToPointCloud2[m[K’ was not declared in this scope; did you mean ‘[01m[Kgenz_icp_ros::utils::EigenToPointCloud2[m[K’?
+[12.646s]   305 |         map_publisher_->publish(std::move([01;31m[KEigenToPointCloud2[m[K(genz_map, odom_header)));
+[12.646s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[12.646s]       |                                           [32m[Kgenz_icp_ros::utils::EigenToPointCloud2[m[K
+[12.646s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:31[m[K:
+[12.646s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:221:37:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp_ros::utils::EigenToPointCloud2[m[K’ declared here
+[12.646s]   221 | inline std::unique_ptr<PointCloud2> [01;36m[KEigenToPointCloud2[m[K(const std::vector<Eigen::Vector3d> &points,
+[12.646s]       |                                     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[12.646s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:312:49:[m[K [01;31m[Kerror: [m[K‘[01m[KEigenToPointCloud2[m[K’ was not declared in this scope; did you mean ‘[01m[Kgenz_icp_ros::utils::EigenToPointCloud2[m[K’?
+[12.646s]   312 |     planar_points_publisher_->publish(std::move([01;31m[KEigenToPointCloud2[m[K(planar_points, odom_header)));
+[12.646s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[12.646s]       |                                                 [32m[Kgenz_icp_ros::utils::EigenToPointCloud2[m[K
+[12.646s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:31[m[K:
+[12.646s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:221:37:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp_ros::utils::EigenToPointCloud2[m[K’ declared here
+[12.646s]   221 | inline std::unique_ptr<PointCloud2> [01;36m[KEigenToPointCloud2[m[K(const std::vector<Eigen::Vector3d> &points,
+[12.646s]       |                                     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[12.653s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[12.653s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[12.653s] gmake: *** [Makefile:146: all] Error 2
+[12.655s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

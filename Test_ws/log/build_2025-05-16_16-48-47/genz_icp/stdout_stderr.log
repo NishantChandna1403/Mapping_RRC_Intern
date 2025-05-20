@@ -1,0 +1,29 @@
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:54:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorCombined[m[K’ in namespace ‘[01m[Kpx4_msgs::msg[m[K’ does not name a type
+   58 |     void SensorCombinedCallback(const px4_msgs::msg::[01;31m[KSensorCombined[m[K::ConstSharedPtr &msg); // Already included
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:85:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   58 |     void SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr [01;31m[K&[m[Kmsg); // Already included
+      |                                                                                     [01;31m[K^[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:84:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   58 |     void SensorCombinedCallback[34m[K([m[Kconst px4_msgs::msg::SensorCombined::ConstSharedPtr[01;31m[K [m[K[32m[K&[m[Kmsg); // Already included
+      |                                [34m[K~[m[K                                                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                    [32m[K)[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   58 |     void SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr [01;31m[K&[m[Kmsg); // Already included
+      |                                                                                     [01;31m[K^[m[K
+      |                                                                                      [32m[K;[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:58:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   58 |     void SensorCombinedCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr &[01;31m[Kmsg[m[K); // Already included
+      |                                                                                      [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

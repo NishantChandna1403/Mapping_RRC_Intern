@@ -1,0 +1,76 @@
+[ 14%] Built target metrics
+[ 28%] Built target odometry_node
+[ 71%] Built target core
+[ 85%] Built target pipeline
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:94:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPreintegration[m[K’ is not a member of ‘[01m[Kgenz_icp[m[K’
+   94 |     std::vector<std::shared_ptr<genz_icp::[01;31m[KPreintegration[m[K>> pre_integrations_;
+      |                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:94:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:94:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |     std::vector<std::shared_ptr<genz_icp::Preintegration[01;31m[K>>[m[K pre_integrations_;
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:94:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:94:10:[m[K [01;31m[Kerror: [m[K‘[01m[K<expression error>[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+   94 |     std::[01;31m[Kvector<std::shared_ptr<genz_icp::Preintegration>>[m[K pre_integrations_;
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:55:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp_ros::Config&)[m[K’
+   55 |     odometry_ = genz_icp::pipeline::GenZICP(config_[01;31m[K)[m[K;
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:9[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:42:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+   42 |     [01;36m[KGenZICP[m[K() : GenZICP(GenZConfig{}) {}
+      |     [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:42:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:9[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:36:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+   36 |     explicit [01;36m[KGenZICP[m[K(const GenZConfig &config)
+      |              [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:36:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::Config[m[K’ to ‘[01m[Kconst genz_icp::pipeline::GenZConfig&[m[K’
+   36 |     explicit GenZICP([01;36m[Kconst GenZConfig &config[m[K)
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:30:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZICP&)[m[K’
+   30 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:30:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::Config[m[K’ to ‘[01m[Kconst genz_icp::pipeline::GenZICP&[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:30:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(genz_icp::pipeline::GenZICP&&)[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:30:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgenz_icp_ros::Config[m[K’ to ‘[01m[Kgenz_icp::pipeline::GenZICP&&[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::ImuCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:193:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_integrations_[m[K’ was not declared in this scope
+  193 |     if (![01;31m[Kpre_integrations_[m[K.empty()) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:218:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_integrations_[m[K’ was not declared in this scope
+  218 |     if (![01;31m[Kpre_integrations_[m[K.empty()) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:235:54:[m[K [01;31m[Kerror: [m[K‘[01m[KPreintegration[m[K’ is not a member of ‘[01m[Kgenz_icp[m[K’
+  235 |     auto preintegration = std::make_shared<genz_icp::[01;31m[KPreintegration[m[K>(
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:235:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(Eigen::Vector3d&, Eigen::Vector3d&, __gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 3, 1> >, Eigen::Matrix<double, 3, 1> >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 3, 1> >, Eigen::Matrix<double, 3, 1> >::value_type&)[m[K’
+  235 |     auto preintegration = [01;31m[Kstd::make_shared<genz_icp::Preintegration>([m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  236 | [01;31m[K        acc_0_, gyr_0_, Bas_.back(), Bgs_.back())[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                    
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:5[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:235:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  235 |     auto preintegration = [01;31m[Kstd::make_shared<genz_icp::Preintegration>([m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  236 | [01;31m[K        acc_0_, gyr_0_, Bas_.back(), Bgs_.back())[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                    
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:237:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_integrations_[m[K’ was not declared in this scope
+  237 |     [01;31m[Kpre_integrations_[m[K.push_back(preintegration);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

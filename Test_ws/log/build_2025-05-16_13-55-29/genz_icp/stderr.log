@@ -1,0 +1,15 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::GetPredictionModel() const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:400:23:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KRACEResult[m[K’
+  400 |     Sophus::SE3d pred [01;31m[KRACEResult[m[K = Sophus::SE3d();
+      |                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:404:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kpred[m[K’ was not declared in this scope; did you mean ‘[01m[Kpread[m[K’?
+  404 |         return [01;31m[Kpred[m[K;
+      |                [01;31m[K^~~~[m[K
+      |                [32m[Kpread[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:406:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpred[m[K’ was not declared in this scope; did you mean ‘[01m[Kpread[m[K’?
+  406 |     [01;31m[Kpred[m[K = poses_[N - 2].inverse() * poses_[N - 1];
+      |     [01;31m[K^~~~[m[K
+      |     [32m[Kpread[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -98,6 +98,9 @@ elseif("$ENV{ROS_VERSION}" STREQUAL "2")
     geometry_msgs
     tf2_ros)
 
+  # Add px4_msgs include directories explicitly (this might help resolve the header not found error)
+  target_include_directories(odometry_component PRIVATE ${px4_msgs_INCLUDE_DIRS})
+
   rclcpp_components_register_node(odometry_component PLUGIN "genz_icp_ros::OdometryServer" EXECUTABLE odometry_node)
 
   install(TARGETS odometry_component LIBRARY DESTINATION lib RUNTIME DESTINATION lib/${PROJECT_NAME})

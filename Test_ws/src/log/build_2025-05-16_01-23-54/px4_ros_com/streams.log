@@ -1,0 +1,15 @@
+[0.249s] Invoking command in '/home/nishant/RRC_Project/Test_ws/src/build/px4_ros_com': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/src/build/px4_ros_com -- -j12 -l12
+[0.293s] [ 16%] Built target frame_transforms
+[0.293s] [ 33%] Built target debug_vect_advertiser
+[0.294s] [ 50%] Built target vehicle_gps_position_listener
+[0.294s] [ 66%] Built target offboard_control_srv
+[0.294s] [ 83%] Built target offboard_control
+[0.294s] [ 83%] Built target ament_cmake_python_copy_px4_ros_com
+[0.300s] [100%] Built target sensor_combined_listener
+[0.525s] running egg_info
+[0.533s] writing px4_ros_com.egg-info/PKG-INFO
+[0.533s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.533s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.559s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.559s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.594s] [100%] Built target ament_cmake_python_build_px4_ros_com_egg

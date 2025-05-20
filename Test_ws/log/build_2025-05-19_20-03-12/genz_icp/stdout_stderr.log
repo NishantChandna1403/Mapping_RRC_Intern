@@ -1,0 +1,49 @@
+[ 14%] Built target metrics
+[ 57%] Built target core
+[ 71%] Built target odometry_node
+[ 85%] Built target pipeline
+[35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:33:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct genz_icp_ros::IMUData[m[K’
+   33 | struct [01;31m[KIMUData[m[K {
+      |        [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:25:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct genz_icp_ros::IMUData[m[K’
+   25 | struct [01;36m[KIMUData[m[K {
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:39:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’
+   39 | class [01;31m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’
+   31 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:239:57:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_keyframe_timestamp_[m[K’ was not declared in this scope
+  239 |     if (current_timestamp <= 0.0 || current_timestamp < [01;31m[Klast_keyframe_timestamp_[m[K) {
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:264:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_buffer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf2_buffer_[m[K’?
+  264 |     [01;31m[Kimu_buffer_[m[K.push_back(imu_data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Ktf2_buffer_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:292:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass genz_icp::pipeline::Preintegration[m[K’ has no member named ‘[01m[Kreset[m[K’
+  292 |     preintegration_->[01;31m[Kreset[m[K();
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:293:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_buffer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf2_buffer_[m[K’?
+  293 |     for (const auto& imu_data : [01;31m[Kimu_buffer_[m[K) {
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+      |                                 [32m[Ktf2_buffer_[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:294:34:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_keyframe_timestamp_[m[K’ was not declared in this scope
+  294 |         if (imu_data.timestamp > [01;31m[Klast_keyframe_timestamp_[m[K && imu_data.timestamp <= cloud_timestamp) {
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:320:35:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_keyframe_timestamp_[m[K’ was not declared in this scope
+  320 |     double dt = cloud_timestamp - [01;31m[Klast_keyframe_timestamp_[m[K;
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:367:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_buffer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktf2_buffer_[m[K’?
+  367 |     while (![01;31m[Kimu_buffer_[m[K.empty() && imu_buffer_.front().timestamp < last_keyframe_timestamp_) {
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[Ktf2_buffer_[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

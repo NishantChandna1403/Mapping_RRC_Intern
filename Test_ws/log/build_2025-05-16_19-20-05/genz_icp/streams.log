@@ -1,0 +1,102 @@
+[0.020s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.283s] [ 14%] Built target metrics
+[0.283s] [ 57%] Built target core
+[0.284s] [ 71%] Built target odometry_node
+[0.284s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.284s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[5.404s] /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp: In instantiation of ‘[01m[Kbool genz_icp::pipeline::IMUResidual::operator()(const T*, const T*, const T*, const T*, const T*, T*) const [with T = ceres::Jet<double, 16>][m[K’:
+[5.404s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:57:17:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = genz_icp::pipeline::IMUResidual; T = ceres::Jet<double, 16>; int ...Indices = {0, 1, 2, 3, 4}; std::false_type = std::integral_constant<bool, false>][m[K’
+[5.404s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:79:30:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ceres::internal::ParameterDims<false, 3, 4, 3, 3, 3>; Functor = genz_icp::pipeline::IMUResidual; T = ceres::Jet<double, 16>][m[K’
+[5.404s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:108:45:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ceres::internal::ParameterDims<false, 3, 4, 3, 3, 3>; Functor = genz_icp::pipeline::IMUResidual; T = ceres::Jet<double, 16>][m[K’
+[5.404s] [01m[K/usr/include/ceres/internal/autodiff.h:351:39:[m[K   required from ‘[01m[Kbool ceres::internal::AutoDifferentiate(const Functor&, const T* const*, int, T*, T**) [with int kNumResiduals = 9; ParameterDims = ceres::internal::ParameterDims<false, 3, 4, 3, 3, 3>; Functor = genz_icp::pipeline::IMUResidual; T = double][m[K’
+[5.405s] [01m[K/usr/include/ceres/autodiff_cost_function.h:210:69:[m[K   required from ‘[01m[Kbool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = genz_icp::pipeline::IMUResidual; int kNumResiduals = 9; int ...Ns = {3, 4, 3, 3, 3}][m[K’
+[5.405s] [01m[K/usr/include/ceres/autodiff_cost_function.h:200:8:[m[K   required from here
+[5.405s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Quaternion<ceres::Jet<double, 16>, 0>::Quaternion(const double&, const double&, const double&, const double&)[m[K’
+[5.405s]   134 |         Eigen::Quaternion<T> [01;31m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+[5.405s]       |                              [01;31m[K^~~~~~~~[m[K
+[5.405s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+[5.405s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+[5.405s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[5.406s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[5.406s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[5.406s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[5.406s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[5.406s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:317:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherScalar, int OtherOptions> Eigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::Quaternion<OtherScalar, OtherOptions>&) [with OtherScalar = OtherScalar; int OtherOptions = OtherOptions; _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+[5.406s]   317 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const Quaternion<OtherScalar, OtherOptions>& other)
+[5.406s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.406s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:317:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.406s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::Quaternion<_Scalar, _Options>[m[K’ and ‘[01m[Kconst double[m[K’
+[5.406s]   134 |         Eigen::Quaternion<T> [01;36m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+[5.406s]       |                              [01;36m[K^~~~~~~~[m[K
+[5.407s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+[5.407s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+[5.407s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[5.407s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[5.407s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[5.407s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[5.407s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[5.408s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:313:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived> Eigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::MatrixBase<OtherDerived>&) [with Derived = Derived; _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+[5.408s]   313 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const MatrixBase<Derived>& other) { *this = other; }
+[5.408s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.409s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:313:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.409s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[Kconst double[m[K’
+[5.410s]   134 |         Eigen::Quaternion<T> [01;36m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+[5.410s]       |                              [01;36m[K^~~~~~~~[m[K
+[5.410s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+[5.410s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+[5.410s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[5.410s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[5.411s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[5.411s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[5.411s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[5.411s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:303:65:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived> Eigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::QuaternionBase<OtherDerived>&) [with Derived = Derived; _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+[5.411s]   303 |   template<class Derived> EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE [01;36m[KQuaternion[m[K(const QuaternionBase<Derived>& other) { this->Base::operator=(other); }
+[5.411s]       |                                                                 [01;36m[K^~~~~~~~~~[m[K
+[5.411s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:303:65:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.411s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::QuaternionBase<Derived>[m[K’ and ‘[01m[Kconst double[m[K’
+[5.412s]   134 |         Eigen::Quaternion<T> [01;36m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+[5.412s]       |                              [01;36m[K^~~~~~~~[m[K
+[5.412s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+[5.413s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+[5.413s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[5.413s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[5.413s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[5.413s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[5.413s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[5.413s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:323:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(Eigen::Quaternion<Scalar, Options>&&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+[5.413s]   323 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K(Quaternion&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_constructible<Scalar>::value)
+[5.413s]       |                            [01;36m[K^~~~~~~~~~[m[K
+[5.413s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:323:28:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[5.413s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:306:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const AngleAxisType&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0; Eigen::Quaternion<Scalar, Options>::AngleAxisType = Eigen::AngleAxis<ceres::Jet<double, 16> >][m[K’
+[5.413s]   306 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const AngleAxisType& aa) { *this = aa; }
+[5.413s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.413s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:306:37:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[5.413s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:300:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const Scalar*) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0; Eigen::Quaternion<Scalar, Options>::Scalar = ceres::Jet<double, 16>][m[K’
+[5.413s]   300 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const Scalar* data) : m_coeffs(data) {}
+[5.413s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[5.413s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:300:37:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[5.414s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:297:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0; Eigen::Quaternion<Scalar, Options>::Scalar = ceres::Jet<double, 16>][m[K’
+[5.414s]   297 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K(const Scalar& w, const Scalar& x, const Scalar& y, const Scalar& z) : m_coeffs(x, y, z, w){}
+[5.414s]       |                            [01;36m[K^~~~~~~~~~[m[K
+[5.414s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:297:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst double[m[K’ to ‘[01m[Kconst Scalar&[m[K’ {aka ‘[01m[Kconst ceres::Jet<double, 16>&[m[K’}
+[5.414s]   297 |   EIGEN_DEVICE_FUNC inline Quaternion([01;36m[Kconst Scalar& w[m[K, const Scalar& x, const Scalar& y, const Scalar& z) : m_coeffs(x, y, z, w){}
+[5.414s]       |                                       [01;36m[K~~~~~~~~~~~~~~^[m[K
+[5.414s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:288:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion() [with _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+[5.414s]   288 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K() {}
+[5.414s]       |                            [01;36m[K^~~~~~~~~~[m[K
+[5.414s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:288:28:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+[5.414s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[5.414s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[5.414s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[5.414s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[5.414s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[5.414s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[5.415s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[5.415s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:281:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::Quaternion<Scalar, Options>&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+[5.415s]   281 |   [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Quaternion)
+[5.415s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.415s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:281:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[5.415s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[5.415s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[5.415s] gmake: *** [Makefile:146: all] Error 2
+[5.415s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

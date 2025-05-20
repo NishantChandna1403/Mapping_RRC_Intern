@@ -17,10 +17,10 @@ class Px4ImuConverter(Node):
             durability=QoSDurabilityPolicy.VOLATILE
         )
 
-        # Subscriber for /fmu/out/sensor_combined with matching QoS
+        # Subscriber for /px4_1/fmu/out/sensor_combined with matching QoS
         self.subscription = self.create_subscription(
             SensorCombined,
-            '/fmu/out/sensor_combined',
+            '/px4_1/fmu/out/sensor_combined',
             self.callback,
             qos_profile
         )

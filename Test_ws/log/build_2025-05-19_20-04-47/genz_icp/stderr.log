@@ -1,0 +1,69 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:10[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:204:37:[m[K [01;31m[Kerror: [m[Kambiguating new declaration of ‘[01m[Kstd::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > > genz_icp_ros::utils::EigenToPointCloud2(const std::vector<Eigen::Matrix<double, 3, 1> >&, const Header&)[m[K’
+  204 | inline std::unique_ptr<PointCloud2> [01;31m[KEigenToPointCloud2[m[K(const std::vector<Eigen::Vector3d> &points,
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:29:35:[m[K [01;36m[Knote: [m[Kold declaration ‘[01m[Ksensor_msgs::msg::PointCloud2 genz_icp_ros::utils::EigenToPointCloud2(const std::vector<Eigen::Matrix<double, 3, 1> >&, const Header&)[m[K’
+   29 |     sensor_msgs::msg::PointCloud2 [01;36m[KEigenToPointCloud2[m[K(const std::vector<Eigen::Vector3d>& points,
+      |                                   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:10[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:211:37:[m[K [01;31m[Kerror: [m[Kambiguating new declaration of ‘[01m[Kstd::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > > genz_icp_ros::utils::EigenToPointCloud2(const std::vector<Eigen::Matrix<double, 3, 1> >&, const SE3d&, const Header&)[m[K’
+  211 | inline std::unique_ptr<PointCloud2> [01;31m[KEigenToPointCloud2[m[K(const std::vector<Eigen::Vector3d> &points,
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31:35:[m[K [01;36m[Knote: [m[Kold declaration ‘[01m[Ksensor_msgs::msg::PointCloud2 genz_icp_ros::utils::EigenToPointCloud2(const std::vector<Eigen::Matrix<double, 3, 1> >&, const SE3d&, const Header&)[m[K’
+   31 |     sensor_msgs::msg::PointCloud2 [01;36m[KEigenToPointCloud2[m[K(const std::vector<Eigen::Vector3d>& points,
+      |                                   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:10[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:[m[K In function ‘[01m[Kstd::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > > genz_icp_ros::utils::EigenToPointCloud2(const std::vector<Eigen::Matrix<double, 3, 1> >&, const SE3d&, const Header&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:218:30:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kgenz_icp_ros::utils::EigenToPointCloud2(const std::vector<Eigen::Matrix<double, 3, 1> >&, const Header&)((* & header))[m[K’ from ‘[01m[Ksensor_msgs::msg::PointCloud2[m[K’ {aka ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::unique_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> >, std::default_delete<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >[m[K’
+  218 |     return [01;31m[KEigenToPointCloud2(points_t, header)[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+      |                              [01;31m[K|[m[K
+      |                              [01;31m[Ksensor_msgs::msg::PointCloud2 {aka sensor_msgs::msg::PointCloud2_<std::allocator<void> >}[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:33:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct genz_icp_ros::IMUData[m[K’
+   33 | struct [01;31m[KIMUData[m[K {
+      |        [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:38:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct genz_icp_ros::IMUData[m[K’
+   38 | struct [01;36m[KIMUData[m[K {
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:39:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’
+   39 | class [01;31m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:44:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’
+   44 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:277:43:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KPointCloud2ToEigen(const ConstSharedPtr&)[m[K’ is ambiguous
+  277 |     const auto points = [01;31m[KPointCloud2ToEigen(msg)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:10[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:179:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > genz_icp_ros::utils::PointCloud2ToEigen(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’
+  179 | inline std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const PointCloud2::ConstSharedPtr msg) {
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:34:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > genz_icp_ros::utils::PointCloud2ToEigen(const ConstSharedPtr&)[m[K’
+   34 |     std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr& msg);
+      |                                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:281:29:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KGetTimestamps(const ConstSharedPtr&)[m[K’ is ambiguous
+  281 |         return [01;31m[KGetTimestamps(msg)[m[K;
+      |                [01;31m[K~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:10[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:170:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<double> genz_icp_ros::utils::GetTimestamps(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’
+  170 | inline std::vector<double> [01;36m[KGetTimestamps[m[K(const PointCloud2::ConstSharedPtr msg) {
+      |                            [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:9[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:35:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<double> genz_icp_ros::utils::GetTimestamps(const ConstSharedPtr&)[m[K’
+   35 |     std::vector<double> [01;36m[KGetTimestamps[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr& msg);
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:292:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass genz_icp::pipeline::Preintegration[m[K’ has no member named ‘[01m[Kreset[m[K’
+  292 |     preintegration_->[01;31m[Kreset[m[K();
+      |                      [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

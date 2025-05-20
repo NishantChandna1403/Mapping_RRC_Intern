@@ -1,0 +1,46 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:46:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::Preintegration::Preintegration(const Vector3d&, const Vector3d&, const Vector3d&, const Vector3d&)[m[K’
+   46 | [01;31m[KPreintegration[m[K::Preintegration(const Eigen::Vector3d& acc_0, const Eigen::Vector3d& gyro_0,
+      | [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:56:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::Preintegration::Preintegration(genz_icp::pipeline::Preintegration&&)[m[K’
+   56 | class [01;36m[KPreintegration[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:56:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::Preintegration::Preintegration(const genz_icp::pipeline::Preintegration&)[m[K’
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:58:5:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::Preintegration::Preintegration(const Vector3d&, const Vector3d&)[m[K’
+   58 |     [01;36m[KPreintegration[m[K(const Eigen::Vector3d& ba = Eigen::Vector3d::Zero(),
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:56:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::Preintegration[m[K’ defined here
+   56 | class [01;36m[KPreintegration[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:58:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp::pipeline::Preintegration::IntegrateNewMeasurement(const Vector3d&, const Vector3d&, double)[m[K’
+   58 | void [01;31m[KPreintegration[m[K::IntegrateNewMeasurement(const Eigen::Vector3d& acc, const Eigen::Vector3d& gyro, double dt) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:61:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid genz_icp::pipeline::Preintegration::IntegrateNewMeasurement(const Vector3d&, const Vector3d&, double, const Vector3d&)[m[K’
+   61 |     void [01;36m[KIntegrateNewMeasurement[m[K(const Eigen::Vector3d& acc, const Eigen::Vector3d& gyro, double dt, const Eigen::Vector3d& gravity);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:56:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::Preintegration[m[K’ defined here
+   56 | class [01;36m[KPreintegration[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:190:14:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double, const genz_icp::pipeline::Preintegration*)[m[K’
+  190 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+      |              [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:123:18:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double, const genz_icp::pipeline::Preintegration*, const Vector3d*, const Vector3d*)[m[K’
+  123 |     Sophus::SE3d [01;36m[KfusePosesWithCeres[m[K(const Sophus::SE3d &icp_pose,
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:80:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   80 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const Vector3dVector&, std::vector<double>, const SE3d&, const SE3d&, const Vector3d&, const Vector3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:307:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::Preintegration::IntegrateNewMeasurement(const Vector3d&, const Vector3d&, const double&)[m[K’
+  307 |         [01;31m[Kpreintegration_->IntegrateNewMeasurement(acc_enu, gyro_enu, dt)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:61:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid genz_icp::pipeline::Preintegration::IntegrateNewMeasurement(const Vector3d&, const Vector3d&, double, const Vector3d&)[m[K’
+   61 |     void [01;36m[KIntegrateNewMeasurement[m[K(const Eigen::Vector3d& acc, const Eigen::Vector3d& gyro, double dt, const Eigen::Vector3d& gravity);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:61:10:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

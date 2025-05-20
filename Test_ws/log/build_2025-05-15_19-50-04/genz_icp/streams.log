@@ -1,0 +1,175 @@
+[0.011s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.055s] [ 14%] Built target odometry_node
+[0.055s] [ 28%] Built target metrics
+[0.059s] [ 71%] Built target core
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.084s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[2.231s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kbool genz_icp::pipeline::GyroResidual::operator()(const T*, T*) const[m[K’:
+[2.231s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:49:[m[K [01;31m[Kerror: [m[KISO C++ forbids zero-size array ‘[01m[Kgyro_enu_[m[K’ [[01;31m[K-Werror=pedantic[m[K]
+[2.231s]   118 |         Eigen::Matrix<T, 3, 1> gyro(T(gyro_enu_[[01;31m[K0[m[K]), T(gyro_enu_[1]), T(gyro_enu_[2]));
+[2.231s]       |                                                 [01;31m[K^[m[K
+[2.231s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:56:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KT* gyro_enu_[m[K’
+[2.231s]   118 |         Eigen::Matrix<T, 3, 1> gyro(T(gyro_enu_[0]), [01;31m[KT(gyro_enu_[1])[m[K, T(gyro_enu_[2]));
+[2.231s]       |                                                      [01;31m[K~~^~~~~~~~~~~~~[m[K
+[2.231s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:39:[m[K [01;36m[Knote: [m[K‘[01m[KT* gyro_enu_[m[K’ previously declared here
+[2.231s]   118 |         Eigen::Matrix<T, 3, 1> gyro([01;36m[KT(gyro_enu_[0])[m[K, T(gyro_enu_[1]), T(gyro_enu_[2]));
+[2.231s]       |                                     [01;36m[K~~^~~~~~~~~~~~~[m[K
+[2.232s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:73:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KT* gyro_enu_[m[K’
+[2.232s]   118 |         Eigen::Matrix<T, 3, 1> gyro(T(gyro_enu_[0]), T(gyro_enu_[1]), [01;31m[KT(gyro_enu_[2])[m[K);
+[2.232s]       |                                                                       [01;31m[K~~^~~~~~~~~~~~~[m[K
+[2.232s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:39:[m[K [01;36m[Knote: [m[K‘[01m[KT* gyro_enu_[m[K’ previously declared here
+[2.232s]   118 |         Eigen::Matrix<T, 3, 1> gyro([01;36m[KT(gyro_enu_[0])[m[K, T(gyro_enu_[1]), T(gyro_enu_[2]));
+[2.232s]       |                                     [01;36m[K~~^~~~~~~~~~~~~[m[K
+[2.232s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:36:[m[K [01;31m[Kerror: [m[Kparentheses were disambiguated as a function declaration [[01;31m[K-Werror=vexing-parse[m[K]
+[2.232s]   118 |         Eigen::Matrix<T, 3, 1> gyro[01;31m[K(T(gyro_enu_[0]), T(gyro_enu_[1]), T(gyro_enu_[2]))[m[K;
+[2.232s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.232s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:36:[m[K [01;36m[Knote: [m[Kreplace parentheses with braces to declare a variable
+[2.232s]   118 |         Eigen::Matrix<T, 3, 1> gyro[01;36m[K(T(gyro_enu_[0]), T(gyro_enu_[1]), T(gyro_enu_[2]))[m[K;
+[2.232s]       |                                    [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.232s]       |                                    [31m[K-[m[K
+[2.232s]       |                                    [32m[K{[m[K                                                 [31m[K-[m[K
+[2.232s]       |                                                                                      [32m[K}[m[K
+[2.232s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const Vector3d&, const Vector3d&)[m[K’:
+[2.232s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:237:75:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kgyro_enu[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+[2.232s]   237 |                                                    [01;31m[Kconst Eigen::Vector3d &gyro_enu[m[K) {
+[2.232s]       |                                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.232s] /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp: In instantiation of ‘[01m[Kbool genz_icp::pipeline::GyroResidual::operator()(const T*, T*) const [with T = double][m[K’:
+[2.232s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:57:17:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = genz_icp::pipeline::GyroResidual; T = double; int ...Indices = {0}; std::false_type = std::integral_constant<bool, false>][m[K’
+[2.232s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:79:30:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ceres::internal::ParameterDims<false, 4>; Functor = genz_icp::pipeline::GyroResidual; T = double][m[K’
+[2.232s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:108:45:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ceres::internal::ParameterDims<false, 4>; Functor = genz_icp::pipeline::GyroResidual; T = double][m[K’
+[2.232s] [01m[K/usr/include/ceres/autodiff_cost_function.h:207:55:[m[K   required from ‘[01m[Kbool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = genz_icp::pipeline::GyroResidual; int kNumResiduals = 3; int ...Ns = {4}][m[K’
+[2.232s] [01m[K/usr/include/ceres/autodiff_cost_function.h:200:8:[m[K   required from here
+[2.233s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[KEigen::Matrix<double, 3, 1>(...)[m[K’ and ‘[01m[Kdouble[m[K’ to binary ‘[01m[Koperator*[m[K’
+[2.233s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;31m[Kgyro * T(dt_)[m[K;
+[2.233s]       |                                             [01;31m[K~~~~~^~~~~~~~[m[K
+[2.233s] /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp: In instantiation of ‘[01m[Kbool genz_icp::pipeline::GyroResidual::operator()(const T*, T*) const [with T = ceres::Jet<double, 4>][m[K’:
+[2.233s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:57:17:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = genz_icp::pipeline::GyroResidual; T = ceres::Jet<double, 4>; int ...Indices = {0}; std::false_type = std::integral_constant<bool, false>][m[K’
+[2.233s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:79:30:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ceres::internal::ParameterDims<false, 4>; Functor = genz_icp::pipeline::GyroResidual; T = ceres::Jet<double, 4>][m[K’
+[2.233s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:108:45:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ceres::internal::ParameterDims<false, 4>; Functor = genz_icp::pipeline::GyroResidual; T = ceres::Jet<double, 4>][m[K’
+[2.233s] [01m[K/usr/include/ceres/internal/autodiff.h:351:39:[m[K   required from ‘[01m[Kbool ceres::internal::AutoDifferentiate(const Functor&, const T* const*, int, T*, T**) [with int kNumResiduals = 3; ParameterDims = ceres::internal::ParameterDims<false, 4>; Functor = genz_icp::pipeline::GyroResidual; T = double][m[K’
+[2.233s] [01m[K/usr/include/ceres/autodiff_cost_function.h:210:69:[m[K   required from ‘[01m[Kbool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = genz_icp::pipeline::GyroResidual; int kNumResiduals = 3; int ...Ns = {4}][m[K’
+[2.233s] [01m[K/usr/include/ceres/autodiff_cost_function.h:200:8:[m[K   required from here
+[2.233s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:32:[m[K [01;31m[Kerror: [m[Kambiguating new declaration of ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1> genz_icp::pipeline::gyro(...)[m[K’
+[2.233s]   118 |         Eigen::Matrix<T, 3, 1> [01;31m[Kgyro[m[K(T(gyro_enu_[0]), T(gyro_enu_[1]), T(gyro_enu_[2]));
+[2.233s]       |                                [01;31m[K^~~~[m[K
+[2.233s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:118:32:[m[K [01;36m[Knote: [m[Kold declaration ‘[01m[KEigen::Matrix<double, 3, 1> genz_icp::pipeline::gyro(...)[m[K’
+[2.233s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand types are ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’ and ‘[01m[Kceres::Jet<double, 4>[m[K’)
+[2.233s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;31m[Kgyro * T(dt_)[m[K;
+[2.233s]       |                                             [01;31m[K~~~~~^~~~~~~~[m[K
+[2.233s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[2.233s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[2.233s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.233s] [01m[K/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:50:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> const Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<typename Eigen::internal::promote_scalar_arg<ceres::Jet<double, 4>, T, Eigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<T, ceres::Jet<double, 4>, Eigen::internal::scalar_product_op<T, ceres::Jet<double, 4> > > >::value>::type, ceres::Jet<double, 4> >, const typename Eigen::internal::plain_constant_type<Eigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>, typename Eigen::internal::promote_scalar_arg<ceres::Jet<double, 4>, T, Eigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<T, ceres::Jet<double, 4>, Eigen::internal::scalar_product_op<T, ceres::Jet<double, 4> > > >::value>::type>::type, const Eigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1> > Eigen::operator*(const T&, const StorageBaseType&)[m[K’
+[2.233s]    50 | [01;36m[KEIGEN_MAKE_SCALAR_BINARY_OP[m[K(operator*,product)
+[2.233s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.233s] [01m[K/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:50:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.233s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:52:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kceres::Jet<double, 4>(((const genz_icp::pipeline::GyroResidual*)this)->genz_icp::pipeline::GyroResidual::dt_)[m[K’ (type ‘[01m[Kceres::Jet<double, 4>[m[K’) to type ‘[01m[Kconst StorageBaseType&[m[K’ {aka ‘[01m[Kconst Eigen::MatrixBase<Eigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1> >&[m[K’}
+[2.233s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = gyro * [01;36m[KT(dt_)[m[K;
+[2.233s]       |                                                    [01;36m[K^~~~~~[m[K
+[2.233s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:326[m[K,
+[2.233s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[2.233s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.233s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:515:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MatrixDerived, class PermutationDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::PermutationBase<PermutationDerived>&)[m[K’
+[2.233s]   515 | [01;36m[Koperator[m[K*(const MatrixBase<MatrixDerived> &matrix,
+[2.233s]       | [01;36m[K^~~~~~~~[m[K
+[2.233s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:515:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.233s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.233s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.233s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.233s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:326[m[K,
+[2.233s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:527:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PermutationDerived, class MatrixDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::PermutationBase<PermutationDerived>&, const Eigen::MatrixBase<U>&)[m[K’
+[2.234s]   527 | [01;36m[Koperator[m[K*(const PermutationBase<PermutationDerived> &permutation,
+[2.234s]       | [01;36m[K^~~~~~~~[m[K
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:527:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.234s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::PermutationBase<PermutationDerived>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.234s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.234s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.234s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:327[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:313:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MatrixDerived, class TranspositionsDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::TranspositionsBase<TranspositionsDerived>&)[m[K’
+[2.234s]   313 | [01;36m[Koperator[m[K*(const MatrixBase<MatrixDerived> &matrix,
+[2.234s]       | [01;36m[K^~~~~~~~[m[K
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:313:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.234s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.234s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.234s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.234s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:327[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:325:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class TranspositionsDerived, class MatrixDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::TranspositionsBase<TranspositionsDerived>&, const Eigen::MatrixBase<U>&)[m[K’
+[2.234s]   325 | [01;36m[Koperator[m[K*(const TranspositionsBase<TranspositionsDerived> &transpositions,
+[2.234s]       | [01;36m[K^~~~~~~~[m[K
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:325:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.234s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::TranspositionsBase<TranspositionsDerived>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.234s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.234s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.234s] In file included from [01m[K/usr/include/eigen3/Eigen/Householder:24[m[K,
+[2.234s]                  from [01m[K/usr/include/eigen3/Eigen/QR:15[m[K,
+[2.234s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:4[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:26[m[K,
+[2.234s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.234s] [01m[K/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:513:99:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived, class VectorsType, class CoeffsType, int Side> typename Eigen::internal::matrix_type_times_scalar_type<typename VectorsType::Scalar, OtherDerived>::Type Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::HouseholderSequence<VectorsType, CoeffsType, Side>&)[m[K’
+[2.234s]   513 | typename internal::matrix_type_times_scalar_type<typename VectorsType::Scalar,OtherDerived>::Type [01;36m[Koperator[m[K*(const MatrixBase<OtherDerived>& other, const HouseholderSequence<VectorsType,CoeffsType,Side>& h)
+[2.235s]       |                                                                                                   [01;36m[K^~~~~~~~[m[K
+[2.235s] [01m[K/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:513:99:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.235s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.235s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.235s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.235s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:46[m[K,
+[2.235s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:26[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[2.235s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:135:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Scalar> Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<typename Eigen::internal::traits<T>::Scalar, Scalar>, const Derived, const typename Eigen::internal::plain_constant_type<Expr, Scalar>::type> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::UniformScaling<Scalar>&)[m[K’
+[2.235s]   135 | [01;36m[Koperator[m[K*(const MatrixBase<Derived>& matrix, const UniformScaling<Scalar>& s)
+[2.235s]       | [01;36m[K^~~~~~~~[m[K
+[2.235s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:135:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.235s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.235s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.235s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.235s] In file included from [01m[K/usr/include/ceres/internal/autodiff.h:153[m[K,
+[2.235s]                  from [01m[K/usr/include/ceres/autodiff_cost_function.h:130[m[K,
+[2.235s]                  from [01m[K/usr/include/ceres/ceres.h:37[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:34[m[K:
+[2.235s] [01m[K/usr/include/ceres/jet.h:310:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, int N> ceres::Jet<T, N> ceres::operator*(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&)[m[K’
+[2.235s]   310 | inline Jet<T, N> [01;36m[Koperator[m[K*(const Jet<T, N>& f, const Jet<T, N>& g) {
+[2.235s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.235s] [01m[K/usr/include/ceres/jet.h:310:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.235s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ceres::Jet<T, N>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.235s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.235s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.235s] In file included from [01m[K/usr/include/ceres/internal/autodiff.h:153[m[K,
+[2.235s]                  from [01m[K/usr/include/ceres/autodiff_cost_function.h:130[m[K,
+[2.235s]                  from [01m[K/usr/include/ceres/ceres.h:37[m[K,
+[2.235s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:34[m[K:
+[2.235s] [01m[K/usr/include/ceres/jet.h:316:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, int N> ceres::Jet<T, N> ceres::operator*(const ceres::Jet<T, N>&, T)[m[K’
+[2.235s]   316 | inline Jet<T, N> [01;36m[Koperator[m[K*(const Jet<T, N>& f, T s) {
+[2.235s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.235s] [01m[K/usr/include/ceres/jet.h:316:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.235s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ceres::Jet<T, N>[m[K’ and ‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1>(...)[m[K’
+[2.235s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.236s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.236s] In file included from [01m[K/usr/include/ceres/internal/autodiff.h:153[m[K,
+[2.236s]                  from [01m[K/usr/include/ceres/autodiff_cost_function.h:130[m[K,
+[2.236s]                  from [01m[K/usr/include/ceres/ceres.h:37[m[K,
+[2.236s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:34[m[K:
+[2.236s] [01m[K/usr/include/ceres/jet.h:322:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, int N> ceres::Jet<T, N> ceres::operator*(T, const ceres::Jet<T, N>&)[m[K’
+[2.236s]   322 | inline Jet<T, N> [01;36m[Koperator[m[K*(T s, const Jet<T, N>& f) {
+[2.236s]       |                  [01;36m[K^~~~~~~~[m[K
+[2.236s] [01m[K/usr/include/ceres/jet.h:322:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.236s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:119:50:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[KT[m[K’ (‘[01m[KEigen::Matrix<ceres::Jet<double, 4>, 3, 1, 0, 3, 1> (*)(...)[m[K’ and ‘[01m[Kdouble[m[K’)
+[2.236s]   119 |         Eigen::Matrix<T, 3, 1> angle_axis = [01;36m[Kgyro * T(dt_)[m[K;
+[2.236s]       |                                             [01;36m[K~~~~~^~~~~~~~[m[K
+[2.236s] cc1plus: all warnings being treated as errors
+[2.246s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[2.246s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[2.246s] gmake: *** [Makefile:146: all] Error 2
+[2.247s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

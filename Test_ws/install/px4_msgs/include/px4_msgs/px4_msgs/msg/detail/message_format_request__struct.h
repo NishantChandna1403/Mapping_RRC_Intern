@@ -34,7 +34,7 @@ typedef struct px4_msgs__msg__MessageFormatRequest
   uint64_t timestamp;
   /// Must be set to LATEST_PROTOCOL_VERSION. Do not change this field, it must be the first field after the timestamp
   uint16_t protocol_version;
-  /// E.g. /fmu/in/vehicle_command
+  /// E.g. /px4_1/fmu/in/vehicle_command
   uint8_t topic_name[50];
 } px4_msgs__msg__MessageFormatRequest;
 

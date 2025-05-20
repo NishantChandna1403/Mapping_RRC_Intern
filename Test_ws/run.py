@@ -9,7 +9,7 @@ class PX4GoTo(Node):
         # Subscribe to vehicle status
         self.subscription = self.create_subscription(
             VehicleStatus,
-            '/fmu/out/vehicle_status_v1',  # Updated topic name
+            '/px4_1/fmu/out/vehicle_status_v1',  # Updated topic name
             self.vehicle_status_callback,
             10
         )
@@ -17,7 +17,7 @@ class PX4GoTo(Node):
         # Publisher for GoTo commands
         self.goto_publisher = self.create_publisher(
             TrajectorySetpoint,
-            '/fmu/in/goto_setpoint',
+            '/px4_1/fmu/in/goto_setpoint',
             10
         )
 

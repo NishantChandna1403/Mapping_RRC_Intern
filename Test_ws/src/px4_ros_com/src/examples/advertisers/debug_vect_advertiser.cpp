@@ -49,7 +49,7 @@ public:
 	DebugVectAdvertiser() : Node("debug_vect_advertiser")
 	{
 
-		publisher_ = this->create_publisher<px4_msgs::msg::DebugVect>("/fmu/in/debug_vect", 10);
+		publisher_ = this->create_publisher<px4_msgs::msg::DebugVect>("/px4_1/fmu/in/debug_vect", 10);
 
 		auto timer_callback = [this]()->void {
 			auto debug_vect = px4_msgs::msg::DebugVect();

@@ -1,0 +1,119 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVector genz_icp::pipeline::GenZICP::LocalMap() const[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:84:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst struct genz_icp::VoxelHashMap[m[K’ has no member named ‘[01m[KGetPoints[m[K’; did you mean ‘[01m[KAddPoints[m[K’?
+   84 |     Vector3dVector LocalMap() const { return local_map_.[01;31m[KGetPoints[m[K(); }
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+      |                                                         [32m[KAddPoints[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:51:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP()[m[K’
+   51 | [01;31m[KGenZICP[m[K::GenZICP() : GenZICP(GenZConfig{}) {}
+      | [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZICP&)[m[K’
+   55 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:43:1:[m[K [01;36m[Knote: [m[K                ‘[01m[Kgenz_icp::pipeline::GenZICP::GenZICP(const genz_icp::pipeline::GenZConfig&)[m[K’
+   43 | [01;36m[KGenZICP[m[K::GenZICP(const GenZConfig &config)
+      | [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   55 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:51:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   51 | GenZICP::GenZICP() : GenZICP(GenZConfig{}[01;31m[K)[m[K {}
+      |                                          [01;31m[K^[m[K
+/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp: In instantiation of ‘[01m[Kbool genz_icp::pipeline::IMUResidual::operator()(const T*, const T*, const T*, const T*, const T*, T*) const [with T = ceres::Jet<double, 16>][m[K’:
+[01m[K/usr/include/ceres/internal/variadic_evaluate.h:57:17:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = genz_icp::pipeline::IMUResidual; T = ceres::Jet<double, 16>; int ...Indices = {0, 1, 2, 3, 4}; std::false_type = std::integral_constant<bool, false>][m[K’
+[01m[K/usr/include/ceres/internal/variadic_evaluate.h:79:30:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ceres::internal::ParameterDims<false, 3, 4, 3, 3, 3>; Functor = genz_icp::pipeline::IMUResidual; T = ceres::Jet<double, 16>][m[K’
+[01m[K/usr/include/ceres/internal/variadic_evaluate.h:108:45:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ceres::internal::ParameterDims<false, 3, 4, 3, 3, 3>; Functor = genz_icp::pipeline::IMUResidual; T = ceres::Jet<double, 16>][m[K’
+[01m[K/usr/include/ceres/internal/autodiff.h:351:39:[m[K   required from ‘[01m[Kbool ceres::internal::AutoDifferentiate(const Functor&, const T* const*, int, T*, T**) [with int kNumResiduals = 9; ParameterDims = ceres::internal::ParameterDims<false, 3, 4, 3, 3, 3>; Functor = genz_icp::pipeline::IMUResidual; T = double][m[K’
+[01m[K/usr/include/ceres/autodiff_cost_function.h:210:69:[m[K   required from ‘[01m[Kbool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = genz_icp::pipeline::IMUResidual; int kNumResiduals = 9; int ...Ns = {3, 4, 3, 3, 3}][m[K’
+[01m[K/usr/include/ceres/autodiff_cost_function.h:200:8:[m[K   required from here
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::Quaternion<ceres::Jet<double, 16>, 0>::Quaternion(const double&, const double&, const double&, const double&)[m[K’
+  134 |         Eigen::Quaternion<T> [01;31m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+      |                              [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:317:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherScalar, int OtherOptions> Eigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::Quaternion<OtherScalar, OtherOptions>&) [with OtherScalar = OtherScalar; int OtherOptions = OtherOptions; _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+  317 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const Quaternion<OtherScalar, OtherOptions>& other)
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:317:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::Quaternion<_Scalar, _Options>[m[K’ and ‘[01m[Kconst double[m[K’
+  134 |         Eigen::Quaternion<T> [01;36m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+      |                              [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:313:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived> Eigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::MatrixBase<OtherDerived>&) [with Derived = Derived; _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+  313 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const MatrixBase<Derived>& other) { *this = other; }
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:313:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[Kconst double[m[K’
+  134 |         Eigen::Quaternion<T> [01;36m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+      |                              [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:303:65:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived> Eigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::QuaternionBase<OtherDerived>&) [with Derived = Derived; _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+  303 |   template<class Derived> EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE [01;36m[KQuaternion[m[K(const QuaternionBase<Derived>& other) { this->Base::operator=(other); }
+      |                                                                 [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:303:65:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:134:30:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::QuaternionBase<Derived>[m[K’ and ‘[01m[Kconst double[m[K’
+  134 |         Eigen::Quaternion<T> [01;36m[Kimu_quat[m[K(imu_meas_.delta_pose.unit_quaternion().w(),
+      |                              [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:42[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:323:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(Eigen::Quaternion<Scalar, Options>&&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+  323 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K(Quaternion&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_constructible<Scalar>::value)
+      |                            [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:323:28:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:306:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const AngleAxisType&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0; Eigen::Quaternion<Scalar, Options>::AngleAxisType = Eigen::AngleAxis<ceres::Jet<double, 16> >][m[K’
+  306 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const AngleAxisType& aa) { *this = aa; }
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:306:37:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:300:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const Scalar*) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0; Eigen::Quaternion<Scalar, Options>::Scalar = ceres::Jet<double, 16>][m[K’
+  300 |   EIGEN_DEVICE_FUNC explicit inline [01;36m[KQuaternion[m[K(const Scalar* data) : m_coeffs(data) {}
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:300:37:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:297:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const Scalar&, const Scalar&, const Scalar&, const Scalar&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0; Eigen::Quaternion<Scalar, Options>::Scalar = ceres::Jet<double, 16>][m[K’
+  297 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K(const Scalar& w, const Scalar& x, const Scalar& y, const Scalar& z) : m_coeffs(x, y, z, w){}
+      |                            [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:297:53:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst double[m[K’ to ‘[01m[Kconst Scalar&[m[K’ {aka ‘[01m[Kconst ceres::Jet<double, 16>&[m[K’}
+  297 |   EIGEN_DEVICE_FUNC inline Quaternion([01;36m[Kconst Scalar& w[m[K, const Scalar& x, const Scalar& y, const Scalar& z) : m_coeffs(x, y, z, w){}
+      |                                       [01;36m[K~~~~~~~~~~~~~~^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:288:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion() [with _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+  288 |   EIGEN_DEVICE_FUNC inline [01;36m[KQuaternion[m[K() {}
+      |                            [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:288:28:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/rotation_matrix.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:25[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:281:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Quaternion<Scalar, Options>::Quaternion(const Eigen::Quaternion<Scalar, Options>&) [with _Scalar = ceres::Jet<double, 16>; int _Options = 0][m[K’
+  281 |   [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Quaternion)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:281:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

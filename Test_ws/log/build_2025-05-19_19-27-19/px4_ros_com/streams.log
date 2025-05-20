@@ -1,0 +1,15 @@
+[0.250s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/px4_ros_com -- -j12 -l12
+[0.296s] [ 16%] Built target debug_vect_advertiser
+[0.297s] [ 33%] Built target offboard_control
+[0.299s] [ 50%] Built target vehicle_gps_position_listener
+[0.299s] [ 66%] Built target frame_transforms
+[0.300s] [ 66%] Built target ament_cmake_python_copy_px4_ros_com
+[0.301s] [ 83%] Built target offboard_control_srv
+[0.301s] [100%] Built target sensor_combined_listener
+[0.514s] running egg_info
+[0.523s] writing px4_ros_com.egg-info/PKG-INFO
+[0.523s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.523s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.547s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.548s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.581s] [100%] Built target ament_cmake_python_build_px4_ros_com_egg

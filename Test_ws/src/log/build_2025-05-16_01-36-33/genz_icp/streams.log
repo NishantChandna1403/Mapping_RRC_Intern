@@ -1,0 +1,388 @@
+[0.011s] Invoking command in '/home/nishant/RRC_Project/Test_ws/src/build/genz_icp': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/src/build/genz_icp -- -j12 -l12
+[0.250s] [ 42%] Built target core
+[0.251s] [ 57%] Built target metrics
+[0.251s] [ 71%] Built target odometry_node
+[0.251s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.251s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[4.835s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.836s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.836s] /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp: In instantiation of ‘[01m[Kbool genz_icp::pipeline::IMUPreintegrationResidual::operator()(const T*, const T*, const T*, const T*, const T*, const T*, T*) const [with T = double][m[K’:
+[4.836s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:57:17:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = double; int ...Indices = {0, 1, 2, 3, 4, 5}; std::false_type = std::integral_constant<bool, false>][m[K’
+[4.836s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:79:30:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ceres::internal::ParameterDims<false, 7, 3, 6, 7, 3, 6>; Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = double][m[K’
+[4.836s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:108:45:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ceres::internal::ParameterDims<false, 7, 3, 6, 7, 3, 6>; Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = double][m[K’
+[4.836s] [01m[K/usr/include/ceres/autodiff_cost_function.h:207:55:[m[K   required from ‘[01m[Kbool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = genz_icp::pipeline::IMUPreintegrationResidual; int kNumResiduals = 15; int ...Ns = {7, 3, 6, 7, 3, 6}][m[K’
+[4.836s] [01m[K/usr/include/ceres/autodiff_cost_function.h:200:8:[m[K   required from here
+[4.836s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand types are ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} and ‘[01m[KEigen::Quaternion<double>[m[K’)
+[4.836s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;31m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.837s]       |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.837s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:358:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Sophus::SO3Base<Derived>::SO3Product<OtherDerived> Sophus::SO3Base<Derived>::operator*(const Sophus::SO3Base<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Sophus::SO3<double>][m[K’
+[4.837s]   358 |   SOPHUS_FUNC SO3Product<OtherDerived> [01;36m[Koperator[m[K*(
+[4.837s]       |                                        [01;36m[K^~~~~~~~[m[K
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:358:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.837s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<double>[m[K’ is not derived from ‘[01m[Kconst Sophus::SO3Base<OtherDerived>[m[K’
+[4.837s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.837s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.837s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:388:42:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointDerived, class> Sophus::SO3Base<Derived>::PointProduct<PointDerived> Sophus::SO3Base<Derived>::operator*(const Eigen::MatrixBase<OtherDerived>&) const [with PointDerived = PointDerived; <template-parameter-2-2> = <template-parameter-1-2>; Derived = Sophus::SO3<double>][m[K’
+[4.837s]   388 |   SOPHUS_FUNC PointProduct<PointDerived> [01;36m[Koperator[m[K*(
+[4.837s]       |                                          [01;36m[K^~~~~~~~[m[K
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:388:42:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.837s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<double>[m[K’ is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.837s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.837s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.837s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.837s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.837s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:403:54:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class HPointDerived, class> Sophus::SO3Base<Derived>::HomogeneousPointProduct<HPointDerived> Sophus::SO3Base<Derived>::operator*(const Eigen::MatrixBase<OtherDerived>&) const [with HPointDerived = HPointDerived; <template-parameter-2-2> = <template-parameter-1-2>; Derived = Sophus::SO3<double>][m[K’
+[4.838s]   403 |   SOPHUS_FUNC HomogeneousPointProduct<HPointDerived> [01;36m[Koperator[m[K*(
+[4.838s]       |                                                      [01;36m[K^~~~~~~~[m[K
+[4.838s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:403:54:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.838s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.838s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.838s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<double>[m[K’ is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.838s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.838s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.838s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.838s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.838s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.838s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.839s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:416:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSophus::SO3Base<Derived>::Line Sophus::SO3Base<Derived>::operator*(const Line&) const [with Derived = Sophus::SO3<double>; Sophus::SO3Base<Derived>::Line = Eigen::ParametrizedLine<double, 3, 0>][m[K’
+[4.839s]   416 |   SOPHUS_FUNC Line [01;36m[Koperator[m[K*(Line const& l) const {
+[4.839s]       |                    [01;36m[K^~~~~~~~[m[K
+[4.839s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:416:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEigen::Quaternion<double>[m[K’ to ‘[01m[Kconst Line&[m[K’ {aka ‘[01m[Kconst Eigen::ParametrizedLine<double, 3, 0>&[m[K’}
+[4.839s]   416 |   SOPHUS_FUNC Line operator*([01;36m[KLine const& l[m[K) const {
+[4.839s]       |                              [01;36m[K~~~~~~~~~~~~^[m[K
+[4.839s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:428:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSophus::SO3Base<Derived>::Hyperplane Sophus::SO3Base<Derived>::operator*(const Hyperplane&) const [with Derived = Sophus::SO3<double>; Sophus::SO3Base<Derived>::Hyperplane = Eigen::Hyperplane<double, 3, 0>][m[K’
+[4.839s]   428 |   SOPHUS_FUNC Hyperplane [01;36m[Koperator[m[K*(Hyperplane const& p) const {
+[4.839s]       |                          [01;36m[K^~~~~~~~[m[K
+[4.839s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:428:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEigen::Quaternion<double>[m[K’ to ‘[01m[Kconst Hyperplane&[m[K’ {aka ‘[01m[Kconst Eigen::Hyperplane<double, 3, 0>&[m[K’}
+[4.839s]   428 |   SOPHUS_FUNC Hyperplane operator*([01;36m[KHyperplane const& p[m[K) const {
+[4.839s]       |                                    [01;36m[K~~~~~~~~~~~~~~~~~~^[m[K
+[4.839s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:40[m[K,
+[4.839s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.839s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.839s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.839s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:76:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::RotationBase<Eigen::Quaternion<double>, 3>::RotationMatrixType Eigen::operator*(const Eigen::EigenBase<Derived>&, const Eigen::Quaternion<double>&)[m[K’
+[4.839s]    76 |     EIGEN_DEVICE_FUNC inline RotationMatrixType [01;36m[Koperator[m[K*(const EigenBase<OtherDerived>& l, const Derived& r)
+[4.839s]       |                                                 [01;36m[K^~~~~~~~[m[K
+[4.839s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:76:49:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.839s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.839s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.839s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’
+[4.839s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.839s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.839s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:326[m[K,
+[4.839s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.839s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.839s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:515:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MatrixDerived, class PermutationDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::PermutationBase<PermutationDerived>&)[m[K’
+[4.839s]   515 | [01;36m[Koperator[m[K*(const MatrixBase<MatrixDerived> &matrix,
+[4.839s]       | [01;36m[K^~~~~~~~[m[K
+[4.840s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:515:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.840s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.840s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.840s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.840s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.840s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.840s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:326[m[K,
+[4.840s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.840s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.840s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:527:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PermutationDerived, class MatrixDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::PermutationBase<PermutationDerived>&, const Eigen::MatrixBase<U>&)[m[K’
+[4.840s]   527 | [01;36m[Koperator[m[K*(const PermutationBase<PermutationDerived> &permutation,
+[4.840s]       | [01;36m[K^~~~~~~~[m[K
+[4.840s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:527:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.840s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.840s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.840s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::PermutationBase<PermutationDerived>[m[K’
+[4.840s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.840s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.840s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:327[m[K,
+[4.840s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.840s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.840s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:313:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MatrixDerived, class TranspositionsDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::TranspositionsBase<TranspositionsDerived>&)[m[K’
+[4.841s]   313 | [01;36m[Koperator[m[K*(const MatrixBase<MatrixDerived> &matrix,
+[4.841s]       | [01;36m[K^~~~~~~~[m[K
+[4.841s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:313:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.841s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.841s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.841s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.841s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.841s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.841s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:327[m[K,
+[4.841s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.841s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.841s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:325:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class TranspositionsDerived, class MatrixDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::TranspositionsBase<TranspositionsDerived>&, const Eigen::MatrixBase<U>&)[m[K’
+[4.841s]   325 | [01;36m[Koperator[m[K*(const TranspositionsBase<TranspositionsDerived> &transpositions,
+[4.841s]       | [01;36m[K^~~~~~~~[m[K
+[4.841s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:325:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.841s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.841s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.842s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::TranspositionsBase<TranspositionsDerived>[m[K’
+[4.842s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.842s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.842s] In file included from [01m[K/usr/include/eigen3/Eigen/Householder:24[m[K,
+[4.842s]                  from [01m[K/usr/include/eigen3/Eigen/QR:15[m[K,
+[4.842s]                  from [01m[K/usr/include/eigen3/Eigen/SVD:11[m[K,
+[4.842s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:13[m[K,
+[4.842s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.842s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.842s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.842s] [01m[K/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:513:99:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived, class VectorsType, class CoeffsType, int Side> typename Eigen::internal::matrix_type_times_scalar_type<typename VectorsType::Scalar, OtherDerived>::Type Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::HouseholderSequence<VectorsType, CoeffsType, Side>&)[m[K’
+[4.842s]   513 | typename internal::matrix_type_times_scalar_type<typename VectorsType::Scalar,OtherDerived>::Type [01;36m[Koperator[m[K*(const MatrixBase<OtherDerived>& other, const HouseholderSequence<VectorsType,CoeffsType,Side>& h)
+[4.842s]       |                                                                                                   [01;36m[K^~~~~~~~[m[K
+[4.842s] [01m[K/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:513:99:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.842s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.843s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.843s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.843s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.844s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.844s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:46[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.844s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:135:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Scalar> Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<typename Eigen::internal::traits<T>::Scalar, Scalar>, const Derived, const typename Eigen::internal::plain_constant_type<Expr, Scalar>::type> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::UniformScaling<Scalar>&)[m[K’
+[4.844s]   135 | [01;36m[Koperator[m[K*(const MatrixBase<Derived>& matrix, const UniformScaling<Scalar>& s)
+[4.844s]       | [01;36m[K^~~~~~~~[m[K
+[4.844s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:135:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.844s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.844s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.844s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.844s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.844s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:40[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.844s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.844s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:80:66:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Transform<double, 3, 2> Eigen::operator*(const Eigen::DiagonalMatrix<double, 3>&, const Eigen::Quaternion<double>&)[m[K’
+[4.844s]    80 |     EIGEN_DEVICE_FUNC friend inline Transform<Scalar,Dim,Affine> [01;36m[Koperator[m[K*(const DiagonalMatrix<Scalar,Dim>& l, const Derived& r)
+[4.844s]       |                                                                  [01;36m[K^~~~~~~~[m[K
+[4.845s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:80:110:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KSophus::SO3Base<Sophus::SO3<double> >::SO3Product<Sophus::SO3<double> >[m[K’ {aka ‘[01m[KSophus::SO3<double>[m[K’} to ‘[01m[Kconst Eigen::DiagonalMatrix<double, 3>&[m[K’
+[4.845s]    80 |     EIGEN_DEVICE_FUNC friend inline Transform<Scalar,Dim,Affine> operator*([01;36m[Kconst DiagonalMatrix<Scalar,Dim>& l[m[K, const Derived& r)
+[4.845s]       |                                                                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.845s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.845s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.845s] /home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp: In instantiation of ‘[01m[Kbool genz_icp::pipeline::IMUPreintegrationResidual::operator()(const T*, const T*, const T*, const T*, const T*, const T*, T*) const [with T = ceres::Jet<double, 32>][m[K’:
+[4.845s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:57:17:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = ceres::Jet<double, 32>; int ...Indices = {0, 1, 2, 3, 4, 5}; std::false_type = std::integral_constant<bool, false>][m[K’
+[4.845s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:79:30:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ceres::internal::ParameterDims<false, 7, 3, 6, 7, 3, 6>; Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = ceres::Jet<double, 32>][m[K’
+[4.845s] [01m[K/usr/include/ceres/internal/variadic_evaluate.h:108:45:[m[K   required from ‘[01m[Kbool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ceres::internal::ParameterDims<false, 7, 3, 6, 7, 3, 6>; Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = ceres::Jet<double, 32>][m[K’
+[4.845s] [01m[K/usr/include/ceres/internal/autodiff.h:351:39:[m[K   required from ‘[01m[Kbool ceres::internal::AutoDifferentiate(const Functor&, const T* const*, int, T*, T**) [with int kNumResiduals = 15; ParameterDims = ceres::internal::ParameterDims<false, 7, 3, 6, 7, 3, 6>; Functor = genz_icp::pipeline::IMUPreintegrationResidual; T = double][m[K’
+[4.845s] [01m[K/usr/include/ceres/autodiff_cost_function.h:210:69:[m[K   required from ‘[01m[Kbool ceres::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = genz_icp::pipeline::IMUPreintegrationResidual; int kNumResiduals = 15; int ...Ns = {7, 3, 6, 7, 3, 6}][m[K’
+[4.845s] [01m[K/usr/include/ceres/autodiff_cost_function.h:200:8:[m[K   required from here
+[4.845s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand types are ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} and ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’)
+[4.845s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;31m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.845s]       |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.845s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.845s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.845s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.845s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.845s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:358:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Sophus::SO3Base<Derived>::SO3Product<OtherDerived> Sophus::SO3Base<Derived>::operator*(const Sophus::SO3Base<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Sophus::SO3<ceres::Jet<double, 32>, 0>][m[K’
+[4.845s]   358 |   SOPHUS_FUNC SO3Product<OtherDerived> [01;36m[Koperator[m[K*(
+[4.845s]       |                                        [01;36m[K^~~~~~~~[m[K
+[4.845s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:358:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.845s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.845s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.846s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’ is not derived from ‘[01m[Kconst Sophus::SO3Base<OtherDerived>[m[K’
+[4.846s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.846s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.846s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.846s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:388:42:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointDerived, class> Sophus::SO3Base<Derived>::PointProduct<PointDerived> Sophus::SO3Base<Derived>::operator*(const Eigen::MatrixBase<OtherDerived>&) const [with PointDerived = PointDerived; <template-parameter-2-2> = <template-parameter-1-2>; Derived = Sophus::SO3<ceres::Jet<double, 32>, 0>][m[K’
+[4.846s]   388 |   SOPHUS_FUNC PointProduct<PointDerived> [01;36m[Koperator[m[K*(
+[4.846s]       |                                          [01;36m[K^~~~~~~~[m[K
+[4.846s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:388:42:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.846s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.846s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’ is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.846s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.846s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.846s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.846s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:403:54:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class HPointDerived, class> Sophus::SO3Base<Derived>::HomogeneousPointProduct<HPointDerived> Sophus::SO3Base<Derived>::operator*(const Eigen::MatrixBase<OtherDerived>&) const [with HPointDerived = HPointDerived; <template-parameter-2-2> = <template-parameter-1-2>; Derived = Sophus::SO3<ceres::Jet<double, 32>, 0>][m[K’
+[4.846s]   403 |   SOPHUS_FUNC HomogeneousPointProduct<HPointDerived> [01;36m[Koperator[m[K*(
+[4.846s]       |                                                      [01;36m[K^~~~~~~~[m[K
+[4.846s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:403:54:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.846s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.846s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.847s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’ is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.847s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.847s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.847s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/se3.hpp:6[m[K,
+[4.847s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:6[m[K,
+[4.847s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.847s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.847s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:416:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSophus::SO3Base<Derived>::Line Sophus::SO3Base<Derived>::operator*(const Line&) const [with Derived = Sophus::SO3<ceres::Jet<double, 32>, 0>; Sophus::SO3Base<Derived>::Line = Eigen::ParametrizedLine<ceres::Jet<double, 32>, 3, 0>][m[K’
+[4.848s]   416 |   SOPHUS_FUNC Line [01;36m[Koperator[m[K*(Line const& l) const {
+[4.848s]       |                    [01;36m[K^~~~~~~~[m[K
+[4.848s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:416:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’ to ‘[01m[Kconst Line&[m[K’ {aka ‘[01m[Kconst Eigen::ParametrizedLine<ceres::Jet<double, 32>, 3, 0>&[m[K’}
+[4.849s]   416 |   SOPHUS_FUNC Line operator*([01;36m[KLine const& l[m[K) const {
+[4.849s]       |                              [01;36m[K~~~~~~~~~~~~^[m[K
+[4.849s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:428:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSophus::SO3Base<Derived>::Hyperplane Sophus::SO3Base<Derived>::operator*(const Hyperplane&) const [with Derived = Sophus::SO3<ceres::Jet<double, 32>, 0>; Sophus::SO3Base<Derived>::Hyperplane = Eigen::Hyperplane<ceres::Jet<double, 32>, 3, 0>][m[K’
+[4.850s]   428 |   SOPHUS_FUNC Hyperplane [01;36m[Koperator[m[K*(Hyperplane const& p) const {
+[4.850s]       |                          [01;36m[K^~~~~~~~[m[K
+[4.850s] [01m[K/home/nishant/RRC_Project/Test_ws/src/build/genz_icp/_deps/sophus-src/sophus/so3.hpp:428:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’ to ‘[01m[Kconst Hyperplane&[m[K’ {aka ‘[01m[Kconst Eigen::Hyperplane<ceres::Jet<double, 32>, 3, 0>&[m[K’}
+[4.850s]   428 |   SOPHUS_FUNC Hyperplane operator*([01;36m[KHyperplane const& p[m[K) const {
+[4.850s]       |                                    [01;36m[K~~~~~~~~~~~~~~~~~~^[m[K
+[4.850s] In file included from [01m[K/usr/include/ceres/internal/autodiff.h:153[m[K,
+[4.850s]                  from [01m[K/usr/include/ceres/autodiff_cost_function.h:130[m[K,
+[4.850s]                  from [01m[K/usr/include/ceres/ceres.h:37[m[K,
+[4.850s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:7[m[K,
+[4.850s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.850s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.850s] [01m[K/usr/include/ceres/jet.h:310:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, int N> ceres::Jet<T, N> ceres::operator*(const ceres::Jet<T, N>&, const ceres::Jet<T, N>&)[m[K’
+[4.850s]   310 | inline Jet<T, N> [01;36m[Koperator[m[K*(const Jet<T, N>& f, const Jet<T, N>& g) {
+[4.850s]       |                  [01;36m[K^~~~~~~~[m[K
+[4.850s] [01m[K/usr/include/ceres/jet.h:310:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.850s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.850s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.851s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst ceres::Jet<T, N>[m[K’
+[4.851s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.851s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.851s] In file included from [01m[K/usr/include/ceres/internal/autodiff.h:153[m[K,
+[4.851s]                  from [01m[K/usr/include/ceres/autodiff_cost_function.h:130[m[K,
+[4.851s]                  from [01m[K/usr/include/ceres/ceres.h:37[m[K,
+[4.851s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:7[m[K,
+[4.851s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.851s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.851s] [01m[K/usr/include/ceres/jet.h:316:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, int N> ceres::Jet<T, N> ceres::operator*(const ceres::Jet<T, N>&, T)[m[K’
+[4.851s]   316 | inline Jet<T, N> [01;36m[Koperator[m[K*(const Jet<T, N>& f, T s) {
+[4.851s]       |                  [01;36m[K^~~~~~~~[m[K
+[4.851s] [01m[K/usr/include/ceres/jet.h:316:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.851s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.851s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.851s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst ceres::Jet<T, N>[m[K’
+[4.851s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.851s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.852s] In file included from [01m[K/usr/include/ceres/internal/autodiff.h:153[m[K,
+[4.852s]                  from [01m[K/usr/include/ceres/autodiff_cost_function.h:130[m[K,
+[4.852s]                  from [01m[K/usr/include/ceres/ceres.h:37[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:7[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.852s] [01m[K/usr/include/ceres/jet.h:322:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, int N> ceres::Jet<T, N> ceres::operator*(T, const ceres::Jet<T, N>&)[m[K’
+[4.852s]   322 | inline Jet<T, N> [01;36m[Koperator[m[K*(T s, const Jet<T, N>& f) {
+[4.852s]       |                  [01;36m[K^~~~~~~~[m[K
+[4.852s] [01m[K/usr/include/ceres/jet.h:322:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.852s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.852s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KEigen::Quaternion<ceres::Jet<double, 32>, 0>[m[K’ is not derived from ‘[01m[Kconst ceres::Jet<T, N>[m[K’
+[4.852s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.852s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.852s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:40[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.852s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:76:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::RotationBase<Eigen::Quaternion<ceres::Jet<double, 32>, 0>, 3>::RotationMatrixType Eigen::operator*(const Eigen::EigenBase<Derived>&, const Eigen::Quaternion<ceres::Jet<double, 32>, 0>&)[m[K’
+[4.852s]    76 |     EIGEN_DEVICE_FUNC inline RotationMatrixType [01;36m[Koperator[m[K*(const EigenBase<OtherDerived>& l, const Derived& r)
+[4.852s]       |                                                 [01;36m[K^~~~~~~~[m[K
+[4.852s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:76:49:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.852s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.852s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’
+[4.852s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.852s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.852s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:326[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.852s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:515:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MatrixDerived, class PermutationDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::PermutationBase<PermutationDerived>&)[m[K’
+[4.852s]   515 | [01;36m[Koperator[m[K*(const MatrixBase<MatrixDerived> &matrix,
+[4.852s]       | [01;36m[K^~~~~~~~[m[K
+[4.852s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:515:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.852s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.852s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.853s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.853s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.853s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:326[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:527:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PermutationDerived, class MatrixDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::PermutationBase<PermutationDerived>&, const Eigen::MatrixBase<U>&)[m[K’
+[4.853s]   527 | [01;36m[Koperator[m[K*(const PermutationBase<PermutationDerived> &permutation,
+[4.853s]       | [01;36m[K^~~~~~~~[m[K
+[4.853s] [01m[K/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:527:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.853s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::PermutationBase<PermutationDerived>[m[K’
+[4.853s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.853s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.853s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:327[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:313:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MatrixDerived, class TranspositionsDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::TranspositionsBase<TranspositionsDerived>&)[m[K’
+[4.853s]   313 | [01;36m[Koperator[m[K*(const MatrixBase<MatrixDerived> &matrix,
+[4.853s]       | [01;36m[K^~~~~~~~[m[K
+[4.853s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:313:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.853s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.853s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.853s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.853s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:327[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:3[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:325:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class TranspositionsDerived, class MatrixDerived> const Eigen::Product<MatrixDerived, PermutationDerived, 2> Eigen::operator*(const Eigen::TranspositionsBase<TranspositionsDerived>&, const Eigen::MatrixBase<U>&)[m[K’
+[4.853s]   325 | [01;36m[Koperator[m[K*(const TranspositionsBase<TranspositionsDerived> &transpositions,
+[4.853s]       | [01;36m[K^~~~~~~~[m[K
+[4.853s] [01m[K/usr/include/eigen3/Eigen/src/Core/Transpositions.h:325:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.853s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.853s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.853s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::TranspositionsBase<TranspositionsDerived>[m[K’
+[4.853s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.854s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.854s] In file included from [01m[K/usr/include/eigen3/Eigen/Householder:24[m[K,
+[4.854s]                  from [01m[K/usr/include/eigen3/Eigen/QR:15[m[K,
+[4.854s]                  from [01m[K/usr/include/eigen3/Eigen/SVD:11[m[K,
+[4.854s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:13[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.854s] [01m[K/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:513:99:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived, class VectorsType, class CoeffsType, int Side> typename Eigen::internal::matrix_type_times_scalar_type<typename VectorsType::Scalar, OtherDerived>::Type Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::HouseholderSequence<VectorsType, CoeffsType, Side>&)[m[K’
+[4.854s]   513 | typename internal::matrix_type_times_scalar_type<typename VectorsType::Scalar,OtherDerived>::Type [01;36m[Koperator[m[K*(const MatrixBase<OtherDerived>& other, const HouseholderSequence<VectorsType,CoeffsType,Side>& h)
+[4.854s]       |                                                                                                   [01;36m[K^~~~~~~~[m[K
+[4.854s] [01m[K/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:513:99:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.854s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.854s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.854s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.854s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.854s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:46[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.854s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:135:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Scalar> Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<typename Eigen::internal::traits<T>::Scalar, Scalar>, const Derived, const typename Eigen::internal::plain_constant_type<Expr, Scalar>::type> Eigen::operator*(const Eigen::MatrixBase<Derived>&, const Eigen::UniformScaling<Scalar>&)[m[K’
+[4.854s]   135 | [01;36m[Koperator[m[K*(const MatrixBase<Derived>& matrix, const UniformScaling<Scalar>& s)
+[4.854s]       | [01;36m[K^~~~~~~~[m[K
+[4.854s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:135:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.854s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.854s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:120:69:[m[K [01;36m[Knote: [m[K  ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} is not derived from ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’
+[4.854s]   120 |         Eigen::Matrix<T, 3, 1> q_err = [01;36m[K(delta_R.inverse() * q_i_inv * q_j)[m[K.log();
+[4.854s]       |                                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.854s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:40[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/IMUPreintegrator.hpp:4[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:7[m[K,
+[4.854s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[4.854s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:80:66:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Transform<ceres::Jet<double, 32>, 3, 2, 0> Eigen::operator*(const Eigen::DiagonalMatrix<ceres::Jet<double, 32>, 3, 3>&, const Eigen::Quaternion<ceres::Jet<double, 32>, 0>&)[m[K’
+[4.854s]    80 |     EIGEN_DEVICE_FUNC friend inline Transform<Scalar,Dim,Affine> [01;36m[Koperator[m[K*(const DiagonalMatrix<Scalar,Dim>& l, const Derived& r)
+[4.854s]       |                                                                  [01;36m[K^~~~~~~~[m[K
+[4.854s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:80:110:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KSophus::SO3Base<Sophus::SO3<ceres::Jet<double, 32>, 0> >::SO3Product<Sophus::SO3<ceres::Jet<double, 32>, 0> >[m[K’ {aka ‘[01m[KSophus::SO3<ceres::Jet<double, 32>, 0>[m[K’} to ‘[01m[Kconst Eigen::DiagonalMatrix<ceres::Jet<double, 32>, 3, 3>&[m[K’
+[4.855s]    80 |     EIGEN_DEVICE_FUNC friend inline Transform<Scalar,Dim,Affine> operator*([01;36m[Kconst DiagonalMatrix<Scalar,Dim>& l[m[K, const Derived& r)
+[4.855s]       |                                                                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.855s] gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+[4.855s] gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+[4.855s] gmake: *** [Makefile:146: all] Error 2
+[4.855s] Invoked command in '/home/nishant/RRC_Project/Test_ws/src/build/genz_icp' returned '2': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/src/build/genz_icp -- -j12 -l12

@@ -1,0 +1,17 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:359:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct genz_icp::pipeline::GenZConfig[m[K’ has no member named ‘[01m[Kkernel[m[K’
+  359 |             processed_frame, local_map_, icp_pose, config_.[01;31m[Kkernel[m[K, config_.max_correspondence_distance);
+      |                                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:359:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct genz_icp::pipeline::GenZConfig[m[K’ has no member named ‘[01m[Kmax_correspondence_distance[m[K’
+  359 |             processed_frame, local_map_, icp_pose, config_.kernel, config_.[01;31m[Kmax_correspondence_distance[m[K);
+      |                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorPair genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const genz_icp::pipeline::IMUData&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:407:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct genz_icp::pipeline::GenZConfig[m[K’ has no member named ‘[01m[Kkernel[m[K’
+  407 |             processed_frame, local_map_, icp_pose, config_.[01;31m[Kkernel[m[K, config_.max_correspondence_distance);
+      |                                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:407:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct genz_icp::pipeline::GenZConfig[m[K’ has no member named ‘[01m[Kmax_correspondence_distance[m[K’
+  407 |             processed_frame, local_map_, icp_pose, config_.kernel, config_.[01;31m[Kmax_correspondence_distance[m[K);
+      |                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

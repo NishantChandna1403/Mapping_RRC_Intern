@@ -1,0 +1,34 @@
+[0.002s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.051s] [ 14%] Built target odometry_node
+[0.054s] [ 28%] Built target metrics
+[0.066s] [ 71%] Built target core
+[0.090s] [ 85%] Built target pipeline
+[0.120s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[11.502s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[11.502s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:208:50:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KPointCloud2ToEigen(const ConstSharedPtr&)[m[K’ is ambiguous
+[11.502s]   208 |     const auto points = [01;31m[Kutils::PointCloud2ToEigen(msg)[m[K;
+[11.502s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.502s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:2[m[K:
+[11.502s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:35:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > genz_icp_ros::utils::PointCloud2ToEigen(const ConstSharedPtr&)[m[K’
+[11.502s]    35 |     std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr& msg);
+[11.503s]       |                                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.503s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:3[m[K:
+[11.503s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:200:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > genz_icp_ros::utils::PointCloud2ToEigen(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’
+[11.503s]   200 | inline std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const PointCloud2::ConstSharedPtr msg) {
+[11.503s]       |                                     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.503s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[11.503s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:212:36:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KGetTimestamps(const ConstSharedPtr&)[m[K’ is ambiguous
+[11.503s]   212 |         return [01;31m[Kutils::GetTimestamps(msg)[m[K;
+[11.503s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[11.503s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:2[m[K:
+[11.503s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:36:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<double> genz_icp_ros::utils::GetTimestamps(const ConstSharedPtr&)[m[K’
+[11.503s]    36 |     std::vector<double> [01;36m[KGetTimestamps[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr& msg);
+[11.503s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[11.504s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:3[m[K:
+[11.504s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:191:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<double> genz_icp_ros::utils::GetTimestamps(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’
+[11.504s]   191 | inline std::vector<double> [01;36m[KGetTimestamps[m[K(const PointCloud2::ConstSharedPtr msg) {
+[11.504s]       |                            [01;36m[K^~~~~~~~~~~~~[m[K
+[11.504s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[11.504s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[11.504s] gmake: *** [Makefile:146: all] Error 2
+[11.507s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

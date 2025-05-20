@@ -1,0 +1,63 @@
+[0.786s] Invoking command in '/home/nishant/RRC_Project/Test_ws/src/ROS2_PX4_Offboard_Example/px4_offboard': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages:/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/px4_offboard build --build-base /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build install --record /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/install.log --single-version-externally-managed install_data
+[1.037s] running egg_info
+[1.037s] creating ../../build/px4_offboard/px4_offboard.egg-info
+[1.045s] writing ../../build/px4_offboard/px4_offboard.egg-info/PKG-INFO
+[1.046s] writing dependency_links to ../../build/px4_offboard/px4_offboard.egg-info/dependency_links.txt
+[1.046s] writing entry points to ../../build/px4_offboard/px4_offboard.egg-info/entry_points.txt
+[1.046s] writing requirements to ../../build/px4_offboard/px4_offboard.egg-info/requires.txt
+[1.046s] writing top-level names to ../../build/px4_offboard/px4_offboard.egg-info/top_level.txt
+[1.046s] writing manifest file '../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[1.070s] reading manifest file '../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[1.070s] adding license file 'LICENSE'
+[1.070s] writing manifest file '../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[1.070s] running build
+[1.070s] running build_py
+[1.070s] creating /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build
+[1.070s] creating /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib
+[1.070s] creating /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.070s] copying px4_offboard/pcl_converter.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.172s] copying px4_offboard/processes.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.172s] copying px4_offboard/control.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.173s] copying px4_offboard/run.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.173s] copying px4_offboard/visualizer.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.174s] copying px4_offboard/mapper.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.174s] copying px4_offboard/__init__.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.174s] copying px4_offboard/velocity_control.py -> /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard
+[1.175s] running install
+[1.179s] running install_lib
+[1.188s] creating /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/pcl_converter.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/processes.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/control.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/run.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/visualizer.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/mapper.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/__init__.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.188s] copying /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build/lib/px4_offboard/velocity_control.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[1.189s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/pcl_converter.py to pcl_converter.cpython-310.pyc
+[1.189s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/processes.py to processes.cpython-310.pyc
+[1.189s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/control.py to control.cpython-310.pyc
+[1.190s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/run.py to run.cpython-310.pyc
+[1.190s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/visualizer.py to visualizer.cpython-310.pyc
+[1.191s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/mapper.py to mapper.cpython-310.pyc
+[1.192s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/__init__.py to __init__.cpython-310.pyc
+[1.192s] byte-compiling /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/velocity_control.py to velocity_control.cpython-310.pyc
+[1.193s] running install_data
+[1.193s] creating /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/ament_index
+[1.193s] creating /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/ament_index/resource_index
+[1.193s] creating /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/ament_index/resource_index/packages
+[1.193s] copying resource/px4_offboard -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/ament_index/resource_index/packages
+[1.193s] copying resource/visualize.rviz -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/ament_index/resource_index/packages
+[1.193s] copying package.xml -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/px4_offboard
+[1.193s] copying launch/offboard_velocity_control.launch.py -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/px4_offboard
+[1.194s] copying resource/visualize.rviz -> /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/share/px4_offboard
+[1.194s] running install_egg_info
+[1.203s] Copying ../../build/px4_offboard/px4_offboard.egg-info to /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info
+[1.203s] running install_scripts
+[1.239s] Installing control script to /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/px4_offboard
+[1.239s] Installing offboard_control script to /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/px4_offboard
+[1.239s] Installing processes script to /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/px4_offboard
+[1.239s] Installing velocity_control script to /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/px4_offboard
+[1.239s] Installing visualizer script to /home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/px4_offboard
+[1.240s] writing list of installed files to '/home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/install.log'
+[1.273s] Invoked command in '/home/nishant/RRC_Project/Test_ws/src/ROS2_PX4_Offboard_Example/px4_offboard' returned '0': AMENT_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nishant/RRC_Project/Test_ws/src/install/px4_offboard/lib/python3.10/site-packages:/home/nishant/RRC_Project/Test_ws/src/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/px4_offboard build --build-base /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/build install --record /home/nishant/RRC_Project/Test_ws/src/build/px4_offboard/install.log --single-version-externally-managed install_data

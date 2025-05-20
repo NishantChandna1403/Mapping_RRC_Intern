@@ -25,7 +25,7 @@ typedef struct px4_msgs__msg__MessageFormatResponse
   /// Response from PX4 with the format of a message
   /// Must be set to LATEST_PROTOCOL_VERSION. Do not change this field, it must be the first field after the timestamp
   uint16_t protocol_version;
-  /// E.g. /fmu/in/vehicle_command
+  /// E.g. /px4_1/fmu/in/vehicle_command
   uint8_t topic_name[50];
   bool success;
   /// hash over all message fields

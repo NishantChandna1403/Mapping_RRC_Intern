@@ -1,0 +1,96 @@
+[0.014s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.039s] -- Using ccache: /usr/bin/ccache
+[0.125s] -- Turning basic logging ON
+[0.217s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[0.218s] -- Found required Ceres dependency: glog
+[0.219s] -- Found required Ceres dependency: gflags
+[0.219s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[0.229s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.249s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.255s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.256s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.256s] [0m** WARNING ** io features related to png will be disabled[0m
+[0.296s] -- Could NOT find MPI (missing: MPI_C_FOUND C) 
+[0.296s]     Reason given by package: MPI component 'C' was requested, but language C is not enabled.  
+[0.296s] 
+[0.441s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.441s] -- looking for PCL_COMMON
+[0.442s] -- looking for PCL_OCTREE
+[0.442s] -- looking for PCL_IO
+[0.445s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[0.446s] -- Found required Ceres dependency: glog
+[0.446s] -- Found required Ceres dependency: gflags
+[0.447s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[0.447s] -- GenZ-ICP ROS 2 wrapper will be compiled
+[0.447s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.552s] -- Found px4_msgs: 2.0.1 (/home/nishant/RRC_Project/Test_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.566s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.567s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.571s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.579s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.587s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.608s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.647s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.669s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.670s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.763s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.801s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.814s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.825s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.925s] -- Configuring done
+[0.975s] -- Generating done
+[0.996s] -- Build files have been written to: /home/nishant/RRC_Project/Test_ws/build/genz_icp
+[1.029s] [35m[1mConsolidate compiler generated dependencies of target metrics[0m
+[1.032s] [35m[1mConsolidate compiler generated dependencies of target odometry_node[0m
+[1.033s] [35m[1mConsolidate compiler generated dependencies of target core[0m
+[1.043s] [ 14%] Built target metrics
+[1.048s] [ 28%] Built target odometry_node
+[1.054s] [ 71%] Built target core
+[1.063s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[1.076s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[12.635s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[12.666s] [ 85%] Built target pipeline
+[12.677s] [35m[1mConsolidate compiler generated dependencies of target odometry_component[0m
+[12.695s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[23.020s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’:
+[23.020s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:228:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_imu_timestamp_[m[K’ was not declared in this scope
+[23.020s]   228 |     [01;31m[Klatest_imu_timestamp_[m[K = rclcpp::Time(msg->timestamp, RCL_SYSTEM_TIME); // Update with the timestamp from the message
+[23.020s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[23.020s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[23.020s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:245:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgenz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, Sophus::SE3d, Sophus::SE3d, Eigen::Vector3d, Eigen::Vector3d)[m[K’
+[23.020s]   245 |     const auto &[planar_points, non_planar_points] = [01;31m[Kodometry_.RegisterFrame([m[K
+[23.021s]       |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[23.021s]   246 | [01;31m[K        points, timestamps,[m[K
+[23.021s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                                  
+[23.021s]   247 | [01;31m[K        first_imu_received_ ? latest_imu_pose_ : Sophus::SE3d(),[m[K
+[23.021s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K             
+[23.021s]   248 | [01;31m[K        first_local_position_received_ ? latest_local_position_pose_ : Sophus::SE3d(),[m[K
+[23.021s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.021s]   249 | [01;31m[K        first_sensor_combined_received_ ? latest_acc_enu_ : Eigen::Vector3d::Zero(),[m[K
+[23.021s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.021s]   250 | [01;31m[K        first_sensor_combined_received_ ? latest_gyro_enu_ : Eigen::Vector3d::Zero())[m[K;
+[23.021s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.021s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:44[m[K,
+[23.022s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[23.022s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:51:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const Vector3dVector&, const std::vector<double>&, const SE3d&, const Vector3d&, const Vector3d&, double)[m[K’
+[23.022s]    51 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(
+[23.022s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[23.022s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:55:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[KSophus::SE3d[m[K’ {aka ‘[01m[KSophus::SE3<double>[m[K’} to ‘[01m[Kconst Vector3d&[m[K’ {aka ‘[01m[Kconst Eigen::Matrix<double, 3, 1>&[m[K’}
+[23.022s]    55 |         [01;36m[Kconst Eigen::Vector3d &acc_enu[m[K,
+[23.022s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[23.022s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:59:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const Vector3dVector&, const std::vector<double>&, const SE3d&)[m[K’
+[23.022s]    59 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(
+[23.022s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[23.023s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:59:25:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 6 provided
+[23.023s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:66:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const Vector3dVector&, const std::vector<double>&)[m[K’
+[23.023s]    66 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(
+[23.023s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[23.023s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:66:25:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 6 provided
+[23.023s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:72:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const Vector3dVector&)[m[K’
+[23.024s]    72 |     Vector3dVectorTuple [01;36m[KRegisterFrame[m[K(const Vector3dVector &frame) {
+[23.024s]       |                         [01;36m[K^~~~~~~~~~~~~[m[K
+[23.024s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:72:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 6 provided
+[23.024s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[23.024s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[23.024s] gmake: *** [Makefile:146: all] Error 2
+[23.025s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

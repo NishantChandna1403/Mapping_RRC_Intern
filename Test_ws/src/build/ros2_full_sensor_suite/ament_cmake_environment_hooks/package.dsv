@@ -1,0 +1,4 @@
+source;share/ros2_full_sensor_suite/local_setup.bash
+source;share/ros2_full_sensor_suite/local_setup.dsv
+source;share/ros2_full_sensor_suite/local_setup.sh
+source;share/ros2_full_sensor_suite/local_setup.zsh

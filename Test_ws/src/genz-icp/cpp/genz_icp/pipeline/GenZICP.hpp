@@ -1,3 +1,4 @@
+// genz_icp/cpp/genz_icp/pipeline/GenZICP.hpp
 #pragma once
 
 #include <Eigen/Core>
@@ -8,23 +9,24 @@
 #include "genz_icp/core/Threshold.hpp"
 #include "genz_icp/core/VoxelHashMap.hpp"
 #include "genz_icp/core/Registration.hpp"
+#include "genz_icp/pipeline/Preintegration.hpp"
 
 namespace genz_icp::pipeline {
 
 struct GenZConfig {
-    double max_range = 30.0;
+    double max_range = 50.0;
     double min_range = 0.5;
     double map_cleanup_radius = 400.0;
     int max_points_per_voxel = 1;
     double voxel_size = 0.25;
-    int desired_num_voxelized_points = 2000;
-    double min_motion_th = 0.1;
-    double initial_threshold = 2.0;
+    int desired_num_voxelized_points = 500;
+    double min_motion_th = 0.5;
+    double initial_threshold = 5.0;
     double planarity_threshold = 0.1;
     bool deskew = false;
     int max_num_iterations = 150;
     double convergence_criterion = 0.0001;
-    double gps_accuracy = 1.0; // Default GPS accuracy (meters)
+    double gps_accuracy = 2.0;
 };
 
 class GenZICP {
@@ -37,26 +39,34 @@ public:
         : config_(config),
           registration_(config.max_num_iterations, config.convergence_criterion),
           local_map_(config.voxel_size, config.max_range, config.map_cleanup_radius, config.planarity_threshold, config.max_points_per_voxel),
-          adaptive_threshold_(config.initial_threshold, config.min_motion_th, config.max_range) {}
+          adaptive_threshold_(config.initial_threshold, config.min_motion_th, config.max_range),
+          imu_preintegrator_(Eigen::Vector3d::Zero(), Eigen::Vector3d::Zero(), Eigen::Vector3d::Zero(), Eigen::Vector3d::Zero()) {}
 
     GenZICP() : GenZICP(GenZConfig{}) {}
 
 public:
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame);
+
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                      const std::vector<double> &timestamps);
+                                      const std::vector<double> timestamps);
+
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                      const std::vector<double> &timestamps,
-                                      const Sophus::SE3d &imu_orientation = Sophus::SE3d(),
+                                      const std::vector<double> timestamps,
+                                      const Sophus::SE3d &attitude_orientation = Sophus::SE3d(),
                                       const Sophus::SE3d &local_position_pose = Sophus::SE3d());
+
     Vector3dVectorTuple RegisterFrame(const std::vector<Eigen::Vector3d> &frame,
-                                      const std::vector<double> &timestamps,
-                                      const Sophus::SE3d &imu_orientation,
+                                      const std::vector<double> timestamps,
+                                      const Sophus::SE3d &attitude_orientation,
                                       const Sophus::SE3d &local_position_pose,
                                       double eph,
                                       double epv,
                                       const Eigen::Vector3d &velocity,
-                                      double dt);
+                                      const Eigen::Vector3d &delta_p,
+                                      const Eigen::Quaterniond &delta_q,
+                                      const Eigen::Vector3d &delta_v,
+                                      double sum_dt);
+
     Vector3dVectorTuple Voxelize(const std::vector<Eigen::Vector3d> &frame, double voxel_size) const;
     double GetAdaptiveThreshold();
     Sophus::SE3d GetPredictionModel() const;
@@ -68,23 +78,24 @@ public:
 
 private:
     Sophus::SE3d fusePosesWithCeres(const Sophus::SE3d& icp_pose,
-                                    const Sophus::SE3d& imu_orientation,
+                                    const Sophus::SE3d& attitude_orientation,
                                     const Sophus::SE3d& local_position_pose,
                                     const Vector3dVector& planar_points,
                                     const Vector3dVector& non_planar_points,
-                                    double eph = 1.0,
-                                    double epv = 1.0,
-                                    const Eigen::Vector3d &velocity = Eigen::Vector3d::Zero(),
-                                    double dt = 0.0);
+                                    double eph,
+                                    double epv,
+                                    const Eigen::Vector3d &velocity,
+                                    const Preintegration::PreintegratedMeasurement &imu_meas);
 
     std::vector<Sophus::SE3d> poses_;
     GenZConfig config_;
     Registration registration_;
     VoxelHashMap local_map_;
     AdaptiveThreshold adaptive_threshold_;
-    Sophus::SE3d initial_enu_orientation_;
-    Sophus::SE3d last_imu_orientation_;
+    Sophus::SE3d initial_enu_attitude_;
+    Sophus::SE3d last_attitude_orientation_;
     bool first_frame_ = true;
+    Preintegration imu_preintegrator_;
 };
 
 }  // namespace genz_icp::pipeline

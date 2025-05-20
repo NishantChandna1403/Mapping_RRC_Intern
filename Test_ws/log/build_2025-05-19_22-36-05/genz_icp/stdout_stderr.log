@@ -1,0 +1,32 @@
+[ 14%] Built target odometry_node
+[ 28%] Built target metrics
+[ 71%] Built target core
+[ 85%] Built target pipeline
+[ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:208:50:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KPointCloud2ToEigen(const ConstSharedPtr&)[m[K’ is ambiguous
+  208 |     const auto points = [01;31m[Kutils::PointCloud2ToEigen(msg)[m[K;
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:2[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:35:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > genz_icp_ros::utils::PointCloud2ToEigen(const ConstSharedPtr&)[m[K’
+   35 |     std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr& msg);
+      |                                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:3[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:200:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> > genz_icp_ros::utils::PointCloud2ToEigen(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’
+  200 | inline std::vector<Eigen::Vector3d> [01;36m[KPointCloud2ToEigen[m[K(const PointCloud2::ConstSharedPtr msg) {
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In lambda function:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:212:36:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KGetTimestamps(const ConstSharedPtr&)[m[K’ is ambiguous
+  212 |         return [01;31m[Kutils::GetTimestamps(msg)[m[K;
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:2[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:36:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<double> genz_icp_ros::utils::GetTimestamps(const ConstSharedPtr&)[m[K’
+   36 |     std::vector<double> [01;36m[KGetTimestamps[m[K(const sensor_msgs::msg::PointCloud2::ConstSharedPtr& msg);
+      |                         [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:3[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/Utils.hpp:191:28:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<double> genz_icp_ros::utils::GetTimestamps(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’
+  191 | inline std::vector<double> [01;36m[KGetTimestamps[m[K(const PointCloud2::ConstSharedPtr msg) {
+      |                            [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

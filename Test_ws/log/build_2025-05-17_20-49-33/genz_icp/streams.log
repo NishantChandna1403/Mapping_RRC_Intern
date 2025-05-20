@@ -1,0 +1,39 @@
+[0.015s] Invoking command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12
+[0.062s] [ 14%] Built target metrics
+[0.062s] [ 57%] Built target core
+[0.067s] [ 71%] Built target odometry_node
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target pipeline[0m
+[0.088s] [ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+[6.335s] [ 85%] [32m[1mLinking CXX static library libpipeline.a[0m
+[6.379s] [ 85%] Built target pipeline
+[6.414s] [ 92%] [32mBuilding CXX object CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o[0m
+[16.673s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[16.673s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:63:52:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kgenz_icp::pipeline::GenZICP& genz_icp::pipeline::GenZICP::operator=(genz_icp::pipeline::GenZICP&&)[m[K’
+[16.673s]    63 |     odometry_ = genz_icp::pipeline::GenZICP(config_[01;31m[K)[m[K;
+[16.673s]       |                                                    [01;31m[K^[m[K
+[16.673s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:22[m[K,
+[16.673s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[16.673s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:31:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp::pipeline::GenZICP& genz_icp::pipeline::GenZICP::operator=(genz_icp::pipeline::GenZICP&&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[16.673s]    31 | class [01;36m[KGenZICP[m[K {
+[16.673s]       |       [01;36m[K^~~~~~~[m[K
+[16.673s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:31:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kgenz_icp::pipeline::IMUPreintegrator& genz_icp::pipeline::IMUPreintegrator::operator=(genz_icp::pipeline::IMUPreintegrator&&)[m[K’
+[16.673s] In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:11[m[K,
+[16.673s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:22[m[K,
+[16.674s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:8[m[K:
+[16.674s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/Preintegration.hpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgenz_icp::pipeline::IMUPreintegrator& genz_icp::pipeline::IMUPreintegrator::operator=(genz_icp::pipeline::IMUPreintegrator&&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[16.674s]    19 | class [01;36m[KIMUPreintegrator[m[K {
+[16.674s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[16.674s] [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/Preintegration.hpp:19:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::mutex& std::mutex::operator=(const std::mutex&)[m[K’
+[16.674s] In file included from [01m[K/usr/include/c++/11/bits/atomic_wait.h:49[m[K,
+[16.674s]                  from [01m[K/usr/include/c++/11/bits/atomic_base.h:41[m[K,
+[16.674s]                  from [01m[K/usr/include/c++/11/atomic:41[m[K,
+[16.674s]                  from [01m[K/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:14[m[K,
+[16.674s]                  from [01m[K/usr/include/eigen3/Eigen/Core:331[m[K,
+[16.674s]                  from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:1[m[K:
+[16.674s] [01m[K/usr/include/c++/11/bits/std_mutex.h:95:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.674s]    95 |     mutex& [01;36m[Koperator[m[K=(const mutex&) = delete;
+[16.674s]       |            [01;36m[K^~~~~~~~[m[K
+[16.675s] gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+[16.676s] gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+[16.676s] gmake: *** [Makefile:146: all] Error 2
+[16.678s] Invoked command in '/home/nishant/RRC_Project/Test_ws/build/genz_icp' returned '2': CMAKE_PREFIX_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com:/home/nishant/RRC_Project/Test_ws/install/genz_icp:/home/nishant/RRC_Project/Test_ws/install/kiss_icp:/home/nishant/RRC_Project/Test_ws/install/bcr_bot:/usr/lib/x86_64-linux-gnu/cmake/ceres:/usr/lib/x86_64-linux-gnu/cmake/ceres:/home/nishant/RRC_Project/Test_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/nishant/RRC_Project/Test_ws/install/px4_msgs/lib:/home/nishant/RRC_Project/Test_ws/install/ros2_full_sensor_suite/lib:/home/nishant/RRC_Project/Test_ws/install/px4_ros_com/lib:/home/nishant/RRC_Project/Test_ws/install/genz_icp/lib:/home/nishant/RRC_Project/Test_ws/install/kiss_icp/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nishant/RRC_Project/Test_ws/build/genz_icp -- -j12 -l12

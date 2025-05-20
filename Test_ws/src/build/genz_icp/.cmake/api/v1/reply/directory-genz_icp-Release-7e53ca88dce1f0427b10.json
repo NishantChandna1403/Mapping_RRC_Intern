@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "genz_icp",
+		"source" : "/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp"
+	}
+}

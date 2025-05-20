@@ -28,7 +28,7 @@ class GenZICPOdometry(Node):
         # Subscribe to point cloud
         self.subscription = self.create_subscription(
             PointCloud2,
-            '/camera/depth/points_transformed',
+            '/camera_1/depth/points_transformed',
             self.pointcloud_callback,
             10
         )
@@ -43,7 +43,7 @@ class GenZICPOdometry(Node):
         if self.get_parameter('use_gps').value:
             self.gps_subscription = self.create_subscription(
                 SensorGps,
-                '/fmu/out/vehicle_gps_position',
+                '/px4_1/fmu/out/vehicle_gps_position',
                 self.gps_callback,
                 10
             )

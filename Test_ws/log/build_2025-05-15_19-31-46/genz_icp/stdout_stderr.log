@@ -1,0 +1,53 @@
+[ 14%] Built target odometry_node
+[ 28%] Built target metrics
+[ 71%] Built target core
+[ 78%] [32mBuilding CXX object genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o[0m
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:81:11:[m[K [01;31m[Kerror: [m[K‘[01m[KVoxelHashMap[m[K’ does not name a type
+   81 |     const [01;31m[KVoxelHashMap[m[K &LocalMap() const { return local_map_; }
+      |           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVoxelHashMap[m[K’ does not name a type
+   86 |     [01;31m[KVoxelHashMap[m[K local_map_;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRegistration[m[K’ does not name a type
+   87 |     [01;31m[KRegistration[m[K registration_;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[KAdaptiveThreshold[m[K’ does not name a type
+   88 |     [01;31m[KAdaptiveThreshold[m[K adaptive_threshold_;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:110:14:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double, const Vector3d&, const Vector3d&)[m[K’
+  110 | Sophus::SE3d [01;31m[KGenZICP[m[K::fusePosesWithCeres(const Sophus::SE3d& icp_pose,
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:110:14:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[KSophus::SE3d genz_icp::pipeline::GenZICP::fusePosesWithCeres(const SE3d&, const SE3d&, const SE3d&, const Vector3dVector&, const Vector3dVector&, double, double, const Vector3d&, double, const Vector3d&, const Vector3d&)[m[K’
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:24[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.hpp:47:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp::pipeline::GenZICP[m[K’ defined here
+   47 | class [01;36m[KGenZICP[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, const Vector3d&, const Vector3d&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:207:75:[m[K [01;31m[Kerror: [m[Kunused parameter ‘[01m[Kgyro_enu[m[K’ [[01;31m[K-Werror=unused-parameter[m[K]
+  207 |                                                    [01;31m[Kconst Eigen::Vector3d &gyro_enu[m[K) {
+      |                                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kgenz_icp::pipeline::GenZICP::Vector3dVectorTuple genz_icp::pipeline::GenZICP::RegisterFrame(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<double>&, const SE3d&, const SE3d&, double, double, const Vector3d&, double)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:349:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kregistration_[m[K’ was not declared in this scope; did you mean ‘[01m[KRegistration[m[K’?
+  349 |         auto registration_result = [01;31m[Kregistration_[m[K.RegisterFrame(source, local_map_, initial_guess, 3.0 * sigma, sigma / 3.0);
+      |                                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                    [32m[KRegistration[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:349:72:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_map_[m[K’ was not declared in this scope
+  349 |         auto registration_result = registration_.RegisterFrame(source, [01;31m[Klocal_map_[m[K, initial_guess, 3.0 * sigma, sigma / 3.0);
+      |                                                                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:354:20:[m[K [01;31m[Kerror: [m[K‘[01m[KfusePosesWithCeres[m[K’ was not declared in this scope
+  354 |         new_pose = [01;31m[KfusePosesWithCeres[m[K(icp_pose, imu_pose, local_position_pose, planar_points, non_planar_points, eph, epv, velocity, dt, Eigen::Vector3d::Zero(), Eigen::Vector3d::Zero());
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:358:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kadaptive_threshold_[m[K’ was not declared in this scope; did you mean ‘[01m[KGetAdaptiveThreshold[m[K’?
+  358 |         [01;31m[Kadaptive_threshold_[m[K.UpdateModelDeviation(model_deviation);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[KGetAdaptiveThreshold[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:[m[K In member function ‘[01m[Kdouble genz_icp::pipeline::GenZICP::GetAdaptiveThreshold()[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/cpp/genz_icp/pipeline/GenZICP.cpp:415:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kadaptive_threshold_[m[K’ was not declared in this scope; did you mean ‘[01m[KGetAdaptiveThreshold[m[K’?
+  415 |     double threshold = [01;31m[Kadaptive_threshold_[m[K.ComputeThreshold();
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[KGetAdaptiveThreshold[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [genz_icp/pipeline/CMakeFiles/pipeline.dir/build.make:76: genz_icp/pipeline/CMakeFiles/pipeline.dir/GenZICP.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:374: genz_icp/pipeline/CMakeFiles/pipeline.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

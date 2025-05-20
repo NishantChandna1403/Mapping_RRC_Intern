@@ -1,0 +1,23 @@
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:113:2:[m[K [01;31m[Kerror: [m[K#endif without #if
+  113 | #[01;31m[Kendif[m[K // GENZ_ICP_ROS_ODOMETRY_SERVER_HPP
+      |  [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::SensorCombinedCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:227:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_acceleration_[m[K’ was not declared in this scope; did you mean ‘[01m[Kenu_acceleration[m[K’?
+  227 |     [01;31m[Klatest_acceleration_[m[K = enu_acceleration;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kenu_acceleration[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:228:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_angular_velocity_[m[K’ was not declared in this scope; did you mean ‘[01m[Kenu_angular_velocity[m[K’?
+  228 |     [01;31m[Klatest_angular_velocity_[m[K = enu_angular_velocity;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kenu_angular_velocity[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:253:43:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_acceleration_[m[K’ was not declared in this scope
+  253 |         first_sensor_combined_received_ ? [01;31m[Klatest_acceleration_[m[K : Eigen::Vector3d::Zero(),
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:254:43:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_angular_velocity_[m[K’ was not declared in this scope
+  254 |         first_sensor_combined_received_ ? [01;31m[Klatest_angular_velocity_[m[K : Eigen::Vector3d::Zero());
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

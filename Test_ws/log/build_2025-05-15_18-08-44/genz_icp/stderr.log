@@ -1,0 +1,76 @@
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In constructor ‘[01m[Kgenz_icp_ros::OdometryServer::OdometryServer(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:58:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kgenz_icp_ros::OdometryServer[m[K’ does not have any field named ‘[01m[Kimu_preintegration_[m[K’
+   58 |       [01;31m[Kimu_preintegration_[m[K(nullptr),
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:59:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kgenz_icp_ros::OdometryServer[m[K’ does not have any field named ‘[01m[Klast_imu_time_[m[K’
+   59 |       [01;31m[Klast_imu_time_[m[K(0.0),
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:60:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kgenz_icp_ros::OdometryServer[m[K’ does not have any field named ‘[01m[Klast_frame_time_[m[K’
+   60 |       [01;31m[Klast_frame_time_[m[K(0.0),
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:68:25:[m[K [01;31m[Kerror: [m[K‘[01m[KACC_N[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   68 |     genz_icp::pipeline::[01;31m[KACC_N[m[K = get_parameter("imu.acc_noise_density").as_double();
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:69:25:[m[K [01;31m[Kerror: [m[K‘[01m[KGYR_N[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   69 |     genz_icp::pipeline::[01;31m[KGYR_N[m[K = get_parameter("imu.gyr_noise_density").as_double();
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:70:25:[m[K [01;31m[Kerror: [m[K‘[01m[KACC_W[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   70 |     genz_icp::pipeline::[01;31m[KACC_W[m[K = get_parameter("imu.acc_bias_random_walk").as_double();
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:71:25:[m[K [01;31m[Kerror: [m[K‘[01m[KGYR_W[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   71 |     genz_icp::pipeline::[01;31m[KGYR_W[m[K = get_parameter("imu.gyr_bias_random_walk").as_double();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:31[m[K,
+                 from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:74:37:[m[K [01;31m[Kerror: [m[K‘[01m[KACC_N[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   74 |                 genz_icp::pipeline::[01;31m[KACC_N[m[K, genz_icp::pipeline::GYR_N,
+      |                                     [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:74:64:[m[K [01;31m[Kerror: [m[K‘[01m[KGYR_N[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   74 |                 genz_icp::pipeline::ACC_N, genz_icp::pipeline::[01;31m[KGYR_N[m[K,
+      |                                                                [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:75:37:[m[K [01;31m[Kerror: [m[K‘[01m[KACC_W[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   75 |                 genz_icp::pipeline::[01;31m[KACC_W[m[K, genz_icp::pipeline::GYR_W);
+      |                                     [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:75:64:[m[K [01;31m[Kerror: [m[K‘[01m[KGYR_W[m[K’ is not a member of ‘[01m[Kgenz_icp::pipeline[m[K’
+   75 |                 genz_icp::pipeline::ACC_W, genz_icp::pipeline::[01;31m[KGYR_W[m[K);
+      |                                                                [01;31m[K^~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_preintegration_[m[K’ was not declared in this scope
+   79 |     [01;31m[Kimu_preintegration_[m[K = new genz_icp::pipeline::IntegrationBase(acc_0, gyr_0, ba, bg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:79:31:[m[K [01;31m[Kerror: [m[Kexpected type-specifier
+   79 |     imu_preintegration_ = new [01;31m[Kgenz_icp[m[K::pipeline::IntegrationBase(acc_0, gyr_0, ba, bg);
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[K_mm_sub_ss[m[K’?
+  112 |     [01;31m[Kimu_sub_[m[K = create_subscription<px4_msgs::msg::SensorCombined>(
+      |     [01;31m[K^~~~~~~~[m[K
+      |     [32m[K_mm_sub_ss[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:114:36:[m[K [01;31m[Kerror: [m[K‘[01m[KImuCallback[m[K’ is not a member of ‘[01m[Kgenz_icp_ros::OdometryServer[m[K’
+  114 |         std::bind(&OdometryServer::[01;31m[KImuCallback[m[K, this, std::placeholders::_1));
+      |                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K At global scope:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:154:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid genz_icp_ros::OdometryServer::ImuCallback(const ConstSharedPtr&)[m[K’
+  154 | void [01;31m[KOdometryServer[m[K::ImuCallback(const px4_msgs::msg::SensorCombined::ConstSharedPtr &msg) {
+      |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:154:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid genz_icp_ros::OdometryServer::ImuCallback(const ConstSharedPtr&)[m[K’
+In file included from [01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:30[m[K:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.hpp:46:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass genz_icp_ros::OdometryServer[m[K’ defined here
+   46 | class [01;36m[KOdometryServer[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:[m[K In member function ‘[01m[Kvoid genz_icp_ros::OdometryServer::RegisterFrame(const ConstSharedPtr&)[m[K’:
+[01m[K/home/nishant/RRC_Project/Test_ws/src/genz-icp/ros/ros2/OdometryServer.cpp:237:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_preintegration_[m[K’ was not declared in this scope
+  237 |         points, timestamps, [01;31m[Kimu_preintegration_[m[K,
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/odometry_component.dir/build.make:76: CMakeFiles/odometry_component.dir/ros2/OdometryServer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:244: CMakeFiles/odometry_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
